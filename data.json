@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.2)",
-    "updated": "22 nov 2026, 16:30 (hora CDMX)",
+    "updated": "22 nov 2026, 16:51 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "Tiempos y km de la tabla: Apple Maps (lectura v10, 2–8 nov 2026). Contraste OSRM 22 nov 2026.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -1135,7 +1135,7 @@
           "start": "07:45",
           "end": "08:00",
           "type": "hotel",
-          "title": "Check-out Terra / Terra / Auener Hof (hasta 11:00)",
+          "title": "Check-out Terra / Terra / Terra / Terra / Auener Hof (hasta 11:00)",
           "status": "reservado",
           "map": "https://maps.apple.com/?ll=46.651490,11.322360&q=Auener%20Hof%2C%20Prati%2021%2C%20Sarentino",
           "bk": "ok"
@@ -1144,7 +1144,7 @@
           "start": "08:00",
           "end": "10:50",
           "type": "coche",
-          "title": "Manejar Terra / Terra / Auener Hof (Sarentino) → Ansitz Heufler (Rasun-Anterselva)",
+          "title": "Manejar Terra / Terra / Terra / Terra / Auener Hof (Sarentino) → Ansitz Heufler (Rasun-Anterselva)",
           "notes": "OSRM 1 h 56 · 112 km → +20 % 2 h 20 + descansos 15 min + estacionar 15 min = 2 h 50. (Tramo nuevo: no hay lectura de Apple Maps; con Apple el tramo hasta Brunico daba 1 h 35, así que probablemente llegas antes.)",
           "map": "https://maps.apple.com/?saddr=46.651490,11.322360&daddr=46.790905,12.055701&dirflg=d",
           "bk": "gratis"
@@ -1669,7 +1669,7 @@
       "label": "Lun 28 dic",
       "city": "Kobarid → Zagreb",
       "section": "tour",
-      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: FareHarbor ✓ confirmado, orden ✓ confirmado, €44,07). Nota en correo: propuesta de cata en Movia con Nina Šegula a las 10:00 (9 nov), nunca confirmada -> chocaría con Ljubljana 11:00. Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award del 4 nov), foto R3, Adviento y cena en Dubravkin put (TripIt; sin correo de confirmación).",
+      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: FareHarbor ✓ confirmado, orden ✓ confirmado, €44,07). Nota en correo: propuesta de cata en Movia con Nina Šegula a las 10:00 (9 nov), nunca confirmada -> chocaría con Ljubljana 11:00. Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award del 4 nov), foto R3, Adviento y cena en Dubravkin put (confirmada por correo, 2 pax, nota de aniversario).",
       "drive": {
         "key": "hisa_lju",
         "frm": "Hiša Franko",
@@ -1828,7 +1828,7 @@
           "end": "19:00",
           "type": "traslado",
           "title": "Taxi a Dubravkin put (Tuškanac)",
-          "notes": "En TripIt aparece a las 19:00, Dubravkin put 2, Zagreb, pero sin confirmación. EA no encontró correo de reserva en todo el buzón. Se deja en el plan con el estado de TripIt, no como mesa asegurada. Sin correo de confirmación. Bloque de 3 h 30.",
+          "notes": "Taxi a Dubravkin put 2, Zagreb (Tuškanac). Mesa confirmada a las 19:00 para 2, con nota «Celebrating our anniversary». Bloque de 3 h 30.",
           "bk": "gratis"
         },
         {
@@ -1836,24 +1836,26 @@
           "end": "22:30",
           "type": "cena",
           "title": "Dubravkin put ★",
-          "status": "por_resolver",
+          "status": "reservado",
           "place": "Dubravkin put ★",
           "map": "https://maps.apple.com/?ll=45.817852,15.971643&q=Dubravkin%20put%20%E2%98%85",
-          "bk": "pend",
-          "notes": "En TripIt aparece a las 19:00, Dubravkin put 2, Zagreb, pero sin número de confirmación. EA no encontró correo de reserva en todo el buzón. Se mantiene con el estado de TripIt, no como mesa asegurada, con la marca «sin correo de confirmación». Bloque de 3 h 30.",
-          "flag": "sin correo de confirmación"
+          "bk": "ok",
+          "notes": "Confirmado por correo (reenviado a TripIt el 1 nov 21:55): mesa para 2 el lun 28 dic 2026 a las 19:00, nota «Celebrating our anniversary». Llegó de reservations@superbexperience.com (respuesta a info@dubravkin-put.com). Cancelación con al menos 24 h de anticipación; no menciona pago. Bloque de 3 h 30.",
+          "evidencia": {
+            "public_text": "confirmado por correo (1 nov 2026)"
+          }
         }
       ],
       "recs": [
         "Para el tour de las 11:00: salir de Kobarid a las 08:00 (o a más tardar 08:15). El check-out oficial a las 11:00 no estorba si os vais antes.",
         "Tour de Ljubljana confirmado para 2 adultos (FareHarbor ✓ confirmado). Punto de encuentro: TIC Ljubljana, Adamič-Lundrovo nabrežie 2.",
         "Cata en Movia (10:00): quedó solo en propuesta de Nina Šegula (9 nov); fuera del plan.",
-        "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar — si Dubravkin put está de verdad reservado (sin correo de confirmación)."
+        "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar en Dubravkin put (mesa confirmada a las 19:00, 2 pax, nota de aniversario)."
       ],
       "warn": [
         "Check-out oficial de Hiša Franko a las 11:00: salid a las 08:00 (llegada con márgenes ~11:00; en tiempo de Apple ~10:03). Después de las 08:15 se come el margen.",
         "Cata en Movia (Nina Šegula, 10:00): propuesta sin confirmar del 9 nov. Choca con el tour de Ljubljana a las 11:00; confirmar descarte/cortesía si lo deseas.",
-        "Dubravkin put: en TripIt a las 19:00, sin número ni correo de confirmación.",
+        "Dubravkin put ★ 19:00 (2 pax): confirmado por correo (1 nov, reservations@superbexperience.com); cancelación con al menos 24 h; sin prepago.",
         "Eslovenia: viñeta electrónica (A1/A2). Croacia: peaje en caseta (A3)."
       ],
       "family": [],
@@ -1861,7 +1863,7 @@
         "Lluvia: Mercado Dolac techado y cafés de Tkalčićeva."
       ],
       "lodging": "The Westin Zagreb, Izidora Kršnjavoga 1 (✓ confirmado, €129, Deluxe Twin; solicitud Nightly Upgrade Award enviada el 4 nov)",
-      "dinner": "Dubravkin put 19:00 (TripIt; sin correo de confirmación)",
+      "dinner": "Dubravkin put ★ 19:00 (confirmado por correo, 2 pax, aniversario; cancelación ≥24 h)",
       "lod_status": "reservado",
       "photos": [
         "R3"
@@ -2363,7 +2365,7 @@
           "end": "19:00",
           "type": "traslado",
           "title": "Caminar a Bottiglieria 1881 (736 m, 10 min)",
-          "notes": "En TripIt: 19:00, Bocheńska 5, 2 personas, ✓ confirmado, no-show PLN 500 p/p. Se mantiene como reservada (TripIt es más reciente que el correo). Atención: el 23 oct el restaurante dijo que el 29 dic estaba lleno y ofreció lista de espera; no hay correo posterior. Confirma que la mesa del 30 es real. Bloque de 3 h 30; regreso a pie (736 m / ~10 min). En TripIt: 30 dic 19:00, ✓ confirmado, 2 personas. No hay correo de confirmación; el único correo (23 oct) hablaba del 29, que estaba lleno.",
+          "notes": "Caminar 736 m / ~10 min desde Stradom House hasta Bocheńska 5. Mesa confirmada a las 19:00 para 2 (✓ confirmado); la mesa se guarda 3 h 30. Regreso a pie.",
           "map": "https://maps.apple.com/?saddr=50.052776,19.940744&daddr=50.048658,19.946092&dirflg=w",
           "bk": "gratis"
         },
@@ -2376,8 +2378,10 @@
           "place": "Bottiglieria 1881 ★★",
           "map": "https://maps.apple.com/?ll=50.048658,19.946092&q=Bottiglieria%201881%20%E2%98%85%E2%98%85",
           "bk": "ok",
-          "notes": "En TripIt: 19:00, Bocheńska 5, 2 personas, ✓ confirmado, no-show PLN 500 p/p. Se mantiene como reservada según TripIt, con la marca «sin correo de confirmación». El único correo (23 oct) decía que el 29 dic estaba lleno y ofrecía lista de espera; no hay correo posterior. Bloque de 3 h 30; regreso a pie (736 m / ~10 min).",
-          "flag": "sin correo de confirmación"
+          "notes": "Confirmado por correo (reenviado a TripIt el 30 oct, no-reply@dinnerbooking.com, respuesta a biuro@1881.com.pl): mié 30 dic 2026 a las 19:00, 2 personas, ✓ confirmado. La mesa se guarda 3 h 30. Cancelación gratis hasta 72 h antes; después cobran 500 PLN p/p a la tarjeta registrada. Sin prepago. Regreso a pie (736 m / ~10 min).",
+          "evidencia": {
+            "public_text": "confirmado por correo (30 oct 2026)"
+          }
         }
       ],
       "recs": [
@@ -2395,7 +2399,7 @@
         "Frío: Lonja de los Paños y Basílica de Santa María bajo techo; el patio del Wawel es al aire libre."
       ],
       "lodging": "Stradom House Hotel & Spa, Autograph Collection, Stradomska 12-14 (✓ confirmado, PLN 930, Modern Twin courtyard, 2 adultos; cancel. gratis hasta 30 dic 23:59)",
-      "dinner": "Bottiglieria 1881 19:00 (TripIt; sin correo de confirmación)",
+      "dinner": "Bottiglieria 1881 ★★ 19:00 (confirmado por correo, 2 pax; cancel. gratis hasta 72 h antes)",
       "lod_status": "reservado",
       "photos": [
         "R5"
@@ -2758,9 +2762,9 @@
           "start": "11:55",
           "end": "13:45",
           "type": "cena",
-          "title": "Comida con vinos de los Pequeños Cárpatos en la Zámocká viecha (Castillo de Pezinok) — POR CONFIRMAR que abra el 1 ene",
-          "status": "por_resolver",
-          "notes": "Por confirmar que abra el 1 ene y reservar (2 personas, ~11:55). El 1 ene 2027 es viernes y festivo en Eslovaquia, no un domingo. Horario habitual viernes 11:00–22:30 (zamockaviecha.sk). NO VERIFICADO que abra ese festivo: el año pasado el Zámocké vinárstvo cerró su tienda del 1 al 6 ene. Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau (Schlossberg, acceso libre todo el año), de camino a Viena.",
+          "title": "Propuesta — Comida con vinos de los Pequeños Cárpatos en la Zámocká viecha (Castillo de Pezinok)",
+          "status": "propuesta",
+          "notes": "Propuesta (no hay reserva): comida con vino para 2 a ~11:55. EA no encontró ningún correo en Recibidos, Enviados ni Travel + Leisure (Zámocká, Zamocka, viecha, Pezinok). El 1 ene 2027 es viernes y festivo en Eslovaquia. Horario habitual viernes 11:00–22:30 (zamockaviecha.sk). Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau (Schlossberg, acceso libre todo el año), de camino a Viena.",
           "place": "Zámocká viecha, Mladoboleslavská 5, 902 01 Pezinok",
           "map": "https://maps.apple.com/?ll=48.288600,17.266800&q=Z%C3%A1mock%C3%A1%20viecha%2C%20Pezinok",
           "bk": "pend"
@@ -4175,9 +4179,9 @@
       "Terra / Auener Hof (25–26 dic, ✓ confirmado, €822): paquete hotel + cena. Sin respuesta de Terra desde 2 nov; cena 20:00 solo dicha por Francisco; depósito €247 muy probablemente pagado (US$276,89, 4 nov).",
       "Ansitz Heufler (26 dic, €1.180; €350 pagado, faltan €830) · Hiša Franko (27 dic, twin terraza confirmada 5 nov; cena ✓ confirmado) · Tour Ljubljana (28 dic 11:00, 2 adultos, ✓ confirmado, €44,07 pagado) · Movia 10:00 (propuesta sin confirmar).",
       "Hoteles Marriott: Westin ✓ confirmado (€129, NUA 4 nov) · Budapest ✓ confirmado (€234,35, NUA 4 nov) · Stradom ✓ confirmado (PLN 930, gratis 30 dic 23:59) · River Park ✓ confirmado (€182, NUA 4 nov) · Imperial ✓ confirmado (€213) · Prague ✓ confirmado (CZK 6.148).",
-      "Cenas fin de viaje: UFO 31 dic (orden ✓ confirmado, €610 pagado) · TIAN 1 ene 19:00 (2 pax, €199 p/p, gratis hasta 31 dic 19:00) · Štangl 2 ene 19:00 (✓ confirmado, 2 pax, sin pago)."
+      "Cenas fin de viaje: Dubravkin put 28 dic 19:00 (2 pax, confirmada por correo 1 nov; cancel. ≥24 h) · Bottiglieria 1881 30 dic 19:00 (✓ confirmado, confirmada por correo 30 oct; cancel. gratis 72 h, luego PLN 500 p/p) · UFO 31 dic (orden ✓ confirmado, €610 pagado) · TIAN 1 ene 19:00 (2 pax, €199 p/p, gratis hasta 31 dic 19:00) · Štangl 2 ene 19:00 (✓ confirmado, 2 pax, sin pago)."
     ],
-    "missing": "Sin correo ni cargo en tarjetas: Bottiglieria 1881 (✓ confirmado en TripIt; correo del 23 oct sobre 29 dic lleno) y Dubravkin put (solo TripIt). Chalet Airbnb: reservado por Alejandro (fuera de tus tarjetas). Chef Basile (24 dic): sin respuesta desde 10 nov. Sin asientos en los 4 vuelos."
+    "missing": "Chalet Airbnb: reservado por Alejandro (fuera de tus tarjetas). Chef Basile (24 dic): sin respuesta desde 10 nov. Zámocká viecha (1 ene): sin correo en ninguna carpeta — sigue como propuesta. Sin asientos en los 4 vuelos."
   },
   "sources": [
     {
@@ -4186,7 +4190,7 @@
     },
     {
       "t": "iCloud Mail (lectura de EA, solo lectura)",
-      "w": "22 nov 2026, ~15:40 hora CDMX, todo el buzón (incl. Enviados): La Cabane siempre el 23; Hiša Franko habitación por correo; Basile, Ljubljana pax, Terra, Bottiglieria y Dubravkin sin correo de confirmación."
+      "w": "22 nov 2026, 16:51 hora CDMX (Inbox + Travel & Leisure + Enviados + direcciones EA 16:43/16:49): Dubravkin put y Bottiglieria 1881 confirmados por correo; Zámocká viecha sin correo (sigue como propuesta); La Cabane tiene dos reservas activas (22 y 23); Albert 1er del 23 posiblemente activa; Basile y Terra con hilos abiertos."
     },
     {
       "t": "OSRM (router.project-osrm.org)",
@@ -7169,23 +7173,15 @@
         "date": "2026-12-28",
         "label": "Lun 28 dic",
         "city": "Kobarid → Ljubljana → Zagreb",
-        "booked": "Tour Ljubljana 11:00 (✓ confirmado / ✓ confirmado, 2 adultos, €44,07 pagado) · Westin Zagreb ✓ confirmado (€129, NUA 4 nov) · Dubravkin put 19:00 (TripIt).",
+        "booked": "Tour Ljubljana 11:00 (✓ confirmado / ✓ confirmado, 2 adultos, €44,07 pagado) · Westin Zagreb ✓ confirmado (€129, NUA 4 nov) · Dubravkin put 19:00 (confirmado por correo, 2 pax, aniversario; cancel. ≥24 h).",
         "items": [
-          {
-            "grp": "ya",
-            "status": "por_resolver",
-            "what": "Dubravkin put 28 dic 19:00: en TripIt; sin correo de confirmación",
-            "when": "Cuando puedas",
-            "why": "Está en TripIt a las 19:00, pero sin número ni correo de reserva (EA no encontró nada en todo el buzón). Se mantiene con el estado de TripIt, no como mesa asegurada.",
-            "n": 24
-          },
           {
             "grp": "opc",
             "status": "propuesta",
             "what": "Cata Movia 28 dic 10:00 (Nina Šegula): propuesta sin confirmar (9 nov)",
             "when": "Descartar o avisar por cortesía",
             "why": "Nina ofreció el 28 a las 10:00 el 9 nov y nunca confirmaste; choca con Ljubljana 11:00.",
-            "n": 25
+            "n": 24
           }
         ]
       },
@@ -7234,7 +7230,7 @@
                 "detail": "Reservar: https://budapestshooting.eu/en/packages/ · Nagymező u. 37-39 (taxi ~10 min del hotel)."
               }
             ],
-            "n": 26,
+            "n": 25,
             "grp": "tour"
           }
         ]
@@ -7243,16 +7239,8 @@
         "date": "2026-12-30",
         "label": "Mié 30 dic",
         "city": "Budapest → Cracovia",
-        "booked": "Stradom House ✓ confirmado (3 nov, PLN 930, Modern Twin, gratis hasta 30 dic 23:59) · Bottiglieria 1881 19:00, ✓ confirmado (TripIt; sin correo).",
+        "booked": "Stradom House ✓ confirmado (3 nov, PLN 930, Modern Twin, gratis hasta 30 dic 23:59) · Bottiglieria 1881 19:00 (confirmado por correo, 2 pax; cancel. gratis hasta 72 h antes, luego PLN 500 p/p).",
         "items": [
-          {
-            "n": 27,
-            "grp": "ya",
-            "status": "info",
-            "what": "Bottiglieria 1881 30 dic 19:00: en TripIt; sin correo de confirmación",
-            "when": "Cuando puedas",
-            "why": "Se mantiene como reservada según TripIt: 30 dic 19:00, ✓ confirmado, 2 personas, no-show PLN 500 p/p. El único correo (23 oct) decía que el 29 estaba lleno y ofrecía lista de espera; no hay correo posterior."
-          },
           {
             "what": "Tarde en Cracovia: elige",
             "when": "Ver cada una",
@@ -7276,7 +7264,7 @@
                 "detail": "Reservar: https://www.wieliczka-saltmine.com/individual-tourist/useful-information/ticket-prices-and-visiting-hours · Sin verificar: Horarios de salida en inglés del 30 dic no verificados."
               }
             ],
-            "n": 28,
+            "n": 26,
             "grp": "tour"
           }
         ]
@@ -7292,7 +7280,7 @@
             "when": "Cuanto antes",
             "why": "Termina ~18:00 y la cena en el UFO es a las 20:00: encaja sin mover nada salvo el castillo y la foto R6 de la tarde. 40 € / 35 € por persona (filharmonia.sk). Cancelación: sin verificar. Peso/edad: no aplica.",
             "status": "propuesta",
-            "n": 29,
+            "n": 27,
             "detail": "Reservar: https://www.filharmonia.sk/m6-2026",
             "grp": "tour"
           }
@@ -7305,18 +7293,18 @@
         "booked": "Imperial Riding School, ✓ confirmado, €213 · TIAN 19:00, 2 personas, menú €199 p/p, cancelación gratis hasta el 31 dic 19:00.",
         "items": [
           {
-            "what": "Comida con vino del 1 ene: confirmar que abre y reservar (2 personas, ~11:55)",
-            "when": "Ya: los restaurantes cierran agenda de festivos en diciembre",
-            "why": "Confirmar que la Zámocká viecha abre el 1 ene 2027 (viernes festivo, no domingo) y reservar para 2 a ~11:55. Horario habitual viernes 11:00–22:30. Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau, Schlossberg de acceso libre todo el año (Carnuntum no abre hasta el 13 mar 2027).",
-            "status": "por_resolver",
-            "grp": "ya",
+            "what": "Comida con vino del 1 ene: propuesta Zámocká viecha (2 personas, ~11:55) — no hay correo",
+            "when": "Si la quieres, hay que escribir para preguntar si abre y reservar",
+            "why": "No hay correo de Zámocká viecha en Recibidos, Enviados ni Travel + Leisure. Sigue como propuesta: confirmar que abre el 1 ene 2027 (viernes festivo) y reservar para 2 a ~11:55. Horario habitual viernes 11:00–22:30. Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau, Schlossberg de acceso libre todo el año.",
+            "status": "propuesta",
+            "grp": "opc",
             "alts": [
               {
                 "l": "A",
                 "title": "Zámocká viecha — restaurante de vinos en el castillo de Pezinok",
-                "status": "por_resolver",
+                "status": "propuesta",
                 "when": "11:55–13:45",
-                "why": "Viernes normal 11:00–22:30 (zamockaviecha.sk). viecha@zamokpezinok.sk · +421 904 720 049. 1 ene sin verificar."
+                "why": "Propuesta (sin correo). Viernes normal 11:00–22:30 (zamockaviecha.sk). viecha@zamokpezinok.sk · +421 904 720 049. 1 ene sin verificar."
               },
               {
                 "l": "B",
@@ -7333,10 +7321,10 @@
                 "why": "Si ninguna abre el 1 ene."
               }
             ],
-            "n": 30
+            "n": 28
           },
           {
-            "n": 31,
+            "n": 29,
             "grp": "ya",
             "status": "propuesta",
             "what": "Foto R7: orilla pública de Devín (el recinto sigue cerrado el 1 ene)",
@@ -7348,7 +7336,7 @@
             "when": "Solo si quieres cambiar",
             "why": "Lo pediste el 4 nov: los 1★ que abren el 1 ene, más la 9ª de Beethoven. Si eliges el concierto (19:00–20:30), lo natural es mover TIAN o cenar en APRON, al lado del Konzerthaus.",
             "status": "propuesta",
-            "n": 32,
+            "n": 30,
             "alts": [
               {
                 "l": "A",
@@ -7432,7 +7420,7 @@
                 "detail": "Reservar: https://shootingrangeprague.com/"
               }
             ],
-            "n": 33,
+            "n": 31,
             "grp": "tour"
           }
         ]
@@ -7448,7 +7436,7 @@
             "when": "Antes del 3 ene",
             "why": "Ryanair (T2) y AM 38 (T1) van en boletos separados con 2 h 30 de conexión.",
             "status": "propuesta",
-            "n": 34,
+            "n": 32,
             "grp": "ya"
           }
         ]
@@ -7457,16 +7445,17 @@
     "listo_note": "Listo · sin pendientes."
   },
   "mail": {
-    "read": "22 nov 2026, 16:29 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados + 59 capturas) + Finance conciliado 16:29.",
+    "read": "22 nov 2026, 16:51 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados + 59 capturas + direcciones 16:43/16:49) + Finance conciliado.",
     "conflicts": [
       "La Cabane des Praz: DOS reservas activas (mar 22 dic 19:15 y mié 23 dic 19:30, 5 pax). Decidir y cancelar una.",
       "Albert 1er ★ (mié 23 dic 20:00, 3 pax): cancelación pedida 2 nov, pero Zenchef confirmó el 4 nov -> posiblemente activa (€100 p/p no-show).",
       "Chef Basile (24 dic, 8 pax): oferta 10 nov y respuesta a las 18:31 pidiendo €600 + depósito; sin respuesta posterior.",
       "Terra (25 dic): sin respuesta de Terra desde el 2 nov; 20:00 solo dicho por Francisco; dudas del 22 nov (12:33/12:34) y cancelación pendientes.",
-      "Movia (28 dic 10:00, Nina Šegula): propuesta del 9 nov nunca confirmada; choca con Ljubljana 11:00.",
-      "Bottiglieria 1881 (30 dic, ✓ confirmado) y Dubravkin put (28 dic): sin correo de confirmación."
+      "Movia (28 dic 10:00, Nina Šegula): propuesta del 9 nov nunca confirmada; choca con Ljubljana 11:00."
     ],
     "changes": [
+      "Dubravkin put (28 dic 19:00, 2 pax, nota de aniversario; cancel. ≥24 h) y Bottiglieria 1881 (30 dic 19:00, ✓ confirmado, 2 pax; cancel. gratis 72 h, luego PLN 500 p/p): confirmados por correo; salen de Pendientes.",
+      "Zámocká viecha (1 ene ~11:55): no hay correo en ninguna carpeta; se mantiene como propuesta.",
       "TIAN (1 ene 19:00, 2 pax, €199 p/p, gratis 31 dic 19:00) y Štangl (2 ene 19:00, 2 pax, ✓ confirmado, sin pago): respaldados por correo del 1 nov.",
       "Ljubljana tour (✓ confirmado / ✓ confirmado): confirmado y pagado para 2 adultos (€44,07).",
       "Stradom House (✓ confirmado): PLN 930, Modern Twin, gratis hasta 30 dic 23:59. NUA Bonvoy (4 nov) en Westin, Budapest y River Park."
@@ -7481,6 +7470,7 @@
       "24 dic Chef Basile (8 adultos): localizado en Enviados (10 nov 18:31) confirmando 8 adultos y pidiendo 8×€75=€600 + forma de depósito (y anotación 8×€70=€560). Sin respuesta desde el 10 nov -> reconfirmar a info@basilechef.com.",
       "25 dic Terra / Auener Hof (✓ confirmado, €822): paquete hotel + cena. Terra no responde desde el 2 nov (hilo del 8 y 22 nov con dudas pendientes); las 20:00 solo las indica Francisco; depósito €247 muy probablemente pagado (AUENERHOF SARNTAL US$276,89, 4 nov).",
       "28 dic Tour Ljubljana: CONFIRMADO y PAGADO para 2 adultos (✓ confirmado / ✓ confirmado, €44,07). Cata Movia 10:00 (Nina Šegula, 9 nov): propuesta sin confirmar.",
+      "28 dic Dubravkin put ★ 19:00 (2 pax, nota de aniversario) y 30 dic Bottiglieria 1881 ★★ 19:00 (✓ confirmado, 2 pax): CONFIRMADOS por correo (salen de Pendientes). Zámocká viecha (1 ene) sigue como propuesta: no hay correo.",
       "30 dic Stradom House ✓ confirmado (Modern Twin, PLN 930, cancel. gratis hasta 30 dic 23:59) + solicitudes Bonvoy NUA (4 nov) en Westin Zagreb, Budapest Marriott y River Park.",
       "1 ene TIAN ★ (19:00, 2 pax, €199 p/p, cancel. gratis 31 dic 19:00) y 2 ene Štangl ★ (19:00, 2 pax, ✓ confirmado, sin pago): respaldados por correo (1 nov).",
       "Finanzas conciliadas: Iberia ×2 = Vueling ✓ confirmado (confirmado, no duplicado); AM ✓ confirmado probablemente MXN 95.081,82 (30 oct); PayPal ×2 = cargo+reembolso; chalet Airbnb reservado por Alejandro (sin costo para Francisco); solo Plan N Travel (×2 MXN 2.289,16) sigue desconocido.",
@@ -7728,7 +7718,7 @@
       {
         "what": "Otras cenas (garantía con tarjeta / consumo)",
         "amount": "Según consumo",
-        "source": "Cap-Horn, La Cabane, Albert 1er (si activo), Dubravkin, Stand, Bottiglieria",
+        "source": "Cap-Horn, La Cabane, Albert 1er (si activo), Dubravkin put (confirmada, cancel. ≥24 h), Stand, Bottiglieria 1881 (confirmada; cancel. gratis 72 h, luego PLN 500 p/p)",
         "when": "En cada cena"
       },
       {
