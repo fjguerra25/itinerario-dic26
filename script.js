@@ -26,6 +26,20 @@ function tzLabel(){return S.tz==="cet"?'<b>🕐 Horas en: Hora local Europa (CET
 var TYPE={vuelo:"Vuelo",coche:"Coche",visita:"Visita",cena:"Cena",foto:"Foto",hotel:"Hospedaje",libre:"Libre",traslado:"Traslado",cafe:"Café"};
 var STAT={reservado:"Reservado",en_curso:"En curso",propuesta:"Propuesta",por_resolver:"Por resolver",info:"Info",por_confirmar_listo:"Por confirmar listo",conflicto:"Conflicto",listo:"Listo · sin pendientes",cerrado:"Cerrado"};
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+function applePlaceUrl(name,lat,lon){return 'https://maps.apple.com/?q='+encodeURIComponent(name||'Lugar')+'&ll='+Number(lat).toFixed(6)+','+Number(lon).toFixed(6);}
+function evidHtml(e,full){var v=e&&e.evidencia;if(!v)return '';
+  if(D.meta&&D.meta.public_redacted){return '<div class="evid pub">📧 '+esc(v.public_text||'confirmado por correo')+'</div>';}
+  var h='<div class="evid'+(full?' full':'')+'"><b>📧 Evidencia:</b> '+esc(v.sender||'')+(v.date?' · '+esc(v.date):'')+(v.subject?' · <i>'+esc(v.subject)+'</i>':'');
+  var list=(v.imgs&&v.imgs.length)?v.imgs:(v.img?[{file:v.img,label:v.slug||'captura'}]:[]);
+  if(list.length){
+    h+='<div class="evthw">'+list.map(function(it,idx){
+      return '<a class="evitem" href="'+esc(it.file)+'" target="_blank" rel="noopener" title="'+esc(it.label||'')+'"><img class="evth" src="'+esc(it.file)+'" alt="Captura del correo '+(idx+1)+'"><span>'+(list.length>1?('Captura '+(idx+1)+'/'+list.length):'Ver captura')+' ›</span></a>';
+    }).join('')+'</div>';
+  }else if(!v.no_img_ok){
+    h+='<div class="evmiss">Captura pendiente en <code>evidencia/'+esc(v.slug||'')+'.png</code></div>';
+  }
+  return h+'</div>';}
 function badge(s){return s?'<span class="badge '+s+'">'+STAT[s]+'</span>':"";}
 function mins(t){var p=t.split(":");return (+p[0])*60+(+p[1]);}
 function photo(id){for(var i=0;i<D.photos.length;i++)if(D.photos[i].id===id)return D.photos[i];return null;}
@@ -91,7 +105,7 @@ function dayCard(d){
     var t=disp(d,e),dd=dnum(d.date),sd=Math.floor(t.s/1440),ed=Math.floor(t.e/1440);
     var tt=hm(t.s)+(sd!==dd?'<span class="tzd">'+dshort(sd)+'</span>':'')+(e.end?'<br><span style="font-weight:400;color:#889">'+hm(t.e)+'</span>'+(ed!==dd?'<span class="tzd">'+dshort(ed)+'</span>':''):'');
     h+='<div class="ev g-'+(e.bk||'gratis')+(e.optional?' opt':'')+'" data-ev="'+id+'" role="button" tabindex="0" aria-label="Ver detalles: '+esc(e.title)+'"><div class="t">'+tt+'</div><div><span class="ty">'+TYPE[e.type]+'</span>'+badge(e.status)+bkChip(e.bk)+'<div class="ti">'+esc(e.title)+(e.pid?' <span class="pchip">📷 ficha '+e.pid+'</span>':'')+(e.flag?' <span class="mailflag">'+esc(e.flag)+'</span>':'')+'</div>'+
-      (e.place?'<div class="nt">'+esc(e.place)+'</div>':'')+(e.notes?'<div class="nt">'+esc(e.notes)+'</div>':'')+
+      (e.place?'<div class="nt">'+esc(e.place)+'</div>':'')+(e.notes?'<div class="nt">'+esc(e.notes)+'</div>':'')+evidHtml(e,false)+
       (e.map?'<a href="'+esc(e.map)+'" target="_blank" rel="noopener">'+(e.type==="coche"?"Ruta en Apple Maps ›":"Apple Maps ›")+'</a>':'')+'<span class="more">Ver todo ›</span></div></div>';
   });
   h+=actsHtml(d);
@@ -120,33 +134,106 @@ var GSEL={};
 function gframe(m){return '<iframe src="'+esc(m.gembed)+'" title="Google Maps: '+esc(m.title)+'" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>';}
 function mapBlock(key,d){var m=D.maps&&D.maps[key];if(!m)return "";
   var h='<div class="mapcard'+(GSEL[key]?' gmode':'')+'" data-mk="'+key+'"><div class="mhead"><b>🗺 '+esc(key==="overview"||key==="chamonix"?m.title:"Mapa del día")+'</b>';
-  if(m.views.length>1){h+='<div class="mviews" role="group" aria-label="Vista del mapa">'+m.views.map(function(v,i){return '<button type="button" data-mv="'+i+'" aria-pressed="'+(i===0)+'">'+esc(v.name)+'</button>';}).join("")+'</div>';}
+  if(m.views&&m.views.length>1){h+='<div class="mviews" role="group" aria-label="Vista del mapa">'+m.views.map(function(v,i){return '<button type="button" data-mv="'+i+'" aria-pressed="'+(i===0)+'">'+esc(v.name)+'</button>';}).join("")+'</div>';}
   h+='</div>';
-  if(m.gembed) h+='<div class="mprov" role="group" aria-label="Tipo de mapa"><button type="button" data-mp="apple" aria-pressed="'+(!GSEL[key])+'">Estilo Apple</button><button type="button" data-mp="google" aria-pressed="'+(!!GSEL[key])+'">Google Maps</button></div>';
+  if(m.gembed) h+='<div class="mprov" role="group" aria-label="Tipo de mapa"><button type="button" data-mp="apple" aria-pressed="'+(!GSEL[key])+'">🍎 Apple Maps (mapa + enlaces)</button><button type="button" data-mp="google" aria-pressed="'+(!!GSEL[key])+'">Google Maps</button></div>';
   h+='<div class="lmapw"><div class="lmap" data-map="'+key+'" aria-label="Mapa: '+esc(m.title)+'"></div><button type="button" class="mfs" aria-label="Ampliar mapa">⤢</button></div>';
   if(m.gembed) h+='<div class="gmapw"><div class="gmap" data-g="'+esc(m.gembed)+'">'+(GSEL[key]?gframe(m):'')+'</div></div>';
-
-  h+='<ol class="mleg">'+m.markers.map(function(p){return '<li><span class="apin'+(p.k==="start"?" apin-s":"")+'" style="background:'+(window.MCOL[p.k]||"#FF2D55")+'">'+p.n+'</span><span>'+p.lines.map(function(l){return (l.t?'<b>'+(d?hm(disp(d,{start:l.t}).s):l.t)+'</b> ':'')+esc(l.x);}).join(' · ')+'</span></li>';}).join("")+'</ol>';
+  h+='<ol class="mleg">'+m.markers.map(function(p){
+    var firstNm=(p.lines&&p.lines[0]&&p.lines[0].x)||('Parada '+p.n);
+    var au=applePlaceUrl(firstNm,p.lat,p.lon);
+    return '<li><span class="apin'+(p.k==="start"?" apin-s":"")+'" style="background:'+(window.MCOL[p.k]||"#FF2D55")+'">'+p.n+'</span><span>'+p.lines.map(function(l){return (l.t?'<b>'+(d?hm(disp(d,{start:l.t}).s):l.t)+'</b> ':'')+esc(l.x);}).join(' · ')+' <a class="amini" href="'+esc(au)+'" target="_blank" rel="noopener">Apple Maps ›</a></span></li>';
+  }).join("")+'</ol>';
+  h+='<div class="applepanel">';
+  if(m.apple&&m.apple.length){
+    h+='<div class="apsec"><b>🚗 Rutas del día en Apple Maps</b><div class="mbtns">'+m.apple.map(function(a,i){
+      return '<a class="abtn'+(i?' sec':'')+'" href="'+esc(a.url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>'+esc(a.label)+'</span></a>';
+    }).join("")+'</div></div>';
+  }
+  if(m.markers&&m.markers.length){
+    h+='<div class="apsec"><b>📍 Lugares en Apple Maps</b><div class="apchips">'+m.markers.map(function(p){
+      var nm=(p.lines&&p.lines[0]&&p.lines[0].x)||('Parada '+p.n);
+      var au=applePlaceUrl(nm,p.lat,p.lon);
+      return '<a class="apchip" href="'+esc(au)+'" target="_blank" rel="noopener"><span class="apn" style="background:'+(window.MCOL[p.k]||"#FF2D55")+'">'+p.n+'</span>'+esc(nm)+'</a>';
+    }).join("")+'</div></div>';
+  }
+  h+='</div>';
   var gl=m.google||[];
-  h+='<div class="mbtns">'+(m.apple.length?m.apple.map(function(a,i){var g=gl[i];return '<div class="mrow"><div class="mlab">'+esc(a.label)+(g&&g.label!==a.label?'<small>Google: '+esc(g.label)+'</small>':'')+'</div><div class="mpair">'+
-    '<a class="abtn'+(i?' sec':'')+'" href="'+esc(a.url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Abrir en Apple Maps</span></a>'+
-    (g?'<a class="abtn gbtn" href="'+esc(g.url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#fff"/></svg><span>Abrir en Google Maps</span></a>':'')+'</div></div>';}).join(""):
-    gl.map(function(g){return '<div class="mrow"><div class="mlab">'+esc(g.label)+'</div><div class="mpair one"><a class="abtn gbtn" href="'+esc(g.url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#fff"/></svg><span>Abrir en Google Maps</span></a></div></div>';}).join(""))+'</div>';
+  if(gl.length){
+    h+='<div class="gbtns mbtns">'+gl.map(function(g){return '<div class="mrow"><div class="mlab">'+esc(g.label)+'</div><div class="mpair one"><a class="abtn gbtn" href="'+esc(g.url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4335" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.6" fill="#fff"/></svg><span>Abrir en Google Maps</span></a></div></div>';}).join("")+'</div>';
+  }
   if(m.gembed) h+='<p class="mcap gcap">'+esc(D.meta.gmap_note)+'</p>';
   h+='<p class="mcap">'+esc(D.meta.map_caption)+(key==="overview"?' '+esc(D.meta.map_caption_ov):'')+'</p></div>';
   return h;}
-window.MCOL={hotel:"#5E5CE6",cena:"#FF9500",visita:"#FF2D55",cafe:"#A2845E",foto:"#0A9FD8",libre:"#30B455",traslado:"#636366",start:"#ffffff"};
+window.MCOL={hotel:"#5E5CE6",cena:"#FF9500",visita:"#FF2D55",cafe:"#A2845E",foto:"#0A9FD8",libre:"#30B455",traslado:"#636366",start:"#13233a"};
+
+function drawSvgMap(el,spec,fmt){
+  var ms=spec.markers||[];if(!ms.length)return;
+  var minLat=90,maxLat=-90,minLon=180,maxLon=-180;
+  ms.forEach(function(p){if(p.lat<minLat)minLat=p.lat;if(p.lat>maxLat)maxLat=p.lat;if(p.lon<minLon)minLon=p.lon;if(p.lon>maxLon)maxLon=p.lon;});
+  var padLat=Math.max(0.01,(maxLat-minLat)*0.22),padLon=Math.max(0.01,(maxLon-minLon)*0.22);
+  minLat-=padLat;maxLat+=padLat;minLon-=padLon;maxLon+=padLon;
+  var W=640,H=320;
+  function px(lon){return 30+((lon-minLon)/(maxLon-minLon))*(W-60);}
+  function py(lat){return H-30-((lat-minLat)/(maxLat-minLat))*(H-60);}
+  var pts=ms.map(function(p){return px(p.lon).toFixed(1)+','+py(p.lat).toFixed(1);}).join(' ');
+  var svg='<svg viewBox="0 0 '+W+' '+H+'" class="svgmap" role="img" aria-label="Ruta esquemática">';
+  svg+='<rect width="'+W+'" height="'+H+'" fill="#f2efe9"/>';
+  if(ms.length>1) svg+='<polyline fill="none" stroke="#0A84FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" points="'+pts+'"/>';
+  ms.forEach(function(p){
+    var x=px(p.lon),y=py(p.lat),col=(window.MCOL[p.k]||"#FF2D55");
+    svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="13" fill="'+col+'" stroke="#fff" stroke-width="2.5"/>';
+    svg+='<text x="'+x.toFixed(1)+'" y="'+(y+4.5).toFixed(1)+'" text-anchor="middle" fill="#fff" font-size="12" font-weight="700" font-family="-apple-system,sans-serif">'+p.n+'</text>';
+  });
+  svg+='</svg><div class="svgnote">Vista esquemática (mapa en vivo cargando / sin WebGL). Toca cualquier enlace de Apple Maps abajo.</div>';
+  el.innerHTML=svg;
+}
+window.TabMaps={create:function(el,spec,opts){
+  opts=opts||{};var fmt=opts.fmt||function(t){return t;};
+  var ms=spec.markers||[];
+  function boundsFor(vi){
+    var v=(spec.views&&spec.views[vi])||null;
+    if(v&&v.b&&v.b.length===2) return [[v.b[0][1],v.b[0][0]],[v.b[1][1],v.b[1][0]]];
+    if(!ms.length) return [[6,45],[16,50]];
+    var a=90,b=-90,c=180,d=-180;
+    ms.forEach(function(p){if(p.lat<a)a=p.lat;if(p.lat>b)b=p.lat;if(p.lon<c)c=p.lon;if(p.lon>d)d=p.lon;});
+    return [[c-0.02,a-0.02],[d+0.02,b+0.02]];
+  }
+  if(!window.maplibregl){drawSvgMap(el,spec,fmt);return {map:{getContainer:function(){return el;},resize:function(){},remove:function(){el.innerHTML="";},cooperativeGestures:{disable:function(){},enable:function(){}}},view:function(){}};}
+  try{
+    var osmStyle={version:8,sources:{osm:{type:"raster",tiles:["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],tileSize:256,attribution:"© OpenStreetMap"}},layers:[{id:"osm",type:"raster",source:"osm"}]};
+    var b0=boundsFor(opts.view||0);
+    var map=new window.maplibregl.Map({container:el,style:osmStyle,bounds:b0,fitBoundsOptions:{padding:38,maxZoom:14},cooperativeGestures:true});
+    map.addControl(new window.maplibregl.NavigationControl({showCompass:false}),"top-right");
+    map.on("load",function(){
+      if(ms.length>1){
+        map.addSource("leg",{type:"geojson",data:{type:"Feature",geometry:{type:"LineString",coordinates:ms.map(function(p){return [p.lon,p.lat];})}}});
+        map.addLayer({id:"leg-line",type:"line",source:"leg",paint:{"line-color":"#0A84FF","line-width":4,"line-opacity":0.85}});
+      }
+    });
+    map.on("error",function(){if(!el.querySelector("canvas")){drawSvgMap(el,spec,fmt);}});
+    ms.forEach(function(p){
+      var pin=document.createElement("div");pin.className="apin"+(p.k==="start"?" apin-s":"");pin.style.background=(window.MCOL[p.k]||"#FF2D55");pin.textContent=String(p.n);
+      var nm=(p.lines&&p.lines[0]&&p.lines[0].x)||("Parada "+p.n);
+      var html='<div class="apop">'+p.lines.map(function(l){return '<div>'+(l.t?'<b>'+esc(fmt(l.t))+'</b> · ':'')+esc(l.x)+'</div>';}).join("")+'<a href="'+esc(applePlaceUrl(nm,p.lat,p.lon))+'" target="_blank" rel="noopener">Abrir en Apple Maps ›</a></div>';
+      new window.maplibregl.Marker({element:pin}).setLngLat([p.lon,p.lat]).setPopup(new window.maplibregl.Popup({offset:14}).setHTML(html)).addTo(map);
+    });
+    return {map:map,view:function(vi){map.fitBounds(boundsFor(vi),{padding:38,maxZoom:14,duration:400});}};
+  }catch(_e){drawSvgMap(el,spec,fmt);return {map:{getContainer:function(){return el;},resize:function(){},remove:function(){el.innerHTML="";},cooperativeGestures:{disable:function(){},enable:function(){}}},view:function(){}};}
+}};
 var LMAPS=[],LLOAD=0,LQ=[],IO=null,IO2=null;
-function loadLeaflet(cb){if(LLOAD===2)return cb();LQ.push(cb);if(LLOAD===1)return;LLOAD=1;
+function loadLeaflet(cb){if(window.maplibregl){LLOAD=2;return cb();}if(LLOAD===2)return cb();LQ.push(cb);if(LLOAD===1)return;LLOAD=1;
   var CDN=["https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/","https://unpkg.com/maplibre-gl@4.7.1/dist/"];
   var c=document.createElement("link");c.rel="stylesheet";c.href=CDN[0]+"maplibre-gl.css";c.onerror=function(){c.href=CDN[1]+"maplibre-gl.css";};document.head.appendChild(c);
-  var files=[[CDN[0]+"maplibre-gl.js",CDN[1]+"maplibre-gl.js"],["routes.js"],["maps.js"]],k=0;
-  (function next(alt){if(k>=files.length){LLOAD=2;var q=LQ;LQ=[];q.forEach(function(f){f();});return;}var opts=files[k],sc=document.createElement("script");sc.src=opts[alt||0];
-    sc.onload=function(){k++;next(0);};sc.onerror=function(){if(!alt&&opts[1])next(1);else LLOAD=0;};document.body.appendChild(sc);})(0);}
+  var sc=document.createElement("script");sc.src=CDN[0]+"maplibre-gl.js";
+  var done=function(){LLOAD=2;var q=LQ;LQ=[];q.forEach(function(f){f();});};
+  sc.onload=done;sc.onerror=function(){var sc2=document.createElement("script");sc2.src=CDN[1]+"maplibre-gl.js";sc2.onload=done;sc2.onerror=done;document.body.appendChild(sc2);};document.body.appendChild(sc);}
 function dayOf(key){var r=null;D.days.forEach(function(x){if(x.date===key)r=x;});return r;}
 function initMap(el){if(el._lm)return;var key=el.getAttribute("data-map"),spec=D.maps[key],d=dayOf(key);
-  loadLeaflet(function(){if(el._lm||!document.body.contains(el))return;
-    var card=el.closest(".mapcard"),pv=card&&card.querySelector('[data-mv][aria-pressed="true"]');el._lm=window.TabMaps.create(el,spec,window.ROUTES,{view:pv?+pv.getAttribute("data-mv"):0,fmt:function(t){return d?hm(disp(d,{start:t}).s):t;}});LMAPS.push(el._lm);});}
+  drawSvgMap(el,spec,function(t){return d?hm(disp(d,{start:t}).s):t;});
+  loadLeaflet(function(){if(el._lm||!document.body.contains(el)||!window.maplibregl)return;el.innerHTML="";
+    var card=el.closest(".mapcard"),pv=card&&card.querySelector('[data-mv][aria-pressed="true"]');
+    el._lm=window.TabMaps.create(el,spec,{view:pv?+pv.getAttribute("data-mv"):0,fmt:function(t){return d?hm(disp(d,{start:t}).s):t;}});LMAPS.push(el._lm);});}
 function initMaps(){LMAPS=LMAPS.filter(function(x){if(!document.body.contains(x.map.getContainer())){try{x.map.remove();}catch(_e){}return false;}return true;});
   var els=document.querySelectorAll(".lmap");if(!els.length)return;
   if(!("IntersectionObserver" in window)){Array.prototype.forEach.call(els,initMap);return;}
@@ -154,6 +241,11 @@ function initMaps(){LMAPS=LMAPS.filter(function(x){if(!document.body.contains(x.
     IO2=new IntersectionObserver(function(en){en.forEach(function(e){var el=e.target;if(!e.isIntersecting&&el._lm&&!el.closest(".mfull")){try{el._lm.map.remove();}catch(_e){}LMAPS=LMAPS.filter(function(x){return x!==el._lm;});el._lm=null;}});},{rootMargin:"1600px 0px"});}
   Array.prototype.forEach.call(els,function(el){IO.observe(el);IO2.observe(el);});}
 document.addEventListener("click",function(e){
+  var evb=e.target.closest&&e.target.closest("[data-evimg]");
+  if(evb){e.stopPropagation();var fk=evb.getAttribute("data-evimg"),cap=evb.getAttribute("data-evcap")||"";
+    var src=(D.evid_assets&&D.evid_assets[fk])||fk;
+    var lb=document.getElementById("ev-lb");if(!lb){lb=document.createElement("div");lb.id="ev-lb";lb.className="evlb";lb.innerHTML='<div class="evlbi"><button type="button" class="evlbx" aria-label="Cerrar">✕</button><img alt="Captura completa"><div class="evlbc"></div></div>';document.body.appendChild(lb);lb.addEventListener("click",function(ev){if(ev.target===lb||ev.target.closest(".evlbx"))lb.classList.remove("open");});}
+    lb.querySelector("img").src=src;lb.querySelector(".evlbc").textContent=cap;lb.classList.add("open");return;}
   var gp=e.target.closest&&e.target.closest("[data-mp]");
   if(gp){var gc=gp.closest(".mapcard"),gk=gc.getAttribute("data-mk"),on2=gp.getAttribute("data-mp")==="google";GSEL[gk]=on2;
     Array.prototype.forEach.call(gc.querySelectorAll("[data-mp]"),function(x){x.setAttribute("aria-pressed",String(x===gp));});
@@ -169,7 +261,7 @@ document.addEventListener("click",function(e){
     initMap(el2);var go=function(){if(!el2._lm)return setTimeout(go,100);var mp=el2._lm.map;mp.resize();if(on)mp.cooperativeGestures.disable();else mp.cooperativeGestures.enable();};go();}
 });
 function tripitCard(){var t=D.tripit,m=D.mail;
-  var h='<div class="card"><h2>Reservas (TripIt + correo)</h2><p class="sub">TripIt leído en vivo '+esc(t.now)+'. Regla general: lo que está en TripIt cuenta como reservado, salvo el conflicto de La Cabane (correo Zenchef del 9 nov, más reciente).</p>';
+  var h='<div class="card"><h2>Reservas (TripIt + correo)</h2><p class="sub">TripIt leído en vivo '+esc(t.now)+'. Cruce del 22 nov (TripIt 15:00, correo 16:29 y tarjetas conciliadas). En La Cabane hay dos reservas activas (22 y 23); por ahora TripIt manda el 22.</p>';
   if(t.changes&&t.changes.length) h+='<ul class="recs">'+t.changes.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';
   if(t.missing) h+='<p class="sub"><b>No está en TripIt:</b> '+esc(t.missing)+'</p>';
   if(m){h+='<h2>Cruce con el correo</h2><p class="sub">'+esc(m.read)+'</p>';
@@ -183,7 +275,7 @@ function renderChefs(){var c=D.chefs||[];
    '<table class="tbl chefs"><thead><tr><th>#</th><th>Chef / empresa</th><th>Contacto</th><th>Estado</th><th>Respondió</th><th>Nota</th></tr></thead><tbody>'+
    c.map(function(x){return '<tr class="st-'+x.status+'"><td data-l="#"><b>'+x.n+'</b></td><td data-l="Chef">'+esc(x.name)+'</td><td data-l="Contacto">'+esc(x.contact)+'</td><td data-l="Estado"><span class="cst '+x.status+'">'+(L[x.status]||esc(x.status))+'</span></td><td data-l="Respondió">'+esc(x.date)+'</td><td data-l="Nota">'+esc(x.note)+'</td></tr>';}).join('')+'</tbody></table></div>';
   document.getElementById("list").innerHTML=h;}
-function pkey(n){return "itin111-pend-"+n;}
+function pkey(n){return "itin112-pend-"+n;}
 var GRP={ya:"🔴 Reservar / pagar YA",tour:"🟡 Tour / actividad por decidir",tramite:"🛣 Trámite de carretera",info:"ℹ️ Info"};
 function grpChip(g){return g?'<span class="grp grp-'+g+'">'+GRP[g]+'</span>':"";}
 function isDone(p){try{var v=localStorage.getItem(pkey(p.n));if(v==="1")return true;if(v==="0")return false;}catch(_e){}return !!p.done;}
@@ -191,13 +283,23 @@ function pItem(p){var dn=isDone(p);return '<li class="'+(dn?'done':'')+'" id="p-
   (p.alts&&p.alts.length?'<div class="alts"><div class="alth">Alternativas ('+p.alts.length+')</div>'+p.alts.map(function(a){return '<div class="alt" id="p-'+p.n+a.l+'"><div class="altt"><span class="altl">'+p.n+a.l+'</span> <b>'+esc(a.title)+'</b> '+badge(a.status)+'</div><small><b>Cuándo:</b> '+esc(a.when)+'</small><br><small>'+esc(a.why)+'</small>'+(a.detail?'<br><small>'+esc(a.detail)+'</small>':'')+'</div>';}).join('')+'</div>':'')+'</li>';}
 
 function renderBudget(){var B=D.presupuesto||{};
-  function rows(L,pend){if(!L||!L.length)return '<p class="sub nada">Aún no hay partidas. Se llenará con los estados AMEX USD y HSBC USD.</p>';
-    return '<div class="scroll"><table class="tbl"><thead><tr><th>Concepto</th><th>Importe</th><th>Fuente</th><th>'+(pend?'Cuándo':'Estado')+'</th></tr></thead><tbody>'+
-      L.map(function(x){return '<tr><td>'+esc(x.what)+'</td><td>'+esc(x.amount||'—')+'</td><td>'+esc(x.source||'')+'</td><td>'+esc(pend?(x.when||''):(x.status||''))+'</td></tr>';}).join('')+
-      '</tbody></table></div>';}
+  function totTbl(L,title){if(!L||!L.length)return '';
+    return '<div class="card"><h2>'+esc(title)+'</h2><div class="scroll"><table class="tbl"><thead><tr><th>Moneda</th><th>Total</th><th>Detalle</th></tr></thead><tbody>'+
+      L.map(function(x){return '<tr><td><b>'+esc(x.currency)+'</b></td><td><b>'+esc(x.amount)+'</b></td><td>'+esc(x.note||'')+'</td></tr>';}).join('')+
+      '</tbody></table></div></div>';}
+  function cardRows(L,pend){if(!L||!L.length)return '<p class="sub nada">Sin partidas.</p>';
+    return '<div class="scroll"><table class="tbl"><thead><tr><th>Concepto</th>'+(pend?'':'<th>Tarjeta / fecha</th>')+'<th>Importe</th><th>'+(pend?'Fuente':'Orig. / estado')+'</th><th>'+(pend?'Cuándo':'Nota')+'</th></tr></thead><tbody>'+
+      L.map(function(x){
+        var st=x.status?' <span class="badge '+(x.status==="probable"?'por_resolver':'reservado')+'">'+esc(x.status)+'</span>':'';
+        if(pend) return '<tr><td>'+esc(x.what)+'</td><td><b>'+esc(x.amount||'—')+'</b></td><td>'+esc(x.source||'')+'</td><td>'+esc(x.when||'')+'</td></tr>';
+        return '<tr><td>'+esc(x.what)+'</td><td>'+esc((x.card||'')+(x.date?' · '+x.date:''))+'</td><td><b>'+esc(x.amount||'—')+'</b></td><td>'+esc(x.orig||'—')+st+'</td><td>'+esc(x.note||'')+'</td></tr>';
+      }).join('')+'</tbody></table></div>';}
   var h='<div class="card"><h2>Presupuesto — pagado vs pendiente</h2><p class="sub">'+esc(B.intro||'')+'</p></div>';
-  h+='<div class="card"><h2>Pagado (por cruzar con estados de cuenta)</h2>'+rows(B.pagado,false)+'</div>';
-  h+='<div class="card"><h2>Pendiente de pago</h2>'+rows(B.pendiente,true)+'</div>';
+  h+=totTbl(B.totals_paid,'Totales pagados por moneda (sin tipos de cambio inventados)');
+  h+=totTbl(B.totals_pending,'Totales pendientes conocidos por moneda');
+  h+='<div class="card"><h2>Pagado / anticipado en tarjetas</h2>'+cardRows(B.pagado,false)+'</div>';
+  h+='<div class="card"><h2>Cargos probables o sin asignar (MXN)</h2>'+cardRows(B.probables,false)+'</div>';
+  h+='<div class="card"><h2>Pendiente de pago / pago en destino</h2>'+cardRows(B.pendiente,true)+'</div>';
   if(B.note) h+='<div class="card"><p class="sub">'+esc(B.note)+'</p></div>';
   document.getElementById("list").innerHTML=h;}
 function renderPend(){var P=D.pend;var h='<div class="card"><h2>Pendientes por reservar</h2><p class="sub">'+esc(P.intro)+'</p></div>';
@@ -291,6 +393,7 @@ function modalHtml(d,e){var a=absOf(d,e),dt=durTxt(a);
   h+='</dl>';
   if(e.flag) h+='<p class="mailflag big">'+esc(e.flag)+'</p>';
   if(e.notes) h+='<p class="mnotes">'+esc(e.notes)+'</p>';
+  h+=evidHtml(e,true);
   var dr=e.type==="coche"?drvFor(d,e):null; if(dr) h+=driveBox(dr);
   var ac=actFor(d,e); if(ac) h+='<div class="acts">'+actsHtml({acts:[ac]}).replace(/^<h3>[^<]*<\/h3><div class="acts">/,'').replace(/<\/div>$/,'')+'</div>';
   if(e.pid){var p=photo(e.pid);if(p)h+=photoCard(p,true);}
