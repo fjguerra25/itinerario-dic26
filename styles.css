@@ -297,3 +297,25 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 .seg.five{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
 .seg.five button{font-size:13px;padding:7px 2px}.seg.five button span{font-size:10px}
 @media(max-width:480px){.seg.five{gap:3px}.seg.five button{font-size:12px}.seg.five button span{font-size:9px}}
+
+
+/* v11.2 maps + evidencia */
+.mapcard .gbtns{display:none}
+.mapcard.gmode .applepanel{display:none}
+.mapcard.gmode .gbtns{display:grid}
+.applepanel{margin-top:10px;padding:10px 12px;background:#f4f7fb;border:1px solid #d5e2f2;border-radius:12px}
+.apsec+.apsec{margin-top:10px;padding-top:10px;border-top:1px solid #dde6f0}
+.apsec>b{display:block;font-size:13px;color:#13233a;margin-bottom:6px}
+.apchips{display:flex;flex-wrap:wrap;gap:6px}
+.apchip{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;background:#fff;border:1px solid #cddaf0;border-radius:999px;font-size:13px;font-weight:600;color:#0f4c81!important;text-decoration:none!important}
+.apchip .apn{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;color:#fff;font-size:11px;font-weight:700;flex:0 0 auto}
+.amini{font-size:12px;font-weight:600;color:#0A84FF!important;white-space:nowrap}
+.svgmap{width:100%;height:100%;display:block}
+.svgnote{position:absolute;left:8px;right:8px;bottom:8px;background:rgba(255,255,255,.92);padding:5px 8px;border-radius:8px;font-size:11px;color:#3a4250;pointer-events:none}
+.evid{margin-top:6px;padding:6px 8px;background:#f3f5f8;border-left:3px solid #0f4c81;border-radius:6px;font-size:12px;color:#273447}
+.evid.pub{background:#eef6ef;border-left-color:#1d6b33;color:#1d6b33;font-weight:600}
+.evthw{margin-top:6px;display:flex;flex-wrap:wrap;gap:8px}
+.evitem{display:inline-flex;flex-direction:column;gap:3px;text-decoration:none!important;font-size:11px;font-weight:600;color:#0f4c81!important}
+.evth{max-width:150px;max-height:92px;border-radius:6px;border:1px solid #cdd6e2;display:block;object-fit:cover}
+.evid.full .evth{max-width:260px;max-height:180px}
+.evmiss{margin-top:3px;color:#5a6578}

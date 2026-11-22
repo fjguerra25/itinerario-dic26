@@ -1,19 +1,21 @@
 {
   "meta": {
-    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.1)",
-    "updated": "22 nov 2026, 16:00 (hora CDMX)",
+    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.2)",
+    "updated": "22 nov 2026, 16:30 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "Tiempos y km de la tabla: Apple Maps (lectura v10, 2–8 nov 2026). Contraste OSRM 22 nov 2026.",
-    "chefs_read": "22 nov 2026 (segunda búsqueda de EA en todo el buzón: no se localizó confirmación de Basile)",
+    "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
     "tour_km": 2689,
-    "map_caption": "Mapa real (© OpenStreetMap · OpenFreeMap). Línea azul = la ruta por carretera que tomamos de Apple Maps, trazada con un enrutador sobre OpenStreetMap; las horas y los km son los de Apple Maps (tabla de manejo). Números = orden del día; toca un número para ver qué es.",
+    "map_caption": "Mapa interactivo (© OpenStreetMap) con pines numerados y enlaces directos a Apple Maps (lugar: ?q=…&ll=…; ruta: ?saddr=…&daddr=…&dirflg=d). Apple no permite incrustar su mapa web sin token de MapKit JS; cada botón abre Apple Maps nativo.",
     "map_caption_ov": "Total Apple Maps ≈ 2690 km de coche del 25 dic al 3 ene. El enlace multiparada abre toda la ruta en Apple Maps; si tu iPhone no acepta tantas paradas, usa el botón de cada día.",
     "gmap_note": "Google Maps: ruta y tiempos calculados por Google en vivo (pueden variar un poco); la tabla de manejo usa Apple Maps.",
     "chefs_note": "Chef Basile, cerrado según Francisco. En la búsqueda de todo el buzón del 22 nov no se localizó la confirmación (la búsqueda de iCloud no es infalible en un buzón grande). Las demás opciones y la cotización de Osmose se quitaron del plan. Detalles (hora, menú, precio, número de personas) siguen pendientes.",
-    "version": "v11.1",
-    "mail_read": "22 nov 2026, ~15:40 hora CDMX (EA, iCloud, todo el buzón, solo lectura)",
+    "version": "v11.2",
+    "mail_read": "22 nov 2026, 16:29 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados, solo lectura + 59 capturas en evidencia/)",
     "packaging": "site",
-    "share_note": "Sitio público de solo lectura, sin localizadores ni datos de tarjeta."
+    "share_note": "Sitio público de solo lectura, sin localizadores ni datos de tarjeta.",
+    "finance_read": "22 nov 2026, 16:29 hora CDMX (Finance reconciliado: AMEX US/MX y HSBC US/MX; HSBC MX pre-18 oct requiere Token Móvil)",
+    "public_redacted": true
   },
   "days": [
     {
@@ -29,10 +31,13 @@
           "type": "vuelo",
           "title": "AM 37 MEX → BCN (llega lun 21, 11:15 hora BCN)",
           "status": "reservado",
-          "notes": "Confirmación ✓ confirmado. Sale 17:00 hora CDMX = 00:00 CET del lun 21. Ningún asiento asignado. Avión B787-8. Pasajeros: Francisco y Mariane Brust Mascher.",
+          "notes": "Confirmación ✓ confirmado · boletos ✓ confirmado (Francisco) y ✓ confirmado (Mariane). Sale 17:00 hora CDMX = 00:00 CET del lun 21. Ningún asiento asignado. Avión B787-8.",
           "tz": "mx",
           "end_date": "2026-12-21",
-          "bk": "ok"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (30 oct 2026)"
+          }
         }
       ],
       "recs": [],
@@ -115,8 +120,11 @@
           "type": "vuelo",
           "title": "VY 1124 (vendido como IB 5068) BCN → GVA",
           "status": "reservado",
-          "notes": "Confirmación ✓ confirmado · 2 pasajeros · pagado MXN 4 852,74 (TripIt). En TripIt desde hoy. Ningún asiento asignado.",
-          "bk": "ok"
+          "notes": "Confirmación ✓ confirmado · 2 pasajeros · no reembolsable, 1.er cambio gratis y luego €45 · pagado MXN 4.852,74 (2 boletos de MXN 2.426,37 en IBERIA.COM el 2 nov, AMEX MX — confirmado, no duplicado). Ningún asiento asignado.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 nov 2026)"
+          }
         },
         {
           "start": "16:50",
@@ -133,8 +141,12 @@
           "title": "Recoger el coche Sixt (sector francés)",
           "status": "reservado",
           "place": "Sixt, Route Douanière, Parking P21, Aeropuerto de Ginebra",
-          "notes": "Confirmación Sixt (✓ confirmado). Recogida 17:30, aeropuerto de Ginebra sector francés (Route Douanière BP 123, Parking P21, 1240 Ferney-Voltaire, +33 1 70 97 61 11). Fullsize Elite SUV (Alfa Romeo Tonale, BMW X2, BMW X1 o similar), automático. Devolución 3 ene 06:30, aeropuerto de Praga (Aviatická 1082/10). €3.203,28 pagado (incl. €1.093,75 one-way), depósito €500, sin protección ni conductor adicional en la reserva. La cobertura de daños la da la AMEX Centurion. Pendiente: ¿agregar a Mariane como conductora? Calculo 20 min de trámite → salida 17:50.",
-          "bk": "ok"
+          "notes": "Confirmación Sixt (✓ confirmado). Recogida 17:30, aeropuerto de Ginebra sector francés (Route Douanière BP 123, Parking P21, 1240 Ferney-Voltaire, +33 1 70 97 61 11). Fullsize Elite SUV (Alfa Romeo Tonale, BMW X2, BMW X1 o similar), automático, cobertura transfronteriza incluida. Devolución 3 ene 06:30, aeropuerto de Praga (Aviatická 1082/10). €3.203,28 pagado (AMEX MX, 2 nov = MXN 69.298,72; incl. €1.093,75 one-way), depósito €500. Daños cubiertos por AMEX Centurion. Pendiente: ¿agregar a Mariane como conductora? Salida ~17:50.",
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Sixt%20Aeropuerto%20Ginebra%20Sector%20Franc%C3%A9s&ll=46.238100,6.109000",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 nov 2026)"
+          }
         },
         {
           "start": "17:50",
@@ -153,8 +165,11 @@
           "status": "reservado",
           "place": "74 Rue des Moulins, Chamonix",
           "map": "https://maps.apple.com/?ll=45.924294,6.870478&q=Le%20Cap-Horn%2C%2074%20Rue%20des%20Moulins%2C%20Chamonix",
-          "notes": "En TripIt: 19:15 (tel. +33 4 50 21 80 80). Van los 3 hermanos: Francisco, Alejandro y Santiago. Se queda a las 19:15: para 3 personas no había 19:30–20:00 (Zenchef, 4 nov). Alejandro y Santiago llegan primero; Francisco y Mariane llegan ~19:35 (Apple Maps +20 % + estacionar). Mariane no cena en esta mesa. Cancelación gratis hasta el 21 dic 16:45 (nota de la reserva en TripIt). Bloque de 3 h 30 (regla: la reserva no indica otra duración).",
-          "bk": "ok"
+          "notes": "Confirmada en TripIt y correo (Enviados, 29 oct 10:01: «lundi 21 décembre 2026 à 19:15 (3 personne(s))»). Tel. +33 4 50 21 80 80. Van los 3 hermanos: Francisco, Alejandro y Santiago. Alejandro y Santiago llegan primero; Francisco y Mariane ~19:35. Cancelación gratis hasta el 21 dic 16:45 (garantía de tarjeta). Bloque de 3 h 30.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (29 oct 2026)"
+          }
         },
         {
           "start": "22:55",
@@ -176,7 +191,7 @@
       ],
       "family": [],
       "planb": [],
-      "lodging": "Chalet, Les Praz / Chamonix (21–25 dic, in 15:00 / out 11:00; sin número en TripIt)",
+      "lodging": "Chalet Chamonix (reserva Airbnb de Alejandro; sin costo para Francisco)",
       "dinner": "Cena de los 3 hermanos — Le Cap-Horn 19:15 (Francisco, Alejandro y Santiago)",
       "photos": [],
       "sun": {
@@ -197,7 +212,7 @@
       "label": "Mar 22 dic",
       "city": "Chamonix",
       "section": "chamonix",
-      "summary": "Día en el valle, con toda la familia: Montenvers – Mer de Glace, Brévent, y casi 2 h de foto en Les Tissières (hora dorada completa, la luna al 97 % saliendo junto a la Aiguille Verte y parte de la hora azul). Cena en La Cabane des Praz a las 19:15, 5 personas (papá, mamá, Francisco, Alejandro y Santiago), según TripIt. El correo sitúa esa mesa el miércoles 23 a las 19:30: se está verificando.",
+      "summary": "Día en el valle, con toda la familia: Montenvers – Mer de Glace, Brévent, y casi 2 h de foto en Les Tissières. Cena en La Cabane des Praz a las 19:15, 5 personas (papá, mamá, Francisco, Alejandro y Santiago), según TripIt y correo del 4 nov. OJO: hay una SEGUNDA reserva activa de La Cabane para las mismas 5 personas el mié 23 dic a las 19:30.",
       "drive": {
         "key": "tiss_chalet",
         "frm": "Les Tissières (foto C2)",
@@ -313,7 +328,8 @@
           "type": "hotel",
           "title": "Chalet: descanso y arreglarse (50 min)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Chalet%20Chamonix&ll=45.948954,6.894321"
         },
         {
           "start": "18:55",
@@ -330,11 +346,14 @@
           "type": "cena",
           "title": "Cena — La Cabane des Praz (5 personas: papá, mamá, Francisco, Alejandro y Santiago)",
           "status": "reservado",
-          "flag": "correo dice 23 19:30, verificando",
+          "flag": "duplicado por decidir (también activa el 23 19:30)",
           "place": "23 Route du Golf, Les Praz, Chamonix",
           "map": "https://maps.apple.com/?ll=45.940500,6.889800&q=La%20Cabane%20des%20Praz%2C%2023%20Route%20du%20Golf%2C%20Chamonix",
-          "notes": "En TripIt: 19:15, 5 personas, a nombre de Guerra. Por ahora manda TripIt. Van: papá, mamá, Francisco, Alejandro y Santiago. El correo localizado hasta ahora no menciona el 22: la solicitud del 4 nov y las confirmaciones de Lauren Gustin y Zenchef del 9 nov dicen el miércoles 23 a las 19:30. Se está verificando en Inbox y Travel & Leisure. Garantía 30 € p/p (tarjeta registrada): solo se cobra si no llegan o si cancelan después de las 15:30 del día de la reserva. La mesa se libera a las 21:15 (bloque 19:15–21:15, no 3 h 30). Tel. +33 4 50 53 23 27.",
-          "bk": "ok"
+          "notes": "Confirmada el 4 nov (Enviados, 11:26: «mardi 22 décembre 2026 à 19:15 (5 personne(s))») y activa en TripIt. Por ahora manda TripIt (22 dic). Van: papá, mamá, Francisco, Alejandro y Santiago. ATENCIÓN: existe otra reserva activa en La Cabane el mié 23 dic a las 19:30 para las mismas 5 personas. Cancelación gratis hasta 22 dic 15:30; cancelación tardía o no-show cobra toda la garantía de la tarjeta. La mesa se libera a las 21:15. Tel. +33 4 50 53 23 27.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (4 nov 2026)"
+          }
         },
         {
           "start": "21:20",
@@ -353,7 +372,7 @@
         "Salida de Les Tissières 17:30 → chalet 18:05. Del chalet a La Cabane: 20 min con margen (sal 18:55). Van papá, mamá y los 3 hermanos."
       ],
       "warn": [
-        "Por ahora manda TripIt: La Cabane des Praz, mar 22 dic 19:15, 5 personas. Todos los correos localizados hasta ahora (solicitud del 4 nov y confirmaciones del 9 nov) dicen el miércoles 23 a las 19:30. Se está buscando de nuevo en Inbox y Travel & Leisure."
+        "La Cabane tiene DOS reservas activas para 5 personas: mar 22 dic 19:15 (confirmada 4 nov) y mié 23 dic 19:30 (movida 9 nov por Zenchef y Lauren Gustin). Por ahora manda TripIt (22 dic). Cancelación gratis hasta las 15:30 del día."
       ],
       "family": [
         "Abuelos: Montenvers sin escaleras hasta la terraza; la bajada a la cueva de hielo es por telecabina y muchos escalones (no recomendable para ellos).",
@@ -363,8 +382,8 @@
         "Nublado: el tren de Montenvers corre igual pero sin vista; cambia por Village de Noël + Musée Alpin / Espace Tairraz (horarios de diciembre por verificar). Sin cielo despejado la foto C2 no sale: regresa directo al chalet.",
         "Lluvia o nevada fuerte: el tren y el Brévent pueden suspender; centro deportivo Richard Bozon (alberca y pista cubiertas, horario por verificar)."
       ],
-      "lodging": "Chalet",
-      "dinner": "La Cabane des Praz 19:15 (TripIt, 5 pax) · correo dice 23 19:30, verificando",
+      "lodging": "Chalet Chamonix (reserva Airbnb de Alejandro; sin costo para Francisco)",
+      "dinner": "La Cabane des Praz 19:15 (5 pax, TripIt + correo 4 nov) · DUPLICADO con 23 dic 19:30",
       "photos": [
         "C2"
       ],
@@ -422,14 +441,16 @@
           "pend": "13H",
           "status": "propuesta"
         }
-      ]
+      ],
+      "day_status": "conflicto",
+      "conflict": "Reserva duplicada en La Cabane des Praz (5 personas: papá, mamá, Francisco, Alejandro y Santiago). (1) Mar 22 dic 19:15: confirmada el 4 nov (TripIt manda para el 22; cancelación gratis hasta 22 dic 15:30). (2) Mié 23 dic 19:30: confirmada el 29 oct y movida el 9 nov por Zenchef y Lauren Gustin (cancelación gratis hasta 23 dic 15:30). En ambas cobran toda la garantía de la tarjeta si no llegan o cancelan tarde. Decide qué noche queda y cancela la otra."
     },
     {
       "date": "2026-12-23",
       "label": "Mié 23 dic",
       "city": "Chamonix → Chartreuse (Voiron) → Chamonix",
       "section": "chamonix",
-      "summary": "Salida 08:00 a las Caves de la Chartreuse en Voiron con tus papás y Mariane: visita clásica 12:20 y atelier de tisanas 14:00–16:00 (pedido ✓ confirmado, pagado). Por la noche, Albert 1er ★ a las 20:00, 3 personas (Mariane, papá y Francisco), según TripIt. Tu mamá se queda en el chalet.",
+      "summary": "Salida 08:00 a las Caves de la Chartreuse en Voiron con tus papás y Mariane: visita clásica 12:20 y atelier de tisanas 14:00–16:00 (pedido ✓ confirmado, pagado). Por la noche se empalman DOS mesas activas o posiblemente activas: La Cabane des Praz a las 19:30 (5 personas, confirmada por Zenchef y Lauren Gustin el 9 nov; duplicada con el 22) y Albert 1er ★ a las 20:00 (3 personas; Zenchef confirmó el 4 nov tras tu correo de cancelación del 2 nov).",
       "events": [
         {
           "start": "08:00",
@@ -469,7 +490,10 @@
           "place": "10 Bd Edgar Kofler, Voiron",
           "map": "https://maps.apple.com/?ll=45.361730,5.598501&q=Caves%20de%20la%20Chartreuse%2C%2010%20Bd%20Edgar%20Kofler%2C%20Voiron",
           "notes": "En TripIt: Visite Classique 12:20–13:40, confirmación ✓ confirmado. Pedido ✓ confirmado · 4 personas (2 tarifa completa, 2 tarifa reducida) · 166 € pagado en total (visita + atelier) · no reembolsable ni cambiable.",
-          "bk": "ok"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (3 nov 2026)"
+          }
         },
         {
           "start": "13:40",
@@ -499,35 +523,44 @@
           "place": "10 Bd Edgar Kofler, Voiron",
           "map": "https://maps.apple.com/?ll=45.361730,5.598501&q=Caves%20de%20la%20Chartreuse%2C%2010%20Bd%20Edgar%20Kofler%2C%20Voiron",
           "notes": "En TripIt: Atelier confection de tisanes 14:00–16:00. Pedido ✓ confirmado · 4 personas (2 tarifa completa, 2 tarifa reducida) · 166 € pagado en total (visita + atelier) · no reembolsable ni cambiable. Solo se da en francés.",
-          "bk": "ok"
-        },
-        {
-          "start": "16:00",
-          "end": "19:20",
-          "type": "coche",
-          "title": "Manejar Voiron → Chalet (cambio rápido; tu mamá se queda)",
-          "map": "https://maps.apple.com/?saddr=45.361730,5.598501&daddr=45.948954,6.894321&dirflg=d",
-          "notes": "Apple Maps 2 h 19 · 198 km → +20 % 2 h 50 + descansos 15 min + estacionar 15 min = 3 h 20.",
-          "bk": "gratis"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (3 nov 2026)"
+          }
         },
         {
           "start": "19:20",
           "end": "19:35",
           "type": "hotel",
-          "title": "Chalet: cambio rápido (15 min); se queda tu mamá",
+          "title": "Chalet: cambio rápido (15 min)",
           "status": "reservado",
-          "notes": "15 min es lo justo para llegar a Albert 1er a las 20:00. Van Mariane, papá y Francisco. Si se retrasan en carretera, llamad a Albert 1er (avisar antes de las 20:00).",
+          "bk": "ok",
           "place": "Chalet, Les Praz / Chamonix",
-          "map": "https://maps.apple.com/?ll=45.948954,6.894321&q=Les%20Praz%2C%20Chamonix",
-          "bk": "ok"
+          "map": "https://maps.apple.com/?q=Chalet%20Chamonix&ll=45.948954,6.894321",
+          "notes": "Llegáis ~19:20. Si queda Albert 1er (20:00), salida ~19:35 (25 min con margen). Si queda La Cabane el 23 (19:30), está a 1 km."
+        },
+        {
+          "start": "19:30",
+          "end": "21:30",
+          "type": "cena",
+          "title": "DUPLICADO — La Cabane des Praz (5 personas, 19:30)",
+          "status": "conflicto",
+          "bk": "ok",
+          "flag": "duplicado por decidir · choca con Albert 1er",
+          "place": "23 Route du Golf, Les Praz, Chamonix",
+          "map": "https://maps.apple.com/?q=La%20Cabane%20des%20Praz%20Chamonix&ll=45.942520,6.888655",
+          "notes": "Reserva activa por correo: confirmada originalmente el 29 oct (19:15) y confirmada al 19:30 el 9 nov 05:07 tanto por Zenchef como por Lauren Gustin («votre réservation est faite pour le 23/12 à 19H30»). 5 personas (papá, mamá, Francisco, Alejandro y Santiago). Cancelación gratis hasta 23 dic 15:30; cargo completo de garantía si se cancela tarde o no llegan. Choca con la del 22 dic 19:15 (TripIt) y con Albert 1er 20:00.",
+          "evidencia": {
+            "public_text": "confirmado por correo (9 nov 2026)"
+          }
         },
         {
           "start": "19:35",
           "end": "20:00",
           "type": "coche",
           "title": "Manejar Chalet → Albert 1er",
-          "notes": "Apple Maps 6 min · 4 km → +20 % 10 min + estacionar 15 min = 25 min. Son 3,7 km: más de 1 km y va tu papá, así que en coche.",
           "map": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=45.924513,6.874712&dirflg=d",
+          "notes": "Apple Maps 6 min · 4 km → +20 % 10 min + estacionar 15 min = 25 min.",
           "bk": "gratis"
         },
         {
@@ -535,12 +568,15 @@
           "end": "23:30",
           "type": "cena",
           "title": "Cena Michelin Albert 1er ★ (3 personas: Mariane, papá y Francisco)",
-          "status": "reservado",
-          "place": "Hameau Albert 1er, 38 Route du Bouchet, Chamonix",
-          "map": "https://maps.apple.com/?ll=45.924513,6.874712&q=Hameau%20Albert%201er%2C%20Chamonix",
-          "notes": "En TripIt: 20:00, 3 personas, a nombre de Francisco Guerra. Por ahora manda TripIt. Van: Mariane, papá y Francisco (tu mamá se queda en el chalet). En la búsqueda del buzón no se encontró confirmación de esta mesa (solo correos del 22 oct sobre una solicitud del 21 dic para 8, nunca validada). Se sigue verificando. Según la nota de Zenchef en TripIt: cancelar el mismo día después de las 12:00 (o no llegar) cuesta 100 € p/p. 1 estrella Michelin (Guía 2026). Bloque de 3 h 30: la reserva no indica duración.",
+          "status": "conflicto",
           "bk": "ok",
-          "flag": "sin correo de confirmación"
+          "flag": "posiblemente activa · no-show €100/pp",
+          "place": "Hameau Albert 1er, 38 Route du Bouchet, Chamonix",
+          "map": "https://maps.apple.com/?q=Hameau%20Albert%201er%20Chamonix&ll=45.924513,6.874712",
+          "notes": "En TripIt: 20:00, 3 personas (Mariane, papá y Francisco). El 29 oct se confirmó el 22 dic; el 31 oct Nathalie avisó cierre del 22; el 1 nov pediste el 23; el 2 nov 14:52 enviaste «SVP annulé la reservation»; pero el 4 nov 14:22 Zenchef confirmó 23 dic 20:00 (3 pax), sin cancelación posterior. Posiblemente activa (€100 p/p si cancelas el mismo día tras las 12:00 o no llegas).",
+          "evidencia": {
+            "public_text": "confirmado por correo (4 nov 2026)"
+          }
         },
         {
           "start": "23:30",
@@ -556,12 +592,13 @@
         "Salida 08:00 → llegas 11:15 (55 min antes de la cita de las 12:10). Sales con luz (amanece 08:12).",
         "Entre la visita (termina 13:40) y el atelier (cita 13:50) solo hay 10 min: espresso rápido en el bar de las Caves y nada más.",
         "🌕 Luna llena: noche del 23 al 24 dic, 02:28 hora de París. Al salir de la cena la luna está casi llena y alta sobre el valle.",
-        "Cena: Albert 1er, 20:00. Van Mariane, papá y Francisco; tu mamá se queda en el chalet. Salid del chalet ~19:35 (25 min con margen)."
+        "Decidir antes del viaje: si La Cabane queda el 22 (como en TripIt), cancelar la del 23 (19:30) y confirmar si Albert 1er del 23 (20:00) sigue vigente o cancelado."
       ],
       "warn": [
-        "Albert 1er: cancelar el mismo día después de las 12:00, o no llegar, cuesta 100 € por persona.",
-        "Boletos de Chartreuse no reembolsables ni cambiables: si el 23 nieva fuerte, sal antes, no después (el coche trae cadenas).",
-        "OSRM tarda ~10–14 min más que Apple en este trayecto de 198 km; el margen de la tarde ya era justo."
+        "23 dic: La Cabane 19:30 (5 pax, duplicada con el 22; confirmada 9 nov por Zenchef y Lauren Gustin) y Albert 1er 20:00 (3 pax, confirmada por Zenchef el 4 nov después de tu cancelación del 2 nov) se empalman.",
+        "Albert 1er: si sigue activa, cancelar el mismo día después de las 12:00 o no llegar cuesta 100 € p/p.",
+        "La Cabane: si cancelas tarde (después de las 15:30) o no llegas, cobran toda la garantía de la tarjeta.",
+        "Boletos de Chartreuse no reembolsables ni cambiables: si el 23 nieva fuerte, sal antes, no después."
       ],
       "family": [
         "Visita en las bodegas (fresco todo el año): lleven abrigo. Todo es en francés.",
@@ -570,8 +607,8 @@
       "planb": [
         "Frío o lluvia: casi todo es bajo techo (coche + Caves). Con nevada fuerte, sal 30 min antes (08:05)."
       ],
-      "lodging": "Chalet",
-      "dinner": "Albert 1er ★ 20:00 (TripIt, 3 pax: Mariane, papá y Francisco)",
+      "lodging": "Chalet Chamonix (reserva Airbnb de Alejandro; sin costo para Francisco)",
+      "dinner": "CONFLICTO: La Cabane 19:30 (duplicada, 5 pax) + Albert 1er 20:00 (posiblemente activa, 3 pax)",
       "photos": [],
       "sun": {
         "city": "Voiron",
@@ -701,14 +738,16 @@
           "raw": "6 min",
           "read": "OSRM router.project-osrm.org, 22 nov 2026"
         }
-      }
+      },
+      "day_status": "conflicto",
+      "conflict": "En el 23 dic coinciden dos mesas y papá y Francisco están en ambas: (1) La Cabane des Praz, 19:30, 5 personas (papá, mamá, Francisco, Alejandro y Santiago): confirmada el 29 oct (19:15) y movida el 9 nov a las 19:30 por Zenchef y Lauren Gustin; cancelación gratis hasta el 23 dic 15:30 (duplicada con la del 22 dic 19:15). (2) Albert 1er ★, 20:00, 3 personas (Mariane, papá y Francisco): el 2 nov a las 14:52 pediste cancelar («SVP annulé la reservation»), pero el 4 nov Zenchef confirmó la mesa del 23 a las 20:00 y no hay cancelación posterior -> posiblemente activa. Cancelar el mismo día después de las 12:00 o no llegar cuesta €100 p/p."
     },
     {
       "date": "2026-12-24",
       "label": "Jue 24 dic",
       "city": "Chamonix",
       "section": "chamonix",
-      "summary": "Aiguille du Midi con la hora dorada de la mañana (foto C3), con toda la familia (sujeto a boletos, clima y edad de los niños), compras rápidas, mercado de Navidad, foto C4 en la hora azul y el desfile de Navidad a las 17:30 (tentativo, horario de 2025). Nochebuena: raclette en el chalet con chef Basile (cerrado según Francisco; confirmación no localizada en el correo).",
+      "summary": "Mañana en la Aiguille du Midi (3.842 m): foto C3 al amanecer y espresso en Shoukâ; tarde en el Village de Noël, foto C4 y Grande Parade de Noël. Nochebuena en el chalet (8 adultos): intercambio del 10 nov con chef Basile (menú €70 o €75 p/p con ambas raclettes; respondiste a las 18:31 pidiendo confirmar 8 × €75 = €600 y cómo pagar el anticipo), pero sin respuesta suya después del 10 nov — dudosa hasta reconfirmar.",
       "events": [
         {
           "start": "07:40",
@@ -751,28 +790,21 @@
           "bk": "gratis"
         },
         {
-          "start": "11:30",
-          "end": "12:30",
-          "type": "libre",
-          "title": "Nochebuena: raclette en el chalet con chef Basile (8 adultos)",
-          "bk": "pend",
-          "notes": "Chef Basile (cerrado según Francisco; confirmación no localizada en el correo, búsqueda de todo el buzón el 22 nov). La propuesta original era ~70 € p/p × 8, con servicio en el chalet, limpieza, máquina de raclette y colas de langosta. Falta confirmar hora, menú, precio y número de personas cuando aparezca el correo.",
-          "status": "en_curso"
-        },
-        {
           "start": "12:30",
           "end": "14:15",
           "type": "hotel",
           "title": "Chalet: comida ligera y descanso",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Chalet%20Chamonix&ll=45.948954,6.894321"
         },
         {
           "start": "14:15",
           "end": "14:30",
           "type": "coche",
           "title": "Manejar Chalet → centro (estacionar)",
-          "bk": "gratis"
+          "bk": "gratis",
+          "map": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=45.923089,6.869511&dirflg=d"
         },
         {
           "start": "14:30",
@@ -811,18 +843,23 @@
           "type": "coche",
           "title": "Manejar centro → Chalet",
           "notes": "Apple Maps ~8–10 min (centro → chalet) + estacionar 15 min. No leído hoy en Apple Maps para este tramo exacto: sin verificar.",
-          "bk": "gratis"
+          "bk": "gratis",
+          "map": "https://maps.apple.com/?saddr=45.923089,6.869511&daddr=45.948954,6.894321&dirflg=d"
         },
         {
           "start": "19:30",
           "end": "23:30",
           "type": "cena",
-          "title": "Nochebuena: raclette en el chalet (8 adultos)",
+          "title": "Nochebuena: raclette en el chalet con chef Basile (8 adultos · por reconfirmar)",
           "status": "por_resolver",
           "place": "Chalet",
           "map": "https://maps.apple.com/?ll=45.948954,6.894321&q=Les%20Praz%2C%20Chamonix",
-          "notes": "Chef: Basile y Prémices sin respuesta al seguimiento del 5 nov; Osmose cotizó solo entrega, sin chef (768,04 €). Ver ver Pendientes y la pestaña Chefs.",
-          "bk": "pend"
+          "notes": "Intercambio en Enviados (10 nov): Basilechef (info@basilechef.com, 00:08) ofreció menú a €70 p/p o €75 p/p con ambas opciones de raclette (surtido + demi-meule au lait cru, bouchées, homard/langouste, charcutería y bûche de Noël). A las 18:31 confirmaste 8 adultos y pediste confirmar 8 × €75 = €600 y forma de depósito (en reenvío a Elizabeth anotaste 70 € × 8 = 560 €). NO hay respuesta de Basile después del 10 nov ni cargo en tarjetas; faltan depósito, hora y pasarle la dirección exacta.",
+          "bk": "pend",
+          "flag": "sin respuesta desde 10 nov · reconfirmar",
+          "evidencia": {
+            "public_text": "intercambio por correo el 10 nov 2026 (pendiente de reconfirmar)"
+          }
         }
       ],
       "recs": [
@@ -832,7 +869,9 @@
         "Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5. Olivia (2) no puede subir; para Ale (3) no se recomienda; Jimena (5) sí (terraza y, si opera, el «Pas dans le Vide»). Los que no suban pueden quedarse en el Village de Noël o ir al tren de Montenvers (acepta desde 12 meses)."
       ],
       "warn": [
-        "Aiguille du Midi a 3 842 m: no recomendable para quien tenga problemas cardíacos o respiratorios ni para niños muy pequeños (web oficial: prohibido para menores de 3 años y no recomendado para menores de 5)."
+        "Chef Basile (24 dic, 8 adultos): enviaste confirmación el 10 nov 18:31 pidiendo 8 × €75 = €600 y forma de depósito; NO hay respuesta posterior de info@basilechef.com ni cargo en tarjetas. Reconfirmar urgente.",
+        "Aiguille du Midi (3.842 m): niños pequeños (Olivia 2 años, Alejandrito 3 años) no deben subir a 3.842 m por la altitud (límite médico habitual ≥2–3 años). Se puede subir en dos grupos o ir solo los adultos/mayores.",
+        "Grande Parade de Noël: 17:30 es horario de referencia de 2025; confirmar programa de diciembre de la Office de Tourisme."
       ],
       "family": [
         "Abuelos que no suban: Village de Noël y café en el centro; los encuentras a las 11:15 en Shoukâ.",
@@ -841,8 +880,8 @@
       "planb": [
         "Nublado o viento: la Aiguille puede cerrar o no tener vista. Cambia por Montenvers (si no lo hicieron el 22) o por la tarde libre y raclette temprano."
       ],
-      "lodging": "Chalet",
-      "dinner": "Nochebuena: raclette en el chalet con chef Basile (cerrado según Francisco; confirmación no localizada)",
+      "lodging": "Chalet Chamonix (reserva Airbnb de Alejandro; sin costo para Francisco)",
+      "dinner": "Nochebuena: raclette en el chalet con chef Basile (8 adultos, €600 o €560; sin respuesta desde 10 nov — reconfirmar)",
       "photos": [
         "C3",
         "C4"
@@ -880,11 +919,11 @@
       "label": "Vie 25 dic",
       "city": "Chamonix → Sarentino (Alto Adige)",
       "section": "tour",
-      "summary": "Por la mañana, check-out del chalet (toda la familia). A partir de la salida, el tour es solo de Francisco y Mariane. Carretera por el túnel del Mont Blanc, Milán, Verona y el Brennero hasta el Auener Hof (Sarentino). Tarde de spa y descanso en el hotel. Cena de aniversario en Terra ★★ a las 20:00 (en TripIt; sin correo de confirmación). Hoy no hay foto: la épica pasa al 26 (Ranui).",
+      "summary": "Por la mañana, check-out del chalet (toda la familia; la reserva Airbnb es de Alejandro). Desde aquí el tour es solo Francisco y Mariane. Carretera por el túnel del Mont Blanc, Milán, Verona y el Brennero hasta Terra / Auener Hof (Prati 21, Sarentino), estancia + cena de aniversario en un solo paquete (Short Stay & Gourmet Experience, Design Room, ✓ confirmado, €822; depósito €247 muy probablemente pagado el 4 nov en HSBC US). Hora 20:00 indicada por Francisco en correos del 8 y 22 nov, pero Terra no responde desde el 2 nov.",
       "drive": {
         "key": "chalet_terra",
         "frm": "Chalet (Chamonix)",
-        "to": "Auener Hof / Terra (Prati, Sarentino)",
+        "to": "Terra / Auener Hof (Prati, Sarentino)",
         "map": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=46.651490,11.322360&dirflg=d",
         "raw": "5 h 47",
         "raw_min": 347,
@@ -939,9 +978,9 @@
           "start": "07:00",
           "end": "15:00",
           "type": "coche",
-          "title": "Manejar Chalet (Chamonix) → Auener Hof (Prati, Sarentino)",
+          "title": "Manejar Chalet (Chamonix) → Terra / Auener Hof (Prati, Sarentino)",
           "map": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=46.651490,11.322360&dirflg=d",
-          "notes": "Auener Hof Dining Home – Relais & Châteaux (Terra), Prati 21, 39058 Sarentino. En TripIt: entrada vie 25 dic 15:00, salida sáb 26 dic 11:00 (1 noche). Tel. +39 0471 623055. Sin número de reserva. Esta es la noche del 25 (Terra); el 26 duermes en Ansitz Heufler, no aquí.",
+          "notes": "Terra – The Magic Place y Auener Hof (Relais & Châteaux) son la misma propiedad: Prati 21, 39058 Sarentino. Confirmación ✓ confirmado (03.11.2026): paquete Short Stay & Gourmet Experience, 1 Design Room, 25–26 dic, €822 total. Apple Maps 5 h 47 · 539 km → total con márgenes 8 h 00. El 26 duermes en Ansitz Heufler.",
           "bk": "gratis"
         },
         {
@@ -956,33 +995,40 @@
           "start": "15:00",
           "end": "15:30",
           "type": "hotel",
-          "title": "Check-in Auener Hof Dining Home – Relais & Châteaux (Terra)",
+          "title": "Check-in Terra / Auener Hof (Short Stay & Gourmet, Design Room)",
           "status": "reservado",
-          "place": "Prati 21, Sarentino",
-          "map": "https://maps.apple.com/?ll=46.651490,11.322360&q=Auener%20Hof%2C%20Prati%2021%2C%20Sarentino",
-          "notes": "En TripIt: entrada vie 25 dic 15:00, salida sáb 26 dic 11:00 (1 noche). Tel. +39 0471 623055.",
-          "bk": "ok"
+          "place": "Terra / Auener Hof, Prati 21, 39058 Sarentino",
+          "map": "https://maps.apple.com/?q=Terra%20Auener%20Hof%20Sarentino&ll=46.651490,11.322360",
+          "notes": "Confirmación ✓ confirmado (03.11.2026): 25–26 dic, 2 adultos, Short Stay & Gourmet Experience (hotel + cena), Design Room, €822,00. Depósito €247 muy probablemente pagado (AUENERHOF SARNTAL US$276,89 el 4 nov en HSBC US); saldo al salir €575 + tasa €3,70 p/p/día. Tus correos del 8 nov y 22 nov (12:33/12:34 c.c. Mariane) sobre llegada ~15:00, spa/quesería/estrellas siguen sin respuesta de Terra (última respuesta: 2 nov). Política de cancelación tampoco visible en ✓ confirmado.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (3 nov 2026)"
+          }
         },
         {
           "start": "15:30",
           "end": "19:30",
           "type": "libre",
           "title": "Tarde en el hotel: spa / lo que recomiende Terra (pendiente de su respuesta)",
-          "place": "Auener Hof, Sarentino",
-          "notes": "Le pedimos a Terra recomendaciones para esta tarde (spa/jacuzzi, vida local o quesería, estrellas): contestó una grabación el 8 nov y pidieron escribir a info@terra.place. 25 dic: casi todo cerrado fuera del hotel (el Museo de Ötzi en Bolzano también cierra, iceman.it).",
-          "bk": "pend"
+          "place": "Terra / Auener Hof, Prati 21, Sarentino",
+          "notes": "Pendiente respuesta de Terra a tus preguntas del 8 y 22 nov (vida local / quesería abierta en Navidad, jacuzzi/horario del spa el 25, masaje para dos y cielo nocturno).",
+          "bk": "pend",
+          "map": "https://maps.apple.com/?q=Terra%20Auener%20Hof%20Sarentino&ll=46.651490,11.322360"
         },
         {
           "start": "20:00",
           "end": "23:30",
           "type": "cena",
-          "title": "Terra – The Magic Place ★★ (2 personas, aniversario)",
+          "title": "Terra – The Magic Place ★★ (paquete Short Stay & Gourmet — 20:00 por confirmar por escrito)",
           "status": "reservado",
-          "place": "Prati 21, Sarentino (en el Auener Hof)",
-          "map": "https://maps.apple.com/?ll=46.651490,11.322360&q=Terra%20The%20Magic%20Place%2C%20Sarentino",
-          "notes": "En TripIt: mesa para 2 a las 20:00, «Reservation confirmed», comentario aniversario. En el correo solo aparece la solicitud del 2 nov, que no se garantiza hasta que el restaurante confirme: no hay fecha, número de personas ni confirmación posterior. Se mantiene como reservada según TripIt, con la marca «sin correo de confirmación». Menú degustación 219 € p/p y maridaje 115 € (web de Terra, leída 2 nov). Bloque de 3 h 30: la reserva no indica duración.",
+          "place": "Terra / Auener Hof, Prati 21, Sarentino",
+          "map": "https://maps.apple.com/?q=Terra%20The%20Magic%20Place%20Sarentino&ll=46.651490,11.322360",
+          "notes": "Incluida en el paquete Short Stay & Gourmet (✓ confirmado, €822 hotel + cena para 2). El 30 oct Gisela ofreció 19:00 o 20:00; en tus correos del 8 y 22 nov indicaste cena a las 20:00, pero Terra no ha respondido desde el 2 nov ni ✓ confirmado muestra la hora. Conviene pedir que confirmen las 20:00, el depósito €247 y respondan tus dudas del 22 nov. Bloque 20:00–23:30.",
           "bk": "ok",
-          "flag": "sin correo de confirmación"
+          "flag": "hora 20:00 sin confirmar por escrito · sin respuesta desde 2 nov",
+          "evidencia": {
+            "public_text": "confirmado por correo (3 nov 2026)"
+          }
         }
       ],
       "recs": [
@@ -992,14 +1038,15 @@
         "🌕 La luna al 96 % sale a las 18:21: al salir de la cena (~23:30) está alta sobre el valle. Si hay cielo despejado vale la pena una foto nocturna desde la terraza del hotel (1 600 m), pero no es la foto del día."
       ],
       "warn": [
+        "Terra / Auener Hof: Terra no ha respondido después del 2 nov a tus correos del 8 nov y 22 nov (12:33/12:34 c.c. Mariane). La cena a las 20:00 solo la indicas tú; falta confirmación escrita de la hora, recepción del depósito €247 (cargo AUENERHOF SARNTAL US$276,89 en HSBC US, 4 nov), política de cancelación y respuestas a tus preguntas de la tarde (15:00–19:30).",
         "Peajes: túnel del Mont Blanc y autopistas italianas (casetas). A22 del Brennero: llantas de invierno o cadenas a bordo 15 nov–15 abr."
       ],
       "family": [],
       "planb": [
         "Nevada: A22/A4 se mantienen abiertas, pero sal 1 h antes; con nieve fuerte en el valle de Sarentino usa cadenas."
       ],
-      "lodging": "Auener Hof Dining Home (Relais & Châteaux), Prati 21, 39058 Sarentino (25→26 dic; sin número en TripIt)",
-      "dinner": "Terra ★★ 20:00 (TripIt; sin correo de confirmación)",
+      "lodging": "Terra – The Magic Place / Auener Hof (Relais & Châteaux), Prati 21, Sarentino (25→26 dic; ✓ confirmado, Short Stay & Gourmet, Design Room, €822 total; depósito €247 muy probablemente pagado, faltan €575 + tasa €3,70 p/p/día; sin respuesta de Terra desde 2 nov)",
+      "dinner": "Terra ★★ — cena de aniversario (en paquete Short Stay & Gourmet; 20:00 indicado por Francisco, pendiente confirmación escrita de Terra)",
       "lod_status": "reservado",
       "photos": [],
       "sun": {
@@ -1088,7 +1135,7 @@
           "start": "07:45",
           "end": "08:00",
           "type": "hotel",
-          "title": "Check-out Auener Hof (hasta 11:00)",
+          "title": "Check-out Terra / Terra / Auener Hof (hasta 11:00)",
           "status": "reservado",
           "map": "https://maps.apple.com/?ll=46.651490,11.322360&q=Auener%20Hof%2C%20Prati%2021%2C%20Sarentino",
           "bk": "ok"
@@ -1097,7 +1144,7 @@
           "start": "08:00",
           "end": "10:50",
           "type": "coche",
-          "title": "Manejar Auener Hof (Sarentino) → Ansitz Heufler (Rasun-Anterselva)",
+          "title": "Manejar Terra / Terra / Auener Hof (Sarentino) → Ansitz Heufler (Rasun-Anterselva)",
           "notes": "OSRM 1 h 56 · 112 km → +20 % 2 h 20 + descansos 15 min + estacionar 15 min = 2 h 50. (Tramo nuevo: no hay lectura de Apple Maps; con Apple el tramo hasta Brunico daba 1 h 35, así que probablemente llegas antes.)",
           "map": "https://maps.apple.com/?saddr=46.651490,11.322360&daddr=46.790905,12.055701&dirflg=d",
           "bk": "gratis"
@@ -1111,7 +1158,10 @@
           "notes": "Paquete «Atelier Moessmer – Cook the Mountain Night»: Junior Suite, 2 personas, desayuno, total €1.180. Anticipo €350 pagado el 4 nov (Nexi, Mastercard, orden ✓ confirmado); faltan €830. Sin número de reserva en TripIt. Check-in oficial desde las 15:00, check-out 11:00. Early check-in desde las 12:00, según disponibilidad (no desde las 10:50: hay que avisar). Si llegas después de las 22:00, también hay que avisar. Tel. +39 0474 790200.",
           "place": "Ansitz Heufler, Rasun-Anterselva",
           "map": "https://maps.apple.com/?ll=46.790905,12.055701&q=Ansitz%20Heufler%2C%20Rasun-Anterselva",
-          "bk": "ok"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (6 nov 2026)"
+          }
         },
         {
           "start": "11:10",
@@ -1206,7 +1256,11 @@
           "title": "Ansitz Heufler: arreglarse (20 min)",
           "status": "reservado",
           "bk": "ok",
-          "notes": "20 min para arreglarse; el shuttle a Moessmer sale a las 19:00 (confirmado el 9 nov)."
+          "notes": "20 min para arreglarse; el shuttle a Moessmer sale a las 19:00 (confirmado el 9 nov).",
+          "evidencia": {
+            "public_text": "confirmado por correo (6 nov 2026)"
+          },
+          "map": "https://maps.apple.com/?q=Ansitz%20Heufler%20Rasun-Anterselva&ll=46.790905,12.055701"
         },
         {
           "start": "19:00",
@@ -1437,7 +1491,10 @@
           "map": "https://maps.apple.com/?ll=46.247211,13.537768&q=Hi%C5%A1a%20Franko%2C%20Kobarid",
           "bk": "ok",
           "notes": "Habitación confirmada por correo: el 1 nov Ines Kemperle añadió una superior para el 27 dic; el 5 nov Kristina Ivančič la actualizó a twin con terraza. Precio: estándar €230 / superior €250 por noche con desayuno, más €2,5 de impuesto p/p. Cancelación a menos de 96 h = 100 % (del menú, según el correo). No está indicada la categoría ni el precio finales, ni hay número de reserva. No aparece en TripIt. Check-in desde las 15:00.",
-          "lod_status_touch": true
+          "lod_status_touch": true,
+          "evidencia": {
+            "public_text": "confirmado por correo (5 nov 2026)"
+          }
         },
         {
           "start": "13:00",
@@ -1516,7 +1573,10 @@
           "map": "https://maps.apple.com/?ll=46.247211,13.537768&q=Hi%C5%A1a%20Franko%2C%20Kobarid",
           "bk": "ok",
           "notes": "TripIt no trae confirmación de habitación (el correo del restaurante decía «I would like to book a room (1x)»). El 5 nov, por correo, la cambiaron a twin con terraza. Precios: estándar €230 / superior €250 + impuesto turístico €2,5 p/p. Check-in desde las 15:00. Esto hay que cerrarlo: sin habitación confirmada el plan del 27 y la salida del 28 se caen.",
-          "lod_status_touch": true
+          "lod_status_touch": true,
+          "evidencia": {
+            "public_text": "confirmado por correo (5 nov 2026)"
+          }
         },
         {
           "start": "17:45",
@@ -1524,7 +1584,11 @@
           "type": "hotel",
           "title": "Hiša Franko: descanso y arreglarse",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (5 nov 2026)"
+          },
+          "map": "https://maps.apple.com/?q=Hi%C5%A1a%20Franko%20Kobarid&ll=46.247211,13.537768"
         },
         {
           "start": "19:00",
@@ -1535,7 +1599,10 @@
           "place": "Hiša Franko",
           "map": "https://maps.apple.com/?ll=46.247211,13.537768&q=Hi%C5%A1a%20Franko",
           "bk": "ok",
-          "notes": "Cena 19:00, 2 personas, ✓ confirmado (venuo). En TripIt: cancelación gratis hasta el 24 dic 20:00. En el correo de Ines Kemperle (9 nov): menú €335 p/p, maridaje €190 (sin alcohol €135); a menos de 96 h se cobra el 100 % del menú (96 h antes del 27 serían el 23, no el 24: hay que aclarar la regla). La hora se elige en su web (19:00–20:00). Sin número de reserva. Bloque de 3 h 30; duermes ahí mismo — si la habitación está confirmada."
+          "notes": "Cena 19:00, 2 personas, ✓ confirmado (venuo). En TripIt: cancelación gratis hasta el 24 dic 20:00. En el correo de Ines Kemperle (9 nov): menú €335 p/p, maridaje €190 (sin alcohol €135); a menos de 96 h se cobra el 100 % del menú (96 h antes del 27 serían el 23, no el 24: hay que aclarar la regla). La hora se elige en su web (19:00–20:00). Sin número de reserva. Bloque de 3 h 30; duermes ahí mismo — si la habitación está confirmada.",
+          "evidencia": {
+            "public_text": "confirmado por correo (5 nov 2026)"
+          }
         }
       ],
       "recs": [
@@ -1602,7 +1669,7 @@
       "label": "Lun 28 dic",
       "city": "Kobarid → Zagreb",
       "section": "tour",
-      "summary": "Salida 08:00 de Kobarid (podéis salir entre 08:00 y 08:15; el check-out oficial es a las 11:00 y no estorba si os vais antes) rumbo a Ljubljana, con márgenes para el tour de las 11:00 (2 personas, según Francisco; en el correo no aparece; TripIt sigue diciendo 1 persona, €44,07). Por la tarde, a Zagreb: foto R3, Adviento y cena en Dubravkin put (en TripIt; sin correo de confirmación). Movia no entra en el plan.",
+      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: FareHarbor ✓ confirmado, orden ✓ confirmado, €44,07). Nota en correo: propuesta de cata en Movia con Nina Šegula a las 10:00 (9 nov), nunca confirmada -> chocaría con Ljubljana 11:00. Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award del 4 nov), foto R3, Adviento y cena en Dubravkin put (TripIt; sin correo de confirmación).",
       "drive": {
         "key": "hisa_lju",
         "frm": "Hiša Franko",
@@ -1655,7 +1722,8 @@
           "type": "hotel",
           "title": "Check-out Hiša Franko (salida oficial 11:00; os vais a las 08:00)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Hi%C5%A1a%20Franko%20Kobarid&ll=46.247211,13.537768"
         },
         {
           "start": "08:00",
@@ -1667,15 +1735,34 @@
           "bk": "gratis"
         },
         {
+          "start": "10:00",
+          "end": "11:00",
+          "type": "visita",
+          "optional": true,
+          "title": "Propuesta sin confirmar — Cata en Movia (Nina Šegula, 10:00)",
+          "status": "propuesta",
+          "bk": "gratis",
+          "flag": "propuesta sin confirmar · chocaría con Ljubljana 11:00",
+          "place": "Movia, Ceglo 18, 5212 Dobrovo (Goriška Brda)",
+          "map": "https://maps.apple.com/?q=Movia%20Ceglo%2018%20Dobrovo&ll=45.978100,13.524500",
+          "notes": "En correo (9 nov 02:20): Nina Šegula respondió «Sure... we can do 28th at 10.00?» a tu consulta del 4 nov, pero nunca la confirmaste. Choca con el tour pagado de Ljubljana a las 11:00, así que queda como propuesta descartada/sin confirmar salvo que decidas otra cosa.",
+          "evidencia": {
+            "public_text": "propuesta por correo del 9 nov 2026 (sin confirmar)"
+          }
+        },
+        {
           "start": "11:00",
           "end": "13:00",
           "type": "visita",
-          "title": "Tour Centro histórico + Castillo de Ljubljana (2 personas, según Francisco)",
+          "title": "Tour Centro histórico + Castillo de Ljubljana (2 adultos, confirmado y pagado)",
           "status": "reservado",
           "bk": "ok",
-          "place": "Ljubljana (punto de encuentro del tour: ver confirmación ✓ confirmado)",
-          "map": "https://maps.apple.com/?ll=46.048870,14.508620&q=Ljubljanski%20grad",
-          "notes": "Confirmación ✓ confirmado, €44,07. En TripIt figura 1 asistente (Francisco). Francisco indica que es para 2; en una búsqueda de todo el buzón no se encontró el correo ni el número de asistentes. Se anota 2 personas según Francisco, pendiente de prueba. Punto de encuentro: ver la confirmación ✓ confirmado."
+          "place": "TIC Ljubljana, Adamič-Lundrovo nabrežie 2, Ljubljana",
+          "map": "https://maps.apple.com/?q=TIC%20Ljubljana%20Adamic%20Lundrovo%20nabrezje%202&ll=46.050770,14.506750",
+          "notes": "Confirmado y pagado por FareHarbor (22 nov 12:51): Booking ✓ confirmado, orden ✓ confirmado, lun 28 dic 11:00–13:00, en inglés, 2 adultos. €44,07 pagado con Apple Pay (HSBC US: US$48,49 pendiente). Punto de encuentro: TIC Ljubljana, Adamič-Lundrovo nabrežie 2. Cancelación gratis hasta 24 h antes. (TripIt todavía muestra 1 asistente, pero el recibo de FareHarbor confirma 2 adultos).",
+          "evidencia": {
+            "public_text": "confirmado por correo (22 nov 2026)"
+          }
         },
         {
           "start": "13:00",
@@ -1694,8 +1781,11 @@
           "status": "reservado",
           "place": "Kršnjavoga 1, Zagreb",
           "map": "https://maps.apple.com/?ll=45.806646,15.966052&q=The%20Westin%20Zagreb",
-          "notes": "En TripIt: ✓ confirmado, 1 noche, 129 €, cancelación gratis hasta el 28 dic 23:59.",
-          "bk": "ok"
+          "notes": "Confirmación ✓ confirmado (2 nov), Deluxe Twin, €129, cancelación gratis hasta 28 dic. Solicitud de Nightly Upgrade Award (Marriott Bonvoy, 1 NUA) enviada el 4 nov; se revisa desde 5 días antes.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 y 4 nov 2026)"
+          }
         },
         {
           "start": "16:10",
@@ -1756,20 +1846,21 @@
       ],
       "recs": [
         "Para el tour de las 11:00: salir de Kobarid a las 08:00 (o a más tardar 08:15). El check-out oficial a las 11:00 no estorba si os vais antes.",
-        "El tour es para 2 (según Francisco). Falta el correo que lo acredite; TripIt todavía dice 1 persona.",
+        "Tour de Ljubljana confirmado para 2 adultos (FareHarbor ✓ confirmado). Punto de encuentro: TIC Ljubljana, Adamič-Lundrovo nabrežie 2.",
+        "Cata en Movia (10:00): quedó solo en propuesta de Nina Šegula (9 nov); fuera del plan.",
         "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar — si Dubravkin put está de verdad reservado (sin correo de confirmación)."
       ],
       "warn": [
         "Check-out oficial de Hiša Franko a las 11:00: salid a las 08:00 (llegada con márgenes ~11:00; en tiempo de Apple ~10:03). Después de las 08:15 se come el margen.",
-        "Tour de Ljubljana: 2 personas según Francisco. No se encontró el correo; TripIt figura 1 asistente (Francisco), €44,07.",
-        "Dubravkin put: en TripIt a las 19:00, sin confirmación en TripIt ni en el correo.",
+        "Cata en Movia (Nina Šegula, 10:00): propuesta sin confirmar del 9 nov. Choca con el tour de Ljubljana a las 11:00; confirmar descarte/cortesía si lo deseas.",
+        "Dubravkin put: en TripIt a las 19:00, sin número ni correo de confirmación.",
         "Eslovenia: viñeta electrónica (A1/A2). Croacia: peaje en caseta (A3)."
       ],
       "family": [],
       "planb": [
         "Lluvia: Mercado Dolac techado y cafés de Tkalčićeva."
       ],
-      "lodging": "The Westin Zagreb (reservado)",
+      "lodging": "The Westin Zagreb, Izidora Kršnjavoga 1 (✓ confirmado, €129, Deluxe Twin; solicitud Nightly Upgrade Award enviada el 4 nov)",
       "dinner": "Dubravkin put 19:00 (TripIt; sin correo de confirmación)",
       "lod_status": "reservado",
       "photos": [
@@ -1930,7 +2021,8 @@
           "type": "hotel",
           "title": "Check-out The Westin Zagreb (hasta 11:00)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=The%20Westin%20Zagreb&ll=45.806646,15.966052"
         },
         {
           "start": "08:00",
@@ -1949,8 +2041,11 @@
           "status": "reservado",
           "place": "Apáczai Csere János u. 4",
           "map": "https://maps.apple.com/?ll=47.494871,19.049427&q=Budapest%20Marriott%20Hotel",
-          "notes": "Estacionamiento por confirmar (ver Pendientes). Confirmación TripIt ✓ confirmado, €234,35, Deluxe King vista río, Apáczai Csere János u. 4. Estacionamiento por confirmar (Pendientes).",
-          "bk": "ok"
+          "notes": "Confirmación ✓ confirmado (2 nov), €234,35, cancelación gratis hasta 29 dic. Solicitud de Nightly Upgrade Award (Marriott Bonvoy, 1 NUA) enviada el 4 nov.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 y 4 nov 2026)"
+          }
         },
         {
           "start": "13:35",
@@ -2014,7 +2109,8 @@
           "type": "hotel",
           "title": "Check-in y arreglarse (30 min)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Budapest%20Marriott&ll=47.494871,19.049427"
         },
         {
           "start": "18:45",
@@ -2048,7 +2144,7 @@
       "planb": [
         "Frío: Mercado Central techado (horario del 29 no verificado) y baños termales."
       ],
-      "lodging": "Budapest Marriott, Apáczai Csere János u. 4 (✓ confirmado, €234,35, Deluxe King vista río)",
+      "lodging": "Budapest Marriott, Apáczai Csere János u. 4 (✓ confirmado, €234,35; solicitud Nightly Upgrade Award enviada el 4 nov)",
       "dinner": "Stand 19:00 (reservado)",
       "lod_status": "reservado",
       "photos": [
@@ -2182,7 +2278,8 @@
           "type": "hotel",
           "title": "Check-out Budapest Marriott",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Budapest%20Marriott&ll=47.494871,19.049427"
         },
         {
           "start": "06:00",
@@ -2255,7 +2352,11 @@
           "title": "Stradom House: check-in y arreglarse (25 min)",
           "status": "reservado",
           "bk": "ok",
-          "notes": "Confirmación ✓ confirmado, PLN 930, Modern Twin, Stradomska 12-14."
+          "notes": "Confirmación ✓ confirmado (3 nov 16:23): check-in mié 30 dic, check-out jue 31 dic, Modern Twin courtyard, 2 adultos, PLN 930,00. Cancelación gratis hasta el 30 dic 23:59 hora del hotel (luego cobran PLN 930,00). Reemplaza la reserva anterior ✓ confirmado (folio ✓ confirmado), cancelada el 2 nov 12:58.",
+          "evidencia": {
+            "public_text": "confirmado por correo (3 nov 2026)"
+          },
+          "map": "https://maps.apple.com/?q=Stradom%20House%20Cracovia&ll=50.048672,19.946234"
         },
         {
           "start": "18:45",
@@ -2293,7 +2394,7 @@
       "planb": [
         "Frío: Lonja de los Paños y Basílica de Santa María bajo techo; el patio del Wawel es al aire libre."
       ],
-      "lodging": "Stradom House Hotel & Spa, Autograph Collection, Stradomska 12-14 (✓ confirmado, PLN 930, Modern Twin)",
+      "lodging": "Stradom House Hotel & Spa, Autograph Collection, Stradomska 12-14 (✓ confirmado, PLN 930, Modern Twin courtyard, 2 adultos; cancel. gratis hasta 30 dic 23:59)",
       "dinner": "Bottiglieria 1881 19:00 (TripIt; sin correo de confirmación)",
       "lod_status": "reservado",
       "photos": [
@@ -2412,7 +2513,8 @@
           "status": "reservado",
           "place": "12-14 Stradomska, Cracovia",
           "notes": "En TripIt: salida a más tardar 12:00. Confirmación ✓ confirmado.",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Stradom%20House%20Cracovia&ll=50.048672,19.946234"
         },
         {
           "start": "08:00",
@@ -2431,7 +2533,10 @@
           "status": "reservado",
           "map": "https://maps.apple.com/?ll=48.141417,17.090310&q=Grand%20Hotel%20River%20Park%2C%20Bratislava",
           "bk": "ok",
-          "notes": "Confirmación TripIt ✓ confirmado, €182, Dvořákovo nábrežie 6."
+          "notes": "Confirmación ✓ confirmado (2 nov), €182, cancelación gratis hasta 31 dic. Solicitud de Nightly Upgrade Award (Marriott Bonvoy, 1 NUA) enviada el 4 nov.",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 y 4 nov 2026)"
+          }
         },
         {
           "start": "14:25",
@@ -2486,7 +2591,8 @@
           "type": "hotel",
           "title": "Check-in, descanso y arreglarse",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Grand%20Hotel%20River%20Park%20Bratislava&ll=48.141417,17.090310"
         },
         {
           "start": "19:40",
@@ -2506,7 +2612,7 @@
           "map": "https://maps.apple.com/?ll=48.137675,17.104558&q=UFO%20%E2%80%94%20%E2%80%9CThe%20Great%20Countdown%E2%80%9D",
           "end_date": "2027-01-01",
           "bk": "ok",
-          "notes": "Cena de Año Nuevo: el bloque llega hasta las 00:30 para pasar la medianoche ahí (no lo recorto a 3 h 30). Orden n.º 774, pagada €610."
+          "notes": "Cena de Año Nuevo: el bloque llega hasta las 00:30 para pasar la medianoche ahí. Orden n.º 774, pagada €610 (cargo SKYWALK.REDMONKEYG BRATISLAVA US$684,18 en HSBC US el 1 nov)."
         }
       ],
       "recs": [
@@ -2521,7 +2627,7 @@
       "planb": [
         "Frío: catedral de San Martín y cafés del casco antiguo."
       ],
-      "lodging": "Grand Hotel River Park, Dvořákovo nábrežie 6, Bratislava (✓ confirmado, €182)",
+      "lodging": "Grand Hotel River Park, a Luxury Collection Hotel, Dvořákovo nábrežie 6 (✓ confirmado, €182; solicitud Nightly Upgrade Award enviada el 4 nov)",
       "dinner": "UFO 20:00 (reservado)",
       "lod_status": "reservado",
       "photos": [
@@ -2617,7 +2723,8 @@
           "type": "hotel",
           "title": "Check-out River Park",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Grand%20Hotel%20River%20Park%20Bratislava&ll=48.141417,17.090310"
         },
         {
           "start": "10:15",
@@ -2707,7 +2814,10 @@
           "status": "reservado",
           "map": "https://maps.apple.com/?ll=48.196667,16.386463&q=Imperial%20Riding%20School%2C%20Viena",
           "bk": "ok",
-          "notes": "Confirmación TripIt ✓ confirmado, €213, Ungargasse 60."
+          "notes": "Confirmación TripIt ✓ confirmado, €213, Ungargasse 60.",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 nov 2026)"
+          }
         },
         {
           "start": "18:45",
@@ -2725,8 +2835,11 @@
           "status": "reservado",
           "place": "TIAN ★",
           "map": "https://maps.apple.com/?ll=48.205263,16.374529&q=TIAN%20%E2%98%85",
-          "notes": "Alternativas para esta noche (Beethoven en el Konzerthaus y otros 1★ que abren el 1 ene): ver abajo y Pendientes. Bloque de 3 h 30: la reserva no indica duración. Menú €199 p/p, 2 personas, garantía de tarjeta; cancelación gratis hasta el 31 dic 19:00. Sin número en TripIt.",
-          "bk": "ok"
+          "notes": "Confirmado por correo (reenviado a TripIt el 1 nov): vie 1 ene 19:00, 2 personas, menú €199 p/p (€398 total + bebidas), garantía con tarjeta, cancelación gratis hasta el 31 dic 19:00. Bloque de 3 h 30. Alternativas de 1 ene en Pendientes.",
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (1 nov 2026)"
+          }
         }
       ],
       "recs": [
@@ -2991,7 +3104,8 @@
           "type": "hotel",
           "title": "Check-out Imperial Riding School (hasta 12:00)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Imperial%20Riding%20School%20Viena&ll=48.196667,16.386463"
         },
         {
           "start": "08:00",
@@ -3010,7 +3124,10 @@
           "status": "reservado",
           "map": "https://maps.apple.com/?ll=50.088074,14.431498&q=Prague%20Marriott%20Hotel",
           "bk": "ok",
-          "notes": "Confirmación TripIt ✓ confirmado, CZK 6.148, V Celnici 8."
+          "notes": "Confirmación TripIt / correo ✓ confirmado (2 nov), Deluxe 2 queen, CZK 6.148, V Celnici 8. Cancelación gratis hasta el 2 ene.",
+          "evidencia": {
+            "public_text": "confirmado por correo (2 nov 2026)"
+          }
         },
         {
           "start": "13:25",
@@ -3074,7 +3191,8 @@
           "type": "hotel",
           "title": "Check-in y arreglarse (30 min)",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Prague%20Marriott&ll=50.088440,14.430720"
         },
         {
           "start": "18:40",
@@ -3093,7 +3211,10 @@
           "place": "Štangl ★",
           "map": "https://maps.apple.com/?ll=50.091330,14.454420&q=%C5%A0tangl%20%E2%98%85",
           "bk": "ok",
-          "notes": "Bloque de 3 h 30: la reserva no indica duración. Mañana el check-out es a las 05:15."
+          "notes": "Confirmación ✓ confirmado (stangl@ambi.cz, 1 nov): sáb 2 ene 19:00, 2 personas, sin pago anticipado. Bloque de 3 h 30. Mañana el check-out es a las 05:15.",
+          "evidencia": {
+            "public_text": "confirmado por correo (1 nov 2026)"
+          }
         }
       ],
       "recs": [
@@ -3106,8 +3227,8 @@
       "planb": [
         "Frío: Casa Municipal y cafés; el reloj astronómico se ve en 10 min."
       ],
-      "lodging": "Prague Marriott, V Celnici 8 (✓ confirmado, CZK 6.148)",
-      "dinner": "Štangl 19:00 (reservado)",
+      "lodging": "Prague Marriott, V Celnici 8 (✓ confirmado, Deluxe 2 queen, CZK 6.148)",
+      "dinner": "Štangl ★ 19:00 (reservado ✓ confirmado, 2 pax, sin pago)",
       "lod_status": "reservado",
       "photos": [
         "R8"
@@ -3228,7 +3349,8 @@
           "type": "hotel",
           "title": "Check-out Prague Marriott",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "map": "https://maps.apple.com/?q=Prague%20Marriott&ll=50.088440,14.430720"
         },
         {
           "start": "05:40",
@@ -3255,7 +3377,7 @@
           "type": "vuelo",
           "title": "Ryanair FR 3073 PRG → BCN",
           "status": "reservado",
-          "notes": "Confirmación ✓ confirmado. Ningún asiento asignado.",
+          "notes": "Confirmación ✓ confirmado. Pagado US$421,85 en AMEX US el 3 nov (RYANAIR LTD DUBLIN). Ningún asiento asignado.",
           "bk": "ok"
         },
         {
@@ -3264,9 +3386,12 @@
           "type": "vuelo",
           "title": "AM 38 BCN T1 → MEX T2 (llega 19:50 hora CDMX)",
           "status": "reservado",
-          "notes": "Confirmación ✓ confirmado · sale de Barcelona T1 a las 13:45 · llega Ciudad de México T2 a las 19:50 hora CDMX · Turista/L. Ningún asiento asignado.",
+          "notes": "Confirmación ✓ confirmado · boletos ✓ confirmado (Francisco) y ✓ confirmado (Mariane) · sale de Barcelona T1 a las 13:45 · llega Ciudad de México T2 a las 19:50 hora CDMX · Turista/L. Ningún asiento asignado.",
           "end_date": "2027-01-04",
-          "bk": "ok"
+          "bk": "ok",
+          "evidencia": {
+            "public_text": "confirmado por correo (30 oct 2026)"
+          }
         }
       ],
       "recs": [
@@ -3976,9 +4101,9 @@
       "n": 1,
       "name": "Basile — chef à domicile",
       "contact": "info@basilechef.com · +33 6 47 08 74 17",
-      "status": "cerrado",
-      "date": "según Francisco (correo no localizado, 22 nov)",
-      "note": "Cerrado según Francisco para la Nochebuena (raclette, 8 adultos). En una búsqueda de todo el buzón el 22 nov no se localizó la confirmación. Propuesta que sí estaba en el correo (3 nov): ~70 € p/p × 8, con servicio, limpieza, máquina de raclette y colas de langosta; sin depósito; cancelación a menos de 3 días en fiestas = 50 % de las compras. Hora, menú, precio y número de personas: pendientes."
+      "status": "por_resolver",
+      "date": "10 nov 2026 (sin respuesta posterior)",
+      "note": "En Enviados (10 nov 18:31): respondiste a la oferta de Basile (00:08, €70 o €75 p/p con ambas raclettes) confirmando 8 adultos y pidiendo confirmar 8 × €75 = €600 más la forma de depósito (en reenvío a Elizabeth anotaste 70 € × 8 = 560 € ≈ MXN 11.600). NO hubo respuesta después del 10 nov ni cargo en tarjetas; faltan confirmación final, depósito, hora y dirección exacta."
     }
   ],
   "road": {
@@ -4039,16 +4164,20 @@
     ]
   },
   "tripit": {
-    "now": "22 nov 2026, ~15:00 hora CDMX",
+    "now": "22 nov 2026, ~15:00 hora CDMX (cruce correo 16:29 + 59 capturas + tarjetas conciliadas 16:29)",
     "before": null,
     "changes": [
-      "Vuelos: AM 37 ✓ confirmado, VY 1124 / IB 5068 ✓ confirmado, FR 3073 ✓ confirmado, AM 38 ✓ confirmado a MEX T2. Ningún asiento asignado. Pasajeros: Francisco y Mariane Brust Mascher.",
-      "Sixt (✓ confirmado): recogida 21 dic 17:30 Ginebra sector francés; devolución 3 ene 06:30 Praga. €3.203,28 pagado (incl. €1.093,75 one-way), depósito €500, sin protección ni conductor adicional en la reserva. La cobertura de daños la da la AMEX Centurion. Pendiente: ¿agregar a Mariane como conductora?",
-      "Cenas en TripIt: Le Cap-Horn 21 dic 19:15 (3); La Cabane 22 dic 19:15 (5) — por ahora manda TripIt; el correo dice 23 19:30, verificando; Albert 1er 23 dic 20:00 (3, no aparece en el correo); Terra 25 20:00 (sin correo de confirmación); Moessmer 26 19:15 (paquete Heufler); Hiša Franko 27 19:00 ✓ confirmado; Dubravkin put 28 19:00 sin confirmación; Stand 29 19:00; Bottiglieria 1881 30 19:00 ✓ confirmado (sin correo de confirmación); UFO 31 20:00 orden ✓ confirmado, €610 pagados; TIAN 1 ene 19:00; Štangl 2 ene 19:00.",
-      "Hoteles con número: Westin Zagreb ✓ confirmado (€129); Budapest Marriott ✓ confirmado (€234,35, Deluxe King vista río); Stradom House ✓ confirmado (PLN 930); River Park ✓ confirmado (€182); Imperial Riding School ✓ confirmado (€213); Prague Marriott ✓ confirmado (CZK 6.148).",
-      "Nuevo en TripIt: tour Centro histórico + Castillo de Ljubljana, 28 dic 11:00–13:00, ✓ confirmado, €44,07, 1 asistente (Francisco). Francisco indica que es para 2; no se encontró el correo."
+      "Vuelos: AM 37/38 ✓ confirmado (boletos ✓ confirmado/217, probable MXN 95.081,82 el 30 oct), VY 1124 / IB 5068 ✓ confirmado (pagado MXN 4.852,74 en IBERIA.COM ×2, confirmado), FR 3073 ✓ confirmado (US$421,85 AMEX US). Sin asientos.",
+      "Sixt (✓ confirmado): pagado €3.203,28 = MXN 69.298,72 (AMEX MX, 2 nov); daños cubiertos por AMEX Centurion. Chalet Airbnb reservado por Alejandro (sin costo para Francisco).",
+      "La Cabane des Praz: DOS reservas activas para 5 pax — mar 22 dic 19:15 (4 nov, TripIt) y mié 23 dic 19:30 (29 oct → 9 nov Zenchef y Lauren Gustin). Decidir cuál queda.",
+      "Albert 1er (23 dic 20:00, 3 pax): Zenchef confirmó el 4 nov después del correo de cancelación del 2 nov; sin cancelación posterior (€100 p/p no-show).",
+      "Chef Basile (24 dic, 8 adultos): intercambio 10 nov (€70 o €75 p/p; Francisco pidió confirmar 8×€75=€600 + depósito). Sin respuesta posterior -> reconfirmar.",
+      "Terra / Auener Hof (25–26 dic, ✓ confirmado, €822): paquete hotel + cena. Sin respuesta de Terra desde 2 nov; cena 20:00 solo dicha por Francisco; depósito €247 muy probablemente pagado (US$276,89, 4 nov).",
+      "Ansitz Heufler (26 dic, €1.180; €350 pagado, faltan €830) · Hiša Franko (27 dic, twin terraza confirmada 5 nov; cena ✓ confirmado) · Tour Ljubljana (28 dic 11:00, 2 adultos, ✓ confirmado, €44,07 pagado) · Movia 10:00 (propuesta sin confirmar).",
+      "Hoteles Marriott: Westin ✓ confirmado (€129, NUA 4 nov) · Budapest ✓ confirmado (€234,35, NUA 4 nov) · Stradom ✓ confirmado (PLN 930, gratis 30 dic 23:59) · River Park ✓ confirmado (€182, NUA 4 nov) · Imperial ✓ confirmado (€213) · Prague ✓ confirmado (CZK 6.148).",
+      "Cenas fin de viaje: UFO 31 dic (orden ✓ confirmado, €610 pagado) · TIAN 1 ene 19:00 (2 pax, €199 p/p, gratis hasta 31 dic 19:00) · Štangl 2 ene 19:00 (✓ confirmado, 2 pax, sin pago)."
     ],
-    "missing": "Sin número de reserva: chalet de Chamonix, Auener Hof y Ansitz Heufler. Habitación de Hiša Franko: no está en TripIt, sí confirmada por correo (twin con terraza; falta precio/categoría final). Sin confirmación en TripIt ni en el correo: Dubravkin put. Terra y Bottiglieria 1881 están en TripIt, sin correo de confirmación. Sin plan de Nochebuena en TripIt. Sin asientos en ningún vuelo. La Cabane: TripIt la tiene el 22 dic 19:15; el correo localizado la sitúa el 23 dic 19:30 (se está verificando)."
+    "missing": "Sin correo ni cargo en tarjetas: Bottiglieria 1881 (✓ confirmado en TripIt; correo del 23 oct sobre 29 dic lleno) y Dubravkin put (solo TripIt). Chalet Airbnb: reservado por Alejandro (fuera de tus tarjetas). Chef Basile (24 dic): sin respuesta desde 10 nov. Sin asientos en los 4 vuelos."
   },
   "sources": [
     {
@@ -4684,7 +4813,7 @@
           "lines": [
             {
               "t": "19:15",
-              "x": "Cena La Familia Feliz — La Cabane des Praz"
+              "x": "La Cabane des Praz (TripIt + 4 nov; duplicada con el 23)"
             }
           ]
         }
@@ -4804,6 +4933,19 @@
         },
         {
           "n": 3,
+          "k": "cena",
+          "lat": 45.94252,
+          "lon": 6.888655,
+          "major": true,
+          "lines": [
+            {
+              "t": "19:30",
+              "x": "DUPLICADO — La Cabane des Praz (5 pax)"
+            }
+          ]
+        },
+        {
+          "n": 4,
           "k": "cena",
           "lat": 45.924513,
           "lon": 6.874712,
@@ -4960,7 +5102,20 @@
           ]
         }
       ],
-      "apple": [],
+      "apple": [
+        {
+          "label": "Chalet → Teleférico Aiguille du Midi",
+          "url": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=45.918200,6.870100&dirflg=d"
+        },
+        {
+          "label": "Aiguille du Midi (teleférico)",
+          "url": "https://maps.apple.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique%20de%20l%27Aiguille%20du%20Midi&ll=45.918200,6.870100"
+        },
+        {
+          "label": "Village de Noël (Place du Mont-Blanc)",
+          "url": "https://maps.apple.com/?q=Place%20du%20Mont-Blanc%20Chamonix&ll=45.925066,6.871988"
+        }
+      ],
       "google": [
         {
           "label": "Chamonix-Mont-Blanc (sin manejo este día)",
@@ -5031,11 +5186,11 @@
           "lines": [
             {
               "t": "15:00",
-              "x": "Check-in Auener Hof (Terra)"
+              "x": "Check-in Terra / Auener Hof (Short Stay & Gourmet)"
             },
             {
               "t": "20:00",
-              "x": "Terra ★★ — cena de aniversario"
+              "x": "Terra ★★ — cena (20:00 por confirmar por escrito)"
             }
           ]
         }
@@ -6021,26 +6176,26 @@
         {
           "n": 4,
           "k": "visita",
-          "lat": 48.1744,
-          "lon": 16.9794,
+          "lat": 48.1741,
+          "lon": 16.9764,
           "major": false,
           "lines": [
             {
               "t": "14:50",
-              "x": "Devín: la roca del castillo sobre la confluencia del Danubio y el Mora"
+              "x": "Orilla pública bajo Devín (confluencia)"
             }
           ]
         },
         {
           "n": 5,
           "k": "foto",
-          "lat": 48.1727,
-          "lon": 16.9836,
+          "lat": 48.1741,
+          "lon": 16.9764,
           "major": false,
           "lines": [
             {
               "t": "15:30",
-              "x": "Foto R7 — el castillo de Devín sobre la confluencia: hora dorada, atar"
+              "x": "Foto R7 — Devín desde la orilla pública"
             }
           ]
         },
@@ -6606,7 +6761,7 @@
           "lines": [
             {
               "t": null,
-              "x": "La Cabane des Praz · 22 dic · cena 19:15"
+              "x": "La Cabane des Praz · 22 dic 19:15 (TripIt) y 23 dic 19:30 (duplicado)"
             }
           ]
         },
@@ -6669,7 +6824,7 @@
     }
   },
   "pend": {
-    "intro": "Separé lo que hay que reservar o pagar YA (🔴) de los tours y actividades que todavía puedes decidir (🟡). TripIt es la base de las reservas, salvo cuando el correo demuestra un error de datos (La Cabane: todos los correos dicen el 23, no el 22). Lo resuelto se quitó. El 20 y el 21 dic están listos, sin pendientes. Toca la casilla para tacharlo; se guarda en este dispositivo.",
+    "intro": "Separé lo que hay que reservar, decidir o pagar YA (🔴) de los tours opcionales (🟡). Los días 20 y 21 dic están listos, sin pendientes. Toca la casilla para tacharlo; se guarda en este dispositivo.",
     "gen_note": "Coche, carretera, hoteles, familia y fechas límite.",
     "days_note": "Del 20 dic al 3 ene. Primero lo ya reservado; debajo, lo que falta o choca.",
     "nothing": "Nada pendiente este día.",
@@ -6744,9 +6899,9 @@
         "n": 9,
         "grp": "ya",
         "status": "por_resolver",
-        "what": "Hoteles: garantías, cancelación y números que faltan",
+        "what": "Hoteles: números, NUA y cancelación",
         "when": "Antes de cada fecha límite",
-        "why": "Siguen sin número: chalet de Chamonix, Auener Hof y Ansitz Heufler. Con número (TripIt, 22 nov): Westin ✓ confirmado (gratis hasta el 28 dic 23:59, €129); Budapest Marriott ✓ confirmado (€234,35); Stradom ✓ confirmado (gratis hasta el 30 dic 23:59, después 930 PLN); River Park ✓ confirmado (€182); Imperial ✓ confirmado (€213); Prague Marriott ✓ confirmado (CZK 6.148). De varios no leí la política de cancelación."
+        "why": "Chalet Chamonix: reserva Airbnb de Alejandro (sin costo para Francisco). Confirmados con número: Terra/Auener Hof ✓ confirmado (€822 paquete; depósito €247 muy probablemente pagado, faltan €575 + tasa; cancelación por pedir), Ansitz Heufler ✓ confirmado (€1.180; €350 pagado, faltan €830), Westin Zagreb ✓ confirmado (€129, gratis 28 dic; NUA 4 nov), Budapest Marriott ✓ confirmado (€234,35, gratis 29 dic; NUA 4 nov), Stradom House ✓ confirmado (PLN 930, gratis 30 dic 23:59; la ✓ confirmado cancelada), River Park ✓ confirmado (€182, gratis 31 dic; NUA 4 nov), Imperial ✓ confirmado (€213, gratis 1 ene), Prague Marriott ✓ confirmado (CZK 6.148, Deluxe 2 queen, gratis 2 ene). Hiša Franko: confirmada por correo (no hace falta número)."
       },
       {
         "n": 10,
@@ -6762,7 +6917,7 @@
         "status": "propuesta",
         "what": "Familia (tus hermanos): trineo con perros en Huskydalen, mié 23 dic",
         "when": "La fecha que pedían (15 nov) ya pasó",
-        "why": "Edad mínima 3 años: Olivia (2) no puede ir; Ale (3) y Jimena (5) sí. Si aún lo quieren, hay que preguntar si queda lugar. El 23 tienes Chartreuse todo el día y por la noche Albert 1er (Mariane, papá y Francisco)."
+        "why": "Edad mínima 3 años: Olivia (2) no puede ir; Ale (3) y Jimena (5) sí. Si aún lo quieren, hay que preguntar si queda lugar."
       },
       {
         "n": 12,
@@ -6770,7 +6925,7 @@
         "status": "info",
         "what": "Fechas límite que vienen",
         "when": "Calendario",
-        "why": "Parlamento de Budapest (29 dic) a más tardar el 1 dic · Wawel (interiores) 15 dic · Mina de Wieliczka 20 dic · Le Cap-Horn: cancelación gratis hasta el 21 dic 16:45 · Albert 1er (23 dic): 100 € p/p si cancelas el mismo día después de las 12:00 · Hiša Franko: TripIt dice 24 dic 20:00; el correo dice 96 h (23 dic) · TIAN: gratis hasta el 31 dic 19:00 · Saldo Heufler €830"
+        "why": "Parlamento Budapest (29 dic) 1 dic · Wawel 15 dic · Wieliczka 20 dic · Le Cap-Horn gratis hasta 21 dic 16:45 · La Cabane 22 dic gratis hasta 22 dic 15:30 · La Cabane 23 dic gratis hasta 23 dic 15:30 · Albert 1er (23 dic): €100 p/p si cancelas el 23 después de 12:00 · Hiša Franko: TripIt dice 24 dic 20:00, correo dice <96 h (23 dic) · Ljubljana tour gratis hasta 27 dic 11:00 · Westin 28 dic · Marriott Budapest 29 dic · Stradom 30 dic 23:59 · TIAN gratis hasta 31 dic 19:00 · Saldo Heufler €830 · Saldo Terra €575."
       }
     ],
     "dias": [
@@ -6794,14 +6949,14 @@
         "date": "2026-12-22",
         "label": "Mar 22 dic",
         "city": "Chamonix",
-        "booked": "La Cabane des Praz 19:15, 5 personas, según TripIt (papá, mamá, Francisco, Alejandro y Santiago). El correo dice el 23 a las 19:30: se está verificando. El plan de día (Montenvers / Brévent / foto C2) sigue siendo propuesta.",
+        "booked": "La Cabane des Praz 19:15, 5 personas (4 nov, TripIt; gratis hasta 22 dic 15:30) — DUPLICADA con 23 dic 19:30.",
         "items": [
           {
             "grp": "ya",
-            "status": "en_curso",
-            "what": "La Cabane: correo dice 23 19:30, verificando (TripIt la tiene el 22 a las 19:15)",
-            "when": "Cuando llegue el resultado de Inbox / Travel & Leisure",
-            "why": "Por ahora manda TripIt (22 dic 19:15, 5 personas). Los correos ya localizados (4 nov y 9 nov) la sitúan el miércoles 23 a las 19:30. Se está buscando de nuevo. No se mueve la mesa del plan hasta tener esa verificación.",
+            "status": "conflicto",
+            "what": "La Cabane des Praz: decidir entre mar 22 (19:15) o mié 23 (19:30) y cancelar una",
+            "when": "Antes del 22 dic 15:30 (mejor esta semana)",
+            "why": "DOS reservas activas para 5 pax: 22 dic 19:15 (4 nov, TripIt) y 23 dic 19:30 (29 oct / 9 nov Zenchef y Lauren Gustin). No-show/cancelación tardía = garantía completa.",
             "n": 13
           },
           {
@@ -6892,14 +7047,23 @@
         "date": "2026-12-23",
         "label": "Mié 23 dic",
         "city": "Chamonix → Chartreuse → Chamonix",
-        "booked": "Caves de la Chartreuse: Visite Classique 12:20–13:40 + atelier 14:00–16:00, e-ticket ✓ confirmado, 4 personas, pagado. Cena Albert 1er ★ 20:00, 3 personas (Mariane, papá y Francisco), según TripIt (sin correo de confirmación localizado).",
-        "items": []
+        "booked": "Chartreuse e-ticket ✓ confirmado, 4 pax, pagado (€166). Cenas el 23: La Cabane 19:30 (duplicada con 22) y Albert 1er ★ 20:00 (confirmada 4 nov tras cancelación del 2 nov).",
+        "items": [
+          {
+            "grp": "ya",
+            "status": "conflicto",
+            "what": "Albert 1er (23 dic 20:00, 3 pax): confirmar si sigue activa o cancelarla",
+            "when": "Pronto — si sigue activa, cancelar el 23 después de 12:00 cuesta €100 p/p",
+            "why": "El 2 nov pediste cancelar («SVP annulé la reservation»), pero el 4 nov Zenchef confirmó 23 dic 20:00 sin cancelación posterior.",
+            "n": 16
+          }
+        ]
       },
       {
         "date": "2026-12-24",
         "label": "Jue 24 dic",
         "city": "Chamonix",
-        "booked": "Nada en TripIt para este día. Plan: Aiguille du Midi por la mañana y Nochebuena con chef Basile (cerrado según Francisco; confirmación no localizada).",
+        "booked": "Chalet (reserva Airbnb de Alejandro) · Aiguille du Midi (por comprar) · Chef Basile: intercambio 10 nov (8 adultos, €600 o €560) SIN respuesta.",
         "items": [
           {
             "grp": "tour",
@@ -6907,16 +7071,16 @@
             "what": "Reservar horarios de la Aiguille du Midi (clima y niños)",
             "when": "Unos días antes, viendo el pronóstico (la noche del 23)",
             "why": "Es el plan de la mañana (se quita Flaine). Boletos online no reembolsables salvo cierre técnico o por clima. Primera cabina 08:10 para la hora dorada. Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5. Olivia (2) no puede subir; para Ale (3) no se recomienda; Jimena (5) sí. Los que no suban: Village de Noël o Montenvers (desde 12 meses).",
-            "n": 16
+            "n": 17
           },
           {
             "grp": "ya",
-            "status": "en_curso",
-            "what": "Chef Basile (cerrado según Francisco; confirmación no localizada)",
-            "when": "Cuando aparezca el correo, anotar hora, menú, precio y número de personas",
-            "why": "Francisco indica que Basile ya está cerrado para la Nochebuena (raclette, 8 adultos). En una búsqueda de todo el buzón el 22 nov no se localizó la confirmación. Las demás opciones y Osmose se quitaron del plan. Propuesta que sí estaba en el correo (3 nov): ~70 € p/p × 8, con servicio y máquina de raclette.",
+            "status": "por_resolver",
+            "what": "Chef Basile (24 dic, 8 adultos): reconfirmar reserva, monto (€600 o €560) y depósito",
+            "when": "Urgente — correo a info@basilechef.com (sin respuesta desde 10 nov)",
+            "why": "El 10 nov 18:31 confirmaste 8 adultos y pediste confirmar 8×€75=€600 más forma de depósito (y anotaste €560 a €70/pp); sin respuesta posterior.",
             "detail": "info@basilechef.com · +33 6 47 08 74 17",
-            "n": 17
+            "n": 18
           }
         ]
       },
@@ -6924,15 +7088,15 @@
         "date": "2026-12-25",
         "label": "Vie 25 dic",
         "city": "Chamonix → Sarentino",
-        "booked": "Check-out chalet 11:00 · Auener Hof Dining Home (Prati 21, Sarentino) 25→26, sin número · Terra 20:00 en TripIt (ver conflicto con el correo).",
+        "booked": "Check-out chalet 11:00 · Terra / Auener Hof (✓ confirmado, €822; depósito €247 muy probablemente pagado el 4 nov; faltan €575 + tasa).",
         "items": [
           {
-            "n": 18,
+            "n": 19,
             "grp": "ya",
-            "status": "info",
-            "what": "Terra 25 dic 20:00: en TripIt; sin correo de confirmación",
-            "when": "Cuando puedas",
-            "why": "Se mantiene como reservada según TripIt (mesa para 2, aniversario, menú degustación). En el buzón solo está la solicitud del 2 nov, que no se garantiza hasta que el restaurante confirme. Sin correo de confirmación."
+            "status": "por_resolver",
+            "what": "Terra 25 dic: reconfirmar cena 20:00, depósito €247, cancelación y dudas del 22 nov",
+            "when": "Por correo a info@terra.place (sin respuesta desde 2 nov)",
+            "why": "Terra no responde desde el 2 nov; las 20:00 solo las indicaste tú (8 y 22 nov); falta respuesta a tus preguntas del 22 nov (12:33 c.c. Mariane) y condiciones de cancelación."
           },
           {
             "what": "Terra: qué hacer la tarde del 25 (spa/jacuzzi, vida local o quesería, estrellas)",
@@ -6956,7 +7120,7 @@
                 "why": "~1 h 35 más de manejo (OSRM con +20 %) y se pierde la tarde de spa. En el plan está el 26."
               }
             ],
-            "n": 19
+            "n": 20
           }
         ]
       },
@@ -6967,7 +7131,7 @@
         "booked": "Ansitz Heufler, Junior Suite, paquete €1.180 (faltan €830) · Atelier Moessmer 19:15 incluida · shuttle 19:00 confirmado.",
         "items": [
           {
-            "n": 20,
+            "n": 21,
             "grp": "ya",
             "status": "en_curso",
             "what": "Ansitz Heufler: pedir early check-in o dejar maletas (llegan ~10:50; el early oficial es desde las 12:00)",
@@ -6980,7 +7144,7 @@
             "why": "En v10 la cima es mirador libre con el boleto del teleférico (36 € ida y vuelta, se compra en taquilla). LUMEN y MMM son museos: quedan opcionales.",
             "status": "propuesta",
             "detail": "Reservar: https://www.lumenmuseum.it/plan-your-visit",
-            "n": 21,
+            "n": 22,
             "grp": "tour"
           }
         ]
@@ -6997,7 +7161,7 @@
             "why": "Pediste preguntarle a Hiša Franko (correo en su hilo de la reserva). Queda tentativo 14:40 junto al Puente de Napoleón.",
             "status": "en_curso",
             "grp": "tour",
-            "n": 22
+            "n": 23
           }
         ]
       },
@@ -7005,16 +7169,8 @@
         "date": "2026-12-28",
         "label": "Lun 28 dic",
         "city": "Kobarid → Ljubljana → Zagreb",
-        "booked": "Tour Ljubljana 11:00–13:00, ✓ confirmado (2 personas según Francisco; TripIt dice 1) · Westin Zagreb, ✓ confirmado, €129, Deluxe Twin · Dubravkin put 19:00 (TripIt; sin correo de confirmación).",
+        "booked": "Tour Ljubljana 11:00 (✓ confirmado / ✓ confirmado, 2 adultos, €44,07 pagado) · Westin Zagreb ✓ confirmado (€129, NUA 4 nov) · Dubravkin put 19:00 (TripIt).",
         "items": [
-          {
-            "grp": "ya",
-            "status": "por_resolver",
-            "what": "28 dic: salir de Kobarid a las 08:00 y tour de Ljubljana para 2",
-            "when": "El 28 podéis salir a las 08:00–08:15; el check-out oficial es a las 11:00",
-            "why": "El tour es a las 11:00. Con márgenes, Kobarid → Ljubljana son 3 h: salida 08:00, llegada ~11:00 (en tiempo de Apple ~10:03). Después de las 08:15 se come el margen. El check-out oficial a las 11:00 no estorba si os vais antes. Francisco indica que el tour es para 2; no se encontró el correo. TripIt figura 1 asistente (Francisco), €44,07, ✓ confirmado. Movia no entra en el plan.",
-            "n": 23
-          },
           {
             "grp": "ya",
             "status": "por_resolver",
@@ -7022,6 +7178,14 @@
             "when": "Cuando puedas",
             "why": "Está en TripIt a las 19:00, pero sin número ni correo de reserva (EA no encontró nada en todo el buzón). Se mantiene con el estado de TripIt, no como mesa asegurada.",
             "n": 24
+          },
+          {
+            "grp": "opc",
+            "status": "propuesta",
+            "what": "Cata Movia 28 dic 10:00 (Nina Šegula): propuesta sin confirmar (9 nov)",
+            "when": "Descartar o avisar por cortesía",
+            "why": "Nina ofreció el 28 a las 10:00 el 9 nov y nunca confirmaste; choca con Ljubljana 11:00.",
+            "n": 25
           }
         ]
       },
@@ -7070,7 +7234,7 @@
                 "detail": "Reservar: https://budapestshooting.eu/en/packages/ · Nagymező u. 37-39 (taxi ~10 min del hotel)."
               }
             ],
-            "n": 25,
+            "n": 26,
             "grp": "tour"
           }
         ]
@@ -7079,10 +7243,10 @@
         "date": "2026-12-30",
         "label": "Mié 30 dic",
         "city": "Budapest → Cracovia",
-        "booked": "Stradom House, ✓ confirmado, PLN 930, Modern Twin · Bottiglieria 1881 19:00, ✓ confirmado (ver nota del correo).",
+        "booked": "Stradom House ✓ confirmado (3 nov, PLN 930, Modern Twin, gratis hasta 30 dic 23:59) · Bottiglieria 1881 19:00, ✓ confirmado (TripIt; sin correo).",
         "items": [
           {
-            "n": 26,
+            "n": 27,
             "grp": "ya",
             "status": "info",
             "what": "Bottiglieria 1881 30 dic 19:00: en TripIt; sin correo de confirmación",
@@ -7112,7 +7276,7 @@
                 "detail": "Reservar: https://www.wieliczka-saltmine.com/individual-tourist/useful-information/ticket-prices-and-visiting-hours · Sin verificar: Horarios de salida en inglés del 30 dic no verificados."
               }
             ],
-            "n": 27,
+            "n": 28,
             "grp": "tour"
           }
         ]
@@ -7128,7 +7292,7 @@
             "when": "Cuanto antes",
             "why": "Termina ~18:00 y la cena en el UFO es a las 20:00: encaja sin mover nada salvo el castillo y la foto R6 de la tarde. 40 € / 35 € por persona (filharmonia.sk). Cancelación: sin verificar. Peso/edad: no aplica.",
             "status": "propuesta",
-            "n": 28,
+            "n": 29,
             "detail": "Reservar: https://www.filharmonia.sk/m6-2026",
             "grp": "tour"
           }
@@ -7169,10 +7333,10 @@
                 "why": "Si ninguna abre el 1 ene."
               }
             ],
-            "n": 29
+            "n": 30
           },
           {
-            "n": 30,
+            "n": 31,
             "grp": "ya",
             "status": "propuesta",
             "what": "Foto R7: orilla pública de Devín (el recinto sigue cerrado el 1 ene)",
@@ -7184,7 +7348,7 @@
             "when": "Solo si quieres cambiar",
             "why": "Lo pediste el 4 nov: los 1★ que abren el 1 ene, más la 9ª de Beethoven. Si eliges el concierto (19:00–20:30), lo natural es mover TIAN o cenar en APRON, al lado del Konzerthaus.",
             "status": "propuesta",
-            "n": 31,
+            "n": 32,
             "alts": [
               {
                 "l": "A",
@@ -7268,7 +7432,7 @@
                 "detail": "Reservar: https://shootingrangeprague.com/"
               }
             ],
-            "n": 32,
+            "n": 33,
             "grp": "tour"
           }
         ]
@@ -7284,7 +7448,7 @@
             "when": "Antes del 3 ene",
             "why": "Ryanair (T2) y AM 38 (T1) van en boletos separados con 2 h 30 de conexión.",
             "status": "propuesta",
-            "n": 33,
+            "n": 34,
             "grp": "ya"
           }
         ]
@@ -7293,34 +7457,34 @@
     "listo_note": "Listo · sin pendientes."
   },
   "mail": {
-    "read": "22 nov 2026, ~15:40 hora CDMX (EA, iCloud, todo el buzón incl. Enviados, solo lectura). La búsqueda de iCloud no es infalible en un buzón de este tamaño: «no encontrado» no prueba que no exista.",
+    "read": "22 nov 2026, 16:29 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados + 59 capturas) + Finance conciliado 16:29.",
     "conflicts": [
-      "La Cabane des Praz: ningún correo menciona el 22 dic. La fecha siempre fue el miércoles 23; lo que cambió fue la hora, de 19:15 a 19:30. El 4 nov se pidió la mesa «le mercredi 23 décembre 2026 à 19h15 pour 5 personnes» y se pidió moverla a 19:30 / 19:45 / 20:00. El 9 nov, Lauren Gustin y Zenchef confirmaron «mercredi 23 décembre 2026 à 19:30 (5 personnes)». El 22 dic 19:15 de TripIt es un error de datos (conservó la hora original).",
-      "El 23 dic a las 19:30 (Cabane, correo, 5 personas: papá, mamá, Francisco, Alejandro y Santiago) choca con Albert 1er a las 20:00 (3 personas: Mariane, papá y Francisco), que solo aparece en TripIt. En una búsqueda de todo el buzón no se encontró confirmación de Albert el 23 para 3. Hay que decidir.",
-      "Terra, Bottiglieria 1881 (✓ confirmado) y Dubravkin put: no hay correo de confirmación. Se mantienen con el estado de TripIt, marcados «sin correo de confirmación». El único correo de Bottiglieria (23 oct) habla del 29 dic, que estaba lleno."
+      "La Cabane des Praz: DOS reservas activas (mar 22 dic 19:15 y mié 23 dic 19:30, 5 pax). Decidir y cancelar una.",
+      "Albert 1er ★ (mié 23 dic 20:00, 3 pax): cancelación pedida 2 nov, pero Zenchef confirmó el 4 nov -> posiblemente activa (€100 p/p no-show).",
+      "Chef Basile (24 dic, 8 pax): oferta 10 nov y respuesta a las 18:31 pidiendo €600 + depósito; sin respuesta posterior.",
+      "Terra (25 dic): sin respuesta de Terra desde el 2 nov; 20:00 solo dicho por Francisco; dudas del 22 nov (12:33/12:34) y cancelación pendientes.",
+      "Movia (28 dic 10:00, Nina Šegula): propuesta del 9 nov nunca confirmada; choca con Ljubljana 11:00.",
+      "Bottiglieria 1881 (30 dic, ✓ confirmado) y Dubravkin put (28 dic): sin correo de confirmación."
     ],
     "changes": [
-      "Hiša Franko, habitación confirmada por correo: el 1 nov Ines Kemperle añadió una superior para el 27 dic; el 5 nov Kristina Ivančič la actualizó a twin con terraza. Precio: estándar €230 / superior €250 por noche con desayuno, más €2,5 de impuesto p/p. Cancelación a menos de 96 h = 100 %. No está indicada la categoría ni el precio finales, ni hay número de reserva.",
-      "Chef Basile, 24 dic: no se encontró confirmación en el correo (Francisco indica que ya está cerrado).",
-      "Tour de Ljubljana, ✓ confirmado: no se encontró el correo ni el número de asistentes. Se anota 2 personas según Francisco.",
-      "Albert 1er, 21 dic para 8 personas: fue una solicitud Zenchef del 22 oct (huella de tarjeta, nunca validada). No se mantiene como pendiente. El mismo día, Nathalie envió tarifas del menú infantil. No hay correos posteriores."
+      "TIAN (1 ene 19:00, 2 pax, €199 p/p, gratis 31 dic 19:00) y Štangl (2 ene 19:00, 2 pax, ✓ confirmado, sin pago): respaldados por correo del 1 nov.",
+      "Ljubljana tour (✓ confirmado / ✓ confirmado): confirmado y pagado para 2 adultos (€44,07).",
+      "Stradom House (✓ confirmado): PLN 930, Modern Twin, gratis hasta 30 dic 23:59. NUA Bonvoy (4 nov) en Westin, Budapest y River Park."
     ]
   },
   "v11": {
-    "title": "Qué cambió en la v11.1",
+    "title": "Qué cambió en la v11.2",
     "changes": [
-      "Quién viaja: en Chamonix (21–25 dic) va toda la familia; desde la salida del 25, solo Francisco y Mariane.",
-      "Cenas: Le Cap-Horn (21) = los 3 hermanos; La Cabane (5) = papá, mamá y los 3 hermanos; Albert 1er (3) = Mariane, papá y Francisco.",
-      "23 dic, por ahora manda TripIt: La Cabane el 22 a las 19:15 (5: papá, mamá y los 3 hermanos) y Albert 1er el 23 a las 20:00 (Mariane, papá y Francisco). El correo sitúa Cabane el 23 a las 19:30: queda una marca «correo dice 23 19:30, verificando» (se sigue buscando en Inbox y Travel & Leisure).",
-      "20 y 21 dic: listos, sin pendientes.",
-      "Nochebuena: chef Basile (cerrado según Francisco; confirmación no localizada en el correo). El plan del día es la Aiguille du Midi (se quita Flaine y las otras opciones de chef, incluida Osmose).",
-      "28 dic: el tour de Ljubljana a las 11:00 queda para 2 personas (según Francisco; no aparece en el correo; TripIt sigue diciendo 1). Se deja fuera Movia. La salida de Kobarid se adelanta a las 08:00 para llegar con margen.",
-      "Habitación de Hiša Franko confirmada por correo (1 nov superior; 5 nov, twin con terraza). Solo falta anotar el precio o la categoría final (€230–250, desayuno incluido; cancelación a menos de 96 h = 100 %).",
-      "La cobertura de daños del Sixt la da la AMEX Centurion. Pendiente pequeño: ¿agregar a Mariane como conductora?",
-      "Las jornadas largas de coche se quedan como están, con los mismos márgenes (han hecho 24 h seguidas).",
-      "Terra, Bottiglieria 1881 y Dubravkin put se mantienen con el estado de TripIt, con la marca «sin correo de confirmación».",
-      "1 ene: el recinto de Devín sigue cerrado. La foto R7 se hace desde la orilla pública (Slovanské nábrežie, confluencia del Danubio y el Morava), fuera del recinto, legal y accesible sin entrada. Por la mañana se mantiene Pequeños Cárpatos / Zámocká viecha, pendiente de confirmar que abra en festivo; si no, alternativa fuerte: Hainburg (ruinas de Schlossberg, acceso libre todo el año).",
-      "Nueva pestaña Presupuesto (pagado vs pendiente): plantilla para completar con los estados AMEX USD y HSBC USD."
+      "Correos completos (Inbox + Travel & Leisure + Enviados), 3 tandas de capturas en evidencia/ (59 PNG) y conciliación de tarjetas integrados en una sola versión.",
+      "La Cabane des Praz: DOS reservas activas para 5 pax (mar 22 dic 19:15 confirmada 4 nov en TripIt, y mié 23 dic 19:30 movida 9 nov por Zenchef y Lauren Gustin). Se muestran ambas como duplicado por decidir.",
+      "Albert 1er ★ (23 dic 20:00, 3 pax): Zenchef confirmó el 4 nov después del correo de cancelación del 2 nov («SVP annulé la reservation»); sin cancelación posterior -> posiblemente activa (no-show €100 p/p).",
+      "24 dic Chef Basile (8 adultos): localizado en Enviados (10 nov 18:31) confirmando 8 adultos y pidiendo 8×€75=€600 + forma de depósito (y anotación 8×€70=€560). Sin respuesta desde el 10 nov -> reconfirmar a info@basilechef.com.",
+      "25 dic Terra / Auener Hof (✓ confirmado, €822): paquete hotel + cena. Terra no responde desde el 2 nov (hilo del 8 y 22 nov con dudas pendientes); las 20:00 solo las indica Francisco; depósito €247 muy probablemente pagado (AUENERHOF SARNTAL US$276,89, 4 nov).",
+      "28 dic Tour Ljubljana: CONFIRMADO y PAGADO para 2 adultos (✓ confirmado / ✓ confirmado, €44,07). Cata Movia 10:00 (Nina Šegula, 9 nov): propuesta sin confirmar.",
+      "30 dic Stradom House ✓ confirmado (Modern Twin, PLN 930, cancel. gratis hasta 30 dic 23:59) + solicitudes Bonvoy NUA (4 nov) en Westin Zagreb, Budapest Marriott y River Park.",
+      "1 ene TIAN ★ (19:00, 2 pax, €199 p/p, cancel. gratis 31 dic 19:00) y 2 ene Štangl ★ (19:00, 2 pax, ✓ confirmado, sin pago): respaldados por correo (1 nov).",
+      "Finanzas conciliadas: Iberia ×2 = Vueling ✓ confirmado (confirmado, no duplicado); AM ✓ confirmado probablemente MXN 95.081,82 (30 oct); PayPal ×2 = cargo+reembolso; chalet Airbnb reservado por Alejandro (sin costo para Francisco); solo Plan N Travel (×2 MXN 2.289,16) sigue desconocido.",
+      "Mapas Apple Maps reparados + pestaña Presupuesto + capturas de correo en la copia privada."
     ]
   },
   "travelers": {
@@ -7329,59 +7493,251 @@
     "dinners": "Cenas en Chamonix: Le Cap-Horn (21) = los 3 hermanos (Francisco, Alejandro y Santiago). La Cabane (5) = papá, mamá, Francisco, Alejandro y Santiago. Albert 1er (3) = Mariane, papá y Francisco."
   },
   "presupuesto": {
-    "intro": "Pagado frente a lo que falta por pagar. Esta pestaña es una plantilla: las cifras de abajo son las que ya aparecen en TripIt o en el correo, pendientes de cruzar con los estados de cuenta AMEX USD y HSBC USD. Cuando Finance entregue esos movimientos, se completa aquí.",
-    "note": "Nada de esto sale todavía de un estado de cuenta. No se ha inventado ningún cargo.",
+    "intro": "Pagado frente a pendiente de pago tras conciliación de tarjetas del 22 nov 2026 (16:29 CDMX): AMEX US (desde 22 ene), AMEX MX (desde 7 dic 2025), HSBC US (desde 13 dic 2025) y HSBC MX (solo desde 18 oct; antes requiere Token Móvil). El chalet Airbnb de Chamonix fue reservado por Alejandro (sin costo para Francisco) y los dos PayPal de MXN 35.406,33 se netean (cargo + reembolso). Totales por moneda.",
+    "totals_paid": [
+      {
+        "currency": "EUR (importe original conocido en 6 reservas pagadas)",
+        "amount": "€4.620,35",
+        "note": "Sixt €3.203,28 + UFO €610 + Terra dep. €247 + Heufler ant. €350 + Chartreuse €166 + Ljubljana €44,07. Ryanair no muestra EUR."
+      },
+      {
+        "currency": "USD (AMEX US y HSBC US)",
+        "amount": "US$2.010,31",
+        "note": "Ryanair US$421,85 + UFO + Chartreuse + Heufler + Terra + Ljubljana US$48,49 (pendiente)."
+      },
+      {
+        "currency": "MXN confirmados (AMEX MX)",
+        "amount": "MXN 74.151,46",
+        "note": "Sixt MXN 69.298,72 + Vueling ✓ confirmado MXN 4.852,74 (2 boletos IBERIA.COM de MXN 2.426,37, confirmado)."
+      },
+      {
+        "currency": "MXN Aeroméxico ✓ confirmado (probable)",
+        "amount": "MXN 95.081,82 (30 oct, AMEX MX)",
+        "note": "Probable cargo de ✓ confirmado (sin confirmar). Otros cargos AMEX MX / Club Premier + HSBC MX MXN 37.299 suman MXN 147.328,10 netos adicionales sin vuelo asignado."
+      },
+      {
+        "currency": "MXN desconocido + crédito AMEX",
+        "amount": "MXN 4.578,32 (y crédito −MXN 10.000,00)",
+        "note": "Plan N Travel Services CDMX (×2 MXN 2.289,16 el 19 nov, único cargo desconocido). PayPal ×2 fue cargo+reembolso (neto 0)."
+      }
+    ],
+    "totals_pending": [
+      {
+        "currency": "EUR (saldos y hoteles con precio conocido, sin Basile)",
+        "amount": "€3.473,75 – €3.493,75",
+        "note": "Terra saldo €575 + tasa €7,40 + Heufler €830 + Hiša Franko cuarto €230–250 + tasa €5 + menú €670 + Westin €129 + Budapest Marriott €234,35 + River Park €182 + Imperial €213 + TIAN €398 (+ bebidas; sin maridajes)."
+      },
+      {
+        "currency": "EUR (incluyendo Chef Basile: €600 a €75/pp o €560 a €70/pp)",
+        "amount": "€4.033,75 – €4.093,75",
+        "note": "Francisco pidió confirmar 8 × €75 = €600 el 10 nov (y anotó €560 a €70/pp); sin respuesta final de Basile."
+      },
+      {
+        "currency": "PLN (Stradom House Cracovia)",
+        "amount": "PLN 930,00",
+        "note": "Pago en estancia (cancelación gratis hasta 30 dic 23:59)."
+      },
+      {
+        "currency": "CZK (Prague Marriott)",
+        "amount": "CZK 6.148,00",
+        "note": "Pago en estancia (cancelación gratis hasta 2 ene)."
+      }
+    ],
     "pagado": [
       {
         "what": "Sixt (Ginebra → Praga, one-way incluido)",
-        "amount": "€3.203,28",
-        "source": "TripIt",
-        "status": "por cruzar"
+        "card": "AMEX MX",
+        "date": "2 nov",
+        "amount": "MXN 69.298,72",
+        "orig": "€3.203,28",
+        "status": "confirmado",
+        "note": "SIXT AVRIGNY"
       },
       {
-        "what": "Ansitz Heufler, anticipo",
-        "amount": "€350",
-        "source": "Correo, 4 nov",
-        "status": "por cruzar"
+        "what": "Vueling VY 1124 / IB 5068 (BCN → GVA, ✓ confirmado, 2 boletos)",
+        "card": "AMEX MX",
+        "date": "2 nov",
+        "amount": "MXN 4.852,74",
+        "orig": "MXN 2.426,37 × 2",
+        "status": "confirmado",
+        "note": "2 boletos IBERIA.COM = ✓ confirmado exacto (no duplicado)"
       },
       {
-        "what": "UFO, 31 dic",
-        "amount": "€610",
-        "source": "TripIt (orden ✓ confirmado)",
-        "status": "por cruzar"
+        "what": "Aeroméxico ✓ confirmado (MEX ↔ BCN, 2 boletos)",
+        "card": "AMEX MX",
+        "date": "30 oct",
+        "amount": "MXN 95.081,82",
+        "orig": "—",
+        "status": "probable",
+        "note": "Cargo probable de ✓ confirmado (sin confirmar)"
       },
       {
-        "what": "Caves de la Chartreuse (visita + atelier, 4 personas)",
-        "amount": "€166",
-        "source": "TripIt / e-ticket",
-        "status": "por cruzar"
+        "what": "Ryanair FR 3073 (PRG → BCN, ✓ confirmado)",
+        "card": "AMEX US",
+        "date": "3 nov",
+        "amount": "US$421,85",
+        "orig": "EUR no mostrado",
+        "status": "confirmado",
+        "note": "RYANAIR LTD DUBLIN"
       },
       {
-        "what": "Tour de Ljubljana",
-        "amount": "€44,07",
-        "source": "TripIt (figura 1 persona; Francisco indica 2)",
-        "status": "por cruzar"
+        "what": "UFO Bratislava (cena 31 dic, orden ✓ confirmado)",
+        "card": "HSBC US",
+        "date": "1 nov",
+        "amount": "US$684,18",
+        "orig": "€610,00 (probable)",
+        "status": "confirmado",
+        "note": "SKYWALK.REDMONKEYG BRATISLAVA"
+      },
+      {
+        "what": "Caves de la Chartreuse (23 dic, 4 pax, pedido ✓ confirmado)",
+        "card": "HSBC US",
+        "date": "3 nov",
+        "amount": "US$186,55",
+        "orig": "€166,00 (probable)",
+        "status": "confirmado",
+        "note": "VISITE CD VOIRON FR"
+      },
+      {
+        "what": "Ansitz Heufler (26 dic, anticipo paquete Moessmer)",
+        "card": "HSBC US",
+        "date": "4 nov",
+        "amount": "US$392,35",
+        "orig": "€350,00",
+        "status": "confirmado",
+        "note": "ANSITZ HEUFLER"
+      },
+      {
+        "what": "Terra / Auener Hof (25 dic, depósito paquete Short Stay)",
+        "card": "HSBC US",
+        "date": "4 nov",
+        "amount": "US$276,89",
+        "orig": "€247,00 (muy probable)",
+        "status": "confirmado",
+        "note": "AUENERHOF SARNTAL — coincide con depósito ✓ confirmado"
+      },
+      {
+        "what": "Tour de Ljubljana (28 dic, 2 adultos, ✓ confirmado)",
+        "card": "HSBC US",
+        "date": "22 nov",
+        "amount": "US$48,49",
+        "orig": "€44,07",
+        "status": "confirmado",
+        "note": "LJUBLJANA TOURISM (pendiente en extracto; Apple Pay)"
+      }
+    ],
+    "probables": [
+      {
+        "what": "Otros cargos Aeroméxico / Club Premier (sin vuelo asignado)",
+        "card": "AMEX MX + HSBC MX",
+        "date": "24 sep–17 nov",
+        "amount": "MXN 147.328,10 neto",
+        "status": "probable",
+        "note": "AMEX MX MXN 110.029,10 netos (24 sep–31 oct, incl. reembolsos −7.346 y −3.000) + HSBC MX MXN 37.299,00 (17 nov). Pueden ser otros vuelos/personas."
+      },
+      {
+        "what": "Plan N Travel Services CDMX (×2 cargos idénticos)",
+        "card": "AMEX MX",
+        "date": "19 nov",
+        "amount": "MXN 4.578,32",
+        "status": "probable",
+        "note": "MXN 2.289,16 × 2 — único cargo desconocido en tarjetas"
+      },
+      {
+        "what": "Beneficio bonificación viaje (crédito)",
+        "card": "AMEX MX",
+        "date": "16 nov",
+        "amount": "−MXN 10.000,00",
+        "status": "probable",
+        "note": "Crédito a favor en estado de cuenta"
       }
     ],
     "pendiente": [
       {
-        "what": "Ansitz Heufler, saldo del paquete",
-        "amount": "€830",
-        "source": "Correo",
+        "what": "Chef Basile (24 dic, raclette 8 adultos)",
+        "amount": "€600,00 (8 × €75) o €560,00 (8 × €70)",
+        "source": "Correo Enviados 10 nov (sin respuesta final)",
+        "when": "Por reconfirmar depósito y saldo"
+      },
+      {
+        "what": "Terra / Auener Hof (25 dic): resto paquete + tasa turística",
+        "amount": "€575,00 + €7,40 tasa",
+        "source": "✓ confirmado (€822 − €247) + €3,70 p/p/día",
+        "when": "En el hotel (25–26 dic)"
+      },
+      {
+        "what": "Ansitz Heufler + Atelier Moessmer (26 dic): saldo del paquete",
+        "amount": "€830,00",
+        "source": "Correo (€1.180 − €350 anticipo)",
         "when": "Antes de la estancia (26 dic)"
       },
       {
-        "what": "Hiša Franko, habitación (precio/categoría final)",
-        "amount": "€230 o €250 / noche + €2,5 p/p de impuesto (1 noche)",
-        "source": "Correo (habitación ya confirmada)",
-        "when": "Por anotar"
+        "what": "Hiša Franko (27 dic): habitación + tasa + menú cena (2 pax)",
+        "amount": "€230–250 + €5 + €670 (+ maridaje)",
+        "source": "Correo 9 nov (maridaje opc. €190 / €135 sin alcohol p/p)",
+        "when": "En el sitio (27–28 dic)"
       },
       {
-        "what": "Chef Basile, Nochebuena (8 adultos)",
-        "amount": "~70 € p/p (propuesta del 3 nov)",
-        "source": "Correo / Francisco (confirmación no localizada)",
-        "when": "Cuando aparezca la confirmación"
+        "what": "The Westin Zagreb (28 dic, 1 noche)",
+        "amount": "€129,00",
+        "source": "TripIt / correo (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 28 dic)"
+      },
+      {
+        "what": "Budapest Marriott (29 dic, 1 noche)",
+        "amount": "€234,35",
+        "source": "TripIt / correo (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 29 dic)"
+      },
+      {
+        "what": "Stradom House Cracovia (30 dic, 1 noche)",
+        "amount": "PLN 930,00",
+        "source": "Correo / TripIt (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 30 dic 23:59)"
+      },
+      {
+        "what": "Grand Hotel River Park Bratislava (31 dic, 1 noche)",
+        "amount": "€182,00",
+        "source": "TripIt / correo (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 31 dic)"
+      },
+      {
+        "what": "Imperial Riding School Viena (1 ene, 1 noche)",
+        "amount": "€213,00",
+        "source": "TripIt / correo (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 1 ene)"
+      },
+      {
+        "what": "TIAN Viena (1 ene, menú degustación 2 pax)",
+        "amount": "€398,00 (€199 p/p + bebidas)",
+        "source": "Correo 1 nov (cancel. gratis hasta 31 dic 19:00)",
+        "when": "En sitio (garantía de tarjeta)"
+      },
+      {
+        "what": "Prague Marriott (2 ene, 1 noche)",
+        "amount": "CZK 6.148,00",
+        "source": "TripIt / correo (✓ confirmado)",
+        "when": "En estancia (cancel. gratis hasta 2 ene)"
+      },
+      {
+        "what": "Štangl Praga (2 ene, 2 pax)",
+        "amount": "Según consumo (sin anticipo)",
+        "source": "Correo 1 nov (✓ confirmado)",
+        "when": "En sitio"
+      },
+      {
+        "what": "Otras cenas (garantía con tarjeta / consumo)",
+        "amount": "Según consumo",
+        "source": "Cap-Horn, La Cabane, Albert 1er (si activo), Dubravkin, Stand, Bottiglieria",
+        "when": "En cada cena"
+      },
+      {
+        "what": "Chalet Chamonix (21–25 dic, 4 noches)",
+        "amount": "Sin costo para Francisco",
+        "source": "Reserva Airbnb hecha por Alejandro",
+        "when": "Cubierto por Alejandro"
       }
-    ]
+    ],
+    "note": "HSBC MX solo pudo leerse desde el 18 oct 2026 sin Token Móvil. Si necesitas revisar movimientos de HSBC MX anteriores al 18 oct, hace falta un código de Token Móvil."
   }
 }
