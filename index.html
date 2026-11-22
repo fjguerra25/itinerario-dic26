@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Navidad 2026 · Itinerario v11.1 · Francisco y Mariane</title>
+<meta name="description" content="Itinerario 20 dic 2026 – 3 ene 2027: Chamonix y tour gastronómico por Alto Adige, Eslovenia, Zagreb, Budapest, Cracovia, Bratislava, Viena y Praga.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="kicker">Navidad 2026 · Francisco y Mariane</p>
+    <h1>Itinerario 20 dic – 3 ene <span class="ver">v11.1</span></h1>
+    <p class="upd" id="upd"></p>
+    <div class="seg five" role="tablist" aria-label="Itinerario">
+      <button role="tab" id="tab-chamonix" aria-selected="true" data-sec="chamonix">Chamonix<span>20–25 dic</span></button>
+      <button role="tab" id="tab-tour" aria-selected="false" data-sec="tour">Tour<span>25 dic – 3 ene</span></button>
+      <button role="tab" id="tab-chefs" aria-selected="false" data-sec="chefs">Nochebuena<span>Basile</span></button>
+      <button role="tab" id="tab-pend" aria-selected="false" data-sec="pend">Pendientes<span>por reservar</span></button>
+      <button role="tab" id="tab-presupuesto" aria-selected="false" data-sec="presupuesto">Presupuesto<span>pagado vs pendiente</span></button>
+    </div>
+    <div class="seg small" id="vseg" role="tablist" aria-label="Vista">
+      <button role="tab" id="v-list" aria-selected="true" data-view="list">Lista</button>
+      <button role="tab" id="v-cal" aria-selected="false" data-view="cal">Calendario<span>hora por hora</span></button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="main">
+  <section id="legend" class="legend" aria-label="Estados">
+    <span class="bkc bkc-gratis">🟢 Gratis / sin reserva</span>
+    <span class="bkc bkc-ok">🔵 Reservado</span>
+    <span class="bkc bkc-pend">🟠 Reserva pendiente</span>
+    <span class="lgsep">·</span>
+    <span class="badge reservado">Reservado</span> = en TripIt
+    <span class="badge en_curso">En curso</span>
+    <span class="badge propuesta">Propuesta</span>
+    <span class="badge por_resolver">Por resolver</span>
+    <span class="badge listo">Listo · sin pendientes</span>
+    <span class="badge conflicto">Conflicto</span>
+    <span class="lgtip">Toca cualquier actividad para ver todos sus detalles.</span>
+  </section>
+  <section id="tzbar" class="tzbar" aria-label="Zona horaria">
+    <p class="tzlabel" id="tzlabel"></p>
+    <div class="tzseg" role="group" aria-label="Zona horaria">
+      <button type="button" data-tz="cet" aria-pressed="true">Hora local (CET)</button>
+      <button type="button" data-tz="mx" aria-pressed="false">Hora CDMX/Monterrey (UTC−6)</button>
+    </div>
+  </section>
+  <section id="list" aria-live="polite"></section>
+  <section id="cal" hidden></section>
+  <section id="extra"></section>
+</main>
+<footer class="wrap foot" id="foot"></footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
