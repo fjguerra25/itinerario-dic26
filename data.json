@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.6)",
-    "updated": "23 nov 2026, 08:37 (hora CDMX)",
+    "updated": "23 nov 2026, 08:45 (hora CDMX)",
     "tripit_read": "23 nov 2026, 05:47 hora CDMX (en vivo, Travel)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026 (geometría general) y 23 nov 2026, 08:24 hora CDMX (ruta 31 dic vía Katowice–Ostrava–Brno). Apple Maps se abre en cada tramo.",
     "chefs_read": "23 nov 2026, 00:13 hora CDMX (Basile confirmó €600 el 11 nov; el 23 nov confirmó pago por transferencia o efectivo en euros)",
@@ -82396,8 +82396,8 @@
     "kdf": "PBKDF2",
     "hash": "SHA-256",
     "iter": 210000,
-    "salt": "w3LjxltEDvcFfkxp+To5HA==",
-    "iv": "s8w4Ve8HUgK7wwyi",
-    "ct": "dcyAMy6yTCIDMd1upBNwDiOVNyJMXEHAkCjncU9AqRkYMhwWnXfT7sAaMPf5RaSpJMGbQdU4m9jGUahpnBw5EX1tMFWGdgRKhZEuDgmyOEVXBOpebxDAluVFLCbzyCICzu2miVUH/JsVHjdEl9T/t880y7Dyjr/eYHWRBo7mQZXrRz7woWNELfIeaH7kRkfTPSV/u6ISHOF/qZUxTtGJyv4Q/iFqNhOOhjkNnndbGtYoAVzpGy89KYyS5fEaeAMnaSL7aLOqHxPwVyzvyyrX4quxO3/YgW7sSIiol87ptoCfO86Pq0664O2v282k/tQ235RnOT1uPxq5di+GXMPUHbYGxXRzi3gkNUqV4AbBD5bbIidbefDjMby9liobp7sihZt0JFmxPfG7GOD0Xl7g5UZAkgMZ/JVrDzMPAuYyMt0RiX+HOwGEpwUV94OWkkos2SN9UYddmZXAz6jl981mO+OZCOn3Vh9glANe1JiRYIQldiYswhTBu0YI+mFUiVYzA2oSVyw0sBlvx1ICIuFoxn+3/2/NZ+OxuniRFqSXNCbHn8dW6cOxv9bsLO4qRQYtHZs8amAGa5eS1iwjXaRZe+9gKstL2GUjFSSTvyG2RcYED2bg5XlXB35Tffmycf92ZnK2esMxTO2GfbqFOZi8vgSQ/YQhJqVak4WLFWLWts6vs+gixoVwGClbcXjGRj41iNjkoaJHDddII2GzNGEMQebrhFeiL4FLe5KEykcPcPwc5qa6eQd5/lPhKskZlqrkz5FOTu41JQB3nFpNjeH71ldlr1QCjif2yQHkJ6t7XPBdBMdjlsO+JDE9nKg+YwwxbYtyKLJiMPHfzvwCE3MJsDPcMMzwqntZrcE3Ld1NiV+2brvAOiRC1PM+mqtGJ9ZkVc7RU9yPL8MD7Q9PhP3PZsjBhuUq1p4rXDxke1F+Z88NMuLbcAqBHzUQuaJO1XxVNNISucPbFFvaswy/Y7KT3jQbPG+yU4FHmYY5HhYcBsZ1mxqPdNWYidSD8dX43azZaodf/abeD8WE/JRq3cVOaadg1VCGGloUs3z6EEP4H1pYecjbGeGkGf57tkAyXgz0IExjluAo96vXh5mYwk46kyF/xwewu2i6u5+EwqDz3Z+nDeMr0OlN3ORv6EytEf4fvvtckCYGgpj9PxnEIful50LyDn7dABJ9k2t9OxU+1SHs/na1tBqQrv7U9uqwf5N8uq1a9NJ4ow2ZzW7PXh9NHIw2a+YEf0BCz1TsxCBdJ2eYDmlgv5tSDNH49Pk+MXNijbvDFx1tFrXu3tITlFCvR2VgSckvX3OwkhbZnAhqrB97"
+    "salt": "HJc8jNc5TQVFlG895MG66w==",
+    "iv": "uuFw8mUL9X44/1YC",
+    "ct": "gEBmJJUifCvUl4IypYfP6TaPmwj9Rmyp15OKcp9+kErbxdiHe33bLbukqaSweZ2oMAkefzqYPtwy+0IM3kDlk9+V7qhWxDPyQmMJkuEXOkGc1IJ68MFB4uPvYSo9SNOKHbANbIJVfwa/4mWmyAnP7MfjFSKt78kTjH5/0QnVa5qXksVMc37Ebdc04SZ4Lq5cCLU/qwIx5CcNZyighv/bEpbpbQhMFZthi7jWeDhYF+G3ZHVPgGC553DrQN252oJPXdRS1iPhd5ErCsUlOkqIvCafldiPmtbsSJewVZxx4q2/cc/29nVeQlbPIbXs2JmqQgT1e63enNfCOu5U/ygufp+HZiSrf1ZXvROADwp5xy7kadH/bZn8AzyP5uZy8N0++UihHW+/wvRShgg410RQ3q5RRHegjaKGfkKyftUmwHMhTKUNmwO4/IDjhpOdLFajV0qXpakrHQbZbh/UdMO4XgYT7L7RCL5wENFmgFQPzktHoEOh8pLe4O3zcEWGa7KlCl39xPvymrBqha9kBrFnGRx4ktkIxmHrl5f3+UQOF85PqfmE2i/33C/WoE3ICrKqlPFjcjmpHHui8Wrm31lfJ3hIsxvTTgtl2P/QAZhC5vZi2S7+/h+HbbvOZqTxYMNWai7Wflc7bQzTzHMFNot6J2N4x2X6yg4yAOy2b/xWocDdWsB592NUllZSppkoYXqq4XIHWU3wC+yUxv14/U6vG4pz97WbI60ryIZuB2t1YBqOdVXwJsENLgjA2x65XSoRSONtU1g9Us63fblRKYoDqxmoxMSJKU6ZBK7HIMSf+/F1CQrZgPvLP60DlB3vE5HrWLeomnEn8lPrXeyBGmnq0HQhZVRvRGujf8X71h1KchM8yPIdntKD7mweu4vzrIy66bq/1cIQVoGECGabt+RnksFozklLktmg3Cx4YarEx1EgoOI9kMGgMbPV3BD+ubrc51+dncdFwWaEGY9xUvFLS1OhHjeSGvQlKdnFDtHJMZ2BMdh2tH77BfAY2tkpfx7qFk8ldq3l30T+N/stI+fCQsTAqZb89dhyfd/OF1E2+rZAnFEHojWm9pjBis/VufkBZFRS4U9EBNgNit6Wmyhu2n97+z69TCpxLArW+zifv50H+ke/ZQRpukq7ChbuuTrtACj/nif1UGCTKOzDEGAlRB/aAGu5akuuaKB44xifMQiP7voneha1aUl/tf/zcob1w1w/KCa8cHGM+LtDQkkQC4yYZn7E3OtYeRjRBrJbqI8u04InQnuFtSUE7GWiOnwCTp6N7H/GsNL7SPOSOTD5TqIT34ZLU59Ly1e0Xjt6WpWe"
   }
 }
