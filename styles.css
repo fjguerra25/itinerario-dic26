@@ -397,3 +397,37 @@ body.mode-esencial .legend{gap:8px}
 .budg-day .nt{font-size:12px;color:var(--mut);font-weight:400;margin-top:2px}
 .tbl.budg th:nth-child(n+2),.tbl.budg td:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tbl.budg{font-size:13px;min-width:560px}
+
+/* v11.5 Para que Mariane decida */
+.mdec-sum{border:2px solid #b83b6e;background:linear-gradient(180deg,#fff6fa 0%,#ffffff 100%);margin:12px 0}
+.mdec-sum h2{color:#7c1340;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 4px}
+.mdec-pill{display:inline-block;font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 9px;background:#fbe4ef;color:#861546;white-space:nowrap}
+.mdec-pill.urg{background:#fde2de;color:#a3271f}
+.mdec-list{display:grid;gap:8px;margin:10px 0 4px}
+.mdec-row{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:8px;padding:10px 12px;background:#fff;border:1px solid #ecc6d7;border-radius:12px;text-decoration:none;color:inherit}
+.mdec-row:hover{background:#fff9fc;border-color:#b83b6e}
+.mdec-row .mrl{min-width:0;flex:1 1 240px}
+.mdec-row .mrt{font-weight:700;color:#7c1340;font-size:14.5px}
+.mdec-row .mrq{font-size:13px;color:var(--ink);margin-top:2px}
+.mdec-row .mrd{font-size:12px;color:var(--mut);margin-top:3px}
+.mdec-go{font-size:12.5px;font-weight:700;color:#9b1c52;white-space:nowrap;align-self:center}
+.mdec-other{margin-top:10px;padding-top:10px;border-top:1px dashed #e6bfd1;font-size:13px;color:var(--mut)}
+.mdec-other-btns{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.mdec-jump{border:1px solid #d99cb8;background:#fff;color:#7c1340;border-radius:999px;padding:5px 11px;font:600 12.5px/1.2 inherit;cursor:pointer}
+.mdec-jump:hover{background:#fbe4ef}
+.mdec-box{border:2px solid #b83b6e;background:#fff7fa;border-radius:14px;padding:12px 14px;margin:10px 0 12px}
+.mdec-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:6px}
+.mdec-title{font-weight:800;font-size:14.5px;color:#7c1340}
+.mdec-q{margin:0 0 8px;font-size:14px;color:var(--ink)}
+.mdec-opts{display:grid;gap:7px;margin:8px 0}
+.mdec-opt{background:#fff;border:1px solid #edd0dd;border-radius:10px;padding:8px 10px;font-size:13px}
+.mdec-opth{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:3px}
+.mdec-code{display:inline-block;min-width:22px;text-align:center;font-weight:800;font-size:11.5px;border-radius:6px;padding:1px 6px;background:#7c1340;color:#fff}
+.mdec-tag{font-size:11px;font-weight:700;border-radius:999px;padding:1px 7px;background:#f3e5ec;color:#6f143b}
+.mdec-pc{display:grid;gap:2px;font-size:12.5px;color:var(--mut);margin-top:4px}
+.mdec-pc b{color:var(--ink)}
+.mdec-meta{display:grid;gap:3px;font-size:12.5px;color:#3d4756;margin-top:8px;padding-top:8px;border-top:1px dashed #e6bfd1}
+@media(max-width:480px){
+  .mdec-box{padding:10px 11px}
+  .mdec-row{padding:9px 10px}
+}
