@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.4)",
-    "updated": "22 nov 2026, 22:00 (hora CDMX)",
+    "updated": "22 nov 2026, 22:30 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026, 19:55–20:05 hora CDMX (geometría de carretera + tiempos). Apple Maps se abre en cada tramo.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -4676,7 +4676,7 @@
           "map": "https://maps.apple.com/?ll=45.918200,6.870100&q=T%C3%A9l%C3%A9ph%C3%A9rique%20de%20l%E2%80%99Aiguille%20du%20Midi%2C%20Chamonix",
           "pid": "C3",
           "bk": "gratis",
-          "notes": "Hora dorada de la mañana 08:13–09:03 (calculada). Sube en la primera cabina para tener la terraza en esa hora. Ver ficha C3."
+          "notes": "Hora dorada de la mañana 08:13–09:03 (calculada). Sube en la primera cabina (08:10; en diciembre no hay 07:30). Luna llena se pone ~08:45 (az ~309°). Si hay viento o nubes, no subir. Olivia (2) no sube; para Ale (3) no se recomienda. Ver ficha C3."
         },
         {
           "start": "11:00",
@@ -4762,7 +4762,7 @@
         }
       ],
       "recs": [
-        "Sube en la primera cabina (08:10): estás en la terraza durante toda la hora dorada (08:13–09:03).",
+        "Sube en la primera cabina (08:10): estás en la terraza durante toda la hora dorada (08:13–09:03). Luna llena se pone ~08:45. Si hay viento o nubes, no subir.",
         "Si el 24 viene nublado y el 22 despejado, cambia: Aiguille el 22 y Montenvers/Brévent el 24. El 23 no se mueve (boletos de Chartreuse no cambiables).",
         "Hay que reservar horario de la Aiguille du Midi (boletos online, no reembolsables salvo cierre técnico o por clima). Revisa el pronóstico la noche del 23.",
         "Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5. Olivia (2) no puede subir; para Ale (3) no se recomienda; Jimena (5) sí (terraza y, si opera, el «Pas dans le Vide»). Los que no suban pueden quedarse en el Village de Noël o ir al tren de Montenvers (acepta desde 12 meses)."
@@ -12850,7 +12850,7 @@
           "title": "Sendero a la cascada Kozjak (ida y vuelta desde el Puente de Napoleón)",
           "place": "Napoleonov most / Slap Kozjak, Kobarid",
           "map": "https://maps.apple.com/?ll=46.248337,13.586134&q=Napoleonov%20most%2C%20Kobarid",
-          "notes": "Sendero junto al Soča hasta la cascada dentro de su cueva de roca; sin cobro en invierno (la taquilla solo opera del 2 abr al 31 oct). Con hielo, calzado con suela firme. Tiempo de caminata: no lo medí (en vez del Museo de Kobarid, que se quitó: solo 3 museos en todo el viaje).",
+          "notes": "Sendero junto al Soča hasta la cascada dentro de su cueva de roca; sin cobro en invierno (la taquilla solo opera del 2 abr al 31 oct) y el sendero no está mantenido: puede haber hielo en las pasarelas y en la gruta (lleva microspikes). Si está feo, quédate en el Puente de Napoleón. Tiempo de caminata: no lo medí (en vez del Museo de Kobarid, que se quitó: solo 3 museos en todo el viaje).",
           "bk": "gratis"
         },
         {
@@ -12950,7 +12950,8 @@
       "warn": [
         "Ruta Apple Maps directa (pasos leídos el 2 nov desde Brunico; el Ansitz Heufler queda 13 km más al este por carretera, sobre la misma ruta): Pustertal → Sesto → paso Monte Croce Comelico (1 636 m) → Sappada → Tolmezzo → A23 → Udine → Cividale → Kobarid. NO usa Vršič (cerrado en invierno) ni Predel, ni pasa por Austria.",
         "Con nevada en Comelico/Sappada: Apple daba alternativa por autopista (3 h 54); revísalo esa mañana.",
-        "Eslovenia: llantas de invierno obligatorias 15 nov–15 mar. Este tramo no usa autopista eslovena."
+        "Eslovenia: llantas de invierno obligatorias 15 nov–15 mar. Este tramo no usa autopista eslovena.",
+        "No cuentes con el paso de Vršič (cierre invernal por nieve o aludes; esta ruta no lo usa). Las Tolmin Gorges están cerradas del 14 dic 2026 a marzo 2027. Kozjak: sendero no mantenido, con hielo en pasarelas y gruta."
       ],
       "family": [],
       "planb": [
@@ -12982,8 +12983,8 @@
           "price": "Sin cobro en invierno",
           "book": null,
           "book_by": "No hace falta",
-          "facts": "La taquilla de Kozjak solo opera del 2 abr al 31 oct (fuera de temporada el sendero es libre).",
-          "unv": "Estado del sendero con hielo: no verificado.",
+          "facts": "La taquilla de Kozjak solo opera del 2 abr al 31 oct (fuera de temporada el sendero es libre, no mantenido). Las Tolmin Gorges están cerradas del 14 dic 2026 a marzo 2027.",
+          "unv": "Estado del hielo en pasarelas y gruta de Kozjak el 27 dic: comprobar esa mañana; si está feo, quedarse en el puente.",
           "pend": null,
           "status": "propuesta"
         },
@@ -13007,7 +13008,7 @@
       "label": "Lun 28 dic",
       "city": "Kobarid → Zagreb",
       "section": "tour",
-      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: €44,07). Movia quedó descartado (correo de cortesía enviado). Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award), foto R3, Adviento y cena en Dubravkin put (confirmada por correo, 2 pax, nota de aniversario).",
+      "summary": "Amanecer en el Soča, en el Puente de Napoleón (07:20–07:55; queda de camino), y salida 08:00 de Kobarid rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: €44,07). Si el pronóstico marca niebla en el valle con cumbres despejadas, la alternativa es Jamnik (salida ~06:00). Movia quedó descartado (correo de cortesía enviado). Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award), foto R3 en Strossmayerovo šetalište (16:20–17:00); el puente Hendrix es extra si sobra tiempo. Adviento y cena en Dubravkin put (confirmada por correo, 2 pax, nota de aniversario).",
       "drive": {
         "key": "hisa_lju",
         "frm": "Hiša Franko",
@@ -14564,13 +14565,23 @@
       },
       "events": [
         {
-          "start": "07:45",
-          "end": "08:00",
+          "start": "07:00",
+          "end": "07:15",
           "type": "hotel",
-          "title": "Check-out Hiša Franko (salida oficial 11:00; os vais a las 08:00)",
+          "title": "Check-out Hiša Franko (salida oficial 11:00; os vais a las 08:00, tras la foto del Soča)",
           "status": "reservado",
           "bk": "ok",
           "map": "https://maps.apple.com/?q=Hi%C5%A1a%20Franko%20Kobarid&ll=46.247211,13.537768"
+        },
+        {
+          "start": "07:20",
+          "end": "07:55",
+          "type": "foto",
+          "title": "Amanecer en el Soča — Puente de Napoleón (garganta esmeralda)",
+          "place": "Napoleonov most, Kobarid",
+          "map": "https://maps.apple.com/?ll=46.248337,13.586134&q=Napoleonov%20most%2C%20Kobarid",
+          "bk": "gratis",
+          "notes": "Queda de camino a Ljubljana (~6–7 min desde Hiša Franko). Luz en Kobarid: hora azul 07:09–07:22, amanecer 07:45 (az 123° SE); el sol ilumina de lado el agua y las paredes pueden seguir en sombra (mejor para el verde). 24–70 mm + ND, trípode, microspikes. Maletas ya hechas; a las 08:00 arrancáis al tour de las 11:00 (con márgenes 3 h; en tiempo de Apple, sin márgenes, ~10:03). Alternativa solo si el pronóstico marca niebla en el valle con cumbres despejadas: Jamnik (salida ~06:00)."
         },
         {
           "start": "08:00",
@@ -14578,7 +14589,7 @@
           "type": "coche",
           "title": "Manejar Hiša Franko → Ljubljana",
           "map": "https://maps.apple.com/?saddr=46.247211,13.537768&daddr=46.049550,14.503310&dirflg=d",
-          "notes": "Ruta verificada 2 h 03 · 124 km → +20 % 2 h 30 + descansos 15 min + estacionar 15 min = 3 h 00 (sale 08:00 → llega 11:00). OSRM 22 nov: 124 km / 1 h 52. En tiempo de Apple, sin márgenes, llegaríais ~10:03. Después de las 08:15 se come el margen del tour. El check-out oficial es a las 11:00 y no estorba si salís antes. Estaciona en el garaje de Kongresni trg, a 5 min a pie de Prešeren.",
+          "notes": "Salís a las 08:00 tras la foto del Puente de Napoleón (queda de camino). Ruta verificada 2 h 03 · 124 km → +20 % 2 h 30 + descansos 15 min + estacionar 15 min = 3 h 00 (sale 08:00 → llega 11:00). OSRM 22 nov: 124 km / 1 h 52. En tiempo de Apple, sin márgenes, llegaríais ~10:03. Después de las 08:15 se come el margen del tour. El check-out oficial es a las 11:00 y no estorba si os vais antes. Estaciona en el garaje de Kongresni trg, a 5 min a pie de Prešeren.",
           "bk": "gratis"
         },
         {
@@ -14678,12 +14689,14 @@
         }
       ],
       "recs": [
-        "Para el tour de las 11:00: salir de Kobarid a las 08:00 (o a más tardar 08:15). El check-out oficial a las 11:00 no estorba si os vais antes.",
+        "Amanecer 07:20–07:55 en el Puente de Napoleón y salida a las 08:00 (o a más tardar 08:15) para el tour de las 11:00. El check-out oficial a las 11:00 no estorba si os vais antes.",
         "Tour de Ljubljana confirmado para 2 adultos (FareHarbor ✓ confirmado). Punto de encuentro: TIC Ljubljana, Adamič-Lundrovo nabrežie 2.",
-        "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar en Dubravkin put (mesa confirmada a las 19:00, 2 pax, nota de aniversario)."
+        "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar en Dubravkin put (mesa confirmada a las 19:00, 2 pax, nota de aniversario).",
+        "Alternativa de amanecer (solo si el pronóstico marca niebla en el valle con cumbres despejadas): Jamnik, más épica, saliendo ~06:00.",
+        "En Zagreb se queda R3 en Strossmayerovo šetalište (16:20–17:00). El puente Hendrix (Zeleni most, sobre el Sava) es extra si sobra tiempo."
       ],
       "warn": [
-        "Check-out oficial de Hiša Franko a las 11:00: salid a las 08:00 (llegada con márgenes ~11:00; en tiempo de Apple ~10:03). Después de las 08:15 se come el margen.",
+        "Check-out oficial de Hiša Franko a las 11:00: después de la foto del Soča, salid a las 08:00 (llegada con márgenes ~11:00; en tiempo de Apple ~10:03). Después de las 08:15 se come el margen.",
         "Dubravkin put ★ 19:00 (2 pax): confirmado por correo (1 nov, reservations@superbexperience.com); cancelación con al menos 24 h; sin prepago.",
         "Eslovenia: viñeta electrónica (A1/A2). Croacia: peaje en caseta (A3)."
       ],
@@ -14719,6 +14732,34 @@
           "book_by": "No hace falta",
           "facts": "Vista de la catedral y la Ciudad Alta.",
           "unv": "Horario y precio de diciembre no verificados.",
+          "pend": null,
+          "status": "propuesta"
+        },
+        {
+          "k": "Extra si sobra tiempo",
+          "title": "Puente Hendrix (Zeleni most) sobre el Sava, de noche",
+          "when": "Después de R3 (16:20–17:00 en Strossmayer), si sobra tiempo antes de Dubravkin put 19:00. Westin → puente ~8 min en taxi.",
+          "where": "Orilla del Sava, Zagreb",
+          "map": "https://maps.apple.com/?ll=45.784700,15.950200&q=Hendrix%20Bridge%20Zagreb",
+          "price": "Gratis",
+          "book": null,
+          "book_by": "No hace falta",
+          "facts": "R3 en Strossmayerovo šetalište se mantiene como la foto de la tarde. El Hendrix es solo un extra si hay margen.",
+          "unv": null,
+          "pend": null,
+          "status": "propuesta"
+        },
+        {
+          "k": "Alternativa de amanecer (solo con pronóstico)",
+          "title": "Jamnik (iglesia de San Primož y Feliciano) — solo si hay niebla en el valle y cumbres despejadas",
+          "when": "Salida ~06:00 de Hiša Franko. OSRM 81 km / 1 h 27 → +20 % ~1 h 45 + estacionar ~1 h 50 (amanecer en Jamnik 07:40). Luego Jamnik → Ljubljana OSRM 54 km / 53 min → +20 % + estacionar ~1 h 20.",
+          "where": "Jamnik, Eslovenia",
+          "map": "https://maps.apple.com/?ll=46.273969,14.207993&q=Jamnik%20Sv.%20Primo%C5%BE%20in%20Felicijan",
+          "price": "Gratis; estacionamiento mínimo en el acotamiento / sendero",
+          "book": null,
+          "book_by": "No hace falta; se decide la víspera según el pronóstico",
+          "facts": "Más épica que el Soča si hay mar de niebla con cumbres despejadas. Si no hay esa niebla, no desvíes: quédate en el Puente de Napoleón (07:20–07:55) y sal a las 08:00.",
+          "unv": "Estado de la carretera de montaña y del hielo en el sendero el 28 dic: comprobar la víspera.",
           "pend": null,
           "status": "propuesta"
         },
@@ -17848,7 +17889,7 @@
       "label": "Mié 30 dic",
       "city": "Budapest → Cracovia (por Eslovaquia)",
       "section": "tour",
-      "summary": "El tramo más largo (salida 06:00). Tarde fotográfica en Cracovia (sin interiores del Castillo de Wawel): Kopiec Krakusa (~15:20), hora azul (15:50–16:30) del Wawel desde el puente Dębnicki / orilla del Vístula (Foto R5), Rynek y Kazimierz de noche. Cena en Bottiglieria 1881, a 10 min a pie.",
+      "summary": "El tramo más largo (salida 06:00 de Budapest, sin desvío al amanecer). Tarde fotográfica en Cracovia (sin interiores del Castillo de Wawel): atardecer 15:20–15:50 en la abadía de Tyniec desde Skałki Piekarskie si el ángulo y el estacionamiento salen bien; si no, Kopiec Krakusa. Hora azul 16:10–16:24 del Wawel desde la orilla sur (Bulwar Poleski / puente Dębnicki, Foto R5); luego el puente Bernatek y Kazimierz de noche. Plan B épico (se decide la víspera según el clima): Łapszanka, con la muralla de los Tatras, a costa del atardecer en Cracovia. Cena en Bottiglieria 1881, a 10 min a pie.",
       "drive": {
         "key": "budmar_bottig",
         "frm": "Budapest Marriott",
@@ -21416,7 +21457,7 @@
         },
         {
           "start": "06:00",
-          "end": "13:30",
+          "end": "14:55",
           "type": "coche",
           "title": "Manejar Budapest Marriott → Stradom House (Cracovia)",
           "map": "https://maps.apple.com/?saddr=47.494871,19.049427&daddr=50.048672,19.946234&dirflg=d",
@@ -21424,42 +21465,43 @@
           "bk": "gratis"
         },
         {
-          "start": "13:30",
-          "end": "13:55",
-          "type": "traslado",
-          "title": "Dejar coche y maletas en Stradom House (check-in desde las 15:00; registro SCT de bajas emisiones hecho antes) y caminar al Wawel",
-          "bk": "ok",
-          "notes": "Confirmado en Marriott el 22 nov: 1 noche, 2 personas, se paga en el hotel, cancelación gratis hasta las 18:00 del día de llegada. La solicitud de upgrade (Nightly Upgrade Award) sigue pendiente y no está confirmada."
+          "start": "14:55",
+          "end": "15:20",
+          "type": "coche",
+          "title": "De camino, ir directo a Skałki Piekarskie (maletas en el coche; check-in en Stradom después de la hora azul)",
+          "bk": "gratis",
+          "notes": "Llegada a Cracovia ~14:55. Skałki Piekarskie queda al SO, de camino si entráis por el oeste: id directo al atardecer de Tyniec (15:20–15:50) con las maletas en el coche (registro SCT de bajas emisiones hecho antes). Si el ángulo o el estacionamiento no salen, desviad a Kopiec Krakusa. El check-in formal en Stradom House (desde las 15:00) se hace después de la hora azul. Confirmado en Marriott el 22 nov: 1 noche, 2 personas, se paga en el hotel, cancelación gratis hasta las 18:00 del día de llegada. La solicitud de upgrade (Nightly Upgrade Award) sigue pendiente y no está confirmada.",
+          "map": "https://maps.apple.com/?ll=50.019500,19.792800&q=Ska%C5%82ki%20Piekarskie%2C%20Tyniec"
         },
         {
-          "start": "15:00",
-          "end": "15:40",
-          "type": "visita",
-          "title": "Kopiec Krakusa (mirador sobre Cracovia, ~15:20)",
-          "notes": "Plan fotográfico aprobado (sin interiores del Castillo de Wawel): subir a Kopiec Krakusa hacia las 15:20 para vista panorámica y luz previa al atardecer (15:47), y bajar hacia el puente Dębnicki / orilla del Vístula para la hora azul.",
-          "place": "Kopiec Krakusa, Podgórze, Kraków",
-          "map": "https://maps.apple.com/?ll=50.038100,19.958500&q=Kopiec%20Krakusa%2C%20Krak%C3%B3w",
+          "start": "15:20",
+          "end": "15:50",
+          "type": "foto",
+          "title": "Atardecer: abadía de Tyniec desde Skałki Piekarskie (si no, Kopiec Krakusa)",
+          "notes": "Plan fotográfico aprobado (sin interiores del Castillo de Wawel). 15:20–15:50 en Skałki Piekarskie, orilla opuesta a la abadía de Tyniec sobre el acantilado, si el ángulo y el estacionamiento salen bien (~20 min en coche desde Stradom House). Si no, Kopiec Krakusa (público, gratis y sin horario; el camino puede estar helado y no está iluminado). A las 15:50 salid hacia la orilla sur del Vístula para la hora azul.",
+          "place": "Skałki Piekarskie, frente a la abadía de Tyniec",
+          "map": "https://maps.apple.com/?ll=50.019500,19.792800&q=Ska%C5%82ki%20Piekarskie%2C%20Tyniec",
           "bk": "gratis"
         },
         {
-          "start": "15:45",
-          "end": "16:35",
+          "start": "16:10",
+          "end": "16:30",
           "type": "foto",
-          "title": "Foto R5 — Wawel en hora azul (15:50–16:30) desde el puente Dębnicki / orilla del Vístula",
-          "place": "Bulwar Czerwieński",
-          "map": "https://maps.apple.com/?ll=50.052653,19.933255&q=Bulwar%20Czerwie%C5%84ski%2C%20Krak%C3%B3w",
+          "title": "Foto R5 — Wawel en hora azul (16:10–16:24) desde la orilla sur (Bulwar Poleski / puente Dębnicki)",
+          "place": "Bulwar Poleski (Dębniki), orilla sur del Vístula",
+          "map": "https://maps.apple.com/?ll=50.052471,19.931356&q=Bulwar%20Poleski%2C%20Krak%C3%B3w",
           "pid": "R5",
           "bk": "gratis",
-          "notes": "Plan fotográfico aprobado: llegar ~15:45 al puente Dębnicki / Bulwar Poleski (orilla del Vístula). Hora azul 15:50–16:30 con el Castillo de Wawel iluminado y reflejos sobre el río. Ver ficha R5."
+          "notes": "Plan fotográfico aprobado: hora azul real 16:10–16:24 (no 15:50–16:30) desde la orilla SUR, Bulwar Poleski / puente Dębnicki, no desde Bulwar Czerwieński (esa es la misma orilla del Wawel). Castillo de Wawel iluminado y estelas en el puente Grunwaldzki. Ver ficha R5."
         },
         {
-          "start": "16:40",
+          "start": "16:35",
           "end": "17:40",
           "type": "visita",
-          "title": "Rynek Główny (mercado navideño) y paseo por Kazimierz de noche",
-          "place": "Rynek Główny",
-          "map": "https://maps.apple.com/?ll=50.061496,19.937113&q=Rynek%20G%C5%82%C3%B3wny",
-          "notes": "Paseo por el Rynek Główny / mercado navideño y recorrido nocturno por Kazimierz (barrio de Bottiglieria 1881). También se puede rematar Kazimierz de noche después de cenar.",
+          "title": "Puente Bernatek (Kładka Bernatka) y Kazimierz de noche",
+          "place": "Kładka Bernatka / Kazimierz",
+          "map": "https://maps.apple.com/?ll=50.047800,19.947200&q=K%C5%82adka%20Bernatka%2C%20Krak%C3%B3w",
+          "notes": "Tras la hora azul, el puente peatonal Bernatek y un paseo por Kazimierz (barrio de Bottiglieria 1881). También se puede rematar Kazimierz de noche después de cenar. El mercado de Rynek Główny cierra ~20:00.",
           "bk": "gratis"
         },
         {
@@ -21518,9 +21560,10 @@
         }
       ],
       "recs": [
-        "Salida recomendada 06:00 (la más temprana): llegas 13:30 con tiempo de sobra antes de Kopiec Krakusa (~15:20) y la hora azul (15:50–16:30).",
-        "Sin interiores en el Castillo de Wawel: el foco está en Kopiec Krakusa, el Wawel iluminado desde el puente Dębnicki / orilla del Vístula y Kazimierz de noche.",
-        "Bottiglieria 1881 queda en Kazimierz, a 736 m y 10 min a pie desde Stradom House (OSRM a pie). Vas y regresas caminando."
+        "Salida 06:00 de Budapest, sin desvío al amanecer: llegas ~14:55. Atardecer 15:20–15:50 en Tyniec desde Skałki Piekarskie si el ángulo y el estacionamiento salen bien; si no, Kopiec Krakusa. Hora azul 16:10–16:24 en Bulwar Poleski.",
+        "Sin interiores en el Castillo de Wawel: el foco está en Tyniec (o Krakusa), el Wawel iluminado desde la orilla sur (Bulwar Poleski / Dębnicki, no Czerwieński) y el puente Bernatek con Kazimierz de noche.",
+        "Bottiglieria 1881 queda en Kazimierz, a 736 m y 10 min a pie desde Stradom House (OSRM a pie). Vas y regresas caminando.",
+        "Plan B épico, se decide la víspera según el clima: mirador de Łapszanka (muralla de los Tatras). Sacrifica el atardecer en Cracovia."
       ],
       "warn": [
         "Hotel del 30 ya en TripIt: Stradom House Hotel & Spa, Autograph Collection (12-14 Stradomska, Cracovia), confirmación ✓ confirmado, 930 PLN. Ojo: es habitación Modern Twin (2 camas individuales), vista al patio. Cancelación gratis hasta el 30 dic 23:59 hora del hotel; después cobran 930 PLN.",
@@ -21543,21 +21586,35 @@
         "sunset": "15:46",
         "civil_end": "16:24",
         "golden_pm": "14:50–15:47",
-        "blue_pm": "16:11–16:25",
+        "blue_pm": "16:10–16:24",
         "golden_am": "07:40–08:37",
         "blue_am": "07:01–07:16"
       },
       "acts": [
         {
           "k": "Recomendación (aprobado)",
-          "title": "Plan fotográfico Cracovia: Kopiec Krakusa (~15:20) + hora azul Wawel (15:50–16:30 desde puente Dębnicki / Vístula) + Kazimierz de noche",
+          "title": "Plan fotográfico Cracovia: Tyniec 15:20–15:50 (si no, Kopiec Krakusa) + hora azul Wawel 16:10–16:24 en Bulwar Poleski + Bernatek y Kazimierz de noche",
           "status": "listo",
-          "when": "Mié 30 dic, ~15:20–18:30 y después de cenar",
-          "where": "Kopiec Krakusa, puente Dębnicki / Bulwar Poleski y Kazimierz",
+          "when": "Mié 30 dic, 15:20–17:40 y después de cenar",
+          "where": "Skałki Piekarskie / Tyniec (o Kopiec Krakusa), Bulwar Poleski / puente Dębnicki, Kładka Bernatka y Kazimierz",
           "price": "Gratis",
           "book_by": "No se reserva",
-          "facts": "Sin interiores del Castillo de Wawel. Acceso libre en Kopiec Krakusa, puente Dębnicki/Vístula y Kazimierz.",
+          "facts": "Sin interiores del Castillo de Wawel. Salida 06:00 de Budapest, sin desvío al amanecer. Hora azul real 16:10–16:24 desde la orilla sur (Bulwar Poleski / Dębnicki), no desde Bulwar Czerwieński. Kopiec Kościuszki cierra a las 15:30 en diciembre y no sustituye a Krakusa.",
           "pend": "26"
+        },
+        {
+          "k": "Plan B épico (decidir la víspera)",
+          "title": "Łapszanka — muralla de los Tatras (solo si el cielo está despejado; sacrifica el atardecer en Cracovia)",
+          "when": "Se decide la víspera según el clima. Desvío en la ruta Budapest–Cracovia; llega de día al puerto y a Cracovia después de la hora dorada / azul.",
+          "where": "Przełęcz nad Łapszanką, Polonia",
+          "map": "https://maps.apple.com/?ll=49.342200,20.175300&q=Prze%C5%82%C4%99cz%20nad%20%C5%81apszank%C4%85",
+          "price": "Gratis (mirador de carretera)",
+          "book": null,
+          "book_by": "No hace falta; decidir la noche del 29 según webcams y pronóstico de los Tatras",
+          "facts": "Mirador de carretera abierto. Si se elige, se pierde el atardecer en Tyniec/Krakusa; la hora azul en el Vístula puede quedar justa o no alcanzar.",
+          "unv": "Hielo o nieve en la subida al puerto y estado de las cumbres esa mañana: comprobar la víspera.",
+          "pend": null,
+          "status": "propuesta"
         },
         {
           "k": "Alternativa 1 (opcional)",
@@ -24767,7 +24824,8 @@
           "pend": null,
           "status": "propuesta"
         }
-      ]
+      ],
+      "day_status": "listo"
     },
     {
       "date": "2027-01-01",
@@ -28732,7 +28790,8 @@
         "sunset": "16:12",
         "civil_end": "16:50"
       },
-      "lod_status": null
+      "lod_status": null,
+      "day_status": "listo"
     }
   ],
   "photos": [
@@ -29223,12 +29282,12 @@
       "spot": "Bulwar Poleski (Dębniki), orilla sur del Vístula frente al Wawel",
       "subject": "El Castillo de Wawel iluminado sobre el Vístula, con estelas de luz en el puente Grunwaldzki",
       "time": "16:15",
-      "window": "14:55–16:30",
+      "window": "16:10–16:24",
       "bearing": 57,
       "dist_km": 0.4,
       "focal": "24–70 mm · 70–200 mm",
-      "why": "Un castillo iluminado visto desde el otro lado del río, con reflejo y estelas de tráfico: lo que pediste. Cracovia es la ciudad con la hora azul más temprana del viaje (16:11).",
-      "notes": "Cambié el punto de v9 (Bulwar Czerwieński, al pie del Wawel, del mismo lado) a la orilla de enfrente, en Dębniki: se llega cruzando el puente Grunwaldzki a pie (~10 min desde el Wawel). Hora dorada 14:50–15:47 · hora azul 16:11–16:25. Estelas: el tráfico del puente Grunwaldzki y del bulevar al pie del castillo.",
+      "why": "Un castillo iluminado visto desde el otro lado del río, con reflejo y estelas de tráfico: lo que pediste. Cracovia es la ciudad con la hora azul más temprana del viaje (16:10).",
+      "notes": "Orilla SUR, en Dębniki (Bulwar Poleski / puente Dębnicki), no Bulwar Czerwieński (esa es la misma orilla del Wawel). Hora dorada 14:50–15:47 · hora azul real 16:10–16:24. Estelas: el tráfico del puente Grunwaldzki y del bulevar al pie del castillo. Antes, atardecer 15:20–15:50 en Tyniec desde Skałki Piekarskie (si el ángulo y el estacionamiento salen bien; si no, Kopiec Krakusa).",
       "gear": "Hasselblad X2D II en trípode (100 MP, ISO 64, 16 bits) para la toma principal, en horquillado o panorámica de 2–3 tomas. Canon 5D Mark IV como segunda cámara: time-lapse o toma de respaldo. ",
       "sun_tbl": {
         "sunrise": "07:40",
@@ -83558,16 +83617,16 @@
         "booked": "Stradom House ✓ confirmado (3 nov, PLN 930, Modern Twin, gratis hasta 30 dic 23:59) · Bottiglieria 1881 19:00 (confirmado por correo, 2 pax; cancel. gratis hasta 72 h antes, luego PLN 500 p/p).",
         "items": [
           {
-            "what": "Tarde en Cracovia: plan fotográfico aprobado (sin interiores de Wawel; Wieliczka opcional)",
-            "when": "30 dic ~15:20–18:30 y después de cenar",
-            "why": "Descartado entrar al Castillo de Wawel. Plan fotográfico aprobado: Kopiec Krakusa (~15:20), hora azul 15:50–16:30 del Wawel desde el puente Dębnicki / orilla del Vístula (Foto R5) y Kazimierz de noche. Mina de sal de Wieliczka queda solo como opcional (si la quisieran, ocupa toda la tarde).",
+            "what": "Tarde en Cracovia: plan fotográfico aprobado (sin interiores de Wawel; Wieliczka opcional; Łapszanka es plan B según clima)",
+            "when": "30 dic 15:20–16:24 y Kazimierz / Bernatek de noche; Łapszanka se decide la víspera",
+            "why": "Descartado entrar al Castillo de Wawel. Plan fotográfico aprobado: salida 06:00 de Budapest sin desvío al amanecer; atardecer 15:20–15:50 en la abadía de Tyniec desde Skałki Piekarskie si el ángulo y el estacionamiento salen bien (si no, Kopiec Krakusa); hora azul 16:10–16:24 del Wawel desde la orilla sur (Bulwar Poleski / Dębnicki, no Czerwieński, Foto R5); luego el puente Bernatek y Kazimierz de noche. Plan B épico, se decide la víspera según el clima: Łapszanka (sacrifica el atardecer en Cracovia). Kopiec Kościuszki no: cierra a las 15:30. Mina de sal de Wieliczka queda solo como opcional (si la quisieran, ocupa toda la tarde).",
             "status": "listo",
             "alts": [
               {
                 "l": "A",
                 "title": "Opcional: Mina de sal de Wieliczka — Ruta Turística en inglés",
                 "when": "Reservar antes de: 20 dic",
-                "why": "Solo opcional si deciden cambiar el plan de fotos: ocupa ~14:30–17:30 y desplaza Kopiec Krakusa y la hora azul en el Vístula. Costo: 143 PLN p/p.",
+                "why": "Solo opcional si deciden cambiar el plan de fotos: ocupa ~14:30–17:30 y desplaza Tyniec/Krakusa y la hora azul en el Vístula. Costo: 143 PLN p/p.",
                 "status": "propuesta",
                 "detail": "Reservar: https://www.wieliczka-saltmine.com/individual-tourist/useful-information/ticket-prices-and-visiting-hours · Sin verificar: Horarios de salida en inglés del 30 dic no verificados."
               }
@@ -83583,7 +83642,8 @@
         "label": "Jue 31 dic",
         "city": "Cracovia → Bratislava",
         "booked": "Grand Hotel River Park, ✓ confirmado, €182 · UFO 20:00, orden ✓ confirmado, €610 pagados.",
-        "items": []
+        "items": [],
+        "day_status": "listo"
       },
       {
         "date": "2027-01-01",
@@ -83701,7 +83761,8 @@
         "label": "Dom 3 ene",
         "city": "Praga → Barcelona → CDMX",
         "booked": "Sixt devolución 06:30 PRG (✓ confirmado) · FR 3073 08:50, ✓ confirmado · AM 38 BCN T1 13:45 → MEX T2 19:50, ✓ confirmado (sin asientos).",
-        "items": []
+        "items": [],
+        "day_status": "listo"
       }
     ],
     "listo_note": "Listo · sin pendientes."
