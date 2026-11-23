@@ -336,14 +336,71 @@ function leanCard(d){
   }
   return h+'</article>';
 }
+function riskBadge(level){
+  var L={alto:"Alto",medio:"Medio",bajo:"Bajo"};
+  return '<span class="risk risk-'+(level||"medio")+'">'+(L[level]||esc(level))+'</span>';
+}
+function fmtAlt(n){var s=String(n);return (s.length>3?s.slice(0,-3)+" "+s.slice(-3):s)+" m";}
+function hzLinks(links){
+  if(!links||!links.length)return '';
+  return '<div class="hz-links">'+links.map(function(l){
+    return '<a href="'+esc(l.u)+'" target="_blank" rel="noopener">'+esc(l.t)+'</a>';
+  }).join("")+'</div>';
+}
+function hzFacts(s){
+  var h='<dl class="hz-dl">';
+  if(s.segment) h+='<dt>Tramo</dt><dd>'+esc(s.segment)+'</dd>';
+  if(s.alt_m!=null) h+='<dt>Altitud máx.</dt><dd>'+fmtAlt(s.alt_m)+(s.alt_note?' — '+esc(s.alt_note):'')+'</dd>';
+  if(s.why) h+='<dt>Por qué es difícil</dt><dd>'+esc(s.why)+'</dd>';
+  if(s.conditions) h+='<dt>Fin de diciembre / enero</dt><dd>'+esc(s.conditions)+'</dd>';
+  if(s.legal) h+='<dt>Equipo de invierno</dt><dd>'+esc(s.legal)+'</dd>';
+  if(s.tunnels) h+='<dt>Túneles, peajes, viñetas</dt><dd>'+esc(s.tunnels)+'</dd>';
+  if(s.sunset) h+='<dt>Puesta de sol</dt><dd>'+esc(s.sunset)+(s.daylight?' · '+esc(s.daylight):'')+'</dd>';
+  if(s.rec) h+='<dt>Qué hacer</dt><dd>'+esc(s.rec)+'</dd>';
+  h+='</dl>'+hzLinks(s.links);
+  return h;
+}
+function hazardsCompact(){
+  var H=D.hazards; if(!H)return '';
+  var top=(H.sectors||[]).filter(function(s){return s.top;}).sort(function(a,b){return a.rank-b.rank;});
+  var h='<section class="card hz hz-ess" id="tramos-complicados"><h2>'+esc(H.title)+'</h2>';
+  if(H.sixt) h+='<p class="hz-sixt">'+esc(H.sixt)+'</p>';
+  h+='<ol class="hz-top">'+top.map(function(s){
+    return '<li>'+riskBadge(s.risk)+' <span>'+esc(s.line)+'</span></li>';
+  }).join("")+'</ol>';
+  if(H.ess_note) h+='<p class="sub">'+esc(H.ess_note)+'</p>';
+  return h+'</section>';
+}
+function hazardsFull(){
+  var H=D.hazards; if(!H)return '';
+  var secs=(H.sectors||[]).slice().sort(function(a,b){return a.rank-b.rank;});
+  var h='<section class="card hz hz-full" id="tramos-complicados"><h2>'+esc(H.title)+'</h2>';
+  if(H.intro) h+='<p class="sub">'+esc(H.intro)+'</p>';
+  if(H.sixt) h+='<p class="hz-sixt">'+esc(H.sixt)+'</p>';
+  secs.forEach(function(s){
+    var head=riskBadge(s.risk)+' <b>'+esc(s.date_label+(s.km?(' · '+s.km+' km'):'')+' · '+s.title)+'</b>';
+    if(s.risk==="bajo"){
+      h+='<details class="hz-sec hz-'+s.risk+'"><summary>'+head+'</summary>'+hzFacts(s)+'</details>';
+    } else {
+      h+='<article class="hz-sec hz-'+s.risk+'"><h3>'+head+'</h3>'+hzFacts(s)+'</article>';
+    }
+  });
+  return h+'</section>';
+}
+function hazardsSection(){
+  if(!(S.sec==="chamonix"||S.sec==="tour")) return "";
+  if(!D.hazards) return "";
+  return S.dens==="esencial"?hazardsCompact():hazardsFull();
+}
 function esencialLean(){
   var T=D.travelers, h='';
   if(T){h+='<div class="card lean-who"><b>Quién viaja.</b> '+(S.sec==="chamonix"?esc(T.chamonix):esc(T.tour))+'</div>';}
   h+='<p class="ess-note">Vista esencial: hora, trayecto, hotel y cena. Cambia a Completo si quieres fotos, notas y alternativas.</p>';
+  h+=hazardsSection();
   h+=routeMap()+days().map(leanCard).join("");
   return h;
 }
-function renderList(){document.getElementById("list").innerHTML=S.dens==="esencial"?esencialLean():(esencial()+days().map(dayCard).join(""));}
+function renderList(){document.getElementById("list").innerHTML=S.dens==="esencial"?esencialLean():(hazardsSection()+esencial()+days().map(dayCard).join(""));}
 function renderChefs(){var c=D.chefs||[];
   var L={no:'No',sin:'Sin respuesta',rebote:'Rebotó',oferta:'Propuesta',pide:'Pide presupuesto',cerrado:'Cerrado'};
   var h='<div class="card"><h2>Nochebuena — 24 dic, raclette en el chalet</h2><p class="sub">'+esc(D.meta.chefs_note||'')+' Lectura de correo: '+esc(D.meta.chefs_read||'')+'.</p>'+
@@ -441,7 +498,10 @@ function renderCal(){
 }
 function drvRow(lbl,r){return '<tr><td>'+esc(lbl)+'</td><td>'+esc(r.frm)+' → '+esc(r.to)+'</td><td>'+esc(r.raw)+'<br><small>'+r.km+' km</small></td><td>'+esc(r.p20)+'</td><td>'+r.rest+'</td><td>'+r.park+'</td><td><b>'+esc(r.total)+'</b></td><td>'+r.rec.dep+' → '+r.rec.arr+(r.alt06?'<br><small>06:00 → '+r.alt06.arr+'</small>':'')+'</td><td>'+(r.rec.daylight_min>0&&r.rec.daylight_min<600?esc(r.rec.daylight):'—')+(r.alt06&&r.alt06.daylight_min>0?'<br><small>'+esc(r.alt06.daylight)+'</small>':'')+'</td></tr>';}
 function renderExtra(){
-  var h='';if(S.dens==="esencial"||S.sec==="chefs"||S.sec==="pend"||S.sec==="presupuesto"){document.getElementById("extra").innerHTML='';return;}
+  var h='';
+  if(S.sec==="chefs"||S.sec==="pend"||S.sec==="presupuesto"){document.getElementById("extra").innerHTML='';return;}
+  if(S.dens==="esencial"){document.getElementById("extra").innerHTML=(S.view==="cal"?hazardsSection():'');return;}
+  if(S.view==="cal") h+=hazardsSection();
   var rows=days().filter(function(d){return d.drive;});
   h+='<div class="card"><h2>'+(S.sec==="tour"?'Trayectos en coche':'Trayectos en coche (Chamonix)')+' — tiempo previsto con márgenes</h2><div class="scroll"><table class="tbl"><thead><tr><th>Día</th><th>Tramo</th><th>Ruta</th><th>+20 %</th><th>Desc.</th><th>Estac.</th><th>Total</th><th>Salida → llegada</th><th>Luz al llegar</th></tr></thead><tbody>'+
    rows.map(function(d){var x=drvRow(d.label,d.drive);if(d.drive2)x+=drvRow('',d.drive2);if(d.drive3)x+=drvRow('',d.drive3);return x;}).join('')+
