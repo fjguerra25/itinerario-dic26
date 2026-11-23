@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.4)",
-    "updated": "22 nov 2026, 21:20 (hora CDMX)",
+    "updated": "22 nov 2026, 22:00 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026, 19:55–20:05 hora CDMX (geometría de carretera + tiempos). Apple Maps se abre en cada tramo.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -1053,18 +1053,20 @@
           "type": "traslado",
           "title": "Al tren de Montenvers (estación junto a la de SNCF, centro)",
           "map": "https://maps.apple.com/?ll=45.922600,6.875300&q=Gare%20du%20Montenvers%2C%20Chamonix",
-          "bk": "gratis"
+          "bk": "gratis",
+          "status": "listo",
+          "notes": "Temporada 5 dic 2026–12 mar 2027, diario 10:00–16:30. Boletos SOLO en taquilla de la estación (sin venta en línea ni reserva); llegar 10:00. Familia OK: tren sin restricciones (desde 12 meses); telecabina abre 19 dic (10:30–15:00); cueva de hielo ~170 escalones; menores de 5 años gratis en taquilla. Adulto: tren i/v €32,10; tren + telecabina + cueva €51,30."
         },
         {
           "start": "10:00",
           "end": "12:45",
           "type": "visita",
           "title": "Tren de Montenvers + Mer de Glace",
-          "status": "propuesta",
+          "status": "listo",
           "place": "Gare du Montenvers, Chamonix",
           "map": "https://maps.apple.com/?ll=45.922600,6.875300&q=Gare%20du%20Montenvers%2C%20Chamonix",
-          "notes": "Temporada 5 dic 2026–12 mar 2027, diario 10:00–16:30 (Office de Tourisme). Tren ~20 min. Cueva de hielo en invierno: estado no verificado. Boletos online: ver Pendientes.",
-          "bk": "pend"
+          "notes": "Temporada 5 dic 2026–12 mar 2027, diario 10:00–16:30. Boletos SOLO en taquilla de la estación (sin venta en línea ni reserva); llegar 10:00. Familia OK: tren sin restricciones (desde 12 meses); telecabina abre 19 dic (10:30–15:00); cueva de hielo ~170 escalones; menores de 5 años gratis en taquilla. Adulto: tren i/v €32,10; tren + telecabina + cueva €51,30.",
+          "bk": "gratis"
         },
         {
           "start": "12:55",
@@ -1204,11 +1206,25 @@
           "book_by": "21 dic, o ese mismo día según el clima",
           "facts": "Abre diario del 12 dic 2026 al 5 feb 2027 desde las 08:50; última subida 16:15 y última bajada 16:45 (web oficial). La mejor vista del macizo para fotografiar.",
           "unv": "Política de reembolso por clima no verificada.",
-          "pend": "13A",
+          "pend": "15A",
           "status": "propuesta"
         },
         {
           "k": "Alternativa 1",
+          "title": "Motonieve al atardecer en Les Saisies (Evolution 2)",
+          "when": "Sesión 16:30 (también 17:30–21:30). Chalet → Les Saisies: 1 h 38 con márgenes (sal 14:20).",
+          "where": "Sport 2000, 196 Av. des Jeux Olympiques, Hauteluce (Les Saisies)",
+          "map": "https://maps.apple.com/?q=Les%20Saisies%20Evolution%202",
+          "price": "390 € (2 motos, una por persona); guía privado 535 €",
+          "book": "https://evolution2.com/megeve/motoneige",
+          "book_by": "En línea (para que Mariane mire)",
+          "facts": "50 min guiados por 25 km de bosque, manejas tú sin licencia. Límite por moto 200 kg (+100 kg una moto por persona).",
+          "unv": "Retención €1.500 en tarjeta. Regreso a La Cabane ~19:00 si sales 17:20.",
+          "pend": "15B",
+          "status": "propuesta"
+        },
+        {
+          "k": "Alternativa 2",
           "title": "Vuelo privado en helicóptero CMBH — 30 min «Massif du Mont-Blanc» (cara italiana del Mont Blanc y Bionnassay)",
           "when": "14:00–14:30 (vuelo de 30 min), en lugar del Brévent. Del chalet: Apple Maps 10 min · 5 km → 30 min con +20 % y estacionar; salir 13:30.",
           "where": "Chamonix Mont-Blanc Hélicoptères, 400 chemin de la Glacière, Argentière",
@@ -1218,11 +1234,11 @@
           "book_by": "Cuanto antes: pre-reserva en su web, +33 4 50 54 13 82 o info@chamonix-helico.fr",
           "facts": "Precio privado publicado en su web (leída 2 nov). No publican límite de peso por persona; el formulario pide el peso total de los pasajeros. Helicóptero H125 (AS350 B3).",
           "unv": "Que acepten 145 kg (confirmarlo por escrito), que vuelen el 22 dic (operan sobre todo fines de semana fuera de vacaciones escolares) y su política de cancelación: no verificados. Depende del clima.",
-          "pend": "13F",
+          "pend": "15F",
           "status": "propuesta"
         },
         {
-          "k": "Alternativa 2",
+          "k": "Alternativa 3",
           "title": "Alpine Coaster de Les Planards (luge sobre rieles, 1 300 m, en Chamonix)",
           "when": "11:00–17:30, sin reserva (en lugar del Brévent o después de Montenvers). Del chalet: Apple Maps 11 min · 4 km → +20 % 15 min + estacionar 15 min = 30 min.",
           "where": "Domaine des Planards, 351 Chemin du Pied du Grépon, Chamonix",
@@ -1232,7 +1248,7 @@
           "book_by": "No se reserva: se compra en taquilla",
           "facts": "Saltos, curvas y espiral de 540°; trineo con cinturón para 2; funciona con cualquier clima; desde 3 años (solos desde 1,35 m), así que Ale (3) y Jimena (5) pueden ir con un adulto (planards.fr, oficial).",
           "unv": "Límite de peso: la web no lo publica (preguntar en taquilla; con 145 kg puede que pidan ir solo en el trineo). Tarifa 2026-27 y fecha de apertura del invierno 2026 no publicadas (en 2025 abrió el 13 dic).",
-          "pend": "13H",
+          "pend": "15H",
           "status": "propuesta"
         }
       ],
@@ -4634,7 +4650,10 @@
           "type": "traslado",
           "title": "Al teleférico de la Aiguille du Midi (centro)",
           "map": "https://maps.apple.com/?ll=45.918200,6.870100&q=T%C3%A9l%C3%A9ph%C3%A9rique%20de%20l%E2%80%99Aiguille%20du%20Midi%2C%20Chamonix",
-          "bk": "gratis"
+          "bk": "gratis",
+          "optional": true,
+          "status": "propuesta",
+          "notes": "Opción del día: decidir días antes viendo el pronóstico (la noche del 23). Temporada 19 dic 2026–28 mar 2027, 08:10–16:30. Boletos online no reembolsables salvo cierre técnico o por clima."
         },
         {
           "start": "08:10",
@@ -4644,8 +4663,9 @@
           "status": "propuesta",
           "place": "Téléphérique de l’Aiguille du Midi",
           "map": "https://maps.apple.com/?ll=45.918200,6.870100&q=T%C3%A9l%C3%A9ph%C3%A9rique%20de%20l%E2%80%99Aiguille%20du%20Midi%2C%20Chamonix",
-          "notes": "Plan del día (ya no se contempla Flaine). Temporada 19 dic 2026–28 mar 2027, 08:10–16:30 (Office de Tourisme). Reservar horario online: no reembolsable salvo cierre técnico o por clima. Ver el pronóstico la noche del 23. Niños: prohibido para menores de 3 años y no recomendado para menores de 5 (web oficial). Olivia (2) no puede subir; para Ale (3) no se recomienda; Jimena (5) sí. Pendientes: reservar los horarios.",
-          "bk": "pend"
+          "notes": "Opción del día: decidir días antes viendo el pronóstico (la noche del 23). Temporada 19 dic 2026–28 mar 2027, 08:10–16:30. Boletos online no reembolsables salvo cierre técnico o por clima.",
+          "bk": "pend",
+          "optional": true
         },
         {
           "start": "08:15",
@@ -4730,12 +4750,12 @@
           "end": "23:30",
           "type": "cena",
           "title": "Nochebuena: raclette en el chalet con chef Basile (8 adultos · por reconfirmar)",
-          "status": "por_resolver",
+          "status": "en_curso",
           "place": "Chalet",
           "map": "https://maps.apple.com/?ll=45.948954,6.894321&q=Les%20Praz%2C%20Chamonix",
           "notes": "Intercambio en Enviados (10 nov): Basilechef (info@basilechef.com, 00:08) ofreció menú a €70 p/p o €75 p/p con ambas opciones de raclette (surtido + demi-meule au lait cru, bouchées, homard/langouste, charcutería y bûche de Noël). A las 18:31 confirmaste 8 adultos y pediste confirmar 8 × €75 = €600 y forma de depósito (en reenvío a Elizabeth anotaste 70 € × 8 = 560 €). NO hay respuesta de Basile después del 10 nov ni cargo en tarjetas; faltan depósito, hora y pasarle la dirección exacta.",
           "bk": "pend",
-          "flag": "sin respuesta desde 10 nov · reconfirmar",
+          "flag": "esperando respuesta (€560 vs €600)",
           "evidencia": {
             "public_text": "intercambio por correo el 10 nov 2026 (pendiente de reconfirmar)"
           }
@@ -4798,7 +4818,7 @@
       "label": "Vie 25 dic",
       "city": "Chamonix → Sarentino (Alto Adige)",
       "section": "tour",
-      "summary": "Por la mañana, check-out del chalet (toda la familia; la reserva Airbnb es de Alejandro). Desde aquí el tour es solo Francisco y Mariane. Carretera por el túnel del Mont Blanc, Milán, Verona y el Brennero hasta Terra / Auener Hof (Prati 21, Sarentino), estancia + cena de aniversario en un solo paquete (Short Stay & Gourmet Experience, Design Room, ✓ confirmado, €822; depósito €247 muy probablemente pagado el 4 nov en HSBC US). Hora 20:00 indicada por Francisco en correos del 8 y 22 nov, pero Terra no responde desde el 2 nov.",
+      "summary": "Por la mañana, check-out del chalet (toda la familia; la reserva Airbnb es de Alejandro). Desde aquí el tour es solo Francisco y Mariane. Carretera por el túnel del Mont Blanc, Milán, Verona y el Brennero hasta Terra / Auener Hof (Prati 21, Sarentino): estancia (Design Room, check-in 15:00, €822 total, cancelación gratis hasta 15 dic y luego 70 %) + cena de aniversario a las 20:00 CONFIRMADA (prenota-web 2 nov). Pendiente respuesta a las dudas de la tarde (22 nov).",
       "drive": {
         "key": "chalet_terra",
         "frm": "Chalet (Chamonix)",
@@ -7380,7 +7400,7 @@
           "status": "reservado",
           "place": "Terra / Auener Hof, Prati 21, 39058 Sarentino",
           "map": "https://maps.apple.com/?q=Terra%20Auener%20Hof%20Sarentino&ll=46.651490,11.322360",
-          "notes": "Confirmación ✓ confirmado (03.11.2026): 25–26 dic, 2 adultos, Short Stay & Gourmet Experience (hotel + cena), Design Room, €822,00. Depósito €247 muy probablemente pagado (AUENERHOF SARNTAL US$276,89 el 4 nov en HSBC US); saldo al salir €575 + tasa €3,70 p/p/día. Tus correos del 8 nov y 22 nov (12:33/12:34 c.c. Mariane) sobre llegada ~15:00, spa/quesería/estrellas siguen sin respuesta de Terra (última respuesta: 2 nov). Política de cancelación tampoco visible en ✓ confirmado.",
+          "notes": "Confirmación ✓ confirmado: 25–26 dic, 2 adultos, Short Stay & Gourmet Experience (hotel + cena), Design Room, €822,00. Depósito €247 pagado (4 nov); faltan €575 + tasa turística €3,70 p/p/noche. Check-in desde las 15:00. Cancelación gratis hasta el 15 dic; después 70 %.",
           "bk": "ok",
           "evidencia": {
             "public_text": "confirmado por correo (3 nov 2026)"
@@ -7400,13 +7420,13 @@
           "start": "20:00",
           "end": "23:30",
           "type": "cena",
-          "title": "Terra – The Magic Place ★★ (paquete Short Stay & Gourmet — 20:00 por confirmar por escrito)",
+          "title": "Terra – The Magic Place ★★ (paquete Short Stay & Gourmet — 20:00 confirmada)",
           "status": "reservado",
           "place": "Terra / Auener Hof, Prati 21, Sarentino",
           "map": "https://maps.apple.com/?q=Terra%20The%20Magic%20Place%20Sarentino&ll=46.651490,11.322360",
-          "notes": "Incluida en el paquete Short Stay & Gourmet (✓ confirmado, €822 hotel + cena para 2). El 30 oct Gisela ofreció 19:00 o 20:00; en tus correos del 8 y 22 nov indicaste cena a las 20:00, pero Terra no ha respondido desde el 2 nov ni ✓ confirmado muestra la hora. Conviene pedir que confirmen las 20:00, el depósito €247 y respondan tus dudas del 22 nov. Bloque 20:00–23:30.",
+          "notes": "Cena de aniversario a las 20:00 CONFIRMADA (prenota-web 2 nov), incluida en el paquete Short Stay & Gourmet (€822 hotel + cena para 2). Cancelación gratis hasta 15 dic; después 70 %.",
           "bk": "ok",
-          "flag": "hora 20:00 sin confirmar por escrito · sin respuesta desde 2 nov",
+          "flag": null,
           "evidencia": {
             "public_text": "confirmado por correo (3 nov 2026)"
           }
@@ -7419,15 +7439,15 @@
         "🌕 La luna al 96 % sale a las 18:21: al salir de la cena (~23:30) está alta sobre el valle. Si hay cielo despejado vale la pena una foto nocturna desde la terraza del hotel (1 600 m), pero no es la foto del día."
       ],
       "warn": [
-        "Terra / Auener Hof: Terra no ha respondido después del 2 nov a tus correos del 8 nov y 22 nov (12:33/12:34 c.c. Mariane). La cena a las 20:00 solo la indicas tú; falta confirmación escrita de la hora, recepción del depósito €247 (cargo AUENERHOF SARNTAL US$276,89 en HSBC US, 4 nov), política de cancelación y respuestas a tus preguntas de la tarde (15:00–19:30).",
+        "Terra / Auener Hof: cena 20:00 y Design Room confirmadas; cancelación gratis hasta 15 dic (luego 70 %), tasa €3,70 p/p/noche. Queda pendiente respuesta a los correos del 22 nov (spa/jacuzzi, vida local/quesería y cielo nocturno).",
         "Peajes: túnel del Mont Blanc y autopistas italianas (casetas). A22 del Brennero: llantas de invierno o cadenas a bordo 15 nov–15 abr."
       ],
       "family": [],
       "planb": [
         "Nevada: A22/A4 se mantienen abiertas, pero sal 1 h antes; con nieve fuerte en el valle de Sarentino usa cadenas."
       ],
-      "lodging": "Terra – The Magic Place / Auener Hof (Relais & Châteaux), Prati 21, Sarentino (25→26 dic; ✓ confirmado, Short Stay & Gourmet, Design Room, €822 total; depósito €247 muy probablemente pagado, faltan €575 + tasa €3,70 p/p/día; sin respuesta de Terra desde 2 nov)",
-      "dinner": "Terra ★★ — cena de aniversario (en paquete Short Stay & Gourmet; 20:00 indicado por Francisco, pendiente confirmación escrita de Terra)",
+      "lodging": "Terra – The Magic Place / Auener Hof (Relais & Châteaux), Prati 21, Sarentino (25→26 dic; ✓ confirmado, Short Stay & Gourmet, Design Room, €822 total; depósito €247 pagado, faltan €575 + tasa €3,70 p/p/noche; check-in 15:00; cancel. gratis hasta 15 dic, luego 70 %)",
+      "dinner": "Terra ★★ — cena de aniversario 20:00 (confirmada el 2 nov por prenota-web, incluida en paquete Short Stay & Gourmet)",
       "lod_status": "reservado",
       "photos": [],
       "sun": {
@@ -7474,7 +7494,7 @@
       "label": "Sáb 26 dic",
       "city": "Sarentino → Rasun-Anterselva · Plan de Corones · Val di Funes",
       "section": "tour",
-      "summary": "Salida 08:00 del Auener Hof al Ansitz Heufler a dejar maletas, Plan de Corones (panorámica de los Dolomitas) y la foto épica del viaje en Alto Adige: San Giovanni in Ranui con las Odle al atardecer. A las 19:00 te recoge el transporte del hotel para Atelier Moessmer ★★★ (3 h 30) y te regresa.",
+      "summary": "Salida 08:00 del Auener Hof al Ansitz Heufler (dejar maletas 10:50; cuarto desde 12:00 si está listo). Plan tentativo aprobado en Kronplatz: teleférico a la cima, comida en AlpiNN (por reservar y confirmar apertura 26 dic) más LUMEN y MMM Corones. Por la tarde, foto R1 al atardecer en San Giovanni in Ranui con las Odle. A las 19:00 sale el shuttle confirmado a Atelier Moessmer ★★★.",
       "drive": {
         "key": "aue_heufler",
         "frm": "Auener Hof (Sarentino)",
@@ -8678,7 +8698,7 @@
           "type": "hotel",
           "title": "Ansitz Heufler: check-in temprano o dejar las maletas",
           "status": "reservado",
-          "notes": "Paquete «Atelier Moessmer – Cook the Mountain Night»: Junior Suite, 2 personas, desayuno, total €1.180. Anticipo €350 pagado el 4 nov (Nexi, Mastercard, orden ✓ confirmado); faltan €830. Sin número de reserva en TripIt. Check-in oficial desde las 15:00, check-out 11:00. Early check-in desde las 12:00, según disponibilidad (no desde las 10:50: hay que avisar). Si llegas después de las 22:00, también hay que avisar. Tel. +39 0474 790200.",
+          "notes": "Paquete «Atelier Moessmer – Cook the Mountain Night»: Junior Suite, 2 personas, desayuno, total €1.180. Anticipo €350 pagado (Nexi ✓ confirmado); saldo €830 se paga en el hotel. Cancelación gratis hasta el 25 nov (depósito €350 retenido siempre); luego 40 % (30–15 d), 60 % (14–8 d), 80 % (≤7 d). Serena confirmó el 9 nov early check-in desde las 12:00 si el cuarto está listo, y shuttle i/v a Moessmer a las 19:00.",
           "place": "Ansitz Heufler, Rasun-Anterselva",
           "map": "https://maps.apple.com/?ll=46.790905,12.055701&q=Ansitz%20Heufler%2C%20Rasun-Anterselva",
           "bk": "ok",
@@ -8720,21 +8740,23 @@
           "start": "12:20",
           "end": "13:05",
           "type": "visita",
-          "title": "Cima de Plan de Corones: panorámica de 360° de los Dolomitas",
-          "notes": "Mirador libre en la cima. LUMEN (museo de fotografía de montaña) y MMM Corones (Messner, edificio de Zaha Hadid) están ahí mismo, pero son museos: quedan como opcionales, no en el plan.",
+          "title": "Cima de Plan de Corones: mirador 360° + LUMEN y MMM Corones (tentativo en plan)",
+          "notes": "Plan tentativo aprobado: mirador 360° en la cima + visita a LUMEN (museo de fotografía de montaña) y MMM Corones (Messner / Zaha Hadid), combinado €22 p/p.",
           "place": "Estación de montaña de Plan de Corones",
           "map": "https://maps.apple.com/?ll=46.740773,11.956011&q=LUMEN%20Museum%2C%20Plan%20de%20Corones",
-          "bk": "gratis"
+          "bk": "gratis",
+          "status": "propuesta"
         },
         {
           "start": "13:05",
           "end": "13:25",
           "type": "cafe",
-          "title": "☕ Espresso doble — AlpiNN by Norbert Niederkofler (en la cima, junto a LUMEN)",
+          "title": "Comida en AlpiNN by Norbert Niederkofler (cima Kronplatz — por reservar)",
           "place": "Plan de Corones, Brunico",
           "map": "https://maps.apple.com/?ll=46.740773,11.956011&q=LUMEN%20Museum%2C%20Plan%20de%20Corones",
-          "notes": "Abre diario 9:30–16:15 (web oficial alpinn.it). Es de Niederkofler, el mismo chef de tu cena de hoy.",
-          "bk": "gratis"
+          "notes": "Tentativo aprobado: comida en AlpiNN (de Norbert Niederkofler, mismo chef de la cena en Moessmer). Falta reservar mesa y verificar que abra el 26 dic. Horario habitual 9:30–16:15 (alpinn.it).",
+          "bk": "pend",
+          "status": "por_resolver"
         },
         {
           "start": "13:25",
@@ -8791,7 +8813,7 @@
           "type": "traslado",
           "title": "Transporte del hotel: Ansitz Heufler → Atelier Moessmer",
           "status": "reservado",
-          "notes": "Te recogen a las 19:00 en el hotel (lo que me dijiste). TripIt guarda el paquete «Cook the Mountain Night» con traslado privado ida y vuelta Heufler–Moessmer. 16 min en coche (Apple Maps).",
+          "notes": "19:15 (provisional en el paquete Heufler de €1.180), Via Walther von der Vogelweide 17, Brunico (+39 0474 646629). Shuttle gratis i/v del Ansitz Heufler saliendo a las 19:00 confirmado por Serena el 9 nov.",
           "bk": "ok"
         },
         {
@@ -8803,7 +8825,7 @@
           "place": "Atelier Moessmer Norbert Niederkofler",
           "map": "https://maps.apple.com/?ll=46.792730,11.949207&q=Atelier%20Moessmer%20Norbert%20Niederkofler",
           "bk": "ok",
-          "notes": "19:15, Via Walther von der Vogelweide 17, Brunico (+39 0474 646629). Va incluida en el paquete Heufler de €1.180; no hay confirmación aparte del restaurante (cierran el 25; el 26 había mesa por su web). Shuttle gratis del hotel a las 19:00, confirmado el 9 nov por Serena Tamantini (info@ansitzheufler.com). Bloque de 3 h 30 (la reserva no indica duración)."
+          "notes": "19:15 (provisional en el paquete Heufler de €1.180), Via Walther von der Vogelweide 17, Brunico (+39 0474 646629). Shuttle gratis i/v del Ansitz Heufler saliendo a las 19:00 confirmado por Serena el 9 nov."
         },
         {
           "start": "22:45",
@@ -8811,13 +8833,15 @@
           "type": "traslado",
           "title": "Transporte del hotel de regreso: Atelier Moessmer → Ansitz Heufler",
           "status": "reservado",
-          "bk": "ok"
+          "bk": "ok",
+          "notes": "19:15 (provisional en el paquete Heufler de €1.180), Via Walther von der Vogelweide 17, Brunico (+39 0474 646629). Shuttle gratis i/v del Ansitz Heufler saliendo a las 19:00 confirmado por Serena el 9 nov."
         }
       ],
       "recs": [
-        "Salida 08:00 → llegas al Ansitz Heufler 10:50 (OSRM con márgenes).",
-        "Si el viento cierra el teleférico de Plan de Corones, cambia por el Weihnachtsmarkt de Brunico (opcional) y sal a Ranui a la misma hora (13:45).",
-        "LUMEN (fotografía de montaña) está en la cima por si te late como algo corto, pero no lo dejé en el plan: no son de museos."
+        "Salida 08:00 → llegas al Ansitz Heufler 10:50 (OSRM con márgenes). Early check-in desde las 12:00 si el cuarto está listo (confirmado por Serena el 9 nov).",
+        "Kronplatz tentativo: teleférico + comida en AlpiNN (por reservar/confirmar que abra el 26 dic) + LUMEN y MMM Corones. Nota: AlpiNN y Moessmer son ambos de Norbert Niederkofler.",
+        "Opciones de Serena (9 nov) para que Mariane las mire: Lago de Anterselva (junto al hotel), Castillo de Brunico (MMM Ripa) y Prato Piazza (vista a las Tre Cime).",
+        "Si el viento cierra el teleférico de Plan de Corones, cambia por el Weihnachtsmarkt de Brunico o el castillo, y sal a Ranui a la misma hora (13:45)."
       ],
       "warn": [
         "La foto R1 manda: sal de Riscone a las 13:45 a más tardar para llegar a Ranui a las 15:20, antes de la hora dorada.",
@@ -8827,8 +8851,8 @@
       "planb": [
         "Nublado en Ranui (sin alpenglow): la foto pierde la luz, pero la hora azul con la iglesia sigue funcionando. Si llueve o nieva fuerte, quédate en Brunico (mercado) y regresa temprano al hotel."
       ],
-      "lodging": "Ansitz Heufler by Norbert Niederkofler, Via Valle d'Anterselva 24, Rasun-Anterselva (26→27 dic; Junior Suite, paquete €1.180)",
-      "dinner": "Atelier Moessmer 19:15 (incluida en el paquete Heufler) · shuttle del hotel 19:00 confirmado",
+      "lodging": "Ansitz Heufler by Norbert Niederkofler, Via Valle d'Anterselva 24, Rasun-Anterselva (26→27 dic; Junior Suite, paquete €1.180; €350 pagado Nexi ✓ confirmado, saldo €830 en el hotel; cancel. gratis hasta 25 nov salvo depósito €350, luego 40/60/80 %; cuarto desde 12:00 si está listo)",
+      "dinner": "Atelier Moessmer ★★★ 19:15 (provisional en paquete Heufler) · shuttle i/v del hotel 19:00 confirmado",
       "lod_status": "reservado",
       "photos": [
         "R1"
@@ -8845,17 +8869,59 @@
       },
       "acts": [
         {
-          "k": "Recomendación",
-          "title": "Plan de Corones: teleférico (taquilla) y mirador de 360°; LUMEN + MMM Corones solo opcionales",
-          "when": "12:05–15:25",
+          "k": "Recomendación (tentativo aprobado)",
+          "title": "Kronplatz: teleférico + comida en AlpiNN + LUMEN y MMM Corones",
+          "when": "12:00–13:45 (antes de salir a San Giovanni in Ranui)",
           "where": "Kronplatz, Brunico",
           "map": "https://maps.apple.com/?ll=46.740773,11.956011&q=LUMEN%20Museum",
-          "price": "Teleférico 36 € + combinado LUMEN/MMM 22 € = 58 € p/p (116 € los dos)",
-          "book": "https://www.lumenmuseum.it/plan-your-visit",
-          "book_by": "No hace falta; se compra en taquilla (o en línea un día antes)",
-          "facts": "Teleférico Kronplatz 1+2 ida y vuelta 36 € por adulto, 2026/27 (kronplatz.com). LUMEN abre con los teleféricos. MMM Corones abre del 28 nov al 11 abr, 10:00–16:00, último acceso 15:30; combinado 22 € (webs oficiales).",
+          "price": "Teleférico 36 € + combinado LUMEN/MMM 22 € = 58 € p/p + comida en AlpiNN",
+          "book": "https://www.alpinn.it/",
+          "book_by": "Reservar AlpiNN y verificar apertura 26 dic; teleférico en taquilla",
+          "facts": "Teleférico Kronplatz 1+2 €36 p/p; LUMEN + MMM Corones €22 p/p (MMM abre 28 nov–11 abr, 10:00–16:00). AlpiNN y Moessmer son ambos de Norbert Niederkofler.",
+          "unv": "Falta confirmar apertura el 26 dic y reservar mesa en AlpiNN.",
+          "pend": "22A",
+          "status": "por_resolver"
+        },
+        {
+          "k": "Alternativa 1 (opción Mariane)",
+          "title": "Lago de Anterselva (recomendación de Serena, 9 nov)",
+          "when": "Junto al hotel Ansitz Heufler",
+          "where": "Lago di Anterselva",
+          "map": "https://maps.apple.com/?q=Lago%20di%20Anterselva",
+          "price": "Libre",
+          "book": null,
+          "book_by": "No hace falta",
+          "facts": "Paisaje invernal muy cerca del hotel y buenas vistas fotográficas (correo Serena Tamantini, 9 nov).",
           "unv": null,
-          "pend": "19",
+          "pend": "22B",
+          "status": "propuesta"
+        },
+        {
+          "k": "Alternativa 2 (opción Mariane)",
+          "title": "Castillo de Brunico — MMM Ripa (recomendación de Serena, 9 nov)",
+          "when": "De paso por Brunico",
+          "where": "Castillo de Brunico (Bruneck)",
+          "map": "https://maps.apple.com/?q=Castillo%20de%20Brunico",
+          "price": "Taquilla",
+          "book": null,
+          "book_by": "En sitio",
+          "facts": "Sede del Messner Mountain Museum Ripa; recomendado por Serena (9 nov) si pasan por Brunico.",
+          "unv": "Horario del 26 dic por confirmar.",
+          "pend": "22C",
+          "status": "propuesta"
+        },
+        {
+          "k": "Alternativa 3 (opción Mariane)",
+          "title": "Prato Piazza — meseta con vista a las Tre Cime (recomendación de Serena, 9 nov)",
+          "when": "Mañana / mediodía",
+          "where": "Prato Piazza (Plätzwiese)",
+          "map": "https://maps.apple.com/?q=Prato%20Piazza",
+          "price": "Acceso según regulación invernal",
+          "book": null,
+          "book_by": "—",
+          "facts": "Meseta nevada con vista directa a las Tre Cime; recomendada por Serena (9 nov) como gran punto fotográfico.",
+          "unv": "Acceso en coche o bus lanzadera invernal por verificar.",
+          "pend": "22D",
           "status": "propuesta"
         }
       ],
@@ -12941,7 +13007,7 @@
       "label": "Lun 28 dic",
       "city": "Kobarid → Zagreb",
       "section": "tour",
-      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: FareHarbor ✓ confirmado, orden ✓ confirmado, €44,07). Nota en correo: propuesta de cata en Movia con Nina Šegula a las 10:00 (9 nov), nunca confirmada -> chocaría con Ljubljana 11:00. Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award del 4 nov), foto R3, Adviento y cena en Dubravkin put (confirmada por correo, 2 pax, nota de aniversario).",
+      "summary": "Salida 08:00 de Kobarid (08:00–08:15; el check-out oficial es a las 11:00 y no estorba) rumbo a Ljubljana para el tour de las 11:00 (CONFIRMADO y PAGADO para 2 adultos: €44,07). Movia quedó descartado (correo de cortesía enviado). Por la tarde, a Zagreb: Westin (con solicitud Nightly Upgrade Award), foto R3, Adviento y cena en Dubravkin put (confirmada por correo, 2 pax, nota de aniversario).",
       "drive": {
         "key": "hisa_lju",
         "frm": "Hiša Franko",
@@ -14516,22 +14582,6 @@
           "bk": "gratis"
         },
         {
-          "start": "10:00",
-          "end": "11:00",
-          "type": "visita",
-          "optional": true,
-          "title": "Propuesta sin confirmar — Cata en Movia (Nina Šegula, 10:00)",
-          "status": "propuesta",
-          "bk": "gratis",
-          "flag": "propuesta sin confirmar · chocaría con Ljubljana 11:00",
-          "place": "Movia, Ceglo 18, 5212 Dobrovo (Goriška Brda)",
-          "map": "https://maps.apple.com/?q=Movia%20Ceglo%2018%20Dobrovo&ll=45.978100,13.524500",
-          "notes": "En correo (9 nov 02:20): Nina Šegula respondió «Sure... we can do 28th at 10.00?» a tu consulta del 4 nov, pero nunca la confirmaste. Choca con el tour pagado de Ljubljana a las 11:00, así que queda como propuesta descartada/sin confirmar salvo que decidas otra cosa.",
-          "evidencia": {
-            "public_text": "propuesta por correo del 9 nov 2026 (sin confirmar)"
-          }
-        },
-        {
           "start": "11:00",
           "end": "13:00",
           "type": "visita",
@@ -14630,12 +14680,10 @@
       "recs": [
         "Para el tour de las 11:00: salir de Kobarid a las 08:00 (o a más tardar 08:15). El check-out oficial a las 11:00 no estorba si os vais antes.",
         "Tour de Ljubljana confirmado para 2 adultos (FareHarbor ✓ confirmado). Punto de encuentro: TIC Ljubljana, Adamič-Lundrovo nabrežie 2.",
-        "Cata en Movia (10:00): quedó solo en propuesta de Nina Šegula (9 nov); fuera del plan.",
         "Te arreglas al hacer check-in en el Westin (20 min) y de la foto y el Adviento te vas a cenar en Dubravkin put (mesa confirmada a las 19:00, 2 pax, nota de aniversario)."
       ],
       "warn": [
         "Check-out oficial de Hiša Franko a las 11:00: salid a las 08:00 (llegada con márgenes ~11:00; en tiempo de Apple ~10:03). Después de las 08:15 se come el margen.",
-        "Cata en Movia (Nina Šegula, 10:00): propuesta sin confirmar del 9 nov. Choca con el tour de Ljubljana a las 11:00; confirmar descarte/cortesía si lo deseas.",
         "Dubravkin put ★ 19:00 (2 pax): confirmado por correo (1 nov, reservations@superbexperience.com); cancelación con al menos 24 h; sin prepago.",
         "Eslovenia: viñeta electrónica (A1/A2). Croacia: peaje en caseta (A3)."
       ],
@@ -17652,12 +17700,12 @@
           "start": "15:20",
           "end": "16:45",
           "type": "foto",
-          "title": "Foto R4 — luz dorada sobre el Parlamento, atardecer y hora azul con estelas de los tranvías, desde Batthyány tér",
+          "title": "Foto R4 (bloque fijo) — Parlamento desde Batthyány tér y Castillo de Buda desde Pest / terraza del hotel",
           "place": "Batthyány tér",
           "map": "https://maps.apple.com/?ll=47.506298,19.038379&q=Batthy%C3%A1ny%20t%C3%A9r%2C%20Budapest",
           "pid": "R4",
           "bk": "gratis",
-          "notes": "Montar 15:20 · luz dorada en la fachada hasta que las colinas de Buda tapan el sol (15:39, calculado en v9) · el sol se pone 16:01 · hora azul 16:23–16:37 con el Parlamento iluminado y las estelas de los tranvías 19/41 en primer plano. Ver ficha R4."
+          "notes": "Bloques fijos de foto (~16:30–16:45 hora azul): Parlamento desde Batthyány tér (luz dorada hasta 15:39, puesta 16:01, hora azul 16:23–16:37 con estelas de tranvías 19/41) y Castillo de Buda iluminado desde el lado de Pest / terraza del hotel (~16:30–16:45). Cualquier actividad opcional elegida por Mariane debe respetar esta franja."
         },
         {
           "start": "16:45",
@@ -17714,8 +17762,7 @@
         "Desde Batthyány tér las colinas de Buda tapan el sol a las 15:39 (calculado): la luz dorada sobre el Parlamento es antes de esa hora."
       ],
       "warn": [
-        "Hungría: viñeta electrónica (e-matrica). Croacia: peaje en caseta (A4).",
-        "Sixt: confirmar que tu categoría puede entrar a Hungría (Pendientes #1)."
+        "Hungría: viñeta electrónica (e-matrica). Croacia: peaje en caseta (A4)."
       ],
       "family": [],
       "planb": [
@@ -17769,7 +17816,7 @@
         {
           "k": "Alternativa 2",
           "title": "Baños termales Széchenyi",
-          "when": "17:00–18:30 (antes de Stand)",
+          "when": "Antes de las 16:00 (sin chocar con los bloques fijos de foto ~16:30–16:45 ni con Stand 19:00)",
           "where": "Állatkerti krt. 9-11",
           "map": "https://maps.apple.com/?ll=47.518435,19.082522&q=Ba%C3%B1os%20Sz%C3%A9chenyi",
           "price": "15 800 HUF p/p (temporada alta, con casillero); Fast Track en línea 17 800 HUF",
@@ -17801,7 +17848,7 @@
       "label": "Mié 30 dic",
       "city": "Budapest → Cracovia (por Eslovaquia)",
       "section": "tour",
-      "summary": "El tramo más largo (salida 06:00). Tarde corta: la colina del Wawel por fuera y la foto larga del Wawel desde el Vístula (hora dorada y hora azul), Rynek y mercado navideño. Cena en Bottiglieria 1881, a 10 min a pie.",
+      "summary": "El tramo más largo (salida 06:00). Tarde fotográfica en Cracovia (sin interiores del Castillo de Wawel): Kopiec Krakusa (~15:20), hora azul (15:50–16:30) del Wawel desde el puente Dębnicki / orilla del Vístula (Foto R5), Rynek y Kazimierz de noche. Cena en Bottiglieria 1881, a 10 min a pie.",
       "drive": {
         "key": "budmar_bottig",
         "frm": "Budapest Marriott",
@@ -21385,34 +21432,34 @@
           "notes": "Confirmado en Marriott el 22 nov: 1 noche, 2 personas, se paga en el hotel, cancelación gratis hasta las 18:00 del día de llegada. La solicitud de upgrade (Nightly Upgrade Award) sigue pendiente y no está confirmada."
         },
         {
-          "start": "14:00",
-          "end": "14:50",
+          "start": "15:00",
+          "end": "15:40",
           "type": "visita",
-          "title": "Colina del Wawel por fuera: patios, catedral por fuera y murallas (sin interiores)",
-          "notes": "Los patios de la colina son de acceso libre. Quité los interiores del castillo (salas reales, tapices): son museo, y no son de museos. Quedan como alternativa en Pendientes.",
-          "place": "Wawel, Kraków",
-          "map": "https://maps.apple.com/?ll=50.054000,19.935400&q=Wawel%2C%20Krak%C3%B3w",
+          "title": "Kopiec Krakusa (mirador sobre Cracovia, ~15:20)",
+          "notes": "Plan fotográfico aprobado (sin interiores del Castillo de Wawel): subir a Kopiec Krakusa hacia las 15:20 para vista panorámica y luz previa al atardecer (15:47), y bajar hacia el puente Dębnicki / orilla del Vístula para la hora azul.",
+          "place": "Kopiec Krakusa, Podgórze, Kraków",
+          "map": "https://maps.apple.com/?ll=50.038100,19.958500&q=Kopiec%20Krakusa%2C%20Krak%C3%B3w",
           "bk": "gratis"
         },
         {
-          "start": "14:55",
-          "end": "16:30",
+          "start": "15:45",
+          "end": "16:35",
           "type": "foto",
-          "title": "Foto R5 — el Wawel en hora dorada, atardecer y hora azul desde el otro lado del Vístula, con estelas en el puente Grunwaldzki",
+          "title": "Foto R5 — Wawel en hora azul (15:50–16:30) desde el puente Dębnicki / orilla del Vístula",
           "place": "Bulwar Czerwieński",
           "map": "https://maps.apple.com/?ll=50.052653,19.933255&q=Bulwar%20Czerwie%C5%84ski%2C%20Krak%C3%B3w",
           "pid": "R5",
           "bk": "gratis",
-          "notes": "Montar 14:55 · hora dorada 14:50–15:47 (el sol se pone 15:47) · hora azul 16:11–16:25 con el castillo iluminado y las estelas del tráfico en el puente Grunwaldzki y el bulevar. Ver ficha R5."
+          "notes": "Plan fotográfico aprobado: llegar ~15:45 al puente Dębnicki / Bulwar Poleski (orilla del Vístula). Hora azul 15:50–16:30 con el Castillo de Wawel iluminado y reflejos sobre el río. Ver ficha R5."
         },
         {
           "start": "16:40",
           "end": "17:40",
           "type": "visita",
-          "title": "Rynek Główny: Lonja de los Paños, Basílica de Santa María, mercado navideño",
+          "title": "Rynek Główny (mercado navideño) y paseo por Kazimierz de noche",
           "place": "Rynek Główny",
           "map": "https://maps.apple.com/?ll=50.061496,19.937113&q=Rynek%20G%C5%82%C3%B3wny",
-          "notes": "Mercado navideño del Rynek: 27 nov 2026–6 ene 2027 (fuentes de viaje, no oficiales). Al salir de la foto, sube por Kanonicza y Grodzka (15 min).",
+          "notes": "Paseo por el Rynek Główny / mercado navideño y recorrido nocturno por Kazimierz (barrio de Bottiglieria 1881). También se puede rematar Kazimierz de noche después de cenar.",
           "bk": "gratis"
         },
         {
@@ -21471,9 +21518,9 @@
         }
       ],
       "recs": [
-        "Salida recomendada 06:00 (la más temprana): llegas 13:30 con 2 h 16 de luz. Cracovia es la ciudad más al norte y la de atardecer más temprano (15:46). Con 07:30 llegarías 15:00 con solo 46 min de luz.",
-        "Bottiglieria 1881 queda caminando: 736 m y 10 min a pie desde Stradom House (OSRM a pie). Vas y regresas caminando.",
-        "Si te queda energía después de cenar: Patio del Wawel: evento navideño gratuito 28–30 dic y 1–6 ene, 17:00–22:00 (web oficial del Wawel)."
+        "Salida recomendada 06:00 (la más temprana): llegas 13:30 con tiempo de sobra antes de Kopiec Krakusa (~15:20) y la hora azul (15:50–16:30).",
+        "Sin interiores en el Castillo de Wawel: el foco está en Kopiec Krakusa, el Wawel iluminado desde el puente Dębnicki / orilla del Vístula y Kazimierz de noche.",
+        "Bottiglieria 1881 queda en Kazimierz, a 736 m y 10 min a pie desde Stradom House (OSRM a pie). Vas y regresas caminando."
       ],
       "warn": [
         "Hotel del 30 ya en TripIt: Stradom House Hotel & Spa, Autograph Collection (12-14 Stradomska, Cracovia), confirmación ✓ confirmado, 930 PLN. Ojo: es habitación Modern Twin (2 camas individuales), vista al patio. Cancelación gratis hasta el 30 dic 23:59 hora del hotel; después cobran 930 PLN.",
@@ -21502,31 +21549,18 @@
       },
       "acts": [
         {
-          "k": "Recomendación",
-          "title": "Colina del Wawel por fuera + foto R5 desde Dębniki",
-          "status": "propuesta",
-          "when": "Mié 30 dic, 14:00–16:30",
-          "where": "Wawel y Bulwar Poleski",
+          "k": "Recomendación (aprobado)",
+          "title": "Plan fotográfico Cracovia: Kopiec Krakusa (~15:20) + hora azul Wawel (15:50–16:30 desde puente Dębnicki / Vístula) + Kazimierz de noche",
+          "status": "listo",
+          "when": "Mié 30 dic, ~15:20–18:30 y después de cenar",
+          "where": "Kopiec Krakusa, puente Dębnicki / Bulwar Poleski y Kazimierz",
           "price": "Gratis",
           "book_by": "No se reserva",
-          "facts": "Patios de la colina de acceso libre; la foto es desde la orilla de enfrente."
+          "facts": "Sin interiores del Castillo de Wawel. Acceso libre en Kopiec Krakusa, puente Dębnicki/Vístula y Kazimierz.",
+          "pend": "26"
         },
         {
-          "k": "Alternativa 1",
-          "title": "Castillo Real de Wawel — interiores, 1.er y 2.º piso",
-          "when": "14:00–15:45",
-          "where": "Wawel 5",
-          "map": "https://maps.apple.com/?ll=50.054405,19.936022&q=Wawel",
-          "price": "95 PLN p/p con audioguía (190 PLN los dos); solo 2.º piso 57 PLN",
-          "book": "https://wawel.krakow.pl/en/what-to-see",
-          "book_by": "15 dic (cupo diario limitado)",
-          "facts": "Dic: mar–dom 09:00–17:00; último acceso al 1.er+2.º piso 2 h antes del cierre (15:00) (web oficial).",
-          "unv": "Política de reembolso no verificada.",
-          "pend": "22A",
-          "status": "propuesta"
-        },
-        {
-          "k": "Alternativa 2",
+          "k": "Alternativa 1 (opcional)",
           "title": "Mina de sal de Wieliczka — Ruta Turística en inglés",
           "when": "≈14:30–17:30 (se come toda la tarde)",
           "where": "Wieliczka, 25 min en coche",
@@ -21536,7 +21570,7 @@
           "book_by": "20 dic",
           "facts": "Abre 09:00–17:00; boletos con hora en línea; en inglés también se venden en taquilla si hay cupo (web oficial). Auschwitz-Birkenau no cabe hoy: visita guiada de 3 h 30–3 h 45 más ~1 h 15 de coche por trayecto.",
           "unv": "Horarios de salida en inglés del 30 dic no verificados.",
-          "pend": "22B",
+          "pend": "26A",
           "status": "propuesta"
         }
       ]
@@ -24732,20 +24766,6 @@
           "unv": "Horario especial del 31 dic no publicado.",
           "pend": null,
           "status": "propuesta"
-        },
-        {
-          "k": "Alternativa 1",
-          "title": "Concierto de Fin de Año de la Filarmónica Eslovaca — Reduta",
-          "when": "Jue 31 dic 16:00 (termina ~18:00) → UFO 20:00 sin prisa. Reduta está a ~20 min a pie del hotel (no medido): sal 15:35 y salta el castillo y la foto R6.",
-          "where": "Reduta, Nám. Eugena Suchoňa / Medená 3, Bratislava",
-          "map": "https://maps.apple.com/?q=Reduta%20Bratislava",
-          "price": "40 € / 35 € por persona",
-          "book": "https://www.filharmonia.sk/m6-2026",
-          "book_by": "Cuanto antes (venta en su web)",
-          "facts": "Arias y coros de Mozart, Rossini, Chaikovski, Verdi y Wagner; dirige Erik Nielsen; Veronika Dzhioeva (soprano) y Dalibor Jenis (barítono) (filharmonia.sk, oficial).",
-          "unv": "Política de cancelación: no verificada. Peso/edad: no aplica.",
-          "pend": "23",
-          "status": "propuesta"
         }
       ]
     },
@@ -24754,7 +24774,7 @@
       "label": "Vie 1 ene",
       "city": "Bratislava → Pequeños Cárpatos → Devín → Viena",
       "section": "tour",
-      "summary": "Viena se queda para otro viaje: la mañana es para los Pequeños Cárpatos (Svätý Jur y comida con vino en la Zámocká viecha de Pezinok, pendiente de confirmar que abra el 1 ene, que es viernes y festivo). Por la tarde, foto R7 del castillo de Devín desde la orilla pública (Slovanské nábrežie, confluencia del Danubio y el Morava), fuera del recinto, que ese día está cerrado. A Viena solo a dormir y a cenar en TIAN. Si Pezinok no abre: alternativa fuerte, Hainburg an der Donau (ruinas de Schlossberg, acceso libre todo el año).",
+      "summary": "Mañana en ruta entre Bratislava y Viena: buscando vinícola real con cata y comida abierta el 1 ene (descartados restaurantes de vinos). Por la tarde, foto R7 de Devín desde la orilla pública de Slovanské nábrežie (15:30–16:50; plan B Braunsberg a pie ~20 min). Cena en TIAN ★ a las 19:00 (confirmada; Esszimmer, [aend], GLASSWING y APRON quedan de backup).",
       "drive": {
         "key": "river_svjur",
         "frm": "Grand Hotel River Park (Bratislava)",
@@ -25038,7 +25058,7 @@
           "start": "11:25",
           "end": "11:55",
           "type": "coche",
-          "title": "Manejar Svätý Jur → Castillo de Pezinok",
+          "title": "Manejar hacia la vinícola elegida (en búsqueda)",
           "notes": "Ruta verificada 20 min · 24 km → +20 % 25 min + descansos 0 min + estacionar 15 min = 40 min (sale 10:15 → llega 10:55). Por confirmar que abra el 1 ene y reservar (2 personas, ~11:55). Horario habitual domingo 11:00–21:00 (zamockaviecha.sk, leído 22 nov 2026); el 1 ene es festivo y no está verificado. OSRM 10 min · 7 km → +20 % 15 min + estacionar 15 min = 30 min.",
           "map": "https://maps.apple.com/?saddr=48.252000,17.215300&daddr=48.288600,17.266800&dirflg=d",
           "bk": "gratis"
@@ -25047,10 +25067,10 @@
           "start": "11:55",
           "end": "13:45",
           "type": "cena",
-          "title": "Propuesta — Comida con vinos de los Pequeños Cárpatos en la Zámocká viecha (Castillo de Pezinok)",
-          "status": "propuesta",
-          "notes": "Propuesta (no hay reserva): comida con vino para 2 a ~11:55. EA no encontró ningún correo en Recibidos, Enviados ni Travel + Leisure (Zámocká, Zamocka, viecha, Pezinok). El 1 ene 2027 es viernes y festivo en Eslovaquia. Horario habitual viernes 11:00–22:30 (zamockaviecha.sk). Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau (Schlossberg, acceso libre todo el año), de camino a Viena.",
-          "place": "Zámocká viecha, Mladoboleslavská 5, 902 01 Pezinok",
+          "title": "Buscando vinícola — Cata y comida en vinícola entre Bratislava y Viena (1 ene)",
+          "status": "en_curso",
+          "notes": "Buscando vinícola real con cata y comida que abra el 1 ene (se descartaron restaurantes de vinos). Ventana flexible antes de llegar a Devín (15:30) y TIAN (19:00).",
+          "place": "Ruta entre Bratislava y Viena (por definir vinícola abierta el 1 ene)",
           "map": "https://maps.apple.com/?ll=48.288600,17.266800&q=Z%C3%A1mock%C3%A1%20viecha%2C%20Pezinok",
           "bk": "pend"
         },
@@ -25058,7 +25078,7 @@
           "start": "13:45",
           "end": "14:50",
           "type": "coche",
-          "title": "Manejar Pezinok → Castillo de Devín",
+          "title": "Manejar vinícola → orilla pública de Devín",
           "notes": "Ruta verificada 40 min · 41 km → +20 % 50 min + descansos 0 min + estacionar 15 min = 1 h 05 (sale 13:45 → llega 14:50). Id a la orilla pública (Slovanské nábrežie), no a la taquilla del recinto, que está cerrado.",
           "map": "https://maps.apple.com/?saddr=48.288600,17.266800&daddr=48.174400,16.979400&dirflg=d",
           "bk": "gratis"
@@ -25072,19 +25092,19 @@
           "place": "Slovanské nábrežie, Devín (aparcamiento gratuito bajo el peñón)",
           "map": "https://maps.apple.com/?ll=48.174100,16.976400&q=S%C3%BAtok%20Dunaja%20a%20Moravy%2C%20Dev%C3%ADn",
           "bk": "gratis",
-          "status": "propuesta"
+          "status": "listo"
         },
         {
           "start": "15:30",
           "end": "16:50",
           "type": "foto",
           "title": "Foto R7 — Devín desde la orilla pública (confluencia): hora dorada, atardecer y hora azul",
-          "notes": "El recinto del castillo está cerrado el 1 ene, pero esta toma es desde la orilla pública de Slovanské nábrežie (confluencia del Danubio y el Morava), fuera del areál, ~5 min a pie desde el aparcamiento gratuito al pie del peñón. No hace falta entrada. Hora dorada 15:16–16:09 · hora azul 16:32–16:45. El sol se pone a la izquierda del castillo (az 235°), ideal para silueta.",
+          "notes": "Listo (aprobado): orilla pública de Slovanské nábrežie (confluencia Danubio/Morava), fuera del recinto cerrado, ~5 min a pie desde aparcamiento gratuito. Plan B si el río o el hielo no dejan: Braunsberg en Hainburg (Austria), subida a pie ~20 min.",
           "place": "Slovanské nábrežie, sútok Dunaja a Moravy (orilla pública bajo el castillo), Devín",
           "map": "https://maps.apple.com/?ll=48.174100,16.976400&q=S%C3%BAtok%20Dunaja%20a%20Moravy%2C%20Dev%C3%ADn",
           "bk": "gratis",
           "pid": "R7",
-          "status": "propuesta"
+          "status": "listo"
         },
         {
           "start": "16:50",
@@ -25132,15 +25152,14 @@
         }
       ],
       "recs": [
-        "🎻 Concierto de Año Nuevo de la Filarmónica de Viena: en vivo a las 11:15 por Ö1/ORF 2, mientras manejas de Svätý Jur a Pezinok.",
-        "Revisé si alguna bodega abre el 1 ene: el año pasado el Zámocké vinárstvo (Pezinok) cerró del 1 al 6 ene, el restaurante Matyšák (Pezinok) del 31 dic al 2 ene, y el Salón Nacional de Vinos (Bratislava) el 1 ene. Por eso propongo comida con vino en un restaurante de bodega (Zámocká viecha) y no una cata guiada. Hay que confirmar con ellos que abran ese día.",
-        "Desvío frente a ir directo a Viena: unas 2 h 35 más de manejo en total (40 + 30 + 65 + 95 min con márgenes contra 1 h 15 directo), dentro de lo que permitiste.",
-        "Foto R7: orilla pública en Slovanské nábrežie, ~5 min a pie desde el aparcamiento gratuito al pie del castillo. No hace falta entrar al recinto (cerrado el 1 ene). Legal y accesible.",
-        "Si la Zámocká viecha no abre: id a Hainburg an der Donau (a ~25 min, de camino a Viena). Las ruinas de Schlossberg son de acceso libre todo el año y sin entrada. El Braunsberg tiene una vista clásica de Devín desde Austria, pero la carretera al alto está cerrada en invierno desde el 16 nov 2026: se sube a pie (~20 min) y puede haber hielo. El parque de Carnuntum no abre hasta el 13 mar 2027 (el Heidentor, al aire libre, sí es accesible, pero es más débil)."
+        "🎻 Concierto de Año Nuevo de la Filarmónica de Viena: en vivo a las 11:15 por Ö1/ORF 2 en el coche.",
+        "Buscando vinícola real con cata y comida abierta el 1 ene entre Bratislava y Viena (sin comprometer Devín 15:30 ni TIAN 19:00).",
+        "Foto R7 (listo): orilla pública en Slovanské nábrežie, ~5 min a pie del aparcamiento gratuito. Plan B: Braunsberg en Hainburg (~20 min a pie).",
+        "Cena: se mantiene TIAN ★ 19:00; Esszimmer ★, [aend] ★, GLASSWING ★ y APRON ★ quedan únicamente como backup."
       ],
       "warn": [
-        "El recinto de Devín está cerrado el 1 ene (návštevný poriadok, Múzeum mesta Bratislavy). La foto R7 se hace desde la orilla pública de Slovanské nábrežie (confluencia), fuera del recinto, sin entrada.",
-        "La Zámocká viecha no ha confirmado que abra el 1 ene (viernes festivo). Horario habitual vie 11:00–22:30; hay que llamar o escribir. Si no abre: Hainburg (Schlossberg libre todo el año). Carnuntum (parque reconstruido) no abre hasta el 13 mar 2027.",
+        "El recinto de Devín está cerrado el 1 ene; la foto R7 se hace desde la orilla pública de Slovanské nábrežie (Plan B: Braunsberg a pie ~20 min).",
+        "En búsqueda de vinícola abierta el 1 ene (viernes festivo).",
         "Austria: viñeta digital obligatoria. Eslovaquia: la misma viñeta del 30."
       ],
       "family": [],
@@ -25165,48 +25184,20 @@
       },
       "acts": [
         {
-          "k": "Recomendación",
-          "title": "Comida con vinos de los Pequeños Cárpatos en la Zámocká viecha (castillo de Pezinok)",
-          "status": "por_resolver",
-          "when": "Vie 1 ene, 11:55–13:45",
-          "where": "Mladoboleslavská 5, Pezinok",
-          "price": "Carta (sin precio verificado)",
-          "book_by": "Ya (confirmar que abre el 1 ene)",
-          "facts": "Restaurante del castillo con bodegas de más de 800 años; viernes normal 11:00–22:30 (zamockaviecha.sk, 8 nov).",
-          "unv": "Que abra el 1 ene: NO verificado. El año pasado el Zámocké vinárstvo cerró su tienda del 1 al 6 ene.",
-          "map": "https://maps.apple.com/?ll=48.288600,17.266800&q=Z%C3%A1mock%C3%A1%20viecha%2C%20Pezinok",
-          "pend": "24A"
+          "k": "En búsqueda",
+          "title": "Vinícola real con cata y comida abierta el 1 ene (entre Bratislava y Viena)",
+          "status": "en_curso",
+          "when": "Vie 1 ene, ~11:00–13:45",
+          "where": "Entre Bratislava y Viena (Pequeños Cárpatos / frontera AT-SK)",
+          "price": "Por confirmar según vinícola",
+          "book_by": "En cuanto se elija y confirme apertura el 1 ene",
+          "facts": "Se buscan bodegas/vinícolas reales (no restaurantes de vinos); manteniendo foto de Devín 15:30 y TIAN 19:00.",
+          "unv": "Investigación en curso para confirmar bodegas abiertas el 1 ene.",
+          "pend": "28"
         },
         {
-          "k": "Alternativa 1",
-          "title": "ELESKO Restaurant & Wine Bar (Modra, entre viñedos)",
-          "status": "por_resolver",
-          "when": "Vie 1 ene, 12:00–13:45",
-          "where": "Partizánska 2275, Modra",
-          "price": "Carta",
-          "book_by": "Ya (confirmar que abre el 1 ene)",
-          "facts": "\"Abierto en horario normal\" (eleskorestaurant.sk, 8 nov).",
-          "unv": "1 ene sin verificar.",
-          "map": "https://maps.apple.com/?ll=48.319600,17.320800&q=ELESKO%2C%20Modra",
-          "pend": "24B"
-        },
-        {
-          "k": "Alternativa 2 (noche, en vez de TIAN)",
-          "title": "9ª Sinfonía de Beethoven — Sinfónica de Viena, Manfred Honeck (Konzerthaus, Großer Saal)",
-          "when": "Vie 1 ene 19:00 – aprox. 20:30. Choca con TIAN a las 19:00: o mueves TIAN a más tarde, o cenas después en APRON (en el hotel de al lado del Konzerthaus).",
-          "where": "Wiener Konzerthaus, Lothringerstraße 20",
-          "map": "https://maps.apple.com/?q=Wiener%20Konzerthaus",
-          "price": "57 / 78 / 104 / 128 / 147 / 159 € por persona",
-          "book": "https://konzerthaus.at/en/program-and-tickets/wiener-symphoniker-honeck/63700",
-          "book_by": "Cuanto antes (venta abierta)",
-          "facts": "Fecha y hora confirmadas en konzerthaus.at y wienersymphoniker.at (leídas 5 nov): 1 ene 2027, 19:00–~20:30. Solistas: Landshamer, Morison, Schmitt, Schuen; Wiener Singakademie.",
-          "unv": "Política de devolución: no verificada. Peso/edad: no aplica.",
-          "pend": "26A",
-          "status": "propuesta"
-        },
-        {
-          "k": "Alternativa 3 (noche, en vez de TIAN)",
-          "title": "Esszimmer – Everybody's Darling ★ (Alexander Kumptner)",
+          "k": "Backup 3 (noche, en vez de TIAN)",
+          "title": "Backup: Esszimmer – Everybody's Darling ★ (Alexander Kumptner)",
           "when": "Desde las 18:00 (mié–sáb). Abre el 1 ene: según tu lista; su web no menciona el festivo.",
           "where": "Tuchlauben 22, Viena (1.er distrito)",
           "map": "https://maps.apple.com/?q=Everybody%27s%20Darling%2C%20Tuchlauben%2022%2C%20Wien",
@@ -25219,8 +25210,8 @@
           "status": "propuesta"
         },
         {
-          "k": "Alternativa 4 (noche, en vez de TIAN)",
-          "title": "[aend] ★ (Fabian Günzel)",
+          "k": "Backup 4 (noche, en vez de TIAN)",
+          "title": "Backup: [aend] ★ (Fabian Günzel)",
           "when": "Abre el 1 ene: según tu lista; horario no leído.",
           "where": "Mollardgasse 76, Viena (6.º distrito)",
           "map": "https://maps.apple.com/?q=aend%2C%20Mollardgasse%2076%2C%20Wien",
@@ -25233,8 +25224,8 @@
           "status": "propuesta"
         },
         {
-          "k": "Alternativa 5 (noche, en vez de TIAN)",
-          "title": "GLASSWING ★ (Alexandru Simon, hotel The Amauris)",
+          "k": "Backup 5 (noche, en vez de TIAN)",
+          "title": "Backup: GLASSWING ★ (Alexandru Simon, hotel The Amauris)",
           "when": "Mar–sáb desde las 18:00; último horario para el menú 20:30. Abre el 1 ene: según tu lista.",
           "where": "The Amauris Vienna, Kärntner Ring, Viena",
           "map": "https://maps.apple.com/?q=Glasswing%20Restaurant%2C%20The%20Amauris%20Vienna",
@@ -25247,8 +25238,8 @@
           "status": "propuesta"
         },
         {
-          "k": "Alternativa 6 (noche, en vez de TIAN)",
-          "title": "APRON ★ (Hotel Am Konzerthaus)",
+          "k": "Backup 6 (noche, en vez de TIAN)",
+          "title": "Backup: APRON ★ (Hotel Am Konzerthaus)",
           "when": "Mar–sáb 18:00–24:00. Abre el 1 ene: según tu lista. Está pegado al Konzerthaus: la opción para cenar después de Beethoven (~20:45).",
           "where": "Am Heumarkt 35-37, Viena (3.er distrito)",
           "map": "https://maps.apple.com/?q=Restaurant%20Apron%2C%20Am%20Heumarkt%2035%2C%20Wien",
@@ -28439,27 +28430,17 @@
       },
       "acts": [
         {
-          "k": "Recomendación",
-          "title": "Castillo de Praga por fuera + foto R8 (Puente de Carlos → puente Mánes)",
-          "status": "propuesta",
-          "when": "Sáb 2 ene, 14:15–17:05",
-          "where": "Hradčany y orilla del Moldava",
-          "price": "Gratis",
-          "book_by": "No se reserva",
-          "facts": "Patios del Castillo de acceso libre."
-        },
-        {
-          "k": "Alternativa 1 (interiores)",
-          "title": "Castillo de Praga — circuito principal (San Vito, Antiguo Palacio Real, San Jorge, Callejón del Oro)",
-          "when": "14:15–15:45",
-          "where": "Hradčany",
-          "map": "https://maps.apple.com/?ll=50.090811,14.400522&q=Castillo%20de%20Praga",
-          "price": "450 CZK p/p (900 CZK los dos)",
-          "book": "https://www.hrad.cz/en/prague-castle-for-visitors/tickets",
-          "book_by": "Opcional: en los centros de información del Castillo o en línea",
-          "facts": "Invierno: edificios 09:00–16:00, último acceso 15:40 (hrad.cz, oficial); precio según prague.eu.",
-          "unv": null,
-          "pend": "27A",
+          "k": "Opción para Mariane",
+          "title": "1 h Castillo de Praga (14:15–15:15) + paseo en bote Prague Boats (~16:00, muelle 3B puente Čech)",
+          "when": "14:15–15:15 Castillo · ~16:00 crucero de 50 min (horarios 2 ene por abrir)",
+          "where": "Castillo de Praga → Muelle 3B del puente Čech (al final de Pařížská)",
+          "map": "https://maps.apple.com/?ll=50.092800,14.417300&q=Prague%20Boats%20%C4%8Cech%20Bridge%20Pier%203B",
+          "price": "Castillo 450 CZK p/p + Prague Boats €16,20 p/p online",
+          "book": "https://www.prague-boats.cz/one-hour-evening-cruise/",
+          "book_by": "Cuando abran los horarios del 2 ene (con tu OK)",
+          "facts": "Barco eléctrico calefactado todo el año, cubierta superior abierta para fotos al atardecer con el Castillo de fondo.",
+          "unv": "Horarios exactos del 2 ene aún no publicados.",
+          "pend": "31A",
           "status": "propuesta"
         },
         {
@@ -83187,74 +83168,75 @@
         "n": 1,
         "grp": "ya",
         "status": "por_resolver",
-        "what": "Sixt: confirmar por escrito llantas de invierno, tracción (xDrive o equivalente) y países permitidos",
-        "when": "En el mostrador el 21 dic (los cambios gratis en línea ya vencieron, 3 nov)",
-        "why": "Confirmación ✓ confirmado: Fullsize Elite SUV (Tonale / X2 / X1 o similar), incluye cadenas (50 €) y cruce de fronteras, pero no dice nada de llantas de invierno ni de la tracción. Eslovenia las exige 15 nov–15 mar. Confirmar también Hungría y el resto del tour. La cobertura de daños la da la AMEX Centurion (ya no es pendiente)."
+        "what": "Sixt: decidir llantas de invierno (€350 / 28 días) y llevar tus cadenas",
+        "when": "~1 semana antes (~14 dic) — zonas I–III y cadenas ya confirmadas",
+        "why": "Confirmación Sixt (✓ confirmado, correo Diamond 13 nov): zonas I–III confirmadas para todos los países de la ruta, cadenas obligatorias en Francia (ya tienes cadenas propias) y llantas de invierno a €350 por periodo de 28 días (decides ~1 semana antes, hacia el 14 dic). Tracción xDrive o equivalente según flota en mostrador. Daños cubiertos por AMEX Centurion."
       },
       {
         "grp": "ya",
         "status": "propuesta",
-        "what": "¿Agregar a Mariane como conductora en Sixt?",
-        "when": "Antes del 21 dic, o en el mostrador",
-        "why": "Francisco indica que Mariane quizá maneje. La reserva no trae conductor adicional. La cobertura de daños la da la AMEX Centurion.",
+        "what": "Opcional en mostrador: agregar a Mariane como 2.ª conductora en Sixt",
+        "when": "En el mostrador el 21 dic (opcional)",
+        "why": "Decisión: opcional en el mostrador el 21 dic si Mariane decide manejar. La reserva actual no incluye conductor adicional; cobertura de daños por AMEX Centurion.",
         "n": 2
       },
       {
         "n": 3,
         "grp": "ya",
-        "status": "por_resolver",
-        "what": "Permiso internacional de conducir",
-        "when": "Antes de viajar",
-        "why": "No lo verifiqué: algunos países (p. ej. Italia) pueden pedirlo con licencia no europea. Confírmalo con Sixt."
+        "status": "en_curso",
+        "what": "Permiso internacional de conducir (Mariane listo · Francisco en espera de entrega)",
+        "when": "23 nov (Mariane lo recoge; confirmar para marcar listo)",
+        "why": "Mariane ya tiene su permiso internacional. El de Francisco lo recoge Mariane el 23 nov; queda pendiente confirmar entrega para marcarlo listo."
       },
       {
         "n": 4,
         "grp": "tramite",
-        "status": "propuesta",
+        "status": "por_resolver",
         "what": "Viñetas electrónicas: Eslovenia, Hungría, Eslovaquia, Austria, Chequia",
-        "when": "Antes de cada frontera (con la placa, que tendrás el 21 dic)",
-        "why": "Ver «Trámites de carretera» abajo. Suiza no hace falta si sales de Ginebra por la A40 francesa."
+        "when": "A partir del 21 dic, en cuanto se sepa la placa (yo las compro)",
+        "why": "Pendiente para el 21 dic cuando recojas el coche y tengamos la placa; yo las compro. Ver «Trámites de carretera» abajo. Suiza no hace falta saliendo por la A40 francesa."
       },
       {
         "n": 5,
         "grp": "tramite",
         "status": "por_resolver",
         "what": "Cracovia: registrar el coche en la zona de bajas emisiones (SCT)",
-        "when": "Antes del 30 dic (con la placa)",
-        "why": "Desde el 1 ene 2026 los coches con placa extranjera deben registrarse aunque cumplan la norma (krakow.pl)."
+        "when": "El 21 dic en cuanto tengamos la placa (antes del 30 dic; yo lo hago)",
+        "why": "Desde el 1 ene 2026 los coches con placa extranjera deben registrarse en línea aunque cumplan la norma (krakow.pl). Se hace el 21 dic con la placa (yo lo tramito)."
       },
       {
         "n": 6,
         "grp": "ya",
-        "status": "por_resolver",
-        "what": "Llamar a los hoteles para reservar estacionamiento",
-        "when": "Cuando me lo pidas",
-        "why": "Auener Hof, Ansitz Heufler, Hiša Franko, Westin Zagreb, Budapest Marriott, Stradom House, Grand Hotel River Park, Imperial Riding School y Prague Marriott."
+        "status": "en_curso",
+        "what": "Estacionamiento en hoteles Marriott y vista sin obstrucciones en Budapest",
+        "when": "Esperando respuesta de Ambassador Simleendeep Kaur (enviado 22 nov 21:28)",
+        "why": "No hace falta en Auener Hof/Terra, Ansitz Heufler ni Hiša Franko. Correo enviado el 22 nov 21:28 a tu Ambassador (Simleendeep Kaur) pidiendo estacionamiento en los 5 Marriott (Westin Zagreb, Budapest Marriott, Stradom House, Grand Hotel River Park, Imperial Riding School y Prague Marriott) y habitación en Budapest con vista al Parlamento/Danubio sin obstrucciones (sin vidrio de por medio)."
       },
       {
         "n": 7,
         "grp": "ya",
-        "status": "por_resolver",
-        "what": "Ansitz Heufler: pagar el saldo de €830",
-        "when": "Antes de la estancia (26 dic); el anticipo de €350 ya se pagó el 4 nov",
-        "why": "Paquete «Atelier Moessmer – Cook the Mountain Night» €1.180 (Junior Suite, desayuno, 2 personas). Orden ✓ confirmado. Sin número de reserva en TripIt. La política de cancelación solo está en un enlace del correo, no la abrí."
+        "status": "reservado",
+        "what": "Ansitz Heufler: saldo de €830 se paga en el hotel (cancelación gratis hasta 25 nov)",
+        "when": "Fecha límite cancelación gratis: 25 nov · saldo €830 en el hotel (26 dic)",
+        "why": "Paquete «Atelier Moessmer – Cook the Mountain Night» €1.180 (Junior Suite, desayuno, 2 pax). Anticipo €350 pagado (Nexi ✓ confirmado) y saldo de €830 se paga directo en el hotel. Cancelación gratis hasta el 25 nov (el depósito de €350 se retiene en todo caso); luego 40 % (30–15 d), 60 % (14–8 d), 80 % (≤7 d). Shuttle a Moessmer 19:00 i/v confirmado; mesa 19:15 provisional; habitación posiblemente desde las 12:00.",
+        "done": true
       },
       {
         "n": 8,
         "grp": "ya",
-        "status": "info",
-        "what": "Hiša Franko: anotar precio/categoría final",
-        "when": "Cuando puedas",
-        "why": "Habitación confirmada por correo: el 1 nov añadieron una superior; el 5 nov la pasaron a twin con terraza. Precio: estándar €230 / superior €250 por noche con desayuno, más €2,5 de impuesto p/p. Cancelación a menos de 96 h = 100 %. No está indicada la categoría ni el precio finales, ni hay número de reserva. No aparece en TripIt.",
-        "detail": "La hora de la cena se elige en su web (19:00–20:00). Sin número de reserva."
+        "status": "en_curso",
+        "what": "Hiša Franko: esperando categoría/tarifa final, n.º de reserva y cena 19:00",
+        "when": "Esperando respuesta al correo enviado el 22 nov",
+        "why": "Correo enviado el 22 nov pidiendo categoría y tarifa final (estándar €230 / superior €250 por noche con desayuno, más €2,50 impuesto p/p), número de confirmación, confirmación de cena 19:00 y recomendación segura para cold plunge en el Soča. Cancelación a menos de 96 h = 100 %.",
+        "detail": "Pendiente respuesta de Hiša Franko al correo del 22 nov."
       },
       {
         "n": 9,
         "grp": "ya",
-        "status": "por_resolver",
-        "what": "Hoteles: números, NUA y cancelación",
-        "when": "Antes de cada fecha límite",
-        "why": "Chalet Chamonix: reserva Airbnb de Alejandro (sin costo para Francisco). Confirmados con número: Terra/Auener Hof ✓ confirmado (€822 paquete; depósito €247 muy probablemente pagado, faltan €575 + tasa; cancelación por pedir), Ansitz Heufler ✓ confirmado (€1.180; €350 pagado, faltan €830), Westin Zagreb ✓ confirmado (€129, gratis 28 dic; NUA 4 nov), Budapest Marriott ✓ confirmado (€234,35, gratis 29 dic; NUA 4 nov), Stradom House ✓ confirmado (PLN 930, gratis 30 dic 23:59; la ✓ confirmado cancelada), River Park ✓ confirmado (€182, gratis 31 dic; NUA 4 nov), Imperial ✓ confirmado (€213, gratis 1 ene), Prague Marriott ✓ confirmado (CZK 6.148, Deluxe 2 queen, gratis 2 ene). Hiša Franko: confirmada por correo (no hace falta número)."
+        "status": "en_curso",
+        "what": "Hoteles: números, NUA, estacionamiento y políticas de cancelación",
+        "when": "Antes de cada fecha límite (Heufler 25 nov · Terra 15 dic)",
+        "why": "Chalet Chamonix: reserva Airbnb de Alejandro (sin costo). Confirmados: Terra/Auener Hof ✓ confirmado (Design Room €822; depósito €247 pagado, faltan €575 + tasa €3,70 p/p/noche; gratis hasta 15 dic, luego 70 %; check-in 15:00), Ansitz Heufler ✓ confirmado (€1.180; €350 pagado Nexi, €830 en hotel; gratis hasta 25 nov salvo depósito €350, luego 40/60/80 %), Westin Zagreb ✓ confirmado (€129, gratis 28 dic 18:00), Budapest Marriott ✓ confirmado (€234,35, gratis 29 dic 18:00), Stradom House ✓ confirmado (PLN 930, gratis 30 dic 18:00/23:59), River Park ✓ confirmado (€182, gratis 31 dic 18:00), Imperial ✓ confirmado (€213, gratis 1 ene 18:00), Prague Marriott ✓ confirmado (CZK 6.148, gratis 2 ene 18:00). NUA + estacionamiento + vista Budapest pedidos a Ambassador el 22 nov. Hiša Franko: esperando respuesta al correo del 22 nov."
       },
       {
         "n": 10,
@@ -83265,20 +83247,12 @@
         "why": "AM 37, VY 1124, FR 3073 y AM 38: TripIt no trae asientos. Pasajeros: Francisco y Mariane Brust Mascher. Los miras tú; se deja como un solo pendiente."
       },
       {
-        "n": 11,
-        "grp": "ya",
-        "status": "propuesta",
-        "what": "Familia (tus hermanos): trineo con perros en Huskydalen, mié 23 dic",
-        "when": "La fecha que pedían (15 nov) ya pasó",
-        "why": "Edad mínima 3 años: Olivia (2) no puede ir; Ale (3) y Jimena (5) sí. Si aún lo quieren, hay que preguntar si queda lugar."
-      },
-      {
         "n": 12,
         "grp": "info",
         "status": "info",
         "what": "Fechas límite que vienen",
         "when": "Calendario",
-        "why": "Parlamento Budapest (29 dic) 1 dic · Wawel 15 dic · Wieliczka 20 dic · Le Cap-Horn gratis hasta 21 dic 16:45 · La Cabane 22 dic gratis hasta 22 dic 15:30 · La Cabane 23 dic gratis hasta 23 dic 15:30 · Albert 1er (23 dic): €100 p/p si cancelas el 23 después de 12:00 · Hiša Franko: TripIt dice 24 dic 20:00, correo dice <96 h (23 dic) · Ljubljana tour gratis hasta 27 dic 11:00 · Westin 28 dic · Marriott Budapest 29 dic · Stradom 30 dic 23:59 · TIAN gratis hasta 31 dic 19:00 · Saldo Heufler €830 · Saldo Terra €575."
+        "why": "Ansitz Heufler cancelación gratis hasta 25 nov (€350 depósito no reembolsable) · Parlamento Budapest (29 dic, si se elige) 1 dic · Decidir llantas de invierno Sixt ~14 dic · Terra cancelación gratis hasta 15 dic (luego 70 %) · Wieliczka (opcional 30 dic) 20 dic · Le Cap-Horn gratis hasta 21 dic 16:45 · La Cabane 22 dic gratis hasta 22 dic 15:30 · La Cabane 23 dic gratis hasta 23 dic 15:30 · Albert 1er (23 dic): €100 p/p si cancelas el 23 después de 12:00 · Hiša Franko: <96 h (23 dic) 100 % · Ljubljana tour gratis hasta 27 dic 11:00 · TIAN gratis hasta 31 dic 19:00 · Saldos en hotel: Terra €575 + tasa, Heufler €830."
       }
     ],
     "dias": [
@@ -83307,24 +83281,25 @@
           {
             "grp": "ya",
             "status": "conflicto",
-            "what": "La Cabane des Praz: decidir entre mar 22 (19:15) o mié 23 (19:30) y cancelar una",
-            "when": "Antes del 22 dic 15:30 (mejor esta semana)",
-            "why": "DOS reservas activas para 5 pax: 22 dic 19:15 (4 nov, TripIt) y 23 dic 19:30 (29 oct / 9 nov Zenchef y Lauren Gustin). No-show/cancelación tardía = garantía completa.",
+            "what": "La Cabane des Praz: esperando respuesta de Albert 1er; conservar la noche en que no quede Albert",
+            "when": "En cuanto responda Albert 1er (gratis hasta 22/23 dic 15:30)",
+            "why": "DOS reservas activas para 5 pax: mar 22 dic 19:15 (4 nov, TripIt) y mié 23 dic 19:30 (29 oct / 9 nov Zenchef y Lauren Gustin). Decisión: esperar respuesta de Albert 1er y conservar La Cabane en el otro día, cancelando la sobrante.",
             "n": 13
           },
           {
-            "what": "Montenvers – Mer de Glace: boletos 22 dic",
-            "when": "Antes del 22 dic",
-            "why": "Evita fila en temporada alta; tren 10:00–16:30. Para los niños sirve a cualquier edad: acepta desde 12 meses.",
-            "status": "propuesta",
+            "what": "Montenvers – Mer de Glace (22 dic): compra solo en taquilla a las 10:00 (sin venta online)",
+            "when": "22 dic a las 10:00 en la estación (sin reserva previa)",
+            "why": "Confirmado en sitio oficial: boletos solo en taquilla de la estación, sin venta en línea ni reserva. Llegar 10:00. Apto para toda la familia: tren sin restricciones (desde 12 meses); telecabina abre 19 dic (10:30–15:00); cueva de hielo tiene ~170 escalones; menores de 5 años gratis en taquilla. Tarifa adulto: tren i/v €32,10; tren + telecabina + cueva €51,30.",
+            "status": "listo",
             "n": 14,
-            "grp": "tour"
+            "grp": "tour",
+            "done": true
           },
           {
-            "what": "Actividad del día (además de Montenvers): elige una",
-            "when": "Según la que elijas (abajo)",
-            "why": "Todas con lugar o datos reales y compatibles con tus 145 kg salvo donde dice. El plan del día hoy usa la A (Brévent). La cena es a 2 min del chalet: con B o C regresas directo a la tarde libre.",
-            "status": "por_resolver",
+            "what": "Actividad del día (además de Montenvers): Brévent en plan base + opciones para Mariane",
+            "when": "22 dic tarde (para que Mariane mire y decida)",
+            "why": "Plan base: Teleférico del Brévent (41,20 € p/p i/v). Opciones para que Mariane mire: motonieve en Les Saisies (€390), helicóptero privado 30 min (€1.470) o Alpine Coaster Les Planards (€9,50/bajada).",
+            "status": "propuesta",
             "alts": [
               {
                 "l": "A",
@@ -83343,44 +83318,12 @@
                 "detail": "Reservar: https://evolution2.com/megeve/motoneige · Punto de encuentro: Sport 2000, 196 Av. des Jeux Olympiques, Hauteluce."
               },
               {
-                "l": "C",
-                "title": "Manejar una máquina pisanieves de 10 t en Les Saisies (Les Saisies Aventures)",
-                "when": "Solo por teléfono: +33 4 79 38 91 28 (o en el Intersport de la estación)",
-                "why": "45 min al volante de un PistenBully en circuito privado. Temporada desde el 22 dic 2026, diario 08:30–19:00 (oficina de turismo); el 22 no se pudo comprobar en línea. Precios 2025-26: tú manejas 155 €; Mariane de acompañante 59 € (o los dos manejan 310 €). Límite de peso: no publicado (vas sentado en cabina cerrada). Cancelación: sin verificar.",
-                "status": "propuesta",
-                "detail": "Página: https://www.lessaisies-aventures.com/activites-hiver/bapteme-dameuse-les-saisies-11.html"
-              },
-              {
-                "l": "D",
-                "title": "Skyway Monte Bianco, Courmayeur (por el túnel del Mont Blanc)",
-                "when": "Salidas cada 15 min 08:30–14:00 (47 lugares por horario el 22 dic, leído 3 nov)",
-                "why": "Teleférico giratorio a Punta Helbronner (3 466 m). 60 € p/p ida y vuelta (120 € los dos). Peso: no aplica. Choca con Montenvers por la mañana (reemplazaría a Montenvers). Chalet → Skyway: Apple Maps 30 min (24 km) → +20 % 36 min + estacionar 15 min = 51 min (peaje del túnel aparte, no lo verifiqué). Cancelación: no pude leer las condiciones; la tienda permite cambiar la hora reservada.",
-                "status": "propuesta",
-                "detail": "Reservar: https://shop.montebianco.com/it/negozio#/it/acquista?skugroup_id=1841&product_id=156&bookable_y_n_a=a"
-              },
-              {
-                "l": "E",
-                "title": "Caminata privada guiada sobre el glaciar Mer de Glace (Evolution 2 Chamonix)",
-                "when": "09:30–16:30, reservable el 22 dic (grupo privado hasta 4)",
-                "why": "Día con guía de alta montaña: crampones en el glaciar e iniciación al piolet. 495 € el grupo + tren de Montenvers 35,50 € p/p (≈566 € los dos). Reemplaza Montenvers y el Brévent. Peso: no publicado; son 4–5 h caminando y piden buena condición física: confirmar tallas de equipo y que acepten 145 kg. Cancelación: igual que la B.",
-                "status": "propuesta",
-                "detail": "Reservar: https://evolution2.com/chamonix/randonne-glaciaire-hiver"
-              },
-              {
                 "l": "F",
                 "title": "Vuelo privado en helicóptero CMBH, 30 min «Massif du Mont-Blanc», 14:00–14:30",
                 "when": "Reservar antes de: Cuanto antes (pre-reserva en su web, +33 4 50 54 13 82, info@chamonix-helico.fr)",
                 "why": "Alternativa 1 del Mar 22 dic, 14:00–14:30, en lugar del Brévent. Costo: 1 470 € el helicóptero completo (1–6 pasajeros).",
                 "status": "propuesta",
-                "detail": "Reservar: https://chamonix-helico.fr/fr/vols-panoramiques/30-min-massif-du-mont-blanc · Sin verificar: que acepten 145 kg (confirmarlo por escrito), que vuelen el 22 dic y la política de cancelación."
-              },
-              {
-                "l": "G",
-                "title": "Coaching privado de conducción sobre hielo, Circuit Glace de Flaine (30 min)",
-                "when": "Solo por teléfono: +33 4 50 90 82 59 (no sale en su calendario en línea)",
-                "why": "290 € por 30 min en Alpine, Porsche, Toyota GR o Subaru. Su calendario oficial (leído 3 nov) no tiene sesiones el 21 ni el 22 dic; el coaching privado se pide aparte. Chalet → Flaine: Apple Maps 1 h 07 → +20 % 1 h 20 + estacionar 15 min = 1 h 35. No publican límite de peso ni de talla (confirmar 145 kg y que quepas en el asiento). Firme, sin reembolso.",
-                "status": "propuesta",
-                "detail": "Página: https://circuitglace.com/reservation/"
+                "detail": "Reservar: https://chamonix-helico.fr/fr/vols-panoramiques/30-min-massif-du-mont-blanc · +33 4 50 54 13 82"
               },
               {
                 "l": "H",
@@ -83405,9 +83348,9 @@
           {
             "grp": "ya",
             "status": "conflicto",
-            "what": "Albert 1er (23 dic 20:00, 3 pax): confirmar si sigue activa o cancelarla",
-            "when": "Pronto — si sigue activa, cancelar el 23 después de 12:00 cuesta €100 p/p",
-            "why": "El 2 nov pediste cancelar («SVP annulé la reservation»), pero el 4 nov Zenchef confirmó 23 dic 20:00 sin cancelación posterior.",
+            "what": "Albert 1er (23 dic 20:00, 3 pax): esperando respuesta; dejar La Cabane en el día libre",
+            "when": "Esperando respuesta de Albert 1er (cancelar el 23 después de 12:00 cuesta €100 p/p)",
+            "why": "El 2 nov pediste cancelar («SVP annulé la reservation»), pero el 4 nov Zenchef confirmó 23 dic 20:00 sin cancelación posterior. Esperando respuesta de Albert 1er para saber si sigue activa; conservar La Cabane en el otro día (22 o 23).",
             "n": 16
           }
         ]
@@ -83420,18 +83363,18 @@
         "items": [
           {
             "grp": "tour",
-            "status": "por_resolver",
-            "what": "Reservar horarios de la Aiguille du Midi (clima y niños)",
+            "status": "propuesta",
+            "what": "Opcional: horarios de la Aiguille du Midi (decidir días antes según pronóstico)",
             "when": "Unos días antes, viendo el pronóstico (la noche del 23)",
-            "why": "Es el plan de la mañana (se quita Flaine). Boletos online no reembolsables salvo cierre técnico o por clima. Primera cabina 08:10 para la hora dorada. Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5. Olivia (2) no puede subir; para Ale (3) no se recomienda; Jimena (5) sí. Los que no suban: Village de Noël o Montenvers (desde 12 meses).",
+            "why": "Opción para la mañana (se decide días antes según clima). Boletos online no reembolsables salvo cierre técnico o por clima. Primera cabina 08:10 para la hora dorada. Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5.",
             "n": 17
           },
           {
             "grp": "ya",
-            "status": "por_resolver",
-            "what": "Chef Basile (24 dic, 8 adultos): reconfirmar reserva, monto (€600 o €560) y depósito",
-            "when": "Urgente — correo a info@basilechef.com (sin respuesta desde 10 nov)",
-            "why": "El 10 nov 18:31 confirmaste 8 adultos y pediste confirmar 8×€75=€600 más forma de depósito (y anotaste €560 a €70/pp); sin respuesta posterior.",
+            "status": "en_curso",
+            "what": "Chef Basile (24 dic, 8 adultos): esperando respuesta sobre tarifa (€560 vs €600) y depósito",
+            "when": "Esperando respuesta de info@basilechef.com",
+            "why": "El 10 nov 18:31 confirmaste 8 adultos y pediste confirmar 8×€75=€600 más forma de depósito (frente a €560 a €70 p/p); esperando respuesta.",
             "detail": "info@basilechef.com · +33 6 47 08 74 17",
             "n": 18
           }
@@ -83441,20 +83384,21 @@
         "date": "2026-12-25",
         "label": "Vie 25 dic",
         "city": "Chamonix → Sarentino",
-        "booked": "Check-out chalet 11:00 · Terra / Auener Hof (✓ confirmado, €822; depósito €247 muy probablemente pagado el 4 nov; faltan €575 + tasa).",
+        "booked": "Check-out chalet 11:00 · Terra / Auener Hof (✓ confirmado, Design Room, €822; depósito €247 pagado, faltan €575 + tasa €3,70 p/p/noche; check-in 15:00; cancel. gratis hasta 15 dic, luego 70 %) · Cena Terra 20:00 CONFIRMADA (prenota-web 2 nov).",
         "items": [
           {
             "n": 19,
             "grp": "ya",
-            "status": "por_resolver",
-            "what": "Terra 25 dic: reconfirmar cena 20:00, depósito €247, cancelación y dudas del 22 nov",
-            "when": "Por correo a info@terra.place (sin respuesta desde 2 nov)",
-            "why": "Terra no responde desde el 2 nov; las 20:00 solo las indicaste tú (8 y 22 nov); falta respuesta a tus preguntas del 22 nov (12:33 c.c. Mariane) y condiciones de cancelación."
+            "status": "listo",
+            "what": "Terra 25 dic: cena 20:00 y habitación Design Room (€822) confirmadas",
+            "when": "Confirmado (cancelación gratis hasta 15 dic, luego 70 %)",
+            "why": "Cena 25 dic 20:00 CONFIRMADA (prenota-web 2 nov). Habitación Design Room (✓ confirmado), paquete Short Stay & Gourmet €822 (faltan €575 + tasa turística €3,70 p/p/noche). Check-in desde las 15:00. Cancelación gratis hasta el 15 dic; después 70 %.",
+            "done": true
           },
           {
-            "what": "Terra: qué hacer la tarde del 25 (spa/jacuzzi, vida local o quesería, estrellas)",
-            "when": "Antes del 25 dic",
-            "why": "La tarde del 25, después de 8 h de coche (539 km). Spa/jacuzzi, vida local o quesería, estrellas.",
+            "what": "Terra: tarde del 25 (spa/jacuzzi, vida local/quesería, cielo nocturno) — esperando respuesta",
+            "when": "Esperando respuesta de Terra a los correos del 22 nov",
+            "why": "La cena 20:00 y el cuarto ya están confirmados; queda pendiente respuesta de Terra a los correos del 22 nov sobre jacuzzi/horario del spa el 25, vida local o quesería abierta en Navidad y cielo nocturno.",
             "status": "en_curso",
             "grp": "tour",
             "alts": [
@@ -83481,24 +83425,56 @@
         "date": "2026-12-26",
         "label": "Sáb 26 dic",
         "city": "Sarentino → Rasun-Anterselva",
-        "booked": "Ansitz Heufler, Junior Suite, paquete €1.180 (faltan €830) · Atelier Moessmer 19:15 incluida · shuttle 19:00 confirmado.",
+        "booked": "Ansitz Heufler, Junior Suite, paquete €1.180 (€350 pagado Nexi ✓ confirmado; saldo €830 en el hotel; cancel. gratis hasta 25 nov, luego 40/60/80 %; cuarto desde 12:00 según disponibilidad) · Atelier Moessmer 19:15 (provisional en paquete) · shuttle i/v 19:00 confirmado.",
         "items": [
           {
             "n": 21,
             "grp": "ya",
-            "status": "en_curso",
-            "what": "Ansitz Heufler: pedir early check-in o dejar maletas (llegan ~10:50; el early oficial es desde las 12:00)",
-            "when": "Avisar al hotel (info@ansitzheufler.com)",
-            "why": "Check-in oficial 15:00. Early check-in desde las 12:00, según disponibilidad — no desde las 10:50. El shuttle a Moessmer a las 19:00 ya está confirmado (9 nov)."
+            "status": "listo",
+            "what": "Ansitz Heufler: dejar maletas 10:50; cuarto desde 12:00 si está listo; saldo €830 en el hotel",
+            "when": "Confirmado por Serena (9 nov) · cancelación gratis hasta 25 nov",
+            "why": "Serena confirmó el 9 nov early check-in desde las 12:00 si el cuarto está listo (y dejar maletas antes), plus shuttle gratis i/v a Moessmer saliendo 19:00 (mesa 19:15 provisional en el paquete). Saldo €830 se paga en el hotel. Cancelación gratis hasta 25 nov (depósito €350 se retiene en todo caso); luego 40 % (30–15 d), 60 % (14–8 d), 80 % (≤7 d).",
+            "done": true
           },
           {
-            "what": "Plan de Corones (teleférico, taquilla): LUMEN + MMM Corones solo opcionales",
-            "when": "Reservar antes de: No hace falta; se compra en taquilla (o en línea un día antes)",
-            "why": "En v10 la cima es mirador libre con el boleto del teleférico (36 € ida y vuelta, se compra en taquilla). LUMEN y MMM son museos: quedan opcionales.",
-            "status": "propuesta",
-            "detail": "Reservar: https://www.lumenmuseum.it/plan-your-visit",
+            "what": "Kronplatz + AlpiNN + LUMEN y MMM Corones (tentativo aprobado; reservar AlpiNN y confirmar apertura 26 dic)",
+            "when": "26 dic mediodía (teleférico en taquilla + reservar AlpiNN); opciones de Serena para Mariane",
+            "why": "Plan tentativo aprobado: teleférico de Kronplatz a la cima, comida en AlpiNN (Norbert Niederkofler; falta reservar y verificar que abra el 26 dic; nota: AlpiNN y Moessmer son ambos de Niederkofler), y entrada a LUMEN + MMM Corones (ya dentro del plan, no opcionales). Después, foto R1 al atardecer en San Giovanni in Ranui y shuttle 19:00 a Moessmer. Opciones de Serena Tamantini (9 nov) para que Mariane las vea: Lago de Anterselva, Castillo de Brunico (MMM Ripa) y Prato Piazza.",
+            "status": "por_resolver",
+            "detail": "Reservar AlpiNN: https://www.alpinn.it/ · Combinado LUMEN/MMM: https://www.lumenmuseum.it/plan-your-visit",
             "n": 22,
-            "grp": "tour"
+            "grp": "tour",
+            "alts": [
+              {
+                "l": "A",
+                "title": "Plan base tentativo: Kronplatz + comida en AlpiNN + LUMEN y MMM Corones",
+                "when": "12:00–13:45 (antes de salir 13:45 a San Giovanni in Ranui)",
+                "why": "Teleférico 36 € p/p (taquilla) + combinado LUMEN/MMM 22 € p/p + comida en AlpiNN (reservar y verificar apertura 26 dic). Ambos, AlpiNN y Moessmer, son de Norbert Niederkofler.",
+                "status": "por_resolver",
+                "detail": "https://www.alpinn.it/ · https://www.lumenmuseum.it/plan-your-visit"
+              },
+              {
+                "l": "B",
+                "title": "Lago de Anterselva (opción de Serena Tamantini, 9 nov, para Mariane)",
+                "when": "Junto al Ansitz Heufler (mañana o mediodía)",
+                "why": "Recomendación de Serena: paisaje invernal muy cercano al hotel y buenas oportunidades de foto.",
+                "status": "propuesta"
+              },
+              {
+                "l": "C",
+                "title": "Castillo de Brunico — Messner Mountain Museum Ripa (opción de Serena Tamantini, 9 nov, para Mariane)",
+                "when": "De paso en Brunico",
+                "why": "Recomendación de Serena si deciden pasar por Brunico (castillo y museo de montaña MMM Ripa).",
+                "status": "propuesta"
+              },
+              {
+                "l": "D",
+                "title": "Prato Piazza — meseta nevada con vista a las Tre Cime (opción de Serena Tamantini, 9 nov, para Mariane)",
+                "when": "Alternativa de mañana/mediodía (revisar acceso invernal)",
+                "why": "Recomendación de Serena: uno de los miradores fotográficos más impresionantes de la zona frente a las Tre Cime di Lavaredo.",
+                "status": "propuesta"
+              }
+            ]
           }
         ]
       },
@@ -83509,9 +83485,9 @@
         "booked": "Cena Hiša Franko 19:00, 2 personas, ✓ confirmado. Habitación twin con terraza confirmada por correo (5 nov); precio/categoría final por anotar.",
         "items": [
           {
-            "what": "Hiša Franko: lugar seguro para un cold plunge en el Soča y sauna después",
-            "when": "Antes del 27 dic",
-            "why": "Pediste preguntarle a Hiša Franko (correo en su hilo de la reserva). Queda tentativo 14:40 junto al Puente de Napoleón.",
+            "what": "Hiša Franko: cold plunge tentativo en el Soča (14:40) + esperando confirmación de cuarto/cena",
+            "when": "Esperando respuesta al correo enviado el 22 nov",
+            "why": "Correo enviado el 22 nov preguntando categoría/tarifa final, número de reserva, confirmación de cena 19:00 y lugar seguro para cold plunge en el Soča + sauna. El cold plunge queda tentativo a las 14:40 junto al Puente de Napoleón.",
             "status": "en_curso",
             "grp": "tour",
             "n": 23
@@ -83523,16 +83499,7 @@
         "label": "Lun 28 dic",
         "city": "Kobarid → Ljubljana → Zagreb",
         "booked": "Tour Ljubljana 11:00 (✓ confirmado / ✓ confirmado, 2 adultos, €44,07 pagado) · Westin Zagreb ✓ confirmado (€129, NUA 4 nov) · Dubravkin put 19:00 (confirmado por correo, 2 pax, aniversario; cancel. ≥24 h).",
-        "items": [
-          {
-            "grp": "opc",
-            "status": "propuesta",
-            "what": "Cata Movia 28 dic 10:00 (Nina Šegula): propuesta sin confirmar (9 nov)",
-            "when": "Descartar o avisar por cortesía",
-            "why": "Nina ofreció el 28 a las 10:00 el 9 nov y nunca confirmaste; choca con Ljubljana 11:00.",
-            "n": 24
-          }
-        ]
+        "items": []
       },
       {
         "date": "2026-12-29",
@@ -83541,9 +83508,9 @@
         "booked": "Budapest Marriott, ✓ confirmado, €234,35, Deluxe King vista río · Stand 19:00 (SevenRooms, confirmado).",
         "items": [
           {
-            "what": "Tarde en Budapest: elige",
-            "when": "Ver cada una",
-            "why": "Recomendación del Mar 29 dic, ≈14:45 (45 min + seguridad). Las otras dos son alternativas.",
+            "what": "Tarde en Budapest: opciones para Mariane (sin chocar con bloques fijos de foto ~16:30–16:45)",
+            "when": "29 dic tarde (Parlamento: reservar a más tardar 1 dic si se elige)",
+            "why": "Bloques fijos de foto en hora azul (~16:30–16:45): Parlamento desde Batthyány tér (Foto R4) y Castillo de Buda desde el lado de Pest / terraza del hotel. Opciones para que Mariane mire y elija sin chocar con las fotos ni Stand (19:00): Parlamento (visita guiada en inglés, reservar antes del 1 dic), Ópera (OperaTour), baños Széchenyi (ajustando horario para no chocar con 16:30–16:45) o tiro en Budapest Shooting Commando.",
             "status": "propuesta",
             "alts": [
               {
@@ -83565,8 +83532,8 @@
               {
                 "l": "C",
                 "title": "Baños termales Széchenyi — Mar 29 dic (alternativa)",
-                "when": "Reservar antes de: Opcional: Fast Track en línea un día antes",
-                "why": "Alternativa 2 del Mar 29 dic, 17:00–18:30 (antes de Stand). Costo: 15 800 HUF p/p (temporada alta, con casillero); Fast Track en línea 17 800 HUF.",
+                "when": "13:30–15:30 o ajustar para dejar libres las 16:20–16:45 (antes de Stand 19:00)",
+                "why": "Alternativa 2 del Mar 29 dic: debe terminar antes de los bloques fijos de foto (~16:30–16:45, Parlamento y Castillo de Buda) y dar tiempo antes de Stand 19:00. Costo: 15 800 HUF p/p (temporada alta, con casillero); Fast Track en línea 17 800 HUF.",
                 "status": "propuesta",
                 "detail": "Reservar: https://www.szechenyibath.hu/opening-hours · Sin verificar: Política de reembolso no verificada."
               },
@@ -83591,30 +83558,23 @@
         "booked": "Stradom House ✓ confirmado (3 nov, PLN 930, Modern Twin, gratis hasta 30 dic 23:59) · Bottiglieria 1881 19:00 (confirmado por correo, 2 pax; cancel. gratis hasta 72 h antes, luego PLN 500 p/p).",
         "items": [
           {
-            "what": "Tarde en Cracovia: elige",
-            "when": "Ver cada una",
-            "why": "La A es la del plan; las otras dos son alternativas.",
-            "status": "propuesta",
+            "what": "Tarde en Cracovia: plan fotográfico aprobado (sin interiores de Wawel; Wieliczka opcional)",
+            "when": "30 dic ~15:20–18:30 y después de cenar",
+            "why": "Descartado entrar al Castillo de Wawel. Plan fotográfico aprobado: Kopiec Krakusa (~15:20), hora azul 15:50–16:30 del Wawel desde el puente Dębnicki / orilla del Vístula (Foto R5) y Kazimierz de noche. Mina de sal de Wieliczka queda solo como opcional (si la quisieran, ocupa toda la tarde).",
+            "status": "listo",
             "alts": [
               {
                 "l": "A",
-                "title": "Castillo Real de Wawel — interiores, 1.er y 2.º piso — Mié 30 dic",
-                "when": "Reservar antes de: 15 dic (cupo diario limitado)",
-                "why": "Recomendación del Mié 30 dic, 14:00–15:45. Costo: 95 PLN p/p con audioguía (190 PLN los dos); solo 2.º piso 57 PLN.",
-                "status": "propuesta",
-                "detail": "Reservar: https://wawel.krakow.pl/en/what-to-see · Sin verificar: Política de reembolso no verificada."
-              },
-              {
-                "l": "B",
-                "title": "Mina de sal de Wieliczka — Ruta Turística en inglés — Mié 30 dic (alternativa)",
+                "title": "Opcional: Mina de sal de Wieliczka — Ruta Turística en inglés",
                 "when": "Reservar antes de: 20 dic",
-                "why": "Alternativa 1 del Mié 30 dic, ≈14:30–17:30 (se come toda la tarde). Costo: 143 PLN p/p.",
+                "why": "Solo opcional si deciden cambiar el plan de fotos: ocupa ~14:30–17:30 y desplaza Kopiec Krakusa y la hora azul en el Vístula. Costo: 143 PLN p/p.",
                 "status": "propuesta",
                 "detail": "Reservar: https://www.wieliczka-saltmine.com/individual-tourist/useful-information/ticket-prices-and-visiting-hours · Sin verificar: Horarios de salida en inglés del 30 dic no verificados."
               }
             ],
             "n": 26,
-            "grp": "tour"
+            "grp": "tour",
+            "done": true
           }
         ]
       },
@@ -83623,17 +83583,7 @@
         "label": "Jue 31 dic",
         "city": "Cracovia → Bratislava",
         "booked": "Grand Hotel River Park, ✓ confirmado, €182 · UFO 20:00, orden ✓ confirmado, €610 pagados.",
-        "items": [
-          {
-            "what": "Concierto de Fin de Año de la Filarmónica Eslovaca, 16:00 en la Reduta (opcional)",
-            "when": "Cuanto antes",
-            "why": "Termina ~18:00 y la cena en el UFO es a las 20:00: encaja sin mover nada salvo el castillo y la foto R6 de la tarde. 40 € / 35 € por persona (filharmonia.sk). Cancelación: sin verificar. Peso/edad: no aplica.",
-            "status": "propuesta",
-            "n": 27,
-            "detail": "Reservar: https://www.filharmonia.sk/m6-2026",
-            "grp": "tour"
-          }
-        ]
+        "items": []
       },
       {
         "date": "2027-01-01",
@@ -83642,62 +83592,33 @@
         "booked": "Imperial Riding School, ✓ confirmado, €213 · TIAN 19:00, 2 personas, menú €199 p/p, cancelación gratis hasta el 31 dic 19:00.",
         "items": [
           {
-            "what": "Comida con vino del 1 ene: propuesta Zámocká viecha (2 personas, ~11:55) — no hay correo",
-            "when": "Si la quieres, hay que escribir para preguntar si abre y reservar",
-            "why": "No hay correo de Zámocká viecha en Recibidos, Enviados ni Travel + Leisure. Sigue como propuesta: confirmar que abre el 1 ene 2027 (viernes festivo) y reservar para 2 a ~11:55. Horario habitual viernes 11:00–22:30. Reservas: viecha@zamokpezinok.sk, +421 904 720 049. Si no abre: alternativa fuerte Hainburg an der Donau, Schlossberg de acceso libre todo el año.",
-            "status": "propuesta",
-            "grp": "opc",
-            "alts": [
-              {
-                "l": "A",
-                "title": "Zámocká viecha — restaurante de vinos en el castillo de Pezinok",
-                "status": "propuesta",
-                "when": "11:55–13:45",
-                "why": "Propuesta (sin correo). Viernes normal 11:00–22:30 (zamockaviecha.sk). viecha@zamokpezinok.sk · +421 904 720 049. 1 ene sin verificar."
-              },
-              {
-                "l": "B",
-                "title": "ELESKO Restaurant & Wine Bar — Modra, entre viñedos",
-                "status": "por_resolver",
-                "when": "12:00–13:45 (desde Pezinok 30 min; a Devín 1 h 15)",
-                "why": "\"Abierto en horario normal\" (eleskorestaurant.sk, 8 nov). restaurant@elesko.sk · +421 905 704 873. 1 ene sin verificar."
-              },
-              {
-                "l": "C",
-                "title": "Sin bodega: Svätý Jur y Pezinok de paseo y comida en Bratislava",
-                "status": "propuesta",
-                "when": "Mañana",
-                "why": "Si ninguna abre el 1 ene."
-              }
-            ],
+            "what": "Buscando vinícola real con cata y comida (abierta el 1 ene, entre Bratislava y Viena)",
+            "when": "En curso — antes de escribir para reservar (2 personas, ~11:00–13:30)",
+            "why": "Buscando vinícola: se descartaron los restaurantes de vinos (Zámocká viecha / ELESKO) porque quieren una vinícola real con cata y comida abierta el 1 ene entre Bratislava y Viena (con margen de desvío, manteniendo Devín 15:30 y TIAN 19:00).",
+            "status": "en_curso",
+            "grp": "tour",
+            "alts": [],
             "n": 28
           },
           {
             "n": 29,
             "grp": "ya",
-            "status": "propuesta",
-            "what": "Foto R7: orilla pública de Devín (el recinto sigue cerrado el 1 ene)",
-            "when": "El mismo 1 ene, 15:30–16:50",
-            "why": "El recinto está cerrado el 1 ene (reglamento del Museo de la Ciudad de Bratislava). La toma se hace desde Slovanské nábrežie, en la confluencia, fuera del recinto: acceso público, ~5 min desde el aparcamiento gratuito, sin entrada. Plan B si el río o el hielo lo impiden: Braunsberg en Hainburg (vista clásica desde Austria); la carretera al alto está cerrada en invierno desde el 16 nov 2026, se sube a pie (~20 min)."
+            "status": "listo",
+            "what": "Foto R7: orilla pública de Devín (15:30–16:50) · Plan B: Braunsberg a pie (~20 min)",
+            "when": "1 ene, 15:30–16:50 (acceso libre, sin entrada)",
+            "why": "Confirmado: el recinto del castillo cierra el 1 ene, pero la foto se toma desde la orilla pública de Slovanské nábrežie (confluencia Danubio/Morava, acceso libre a ~5 min a pie del aparcamiento gratuito). Plan B si el río o el hielo no dejan: Braunsberg en Hainburg (Austria), subiendo a pie ~20 min (carretera cerrada en invierno).",
+            "done": true
           },
           {
-            "what": "Noche del 1 ene: alternativas a TIAN (TIAN 19:00 sigue reservado)",
-            "when": "Solo si quieres cambiar",
-            "why": "Lo pediste el 4 nov: los 1★ que abren el 1 ene, más la 9ª de Beethoven. Si eliges el concierto (19:00–20:30), lo natural es mover TIAN o cenar en APRON, al lado del Konzerthaus.",
-            "status": "propuesta",
+            "what": "Noche del 1 ene: se mantiene TIAN ★ 19:00 (4 restaurantes quedan solo de backup)",
+            "when": "Confirmado (cancelación gratis TIAN hasta 31 dic 19:00)",
+            "why": "Decidido: se mantiene TIAN ★ a las 19:00 (2 personas, menú €199 p/p). Concierto de Beethoven descartado (sin boletos). Esszimmer ★, [aend] ★, GLASSWING ★ y APRON ★ quedan únicamente como backup.",
+            "status": "listo",
             "n": 30,
             "alts": [
               {
-                "l": "A",
-                "title": "9ª Sinfonía de Beethoven — Sinfónica de Viena, Manfred Honeck (Konzerthaus, Großer Saal)",
-                "when": "Vie 1 ene 19:00 – aprox. 20:30. Choca con TIAN a las 19:00: o mueves TIAN a más tarde, o cenas después en APRON (en el hotel de al lado del Konzerthaus).",
-                "why": "Costo: 57 / 78 / 104 / 128 / 147 / 159 € por persona. Fecha y hora confirmadas en konzerthaus.at y wienersymphoniker.at (leídas 5 nov): 1 ene 2027, 19:00–~20:30. Solistas: Landshamer, Morison, Schmitt, Schuen; Wiener Singakademie. Sin verificar: Política de devolución: no verificada. Peso/edad: no aplica.",
-                "status": "propuesta",
-                "detail": "Reservar: https://konzerthaus.at/en/program-and-tickets/wiener-symphoniker-honeck/63700 · Cuanto antes (venta abierta) · Wiener Konzerthaus, Lothringerstraße 20"
-              },
-              {
                 "l": "B",
-                "title": "Esszimmer – Everybody's Darling ★ (Alexander Kumptner)",
+                "title": "Backup: Esszimmer – Everybody's Darling ★ (Alexander Kumptner)",
                 "when": "Desde las 18:00 (mié–sáb). Abre el 1 ene: según tu lista; su web no menciona el festivo.",
                 "why": "Costo: Menú 188 € p/p; maridaje 45 € (pequeño) o 95 € (grande). Cancelación gratis hasta 24 h antes; después cobran 70 € por persona (web oficial). 1 estrella Michelin (Guía 2026). Sin verificar: Que abra el 1 ene: no verificado.",
                 "status": "propuesta",
@@ -83705,7 +83626,7 @@
               },
               {
                 "l": "C",
-                "title": "[aend] ★ (Fabian Günzel)",
+                "title": "Backup: [aend] ★ (Fabian Günzel)",
                 "when": "Abre el 1 ene: según tu lista; horario no leído.",
                 "why": "Costo: Menú largo de muchos platos; precio no leído (su web lo da en PDF). 1 estrella Michelin (Guía 2026); 4 gorros Gault&Millau. Cocina reducida: cada plato son dos productos. Sin verificar: Horario del 1 ene, precio y cancelación: no verificados.",
                 "status": "propuesta",
@@ -83713,7 +83634,7 @@
               },
               {
                 "l": "D",
-                "title": "GLASSWING ★ (Alexandru Simon, hotel The Amauris)",
+                "title": "Backup: GLASSWING ★ (Alexandru Simon, hotel The Amauris)",
                 "when": "Mar–sáb desde las 18:00; último horario para el menú 20:30. Abre el 1 ene: según tu lista.",
                 "why": "Costo: Menú de 7 tiempos 197 € p/p (precio del bono en la tienda del hotel). 1 estrella Michelin (Guía 2026), Relais & Châteaux. Sin verificar: Que abra el 1 ene y la política de cancelación: no verificados. No sirve para después del concierto (último horario 20:30).",
                 "status": "propuesta",
@@ -83721,14 +83642,15 @@
               },
               {
                 "l": "E",
-                "title": "APRON ★ (Hotel Am Konzerthaus)",
+                "title": "Backup: APRON ★ (Hotel Am Konzerthaus)",
                 "when": "Mar–sáb 18:00–24:00. Abre el 1 ene: según tu lista. Está pegado al Konzerthaus: la opción para cenar después de Beethoven (~20:45).",
                 "why": "Costo: No leído. 1 estrella Michelin (Guía 2026), 4 gorros Gault&Millau. Cocina austriaca moderna. Sin verificar: Que abra el 1 ene, precio y cancelación: no verificados.",
                 "status": "propuesta",
                 "detail": "Reservar: https://www.restaurant-apron.at/en/ · En línea, o por teléfono +43 1 907 47 47 (mar–sáb 15:00–18:00) · Am Heumarkt 35-37, Viena (3.er distrito)"
               }
             ],
-            "grp": "tour"
+            "grp": "tour",
+            "done": true
           }
         ]
       },
@@ -83739,18 +83661,18 @@
         "booked": "Prague Marriott, ✓ confirmado, CZK 6.148 · Štangl 19:00 (correo de confirmación en TripIt).",
         "items": [
           {
-            "what": "Sábado: elige",
-            "when": "Ver cada una",
-            "why": "La A es la del plan; las otras dos son alternativas.",
+            "what": "Sábado 2 ene en Praga: opciones para que Mariane decida (1 h Castillo + 1 h bote / Strahov / tiro)",
+            "when": "2 ene tarde (horarios exactos de Prague Boats aún por abrir)",
+            "why": "Opción principal para que Mariane decida: 1 h Castillo de Praga (14:15–15:15, circuito corto San Vito y Callejón del Oro; boleto 450 CZK p/p) + taxi (~20 min) al muelle 3B del puente Čech para paseo de 50 min en Prague Boats (~16:00, eléctrico calefactado, cubierta abierta, €16,20 p/p online). Quedan como alternativas Biblioteca de Strahov (220 CZK p/p) y tiro en ShootingRangePrague (desde €80 p/p).",
             "status": "propuesta",
             "alts": [
               {
                 "l": "A",
-                "title": "Castillo de Praga — circuito principal (San Vito, Antiguo Palacio Real, San Jorge, Callejón del Oro) — Sáb 2 ene",
-                "when": "Reservar antes de: Opcional: en los centros de información del Castillo o en línea",
-                "why": "Recomendación del Sáb 2 ene, 14:15–15:45. Costo: 450 CZK p/p (900 CZK los dos).",
+                "title": "1 h Castillo de Praga (14:15–15:15) + paseo 50 min Prague Boats (~16:00, muelle 3B puente Čech) — Sáb 2 ene",
+                "when": "Castillo 14:15–15:15 · taxi ~20 min · barco ~16:00 (horarios exactos del 2 ene aún por abrir)",
+                "why": "Opción principal para Mariane: San Vito y Callejón del Oro (450 CZK p/p circuito principal) + crucero vespertino en barco eléctrico calefactado con cubierta abierta al atardecer (€16,20 p/p en línea).",
                 "status": "propuesta",
-                "detail": "Reservar: https://www.hrad.cz/en/prague-castle-for-visitors/tickets"
+                "detail": "Barco: https://www.prague-boats.cz/one-hour-evening-cruise/ · Castillo: https://www.hrad.cz/en/prague-castle-for-visitors/tickets"
               },
               {
                 "l": "B",
@@ -83779,16 +83701,7 @@
         "label": "Dom 3 ene",
         "city": "Praga → Barcelona → CDMX",
         "booked": "Sixt devolución 06:30 PRG (✓ confirmado) · FR 3073 08:50, ✓ confirmado · AM 38 BCN T1 13:45 → MEX T2 19:50, ✓ confirmado (sin asientos).",
-        "items": [
-          {
-            "what": "Opcional: protección de conexión en BCN el 3 ene",
-            "when": "Antes del 3 ene",
-            "why": "Ryanair (T2) y AM 38 (T1) van en boletos separados con 2 h 30 de conexión.",
-            "status": "propuesta",
-            "n": 32,
-            "grp": "ya"
-          }
-        ]
+        "items": []
       }
     ],
     "listo_note": "Listo · sin pendientes."
@@ -83796,18 +83709,19 @@
   "mail": {
     "read": "22 nov 2026, 16:51 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados + 59 capturas + direcciones 16:43/16:49) + Finance conciliado.",
     "conflicts": [
-      "La Cabane des Praz: DOS reservas activas (mar 22 dic 19:15 y mié 23 dic 19:30, 5 pax). Decidir y cancelar una.",
-      "Albert 1er ★ (mié 23 dic 20:00, 3 pax): cancelación pedida 2 nov, pero Zenchef confirmó el 4 nov -> posiblemente activa (€100 p/p no-show).",
-      "Chef Basile (24 dic, 8 pax): oferta 10 nov y respuesta a las 18:31 pidiendo €600 + depósito; sin respuesta posterior.",
-      "Terra (25 dic): sin respuesta de Terra desde el 2 nov; 20:00 solo dicho por Francisco; dudas del 22 nov (12:33/12:34) y cancelación pendientes.",
-      "Movia (28 dic 10:00, Nina Šegula): propuesta del 9 nov nunca confirmada; choca con Ljubljana 11:00."
+      "La Cabane des Praz: DOS reservas activas (mar 22 dic 19:15 y mié 23 dic 19:30, 5 pax). Esperando respuesta de Albert 1er; conservar La Cabane en el día libre.",
+      "Albert 1er ★ (mié 23 dic 20:00, 3 pax): cancelación pedida 2 nov, pero Zenchef confirmó el 4 nov -> esperando respuesta (€100 p/p no-show).",
+      "Chef Basile (24 dic, 8 pax): esperando respuesta sobre €560 vs €600 y depósito.",
+      "Terra (25 dic): cena 20:00 y Design Room €822 confirmadas; esperando respuesta a las dudas de la tarde del 22 nov.",
+      "Hiša Franko (27 dic): esperando respuesta al correo del 22 nov (categoría/tarifa final, n.º reserva, cena 19:00 y cold plunge Soča).",
+      "Marriott Ambassador (Simleendeep Kaur): correo enviado el 22 nov 21:28 pidiendo estacionamiento en los 5 Marriott y vista río sin obstrucciones en Budapest; esperando respuesta."
     ],
     "changes": [
-      "Dubravkin put (28 dic 19:00, 2 pax, nota de aniversario; cancel. ≥24 h) y Bottiglieria 1881 (30 dic 19:00, ✓ confirmado, 2 pax; cancel. gratis 72 h, luego PLN 500 p/p): confirmados por correo; salen de Pendientes.",
-      "Zámocká viecha (1 ene ~11:55): no hay correo en ninguna carpeta; se mantiene como propuesta.",
-      "TIAN (1 ene 19:00, 2 pax, €199 p/p, gratis 31 dic 19:00) y Štangl (2 ene 19:00, 2 pax, ✓ confirmado, sin pago): respaldados por correo del 1 nov.",
-      "Ljubljana tour (✓ confirmado / ✓ confirmado): confirmado y pagado para 2 adultos (€44,07).",
-      "Stradom House (✓ confirmado): PLN 930, Modern Twin, gratis hasta 30 dic 23:59. NUA Bonvoy (4 nov) en Westin, Budapest y River Park."
+      "Sixt (Diamond 13 nov): zonas I–III confirmadas para todos los países, cadenas obligatorias en Francia (ya tienes cadenas) y llantas de invierno a €350/28 días (decides ~14 dic).",
+      "Terra (25 dic): cena 20:00 CONFIRMADA (prenota-web 2 nov), Design Room €822, check-in 15:00, tasa €3,70 p/p/noche, cancelación gratis hasta 15 dic luego 70 %.",
+      "Ansitz Heufler (26 dic): €830 en el hotel; cancelación gratis hasta 25 nov (€350 depósito retenido), luego 40/60/80 %; shuttle 19:00 confirmado, mesa 19:15 provisional, cuarto desde 12:00 si listo.",
+      "Movia (28 dic): descartado (correo de cortesía enviado) -> sale de Pendientes.",
+      "Dubravkin put (28 dic) y Bottiglieria 1881 (30 dic): confirmados por correo -> fuera de Pendientes."
     ]
   },
   "v11": {
