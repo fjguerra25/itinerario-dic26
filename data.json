@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.4)",
-    "updated": "22 nov 2026, 22:30 (hora CDMX)",
+    "updated": "22 nov 2026, 22:45 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026, 19:55–20:05 hora CDMX (geometría de carretera + tiempos). Apple Maps se abre en cada tramo.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -1339,6 +1339,15 @@
           }
         },
         {
+          "start": "16:00",
+          "end": "19:20",
+          "type": "coche",
+          "title": "Manejar Caves de la Chartreuse (Voiron) → Chalet",
+          "map": "https://maps.apple.com/?saddr=45.361730,5.598501&daddr=45.948954,6.894321&dirflg=d",
+          "notes": "Misma ruta de la ida, verificada: 2 h 29 · 198 km → +20 % 3 h 00 + descanso 15 min + salir del estacionamiento 5 min = 3 h 20 (sale 16:00 → llega 19:20). De noche y posible nieve en la subida al valle de Chamonix: si hay mal clima, cuenta 30 min extra.",
+          "bk": "gratis"
+        },
+        {
           "start": "19:20",
           "end": "19:35",
           "type": "hotel",
@@ -1370,7 +1379,7 @@
           "type": "coche",
           "title": "Manejar Chalet → Albert 1er",
           "map": "https://maps.apple.com/?saddr=45.948954,6.894321&daddr=45.924513,6.874712&dirflg=d",
-          "notes": "Ruta verificada 2 h 29 · 198 km → +20 % 3 h 00 + descansos 15 min + estacionar 15 min = 3 h 30 (sale 08:00 → llega 11:30).",
+          "notes": "Trayecto corto dentro del valle (~2,5 km, unos 8 min) + estacionar; 25 min con margen.",
           "bk": "gratis"
         },
         {
@@ -1394,7 +1403,7 @@
           "type": "coche",
           "title": "Manejar Albert 1er → Chalet",
           "map": "https://maps.apple.com/?saddr=45.924513,6.874712&daddr=45.948954,6.894321&dirflg=d",
-          "notes": "Ruta verificada 2 h 29 · 198 km → +20 % 3 h 00 + descansos 15 min + estacionar 15 min = 3 h 30 (sale 08:00 → llega 11:30).",
+          "notes": "Trayecto corto dentro del valle (~2,5 km, unos 8 min) + estacionar; 25 min con margen.",
           "bk": "gratis"
         }
       ],
@@ -4749,15 +4758,14 @@
           "start": "19:30",
           "end": "23:30",
           "type": "cena",
-          "title": "Nochebuena: raclette en el chalet con chef Basile (8 adultos · por reconfirmar)",
-          "status": "en_curso",
+          "title": "Nochebuena: raclette en el chalet con chef Basile (8 adultos · confirmado)",
+          "status": "reservado",
           "place": "Chalet",
           "map": "https://maps.apple.com/?ll=45.948954,6.894321&q=Les%20Praz%2C%20Chamonix",
-          "notes": "Intercambio en Enviados (10 nov): Basilechef (info@basilechef.com, 00:08) ofreció menú a €70 p/p o €75 p/p con ambas opciones de raclette (surtido + demi-meule au lait cru, bouchées, homard/langouste, charcutería y bûche de Noël). A las 18:31 confirmaste 8 adultos y pediste confirmar 8 × €75 = €600 y forma de depósito (en reenvío a Elizabeth anotaste 70 € × 8 = 560 €). NO hay respuesta de Basile después del 10 nov ni cargo en tarjetas; faltan depósito, hora y pasarle la dirección exacta.",
-          "bk": "pend",
-          "flag": "esperando respuesta (€560 vs €600)",
+          "notes": "Confirmado por Basile el 11 nov: 8 adultos a €75 p/p (€600, ambas raclettes: surtido + demi-meule au lait cru, bouchées, homard/langouste, charcutería y bûche de Noël), sin costos extra y sin anticipo; manda factura con RIB después y se paga por transferencia. El 22 nov le preguntamos si se le puede pagar en efectivo en euros ese día. Falta solo pasarle la dirección exacta y la hora unos días antes. Contacto: info@basilechef.com · +33 6 47 08 74 17.",
+          "bk": "ok",
           "evidencia": {
-            "public_text": "intercambio por correo el 10 nov 2026 (pendiente de reconfirmar)"
+            "public_text": "confirmado por correo (11 nov 2026)"
           }
         }
       ],
@@ -83418,7 +83426,7 @@
         "date": "2026-12-24",
         "label": "Jue 24 dic",
         "city": "Chamonix",
-        "booked": "Chalet (reserva Airbnb de Alejandro) · Aiguille du Midi (por comprar) · Chef Basile: intercambio 10 nov (8 adultos, €600 o €560) SIN respuesta.",
+        "booked": "Chalet (reserva Airbnb de Alejandro) · Aiguille du Midi (por comprar) · Chef Basile confirmado (8 adultos, €600, pago por transferencia tras la cena; preguntamos por efectivo el 22 nov).",
         "items": [
           {
             "grp": "tour",
@@ -83427,15 +83435,6 @@
             "when": "Unos días antes, viendo el pronóstico (la noche del 23)",
             "why": "Opción para la mañana (se decide días antes según clima). Boletos online no reembolsables salvo cierre técnico o por clima. Primera cabina 08:10 para la hora dorada. Niños (web oficial): prohibido para menores de 3 años y no recomendado para menores de 5.",
             "n": 17
-          },
-          {
-            "grp": "ya",
-            "status": "en_curso",
-            "what": "Chef Basile (24 dic, 8 adultos): esperando respuesta sobre tarifa (€560 vs €600) y depósito",
-            "when": "Esperando respuesta de info@basilechef.com",
-            "why": "El 10 nov 18:31 confirmaste 8 adultos y pediste confirmar 8×€75=€600 más forma de depósito (frente a €560 a €70 p/p); esperando respuesta.",
-            "detail": "info@basilechef.com · +33 6 47 08 74 17",
-            "n": 18
           }
         ]
       },
