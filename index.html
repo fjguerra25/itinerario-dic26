@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:," >
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Navidad 2026 · Itinerario v11.5 · Francisco y Mariane</title>
+<title>Navidad 2026 · Itinerario v11.6 · Francisco y Mariane</title>
 <meta name="description" content="Itinerario 20 dic 2026 – 3 ene 2027: Chamonix y tour gastronómico por Alto Adige, Eslovenia, Zagreb, Budapest, Cracovia, Bratislava, Viena y Praga.">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,8 +13,25 @@
 <header class="top">
   <div class="wrap">
     <p class="kicker">Navidad 2026 · Francisco y Mariane</p>
-    <h1>Itinerario 20 dic – 3 ene <span class="ver">v11.5</span></h1>
+    <h1>Itinerario 20 dic – 3 ene <span class="ver">v11.6</span></h1>
     <p class="upd" id="upd"></p>
+    <button type="button" class="conf-toggle" id="confToggle" aria-pressed="false">
+      <span aria-hidden="true">🔒</span> Mostrar confirmaciones
+    </button>
+    <div id="confDlg" class="conf-dlg" hidden>
+      <div class="conf-back" data-conf-close="1"></div>
+      <form class="conf-sheet" id="confForm" autocomplete="off">
+        <h2 id="confDlgTitle">Mostrar confirmaciones</h2>
+        <p>Escribe la contraseña para ver los localizadores. Se recuerdan solo en esta sesión.</p>
+        <label class="visually-hidden" for="confPass">Contraseña</label>
+        <input type="password" id="confPass" name="password" autocomplete="off" required>
+        <p class="conf-err" id="confErr" hidden>Contraseña incorrecta.</p>
+        <div class="conf-actions">
+          <button type="submit">Desbloquear</button>
+          <button type="button" data-conf-close="1">Cancelar</button>
+        </div>
+      </form>
+    </div>
     <div class="seg small dens" id="dseg" role="tablist" aria-label="Nivel de detalle">
       <button type="button" role="tab" data-dens="esencial" aria-selected="true">Esencial<span>lo importante del día</span></button>
       <button type="button" role="tab" data-dens="completo" aria-selected="false">Completo<span>todos los detalles</span></button>
