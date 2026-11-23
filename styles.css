@@ -377,3 +377,23 @@ body.mode-esencial .legend{gap:8px}
 .hz details.hz-sec summary::after{content:"▸";margin-left:auto;color:var(--acc);font-size:14px}
 .hz details.hz-sec[open] summary::after{content:"▾"}
 .hz details.hz-sec .hz-dl{padding-bottom:8px}
+
+/* v11.4 presupuesto v2 */
+.btotals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.btot{border-radius:12px;padding:10px 12px}
+.btot small{display:block;font-size:12px;color:var(--mut);margin-bottom:2px}
+.btot b{font-size:18px;font-variant-numeric:tabular-nums}
+.btot.pag{background:var(--okb);color:var(--ok)}
+.btot.pend{background:var(--wipb);color:var(--wip)}
+.btot.all{background:#13233a;color:#fff}
+.btot.all small{color:#cfe0f5}
+@media(max-width:640px){.btotals{grid-template-columns:1fr}.btot b{font-size:17px}}
+.badge.bdg-pagado{background:var(--okb);color:var(--ok)}
+.badge.bdg-pendiente{background:var(--wipb);color:var(--wip)}
+.badge.bdg-por_consumo,.badge.bdg-incluido{background:#eceff3;color:#3d4756}
+.badge.bdg-propuesta{background:var(--propb);color:var(--prop)}
+.tbl tr.sum{background:#f7f6f2}
+.budg-day h2{font-size:17px}
+.budg-day .nt{font-size:12px;color:var(--mut);font-weight:400;margin-top:2px}
+.tbl.budg th:nth-child(n+2),.tbl.budg td:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl.budg{font-size:13px;min-width:560px}

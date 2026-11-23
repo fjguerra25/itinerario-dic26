@@ -414,26 +414,87 @@ function isDone(p){try{var v=localStorage.getItem(pkey(p.n));if(v==="1")return t
 function pItem(p){var dn=isDone(p);return '<li class="'+(dn?'done':'')+'" id="p-'+p.n+'"><label><input type="checkbox" data-n="'+p.n+'"'+(dn?' checked':'')+'><span class="num">'+p.n+'</span><span class="ptx">'+grpChip(p.grp)+'<br><b>'+esc(p.what)+'</b> '+badge(p.status)+'<br><small><b>Cuándo:</b> '+esc(p.when)+'</small><br><small><b>Por qué:</b> '+esc(p.why)+'</small>'+(p.detail?'<br><small>'+esc(p.detail)+'</small>':'')+'</span></label>'+
   (S.dens!=="esencial"&&p.alts&&p.alts.length?'<div class="alts"><div class="alth">Alternativas ('+p.alts.length+')</div>'+p.alts.map(function(a){return '<div class="alt" id="p-'+p.n+a.l+'"><div class="altt"><span class="altl">'+p.n+a.l+'</span> <b>'+esc(a.title)+'</b> '+badge(a.status)+'</div><small><b>Cuándo:</b> '+esc(a.when)+'</small><br><small>'+esc(a.why)+'</small>'+(a.detail?'<br><small>'+esc(a.detail)+'</small>':'')+'</div>';}).join('')+'</div>':'')+'</li>';}
 
+function fmtNum(n){n=Number(n);var s=Math.abs(n).toFixed(2),p=s.split(".");p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");return (n<0?"-":"")+p[0]+","+p[1];}
+function fmtMXN(n){return n==null||n===""?"—":"MXN "+fmtNum(n);}
+function fmtRange(lo,hi){if(lo==null||lo==="")return "—";if(hi==null||Number(hi)===Number(lo))return fmtMXN(lo);return "MXN "+fmtNum(lo)+" – "+fmtNum(hi);}
+function budgeBadge(st){var L={pagado:"Pagado",pendiente:"Pendiente",por_consumo:"Por consumo",incluido:"Incluido",propuesta:"Propuesta"};return '<span class="badge bdg-'+st+'">'+(L[st]||esc(st))+'</span>';}
+function itemOrig(it){
+  if(it.orig_note) return esc(it.orig_note);
+  if(it.pay_ccy==="MXN"&&it.paid!=null) return "MXN "+fmtNum(it.paid);
+  if(it.pay_ccy==="USD"&&it.paid!=null) return "US$"+fmtNum(it.paid);
+  return "—";
+}
+function itemMXN(it){
+  if(it.status==="por_consumo") return "por consumo";
+  if(it.status==="propuesta") return "sin precio (propuesta)";
+  if(it.status==="incluido") return "incluido";
+  return fmtRange(it.mxn_lo,it.mxn_hi);
+}
+function budgetTotalsCard(B){
+  var T=B.totals||{};
+  var h='<div class="card budg-tot"><h2>Presupuesto del viaje</h2><p class="sub">'+esc(B.intro||'')+'</p>';
+  h+='<div class="btotals"><div class="btot pag"><small>Pagado</small><b>'+fmtMXN(T.paid_mxn)+'</b></div>';
+  h+='<div class="btot pend"><small>Pendiente</small><b>'+fmtRange(T.pending_lo,T.pending_hi)+'</b></div>';
+  h+='<div class="btot all"><small>Total</small><b>'+fmtRange(T.total_lo,T.total_hi)+'</b></div></div>';
+  h+='<p class="sub">El rango sale de Basile (€560–€600) y de la habitación de Hiša Franko (€230–€250).</p></div>';
+  return h;
+}
+function fmtRangeBare(lo,hi){if(lo==null||lo==="")return "—";if(hi==null||Number(hi)===Number(lo))return fmtNum(lo);return fmtNum(lo)+" – "+fmtNum(hi);}
+function budgetTypeTable(B){
+  var L=B.types||[];
+  var h='<div class="card"><h2>Por tipo de gasto</h2><div class="scroll"><table class="tbl budg"><thead><tr><th>Tipo</th><th>Pagado (MXN)</th><th>Pendiente (MXN)</th><th>Total (MXN)</th></tr></thead><tbody>';
+  L.forEach(function(t){h+='<tr><td>'+esc(t.type)+'</td><td>'+fmtNum(t.paid)+'</td><td>'+fmtRangeBare(t.pending_lo,t.pending_hi)+'</td><td><b>'+fmtRangeBare(t.total_lo,t.total_hi)+'</b></td></tr>';});
+  var T=B.totals||{};
+  h+='<tr class="sum"><td><b>Suma</b></td><td><b>'+fmtNum(T.paid_mxn)+'</b></td><td><b>'+fmtRangeBare(T.pending_lo,T.pending_hi)+'</b></td><td><b>'+fmtRangeBare(T.total_lo,T.total_hi)+'</b></td></tr>';
+  return h+'</tbody></table></div></div>';
+}
+function budgetFx(B){
+  var f=B.fx||{};
+  return '<div class="card"><h2>Tipo de cambio</h2><p class="sub">'+esc(f.as_of||'')+'</p><div class="scroll"><table class="tbl"><thead><tr><th>Moneda</th><th>Tipo a MXN</th><th>Fuente</th></tr></thead><tbody>'+
+    '<tr><td>1 USD</td><td><b>19,0228</b></td><td>'+esc(f.usd_source||'')+(f.usd_url?' · <a href="'+esc(f.usd_url)+'" target="_blank" rel="noopener">Banxico ›</a>':'')+'</td></tr>'+
+    '<tr><td>1 EUR</td><td><b>20,9547</b></td><td>'+esc(f.eur_source||'')+(f.eur_url?' · <a href="'+esc(f.eur_url)+'" target="_blank" rel="noopener">Frankfurter / BCE ›</a>':'')+'</td></tr>'+
+    '<tr><td>1 PLN</td><td><b>'+esc(f.pln_mxn_display||'')+'</b></td><td>'+esc(f.cross_note||'')+'</td></tr>'+
+    '<tr><td>1 CZK</td><td><b>'+esc(f.czk_mxn_display||'')+'</b></td><td>Cruce BCE del 20 nov (EUR/CZK 24,469).</td></tr>'+
+    '<tr><td>1 HUF</td><td><b>'+esc(f.huf_mxn_display||'')+'</b></td><td>Cruce BCE del 20 nov (EUR/HUF 373,55). El hotel de Budapest se convierte desde el euro, porque no tenemos el importe en forintos.</td></tr>'+
+    '</tbody></table></div></div>';
+}
+function budgetDays(B){
+  var items=B.items||[], days=B.days||[], by={};
+  items.forEach(function(it){(by[it.date]||(by[it.date]=[])).push(it);});
+  var h='';
+  days.forEach(function(d){
+    var rows=by[d.date]||[];
+    h+='<div class="card budg-day"><h2>'+esc(d.label)+' · '+esc(d.city)+'</h2>';
+    h+='<p class="sub">Pagado '+fmtMXN(d.paid)+' · pendiente '+fmtRange(d.pending_lo,d.pending_hi)+' · total <b style="display:inline">'+fmtRange(d.total_lo,d.total_hi)+'</b></p>';
+    h+='<div class="scroll"><table class="tbl"><thead><tr><th>Tipo</th><th>Concepto</th><th>Estado</th><th>Original</th><th>En MXN</th></tr></thead><tbody>';
+    rows.forEach(function(it){
+      h+='<tr><td>'+esc(it.type)+'</td><td>'+esc(it.what)+(it.note?'<div class="nt">'+esc(it.note)+'</div>':'')+(it.when?'<div class="nt">'+esc(it.when)+'</div>':'')+'</td><td>'+budgeBadge(it.status)+'</td><td>'+itemOrig(it)+'</td><td><b>'+itemMXN(it)+'</b></td></tr>';
+    });
+    h+='</tbody></table></div></div>';
+  });
+  return h;
+}
+function budgetExtra(B){
+  var h='';
+  if(B.optional&&B.optional.length){
+    h+='<div class="card"><h2>Opcional (no entra en los totales)</h2><div class="scroll"><table class="tbl"><thead><tr><th>Día</th><th>Concepto</th><th>Original</th><th>En MXN</th></tr></thead><tbody>';
+    B.optional.forEach(function(it){h+='<tr><td>'+esc(it.label)+'</td><td>'+esc(it.what)+(it.note?'<div class="nt">'+esc(it.note)+'</div>':'')+'</td><td>'+esc(it.orig_note||'')+'</td><td>'+fmtRange(it.mxn_lo,it.mxn_hi)+'</td></tr>';});
+    h+='</tbody></table></div></div>';
+  }
+  if(B.excluded&&B.excluded.length){
+    h+='<div class="card"><h2>Fuera de este viaje</h2><ul class="recs">'+B.excluded.map(function(x){return '<li><b>'+esc(x.what)+'.</b> '+esc(x.note)+'</li>';}).join("")+'</ul></div>';
+  }
+  if(B.notes&&B.notes.length){
+    h+='<div class="card"><h2>Notas</h2><ul class="recs">'+B.notes.map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul></div>';
+  }
+  return h;
+}
 function renderBudget(){var B=D.presupuesto||{};
-  function totTbl(L,title){if(!L||!L.length)return '';
-    return '<div class="card"><h2>'+esc(title)+'</h2><div class="scroll"><table class="tbl"><thead><tr><th>Moneda</th><th>Total</th><th>Detalle</th></tr></thead><tbody>'+
-      L.map(function(x){return '<tr><td><b>'+esc(x.currency)+'</b></td><td><b>'+esc(x.amount)+'</b></td><td>'+esc(x.note||'')+'</td></tr>';}).join('')+
-      '</tbody></table></div></div>';}
-  function cardRows(L,pend){if(!L||!L.length)return '<p class="sub nada">Sin partidas.</p>';
-    return '<div class="scroll"><table class="tbl"><thead><tr><th>Concepto</th>'+(pend?'':'<th>Tarjeta / fecha</th>')+'<th>Importe</th><th>'+(pend?'Fuente':'Orig. / estado')+'</th><th>'+(pend?'Cuándo':'Nota')+'</th></tr></thead><tbody>'+
-      L.map(function(x){
-        var st=x.status?' <span class="badge '+(x.status==="probable"?'por_resolver':'reservado')+'">'+esc(x.status)+'</span>':'';
-        if(pend) return '<tr><td>'+esc(x.what)+'</td><td><b>'+esc(x.amount||'—')+'</b></td><td>'+esc(x.source||'')+'</td><td>'+esc(x.when||'')+'</td></tr>';
-        return '<tr><td>'+esc(x.what)+'</td><td>'+esc((x.card||'')+(x.date?' · '+x.date:''))+'</td><td><b>'+esc(x.amount||'—')+'</b></td><td>'+esc(x.orig||'—')+st+'</td><td>'+esc(x.note||'')+'</td></tr>';
-      }).join('')+'</tbody></table></div>';}
-  var h='<div class="card"><h2>Presupuesto — pagado vs pendiente</h2><p class="sub">'+esc(B.intro||'')+'</p></div>';
-  h+=totTbl(B.totals_paid,'Totales pagados por moneda (sin tipos de cambio inventados)');
-  h+=totTbl(B.totals_pending,'Totales pendientes conocidos por moneda');
-  h+='<div class="card"><h2>Pagado / anticipado en tarjetas</h2>'+cardRows(B.pagado,false)+'</div>';
-  h+='<div class="card"><h2>Cargos probables o sin asignar (MXN)</h2>'+cardRows(B.probables,false)+'</div>';
-  h+='<div class="card"><h2>Pendiente de pago / pago en destino</h2>'+cardRows(B.pendiente,true)+'</div>';
-  if(B.note) h+='<div class="card"><p class="sub">'+esc(B.note)+'</p></div>';
+  var h=budgetTotalsCard(B)+budgetTypeTable(B);
+  if(S.dens!=="esencial") h+=budgetFx(B)+budgetDays(B)+budgetExtra(B);
+  else h+='<p class="sub ess-note">En Esencial ves los totales. Cambia a Completo para el desglose día por día, los tipos de cambio y las partidas por consumo.</p>';
   document.getElementById("list").innerHTML=h;}
+
 function renderPend(){var P=D.pend;var h='<div class="card"><h2>Pendientes por reservar</h2><p class="sub">'+esc(P.intro)+'</p></div>';
   var all=[];P.generales.forEach(function(p){all.push({p:p,w:'General'});});P.dias.forEach(function(d){d.items.forEach(function(p){all.push({p:p,w:d.label});});});
   function quick(g,t){var L=all.filter(function(x){return x.p.grp===g;});return '<div class="qcol q-'+g+'"><h3>'+t+' ('+L.length+')</h3><ol class="qlist">'+L.map(function(x){return '<li><a href="#p-'+x.p.n+'"><b>#'+x.p.n+'</b> '+esc(x.w)+': '+esc(x.p.what)+'</a></li>';}).join('')+'</ol></div>';}

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.3)",
-    "updated": "22 nov 2026, 20:30 (hora CDMX)",
+    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.4)",
+    "updated": "22 nov 2026, 21:20 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026, 19:55–20:05 hora CDMX (geometría de carretera + tiempos). Apple Maps se abre en cada tramo.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -10,7 +10,7 @@
     "map_caption_ov": "Total Apple Maps ≈ 2690 km de coche del 25 dic al 3 ene. El enlace multiparada abre toda la ruta en Apple Maps; si tu iPhone no acepta tantas paradas, usa el botón de cada día.",
     "gmap_note": "Google Maps: ruta y tiempos calculados por Google en vivo (pueden variar un poco); la tabla de manejo usa Apple Maps.",
     "chefs_note": "Chef Basile, cerrado según Francisco. En la búsqueda de todo el buzón del 22 nov no se localizó la confirmación (la búsqueda de iCloud no es infalible en un buzón grande). Las demás opciones y la cotización de Osmose se quitaron del plan. Detalles (hora, menú, precio, número de personas) siguen pendientes.",
-    "version": "v11.3",
+    "version": "v11.4",
     "mail_read": "22 nov 2026, 16:29 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados, solo lectura + 59 capturas en evidencia/)",
     "packaging": "site",
     "share_note": "Sitio público de solo lectura, sin localizadores ni datos de tarjeta.",
@@ -29941,6 +29941,16 @@
       "t": "Open-Meteo Elevation API (cotejo del perfil sobre la geometría OSRM ya guardada)",
       "w": "máximos de corredor: Donovaly 977 m, Zwardoń/Skalité 694 m, Idrija 735 m, Vysočina 548 m; el pico 1 697 m junto al T1 se descartó como error del modelo (ladera, no la calzada); calculado 22 nov 2026",
       "u": "https://open-meteo.com/en/docs/elevation-api"
+    },
+    {
+      "t": "Banxico — tipo de cambio FIX USD/MXN",
+      "w": "FIX del 20 nov 2026: 19,0228 (el 21 y 22 nov, domingo, N/E); leído 22 nov 2026",
+      "u": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp"
+    },
+    {
+      "t": "BCE / Frankfurter.app — tipos de referencia EUR, PLN, CZK, HUF, MXN",
+      "w": "20 nov 2026: 1 EUR = 20,9547 MXN, 4,4583 PLN, 24,469 CZK, 373,55 HUF; leído 22 nov 2026",
+      "u": "https://api.frankfurter.app/latest?from=EUR&to=MXN,USD,PLN,CZK,HUF"
     }
   ],
   "tramites": [
@@ -83803,6 +83813,7 @@
   "v11": {
     "title": "Qué cambió en la v11.2",
     "changes": [
+      "Presupuesto nuevo: día por día y por tipo de gasto, con pesos al tipo de cambio oficial del 20 nov 2026 (Banxico FIX y BCE). En Esencial, solo totales; en Completo, el desglose.",
       "Nueva sección «Tramos de manejo más complicados», visible en Esencial (los 5 de más riesgo) y en Completo (todos los tramos, con normas, luz y enlaces oficiales). Los tiempos de manejo no se modificaron.",
       "Correos completos (Inbox + Travel & Leisure + Enviados), 3 tandas de capturas en evidencia/ (59 PNG) y conciliación de tarjetas integrados en una sola versión.",
       "La Cabane des Praz: DOS reservas activas para 5 pax (mar 22 dic 19:15 confirmada 4 nov en TripIt, y mié 23 dic 19:30 movida 9 nov por Zenchef y Lauren Gustin). Se muestran ambas como duplicado por decidir.",
@@ -83823,252 +83834,761 @@
     "dinners": "Cenas en Chamonix: Le Cap-Horn (21) = los 3 hermanos (Francisco, Alejandro y Santiago). La Cabane (5) = papá, mamá, Francisco, Alejandro y Santiago. Albert 1er (3) = Mariane, papá y Francisco."
   },
   "presupuesto": {
-    "intro": "Pagado frente a pendiente de pago tras conciliación de tarjetas del 22 nov 2026 (16:29 CDMX): AMEX US (desde 22 ene), AMEX MX (desde 7 dic 2025), HSBC US (desde 13 dic 2025) y HSBC MX (solo desde 18 oct; antes requiere Token Móvil). El chalet Airbnb de Chamonix fue reservado por Alejandro (sin costo para Francisco) y los dos PayPal de MXN 35.406,33 se netean (cargo + reembolso). Totales por moneda.",
-    "totals_paid": [
+    "version": "v2",
+    "intro": "Presupuesto del viaje (20 dic 2026 – 3 ene 2027) para Francisco y Mariane, organizado por día y por tipo de gasto. Cada partida con precio va en su moneda original y en pesos, con el tipo de cambio oficial más reciente (20 nov 2026). Lo pagado con tarjeta en USD o MXN usa el cargo real; no se vuelve a convertir el euro de origen. Lo pendiente se convierte con el tipo de hoy. Las cenas por consumo se listan sin inventar un monto.",
+    "fx": {
+      "as_of": "22 nov 2026, tarde (hora de CDMX). Hoy es domingo: no hay FIX ni tipo del BCE de este día.",
+      "usd_mxn": 19.0228,
+      "usd_source": "Banxico, tipo de cambio FIX determinado el viernes 20 nov 2026 (19,0228 pesos por dólar). El 21 y el 22 aparecen como N/E porque no hay jornada bancaria.",
+      "usd_url": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp",
+      "eur_mxn": 20.9547,
+      "eur_source": "Tipos de referencia del Banco Central Europeo del 20 nov 2026, consultados en Frankfurter.app (1 EUR = 20,9547 MXN; también 4,4583 PLN, 24,469 CZK, 373,55 HUF y 1,099 USD).",
+      "eur_url": "https://api.frankfurter.app/latest?from=EUR&to=MXN,USD,PLN,CZK,HUF",
+      "pln_mxn": 4.700154767512281,
+      "czk_mxn": 0.8563774571907311,
+      "huf_mxn": 0.05609610493909784,
+      "pln_mxn_display": "4,7002",
+      "czk_mxn_display": "0,856377",
+      "huf_mxn_display": "0,056096",
+      "cross_note": "Los tipos PLN, CZK y HUF a pesos se calculan como EUR/MXN ÷ EUR/moneda, con los tipos del BCE del 20 nov."
+    },
+    "totals": {
+      "paid_mxn": 207475.01,
+      "pending_lo": 94162.16,
+      "pending_hi": 95419.45,
+      "total_lo": 301637.17,
+      "total_hi": 302894.46
+    },
+    "types": [
       {
-        "currency": "EUR (importe original conocido en 6 reservas pagadas)",
-        "amount": "€4.620,35",
-        "note": "Sixt €3.203,28 + UFO €610 + Terra dep. €247 + Heufler ant. €350 + Chartreuse €166 + Ljubljana €44,07. Ryanair no muestra EUR."
+        "type": "Vuelos",
+        "paid": 107959.33,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 107959.33,
+        "total_hi": 107959.33
       },
       {
-        "currency": "USD (AMEX US y HSBC US)",
-        "amount": "US$2.010,31",
-        "note": "Ryanair US$421,85 + UFO + Chartreuse + Heufler + Terra + Ljubljana US$48,49 (pendiente)."
+        "type": "Auto",
+        "paid": 69298.72,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 69298.72,
+        "total_hi": 69298.72
       },
       {
-        "currency": "MXN confirmados (AMEX MX)",
-        "amount": "MXN 74.151,46",
-        "note": "Sixt MXN 69.298,72 + Vueling ✓ confirmado MXN 4.852,74 (2 boletos IBERIA.COM de MXN 2.426,37, confirmado)."
+        "type": "Hospedaje",
+        "paid": 12730.82,
+        "pending_lo": 59788.08,
+        "pending_hi": 60207.18,
+        "total_lo": 72518.9,
+        "total_hi": 72938.0
       },
       {
-        "currency": "MXN Aeroméxico ✓ confirmado (probable)",
-        "amount": "MXN 95.081,82 (30 oct, AMEX MX)",
-        "note": "Probable cargo de ✓ confirmado (sin confirmar). Otros cargos AMEX MX / Club Premier + HSBC MX MXN 37.299 suman MXN 147.328,10 netos adicionales sin vuelo asignado."
+        "type": "Restaurantes",
+        "paid": 13015.02,
+        "pending_lo": 22379.62,
+        "pending_hi": 22379.62,
+        "total_lo": 35394.64,
+        "total_hi": 35394.64
       },
       {
-        "currency": "MXN desconocido + crédito AMEX",
-        "amount": "MXN 4.578,32 (y crédito −MXN 10.000,00)",
-        "note": "Plan N Travel Services CDMX (×2 MXN 2.289,16 el 19 nov, único cargo desconocido). PayPal ×2 fue cargo+reembolso (neto 0)."
+        "type": "Actividades/experiencias",
+        "paid": 4471.12,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 4471.12,
+        "total_hi": 4471.12
+      },
+      {
+        "type": "Chef/catering",
+        "paid": 0.0,
+        "pending_lo": 11734.63,
+        "pending_hi": 12572.82,
+        "total_lo": 11734.63,
+        "total_hi": 12572.82
+      },
+      {
+        "type": "Tasas",
+        "paid": 0.0,
+        "pending_lo": 259.83,
+        "pending_hi": 259.83,
+        "total_lo": 259.83,
+        "total_hi": 259.83
       }
     ],
-    "totals_pending": [
+    "days": [
       {
-        "currency": "EUR (saldos y hoteles con precio conocido, sin Basile)",
-        "amount": "€3.473,75 – €3.493,75",
-        "note": "Terra saldo €575 + tasa €7,40 + Heufler €830 + Hiša Franko cuarto €230–250 + tasa €5 + menú €670 + Westin €129 + Budapest Marriott €234,35 + River Park €182 + Imperial €213 + TIAN €398 (+ bebidas; sin maridajes)."
+        "date": "2026-12-20",
+        "label": "Dom 20 dic",
+        "city": "Ciudad de México → Barcelona",
+        "paid": 95081.82,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 95081.82,
+        "total_hi": 95081.82
       },
       {
-        "currency": "EUR (incluyendo Chef Basile: €600 a €75/pp o €560 a €70/pp)",
-        "amount": "€4.033,75 – €4.093,75",
-        "note": "Francisco pidió confirmar 8 × €75 = €600 el 10 nov (y anotó €560 a €70/pp); sin respuesta final de Basile."
+        "date": "2026-12-21",
+        "label": "Lun 21 dic",
+        "city": "Barcelona → Ginebra → Chamonix",
+        "paid": 74151.46,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 74151.46,
+        "total_hi": 74151.46
       },
       {
-        "currency": "PLN (Stradom House Cracovia)",
-        "amount": "PLN 930,00",
-        "note": "Pago en estancia (cancelación gratis hasta 30 dic 23:59)."
+        "date": "2026-12-22",
+        "label": "Mar 22 dic",
+        "city": "Chamonix",
+        "paid": 0.0,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 0.0,
+        "total_hi": 0.0
       },
       {
-        "currency": "CZK (Prague Marriott)",
-        "amount": "CZK 6.148,00",
-        "note": "Pago en estancia (cancelación gratis hasta 2 ene)."
+        "date": "2026-12-23",
+        "label": "Mié 23 dic",
+        "city": "Chamonix → Voiron → Chamonix",
+        "paid": 3548.7,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 3548.7,
+        "total_hi": 3548.7
+      },
+      {
+        "date": "2026-12-24",
+        "label": "Jue 24 dic",
+        "city": "Chamonix",
+        "paid": 0.0,
+        "pending_lo": 11734.63,
+        "pending_hi": 12572.82,
+        "total_lo": 11734.63,
+        "total_hi": 12572.82
+      },
+      {
+        "date": "2026-12-25",
+        "label": "Vie 25 dic",
+        "city": "Chamonix → Sarentino",
+        "paid": 5267.22,
+        "pending_lo": 12204.01,
+        "pending_hi": 12204.01,
+        "total_lo": 17471.23,
+        "total_hi": 17471.23
+      },
+      {
+        "date": "2026-12-26",
+        "label": "Sáb 26 dic",
+        "city": "Sarentino → Rasun-Anterselva",
+        "paid": 7463.6,
+        "pending_lo": 17392.4,
+        "pending_hi": 17392.4,
+        "total_lo": 24856.0,
+        "total_hi": 24856.0
+      },
+      {
+        "date": "2026-12-27",
+        "label": "Dom 27 dic",
+        "city": "Rasun-Anterselva → Kobarid",
+        "paid": 0.0,
+        "pending_lo": 18964.0,
+        "pending_hi": 19383.1,
+        "total_lo": 18964.0,
+        "total_hi": 19383.1
+      },
+      {
+        "date": "2026-12-28",
+        "label": "Lun 28 dic",
+        "city": "Kobarid → Liubliana → Zagreb",
+        "paid": 922.42,
+        "pending_lo": 2703.16,
+        "pending_hi": 2703.16,
+        "total_lo": 3625.58,
+        "total_hi": 3625.58
+      },
+      {
+        "date": "2026-12-29",
+        "label": "Mar 29 dic",
+        "city": "Zagreb → Budapest",
+        "paid": 0.0,
+        "pending_lo": 4910.73,
+        "pending_hi": 4910.73,
+        "total_lo": 4910.73,
+        "total_hi": 4910.73
+      },
+      {
+        "date": "2026-12-30",
+        "label": "Mié 30 dic",
+        "city": "Budapest → Cracovia",
+        "paid": 0.0,
+        "pending_lo": 4371.14,
+        "pending_hi": 4371.14,
+        "total_lo": 4371.14,
+        "total_hi": 4371.14
+      },
+      {
+        "date": "2026-12-31",
+        "label": "Jue 31 dic",
+        "city": "Cracovia → Bratislava",
+        "paid": 13015.02,
+        "pending_lo": 3813.76,
+        "pending_hi": 3813.76,
+        "total_lo": 16828.78,
+        "total_hi": 16828.78
+      },
+      {
+        "date": "2027-01-01",
+        "label": "Vie 1 ene",
+        "city": "Bratislava → Viena",
+        "paid": 0.0,
+        "pending_lo": 12803.32,
+        "pending_hi": 12803.32,
+        "total_lo": 12803.32,
+        "total_hi": 12803.32
+      },
+      {
+        "date": "2027-01-02",
+        "label": "Sáb 2 ene",
+        "city": "Viena → Praga",
+        "paid": 0.0,
+        "pending_lo": 5265.01,
+        "pending_hi": 5265.01,
+        "total_lo": 5265.01,
+        "total_hi": 5265.01
+      },
+      {
+        "date": "2027-01-03",
+        "label": "Dom 3 ene",
+        "city": "Praga → Barcelona → Ciudad de México",
+        "paid": 8024.77,
+        "pending_lo": 0.0,
+        "pending_hi": 0.0,
+        "total_lo": 8024.77,
+        "total_hi": 8024.77
       }
     ],
-    "pagado": [
+    "items": [
       {
-        "what": "Sixt (Ginebra → Praga, one-way incluido)",
-        "card": "AMEX MX",
-        "date": "2 nov",
-        "amount": "MXN 69.298,72",
-        "orig": "€3.203,28",
-        "status": "confirmado",
-        "note": "SIXT AVRIGNY"
+        "date": "2026-12-20",
+        "label": "Dom 20 dic",
+        "city": "Ciudad de México → Barcelona",
+        "type": "Vuelos",
+        "what": "Aeroméxico Ciudad de México ↔ Barcelona (ida AM 37 y regreso AM 38 del 3 ene, 2 personas)",
+        "status": "pagado",
+        "pay_ccy": "MXN",
+        "paid": 95081.82,
+        "mxn_lo": 95081.82,
+        "orig_note": null,
+        "when": "Pagado el 30 oct",
+        "note": "Francisco confirmó que este cargo corresponde a los vuelos de este viaje.",
+        "mxn_hi": 95081.82
       },
       {
-        "what": "Vueling VY 1124 / IB 5068 (BCN → GVA, ✓ confirmado, 2 boletos)",
-        "card": "AMEX MX",
-        "date": "2 nov",
-        "amount": "MXN 4.852,74",
-        "orig": "MXN 2.426,37 × 2",
-        "status": "confirmado",
-        "note": "2 boletos IBERIA.COM = ✓ confirmado exacto (no duplicado)"
+        "date": "2026-12-21",
+        "label": "Lun 21 dic",
+        "city": "Barcelona → Ginebra → Chamonix",
+        "type": "Vuelos",
+        "what": "Vueling (operado como IB 5068) Barcelona → Ginebra, 2 boletos",
+        "status": "pagado",
+        "pay_ccy": "MXN",
+        "paid": 4852.74,
+        "mxn_lo": 4852.74,
+        "when": "Pagado el 2 nov en dos cargos de MXN 2.426,37",
+        "note": "No reembolsable; el primer cambio es gratis.",
+        "mxn_hi": 4852.74
       },
       {
-        "what": "Aeroméxico ✓ confirmado (MEX ↔ BCN, 2 boletos)",
-        "card": "AMEX MX",
-        "date": "30 oct",
-        "amount": "MXN 95.081,82",
-        "orig": "—",
-        "status": "probable",
-        "note": "Cargo probable de ✓ confirmado (sin confirmar)"
+        "date": "2026-12-21",
+        "label": "Lun 21 dic",
+        "city": "Barcelona → Ginebra → Chamonix",
+        "type": "Auto",
+        "what": "Sixt, recogida en Ginebra (sector francés) y devolución en Praga el 3 ene (one-way incluido)",
+        "status": "pagado",
+        "pay_ccy": "MXN",
+        "paid": 69298.72,
+        "mxn_lo": 69298.72,
+        "orig_ccy": "EUR",
+        "orig_amt": 3203.28,
+        "orig_note": "€3.203,28",
+        "when": "Pagado el 2 nov",
+        "note": "Se toma el cargo real en MXN, no la conversión de hoy del euro. El depósito de garantía del coche no aparece como cargo.",
+        "mxn_hi": 69298.72
       },
       {
-        "what": "Ryanair FR 3073 (PRG → BCN, ✓ confirmado)",
-        "card": "AMEX US",
-        "date": "3 nov",
-        "amount": "US$421,85",
-        "orig": "EUR no mostrado",
-        "status": "confirmado",
-        "note": "RYANAIR LTD DUBLIN"
+        "date": "2026-12-21",
+        "label": "Lun 21 dic",
+        "city": "Barcelona → Ginebra → Chamonix",
+        "type": "Hospedaje",
+        "what": "Chalet en Chamonix (21–25 dic)",
+        "status": "incluido",
+        "mxn_lo": 0,
+        "mxn_hi": 0,
+        "note": "Reserva Airbnb de Alejandro; sin costo para Francisco."
       },
       {
-        "what": "UFO Bratislava (cena 31 dic, orden ✓ confirmado)",
-        "card": "HSBC US",
-        "date": "1 nov",
-        "amount": "US$684,18",
-        "orig": "€610,00 (probable)",
-        "status": "confirmado",
-        "note": "SKYWALK.REDMONKEYG BRATISLAVA"
+        "date": "2026-12-21",
+        "label": "Lun 21 dic",
+        "city": "Barcelona → Ginebra → Chamonix",
+        "type": "Restaurantes",
+        "what": "Le Cap-Horn, 19:15, 3 personas (los 3 hermanos)",
+        "status": "por_consumo"
       },
       {
-        "what": "Caves de la Chartreuse (23 dic, 4 pax, pedido ✓ confirmado)",
-        "card": "HSBC US",
-        "date": "3 nov",
-        "amount": "US$186,55",
-        "orig": "€166,00 (probable)",
-        "status": "confirmado",
-        "note": "VISITE CD VOIRON FR"
+        "date": "2026-12-22",
+        "label": "Mar 22 dic",
+        "city": "Chamonix",
+        "type": "Restaurantes",
+        "what": "La Cabane des Praz, 19:15, 5 personas",
+        "status": "por_consumo",
+        "note": "Reserva activa. Se pretende conservar esta mesa y cancelar la del 23, cuando Albert 1er confirme."
       },
       {
-        "what": "Ansitz Heufler (26 dic, anticipo paquete Moessmer)",
-        "card": "HSBC US",
-        "date": "4 nov",
-        "amount": "US$392,35",
-        "orig": "€350,00",
-        "status": "confirmado",
-        "note": "ANSITZ HEUFLER"
+        "date": "2026-12-23",
+        "label": "Mié 23 dic",
+        "city": "Chamonix → Voiron → Chamonix",
+        "type": "Actividades/experiencias",
+        "what": "Chartreuse en Voiron: Visite Classique + atelier de tisanas",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 186.55,
+        "mxn_lo": 3548.7,
+        "orig_ccy": "EUR",
+        "orig_amt": 166.0,
+        "orig_note": "€166",
+        "when": "Pagado el 3 nov",
+        "note": "Cargo real en USD; el importe original en euros era €166. E-ticket no reembolsable.",
+        "mxn_hi": 3548.7
       },
       {
-        "what": "Terra / Auener Hof (25 dic, depósito paquete Short Stay)",
-        "card": "HSBC US",
-        "date": "4 nov",
-        "amount": "US$276,89",
-        "orig": "€247,00 (muy probable)",
-        "status": "confirmado",
-        "note": "AUENERHOF SARNTAL — coincide con depósito ✓ confirmado"
+        "date": "2026-12-23",
+        "label": "Mié 23 dic",
+        "city": "Chamonix → Voiron → Chamonix",
+        "type": "Restaurantes",
+        "what": "Albert 1er, 20:00, 3 personas (Mariane, papá, Francisco)",
+        "status": "por_consumo",
+        "note": "Hay confirmación Zenchef del 4 nov. Se le escribió el 22 nov para confirmar que abren ese día. Si confirman, se cancela La Cabane del 23 (no se suman dos cenas)."
       },
       {
-        "what": "Tour de Ljubljana (28 dic, 2 adultos, ✓ confirmado)",
-        "card": "HSBC US",
-        "date": "22 nov",
-        "amount": "US$48,49",
-        "orig": "€44,07",
-        "status": "confirmado",
-        "note": "LJUBLJANA TOURISM (pendiente en extracto; Apple Pay)"
+        "date": "2026-12-24",
+        "label": "Jue 24 dic",
+        "city": "Chamonix",
+        "type": "Chef/catering",
+        "what": "Chef Basile, raclette de Nochebuena para 8 adultos",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 560,
+        "pending_hi": 600,
+        "mxn_lo": 11734.63,
+        "mxn_hi": 12572.82,
+        "orig_ccy": "EUR",
+        "orig_note": "€70 u €75 por persona × 8 = €560–€600",
+        "note": "El 11 nov Basile confirmó que no hay depósito ni cargos extra; cobra después, por transferencia (se le preguntó si también acepta euros en efectivo)."
+      },
+      {
+        "date": "2026-12-25",
+        "label": "Vie 25 dic",
+        "city": "Chamonix → Sarentino",
+        "type": "Hospedaje",
+        "what": "Terra / Auener Hof, 1 noche, paquete Short Stay & Gourmet (incluye la cena) — depósito ya pagado",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 276.89,
+        "mxn_lo": 5267.22,
+        "orig_ccy": "EUR",
+        "orig_amt": 247.0,
+        "orig_note": "depósito €247 (de un total de €822)",
+        "when": "Pagado el 4 nov",
+        "note": "Se toma el cargo real en USD. El paquete completo es €822; abajo queda el saldo.",
+        "mxn_hi": 5267.22
+      },
+      {
+        "date": "2026-12-25",
+        "label": "Vie 25 dic",
+        "city": "Chamonix → Sarentino",
+        "type": "Hospedaje",
+        "what": "Terra / Auener Hof — saldo del paquete, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 575,
+        "pending_hi": 575,
+        "mxn_lo": 12048.95,
+        "orig_ccy": "EUR",
+        "orig_note": "€575",
+        "mxn_hi": 12048.95
+      },
+      {
+        "date": "2026-12-25",
+        "label": "Vie 25 dic",
+        "city": "Chamonix → Sarentino",
+        "type": "Tasas",
+        "what": "Tasa de estancia en Terra (€3,70 por persona, 2 personas)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 7.4,
+        "pending_hi": 7.4,
+        "mxn_lo": 155.06,
+        "orig_ccy": "EUR",
+        "orig_note": "€7,40",
+        "mxn_hi": 155.06
+      },
+      {
+        "date": "2026-12-25",
+        "label": "Vie 25 dic",
+        "city": "Chamonix → Sarentino",
+        "type": "Restaurantes",
+        "what": "Cena de aniversario en Terra ★★ (20:00)",
+        "status": "incluido",
+        "mxn_lo": 0,
+        "mxn_hi": 0,
+        "note": "Va incluida en el paquete Short Stay & Gourmet; no hay cargo extra."
+      },
+      {
+        "date": "2026-12-26",
+        "label": "Sáb 26 dic",
+        "city": "Sarentino → Rasun-Anterselva",
+        "type": "Hospedaje",
+        "what": "Ansitz Heufler, Junior Suite, paquete con cena en Atelier Moessmer — anticipo ya pagado",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 392.35,
+        "mxn_lo": 7463.6,
+        "orig_ccy": "EUR",
+        "orig_amt": 350.0,
+        "orig_note": "anticipo €350 (de un total de €1.180)",
+        "when": "Pagado el 4 nov",
+        "note": "Se toma el cargo real en USD.",
+        "mxn_hi": 7463.6
+      },
+      {
+        "date": "2026-12-26",
+        "label": "Sáb 26 dic",
+        "city": "Sarentino → Rasun-Anterselva",
+        "type": "Hospedaje",
+        "what": "Ansitz Heufler — saldo del paquete, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 830,
+        "pending_hi": 830,
+        "mxn_lo": 17392.4,
+        "orig_ccy": "EUR",
+        "orig_note": "€830",
+        "mxn_hi": 17392.4
+      },
+      {
+        "date": "2026-12-26",
+        "label": "Sáb 26 dic",
+        "city": "Sarentino → Rasun-Anterselva",
+        "type": "Restaurantes",
+        "what": "Atelier Moessmer, 19:15 (Cook the Mountain Night)",
+        "status": "incluido",
+        "mxn_lo": 0,
+        "mxn_hi": 0,
+        "note": "Incluida en el paquete de Heufler; hay shuttle del hotel a las 19:00."
+      },
+      {
+        "date": "2026-12-27",
+        "label": "Dom 27 dic",
+        "city": "Rasun-Anterselva → Kobarid",
+        "type": "Hospedaje",
+        "what": "Hiša Franko, habitación twin con terraza (confirmada el 5 nov)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 230,
+        "pending_hi": 250,
+        "mxn_lo": 4819.58,
+        "mxn_hi": 5238.68,
+        "orig_ccy": "EUR",
+        "orig_note": "€230 (standard) – €250 (superior)",
+        "note": "El correo del 5 nov confirma la habitación, no el precio final entre esas dos tarifas."
+      },
+      {
+        "date": "2026-12-27",
+        "label": "Dom 27 dic",
+        "city": "Rasun-Anterselva → Kobarid",
+        "type": "Tasas",
+        "what": "Tasa turística de Hiša Franko (€2,50 por persona, 2 personas)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 5,
+        "pending_hi": 5,
+        "mxn_lo": 104.77,
+        "orig_ccy": "EUR",
+        "orig_note": "€5",
+        "mxn_hi": 104.77
+      },
+      {
+        "date": "2026-12-27",
+        "label": "Dom 27 dic",
+        "city": "Rasun-Anterselva → Kobarid",
+        "type": "Restaurantes",
+        "what": "Menú de Hiša Franko, 19:00, 2 personas (€335 por persona, según correo)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 670,
+        "pending_hi": 670,
+        "mxn_lo": 14039.65,
+        "orig_ccy": "EUR",
+        "orig_note": "€670",
+        "note": "Precio del menú según el correo de Ines Kemperle (9 nov). El maridaje es opcional y va aparte.",
+        "mxn_hi": 14039.65
+      },
+      {
+        "date": "2026-12-28",
+        "label": "Lun 28 dic",
+        "city": "Kobarid → Liubliana → Zagreb",
+        "type": "Actividades/experiencias",
+        "what": "Tour del centro histórico y el castillo de Liubliana, 11:00–13:00, 2 adultos",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 48.49,
+        "mxn_lo": 922.42,
+        "orig_ccy": "EUR",
+        "orig_amt": 44.07,
+        "orig_note": "€44,07",
+        "when": "Pagado el 22 nov (Apple Pay)",
+        "note": "Confirmado y pagado por correo; en el extracto del 22 nov el cargo aún aparecía por liquidar. Se toma el cargo real en USD. Cancelación gratis hasta 24 h antes.",
+        "mxn_hi": 922.42
+      },
+      {
+        "date": "2026-12-28",
+        "label": "Lun 28 dic",
+        "city": "Kobarid → Liubliana → Zagreb",
+        "type": "Hospedaje",
+        "what": "The Westin Zagreb, 1 noche, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 129,
+        "pending_hi": 129,
+        "mxn_lo": 2703.16,
+        "orig_ccy": "EUR",
+        "orig_note": "€129",
+        "note": "Confirmado en Marriott el 22 nov. Tarifa McKinsey; cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 2703.16
+      },
+      {
+        "date": "2026-12-28",
+        "label": "Lun 28 dic",
+        "city": "Kobarid → Liubliana → Zagreb",
+        "type": "Restaurantes",
+        "what": "Dubravkin put, 19:00, 2 personas (aniversario)",
+        "status": "por_consumo",
+        "note": "Confirmado por correo; cancelación con al menos 24 h."
+      },
+      {
+        "date": "2026-12-29",
+        "label": "Mar 29 dic",
+        "city": "Zagreb → Budapest",
+        "type": "Hospedaje",
+        "what": "Budapest Marriott, 1 noche, se paga en el hotel (lo facturan en forintos)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 234.35,
+        "pending_hi": 234.35,
+        "mxn_lo": 4910.73,
+        "orig_ccy": "EUR",
+        "orig_note": "€234,35 (se factura en HUF)",
+        "note": "Confirmado en Marriott el 22 nov. No aparece el importe en HUF; la conversión a MXN se hace desde el euro de la reserva. Cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 4910.73
+      },
+      {
+        "date": "2026-12-29",
+        "label": "Mar 29 dic",
+        "city": "Zagreb → Budapest",
+        "type": "Restaurantes",
+        "what": "Stand, 19:00, 2 personas",
+        "status": "por_consumo",
+        "note": "Reservado."
+      },
+      {
+        "date": "2026-12-30",
+        "label": "Mié 30 dic",
+        "city": "Budapest → Cracovia",
+        "type": "Hospedaje",
+        "what": "Stradom House (Autograph Collection), Cracovia, 1 noche, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "PLN",
+        "pending_lo": 930,
+        "pending_hi": 930,
+        "mxn_lo": 4371.14,
+        "orig_ccy": "PLN",
+        "orig_note": "PLN 930",
+        "note": "Confirmado en Marriott el 22 nov y por correo. Cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 4371.14
+      },
+      {
+        "date": "2026-12-30",
+        "label": "Mié 30 dic",
+        "city": "Budapest → Cracovia",
+        "type": "Restaurantes",
+        "what": "Bottiglieria 1881, 19:00, 2 personas",
+        "status": "por_consumo",
+        "note": "Confirmado por correo; no hay prepago. Cancelación gratis hasta 72 h antes; después cobran PLN 500 por persona a la tarjeta (es una penalización, no el precio de la cena)."
+      },
+      {
+        "date": "2026-12-31",
+        "label": "Jue 31 dic",
+        "city": "Cracovia → Bratislava",
+        "type": "Hospedaje",
+        "what": "Grand Hotel River Park, Bratislava, 1 noche, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 182,
+        "pending_hi": 182,
+        "mxn_lo": 3813.76,
+        "orig_ccy": "EUR",
+        "orig_note": "€182",
+        "note": "Confirmado en Marriott el 22 nov. Cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 3813.76
+      },
+      {
+        "date": "2026-12-31",
+        "label": "Jue 31 dic",
+        "city": "Cracovia → Bratislava",
+        "type": "Restaurantes",
+        "what": "UFO, 20:00, reserva ya pagada",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 684.18,
+        "mxn_lo": 13015.02,
+        "orig_ccy": "EUR",
+        "orig_amt": 610.0,
+        "orig_note": "€610",
+        "when": "Pagado el 1 nov",
+        "note": "Se toma el cargo real en USD; el importe original era €610.",
+        "mxn_hi": 13015.02
+      },
+      {
+        "date": "2027-01-01",
+        "label": "Vie 1 ene",
+        "city": "Bratislava → Viena",
+        "type": "Hospedaje",
+        "what": "Imperial Riding School, Viena, 1 noche, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 213,
+        "pending_hi": 213,
+        "mxn_lo": 4463.35,
+        "orig_ccy": "EUR",
+        "orig_note": "€213",
+        "note": "Confirmado en Marriott el 22 nov. Cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 4463.35
+      },
+      {
+        "date": "2027-01-01",
+        "label": "Vie 1 ene",
+        "city": "Bratislava → Viena",
+        "type": "Restaurantes",
+        "what": "TIAN, 19:00, 2 personas — menú (€199 por persona, según la reserva)",
+        "status": "pendiente",
+        "pay_ccy": "EUR",
+        "pending_lo": 398,
+        "pending_hi": 398,
+        "mxn_lo": 8339.97,
+        "orig_ccy": "EUR",
+        "orig_note": "€398",
+        "note": "Precio del menú según la reserva. Las bebidas van por consumo y no tienen importe. Cancelación gratis hasta el 31 dic a las 19:00.",
+        "mxn_hi": 8339.97
+      },
+      {
+        "date": "2027-01-01",
+        "label": "Vie 1 ene",
+        "city": "Bratislava → Viena",
+        "type": "Restaurantes",
+        "what": "Zámocká viecha (Pezinok), comida alrededor de las 11:55, 2 personas",
+        "status": "propuesta",
+        "note": "Sigue siendo una propuesta: no hay correo ni reserva, y no hay precio."
+      },
+      {
+        "date": "2027-01-02",
+        "label": "Sáb 2 ene",
+        "city": "Viena → Praga",
+        "type": "Hospedaje",
+        "what": "Prague Marriott, 1 noche, se paga en el hotel",
+        "status": "pendiente",
+        "pay_ccy": "CZK",
+        "pending_lo": 6148,
+        "pending_hi": 6148,
+        "mxn_lo": 5265.01,
+        "orig_ccy": "CZK",
+        "orig_note": "CZK 6.148",
+        "note": "Importe del correo de confirmación (Marriott no mostró el total el 22 nov por un fallo técnico). Cancelación gratis hasta las 18:00 del día de llegada.",
+        "mxn_hi": 5265.01
+      },
+      {
+        "date": "2027-01-02",
+        "label": "Sáb 2 ene",
+        "city": "Viena → Praga",
+        "type": "Restaurantes",
+        "what": "Štangl, 19:00, 2 personas",
+        "status": "por_consumo",
+        "note": "Reservado; no hay anticipo."
+      },
+      {
+        "date": "2027-01-03",
+        "label": "Dom 3 ene",
+        "city": "Praga → Barcelona → Ciudad de México",
+        "type": "Vuelos",
+        "what": "Ryanair Praga → Barcelona",
+        "status": "pagado",
+        "pay_ccy": "USD",
+        "paid": 421.85,
+        "mxn_lo": 8024.77,
+        "orig_ccy": "USD",
+        "orig_amt": 421.85,
+        "orig_note": "US$421,85",
+        "when": "Pagado el 3 nov",
+        "note": "Cargo real en USD, convertido a MXN con el FIX de hoy.",
+        "mxn_hi": 8024.77
+      },
+      {
+        "date": "2027-01-03",
+        "label": "Dom 3 ene",
+        "city": "Praga → Barcelona → Ciudad de México",
+        "type": "Vuelos",
+        "what": "Aeroméxico Barcelona → Ciudad de México (AM 38)",
+        "status": "incluido",
+        "mxn_lo": 0,
+        "mxn_hi": 0,
+        "note": "Va incluido en el boleto de ida y vuelta pagado el 20 dic."
       }
     ],
-    "probables": [
+    "optional": [
       {
-        "what": "Otros cargos Aeroméxico / Club Premier (sin vuelo asignado)",
-        "card": "AMEX MX + HSBC MX",
-        "date": "24 sep–17 nov",
-        "amount": "MXN 147.328,10 neto",
-        "status": "probable",
-        "note": "AMEX MX MXN 110.029,10 netos (24 sep–31 oct, incl. reembolsos −7.346 y −3.000) + HSBC MX MXN 37.299,00 (17 nov). Pueden ser otros vuelos/personas."
-      },
-      {
-        "what": "Plan N Travel Services CDMX (×2 cargos idénticos)",
-        "card": "AMEX MX",
-        "date": "19 nov",
-        "amount": "MXN 4.578,32",
-        "status": "probable",
-        "note": "MXN 2.289,16 × 2 — único cargo desconocido en tarjetas"
-      },
-      {
-        "what": "Beneficio bonificación viaje (crédito)",
-        "card": "AMEX MX",
-        "date": "16 nov",
-        "amount": "−MXN 10.000,00",
-        "status": "probable",
-        "note": "Crédito a favor en estado de cuenta"
+        "date": "2026-12-27",
+        "label": "Dom 27 dic",
+        "type": "Restaurantes",
+        "what": "Maridaje de Hiša Franko (opcional, 2 personas)",
+        "orig_note": "€135–€190 por persona (con alcohol €190; sin alcohol €135)",
+        "mxn_lo": 5657.77,
+        "mxn_hi": 7962.79,
+        "note": "No está confirmado. No entra en los totales pendientes."
       }
     ],
-    "pendiente": [
+    "excluded": [
       {
-        "what": "Chef Basile (24 dic, raclette 8 adultos)",
-        "amount": "€600,00 (8 × €75) o €560,00 (8 × €70)",
-        "source": "Correo Enviados 10 nov (sin respuesta final)",
-        "when": "Por reconfirmar depósito y saldo"
+        "what": "Plan N Travel Services, 2 cargos de MXN 2.289,16 (19 nov)",
+        "note": "Son los vuelos a Lima, a 6 meses sin intereses. Francisco confirmó que no son de este viaje."
       },
       {
-        "what": "Terra / Auener Hof (25 dic): resto paquete + tasa turística",
-        "amount": "€575,00 + €7,40 tasa",
-        "source": "✓ confirmado (€822 − €247) + €3,70 p/p/día",
-        "when": "En el hotel (25–26 dic)"
+        "what": "Otros cargos de Aeroméxico / Club Premier (neto distinto al de este viaje)",
+        "note": "Francisco solo confirmó como de este viaje el cargo de MXN 95.081,82. El resto no se asigna."
       },
       {
-        "what": "Ansitz Heufler + Atelier Moessmer (26 dic): saldo del paquete",
-        "amount": "€830,00",
-        "source": "Correo (€1.180 − €350 anticipo)",
-        "when": "Antes de la estancia (26 dic)"
-      },
-      {
-        "what": "Hiša Franko (27 dic): habitación + tasa + menú cena (2 pax)",
-        "amount": "€230–250 + €5 + €670 (+ maridaje)",
-        "source": "Correo 9 nov (maridaje opc. €190 / €135 sin alcohol p/p)",
-        "when": "En el sitio (27–28 dic)"
-      },
-      {
-        "what": "The Westin Zagreb (28 dic, 1 noche)",
-        "amount": "€129,00",
-        "source": "TripIt / correo (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 28 dic)"
-      },
-      {
-        "what": "Budapest Marriott (29 dic, 1 noche)",
-        "amount": "€234,35",
-        "source": "TripIt / correo (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 29 dic)"
-      },
-      {
-        "what": "Stradom House Cracovia (30 dic, 1 noche)",
-        "amount": "PLN 930,00",
-        "source": "Correo / TripIt (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 30 dic 23:59)"
-      },
-      {
-        "what": "Grand Hotel River Park Bratislava (31 dic, 1 noche)",
-        "amount": "€182,00",
-        "source": "TripIt / correo (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 31 dic)"
-      },
-      {
-        "what": "Imperial Riding School Viena (1 ene, 1 noche)",
-        "amount": "€213,00",
-        "source": "TripIt / correo (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 1 ene)"
-      },
-      {
-        "what": "TIAN Viena (1 ene, menú degustación 2 pax)",
-        "amount": "€398,00 (€199 p/p + bebidas)",
-        "source": "Correo 1 nov (cancel. gratis hasta 31 dic 19:00)",
-        "when": "En sitio (garantía de tarjeta)"
-      },
-      {
-        "what": "Prague Marriott (2 ene, 1 noche)",
-        "amount": "CZK 6.148,00",
-        "source": "TripIt / correo (✓ confirmado)",
-        "when": "En estancia (cancel. gratis hasta 2 ene)"
-      },
-      {
-        "what": "Štangl Praga (2 ene, 2 pax)",
-        "amount": "Según consumo (sin anticipo)",
-        "source": "Correo 1 nov (✓ confirmado)",
-        "when": "En sitio"
-      },
-      {
-        "what": "Otras cenas (garantía con tarjeta / consumo)",
-        "amount": "Según consumo",
-        "source": "Cap-Horn, La Cabane, Albert 1er (si activo), Dubravkin put (confirmada, cancel. ≥24 h), Stand, Bottiglieria 1881 (confirmada; cancel. gratis 72 h, luego PLN 500 p/p)",
-        "when": "En cada cena"
-      },
-      {
-        "what": "Chalet Chamonix (21–25 dic, 4 noches)",
-        "amount": "Sin costo para Francisco",
-        "source": "Reserva Airbnb hecha por Alejandro",
-        "when": "Cubierto por Alejandro"
+        "what": "Dos movimientos PayPal de MXN 35.406,33",
+        "note": "Fueron un cargo y su reembolso; el neto es cero y no van en este viaje (chalet de Alejandro)."
       }
     ],
-    "note": "HSBC MX solo pudo leerse desde el 18 oct 2026 sin Token Móvil. Si necesitas revisar movimientos de HSBC MX anteriores al 18 oct, hace falta un código de Token Móvil."
+    "notes": [
+      "Hoy es domingo 22 nov 2026: Banxico no publica FIX ni el BCE actualiza tipos. Se usan los últimos oficiales, del viernes 20 nov 2026.",
+      "Si un cargo en EUR se pagó en USD o en MXN, el pagado es el cargo real de la tarjeta; el euro se anota solo como referencia. No se cuenta dos veces.",
+      "No se estimaron peajes, viñetas, gasolina ni un segundo conductor en Sixt: no hay un importe fuente para este viaje.",
+      "Las cenas «por consumo» (Cap-Horn, La Cabane, Albert 1er, Dubravkin put, Stand, Bottiglieria 1881, Štangl y las bebidas de TIAN) se listan sin inventar un monto.",
+      "El crédito AMEX «Beneficio bonificación viaje» de −MXN 10.000 (16 nov) no se descuenta: no está confirmado que corresponda a este viaje.",
+      "La HSBC MX anterior al 18 oct no se revisó, a petición de Francisco.",
+      "Los 6 hoteles Marriott / Autograph / Luxury Collection se pagan en el hotel, con identificación para la tarifa McKinsey."
+    ]
   },
   "hazards": {
     "title": "Tramos de manejo más complicados",
