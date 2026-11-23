@@ -95,6 +95,39 @@ function actsHtml(d){if(!d.acts||!d.acts.length)return '';
     '<div class="nt"><b>Verificado:</b> '+esc(a.facts)+'</div>'+(a.unv?'<div class="nt unv"><b>Sin verificar:</b> '+esc(a.unv)+'</div>':'')+
     (a.map?'<a href="'+esc(a.map)+'" target="_blank" rel="noopener">Apple Maps ›</a>':'')+'</div>';}).join('')+'</div>';}
 function dayStatus(d){return d.day_status?' '+badge(d.day_status):'';}
+function marianeFor(dt){var L=D.mariane||[];for(var i=0;i<L.length;i++)if(L[i].date===dt)return L[i];return null;}
+function marianeDayBox(d){
+  var m=marianeFor(d.date);if(!m)return '';
+  var h='<section class="mdec-box" aria-label="Para que Mariane decida">';
+  h+='<div class="mdec-head"><span class="mdec-title">✨ Para que Mariane decida</span><span class="mdec-pill">#'+m.pend_n+'</span>'+(m.urgent?'<span class="mdec-pill urg">⏰ Límite 1 dic</span>':'')+'</div>';
+  h+='<p class="mdec-q"><b>Qué decidir:</b> '+esc(m.question)+'</p>';
+  h+='<div class="mdec-opts">'+m.options.map(function(o){
+    return '<div class="mdec-opt"><div class="mdec-opth"><span class="mdec-code">'+esc(o.code)+'</span>'+(o.tag?'<span class="mdec-tag">'+esc(o.tag)+'</span>':'')+'<b>'+esc(o.title)+'</b></div>'+
+      '<div class="mdec-pc"><span><b>Pros:</b> '+esc(o.pros)+'</span><span><b>Contras:</b> '+esc(o.cons)+'</span></div></div>';
+  }).join('')+'</div>';
+  h+='<div class="mdec-meta"><div><b>Fecha límite:</b> '+esc(m.deadline)+'</div><div><b>Reserva necesaria:</b> '+esc(m.booking)+'</div></div>';
+  return h+'</section>';
+}
+function marianeSummary(){
+  var L=D.mariane||[];if(!L.length)return '';
+  var cur=L.filter(function(m){return m.section===S.sec;});
+  var oth=L.filter(function(m){return m.section!==S.sec;});
+  var h='<section class="card mdec-sum" id="para-mariane"><h2>✨ Para que Mariane decida <span class="mdec-pill">'+L.length+' días por definir</span></h2>';
+  h+='<p class="sub">Resumen de los puntos que toca revisar y elegir, con opciones, pros/contras, fecha límite y reserva dentro de cada día.</p>';
+  if(cur.length){
+    h+='<div class="mdec-list">'+cur.map(function(m){
+      return '<a class="mdec-row" href="#d-'+m.date+'"><div class="mrl"><div class="mrt">'+esc(m.label)+' · '+esc(m.city)+' '+(m.urgent?'<span class="mdec-pill urg">⏰ Límite 1 dic</span>':'<span class="mdec-pill">#'+m.pend_n+'</span>')+'</div>'+
+        '<div class="mrq">'+esc(m.question)+'</div><div class="mrd"><b>Límite:</b> '+esc(m.deadline)+'</div></div><span class="mdec-go">Ver día ↓</span></a>';
+    }).join('')+'</div>';
+  }
+  if(oth.length){
+    h+='<div class="mdec-other"><b>También por decidir en '+(S.sec==="chamonix"?'Tour (25 dic – 3 ene)':'Chamonix (20–25 dic)')+':</b>'+
+      '<div class="mdec-other-btns">'+oth.map(function(m){
+        return '<button type="button" class="mdec-jump" data-mjump-sec="'+m.section+'" data-mjump-day="d-'+m.date+'">'+esc(m.label)+(m.urgent?' (⏰ 1 dic)':'')+' ›</button>';
+      }).join('')+'</div></div>';
+  }
+  return h+'</section>';
+}
 function dayCard(d){
   var top='<article class="day" id="d-'+d.date+'"><h2>'+esc(d.label)+' · '+esc(d.city)+dayStatus(d)+'</h2><p class="sub">'+esc(d.summary)+'</p>',h='';
   if(d.sun) h+='<div class="sun">☀️ '+(S.tz==="mx"?'(hora local CET) ':'')+esc(d.sun.city)+': amanece '+d.sun.sunrise+' · se pone '+d.sun.sunset+' · crepúsculo civil hasta '+d.sun.civil_end+(d.sun.golden_pm?'<br>🌅 Hora dorada '+d.sun.golden_pm+' · 🔵 hora azul '+d.sun.blue_pm+(d.sun.golden_am?' <small>(mañana: dorada '+d.sun.golden_am+', azul '+d.sun.blue_am+')</small>':''):'')+'</div>';
@@ -119,7 +152,7 @@ function dayCard(d){
   if(d.warn.length) h+='<h3>Ojo</h3><ul class="warn">'+d.warn.map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul>';
   if(d.photo_note) h+='<h3>Foto del día</h3><p class="pnote">📷 '+esc(d.photo_note)+'</p>';
   if(d.photos.length){h+='<h3>Fotos (para verificar en PhotoPills)</h3>';d.photos.forEach(function(id){var p=photo(id);if(p)h+=photoCard(p);});}
-  return top+'<div class="dgrid"><div class="dside">'+side+'</div><div class="dmain">'+h+'</div></div></article>';
+  return top+marianeDayBox(d)+'<div class="dgrid"><div class="dside">'+side+'</div><div class="dmain">'+h+'</div></div></article>';
 }
 function days(){return D.days.filter(function(d){return d.section===S.sec;});}
 function esencial(){
@@ -263,6 +296,10 @@ function initMaps(){LMAPS=LMAPS.filter(function(x){if(!document.body.contains(x.
     IO2=new IntersectionObserver(function(en){en.forEach(function(e){var el=e.target;if(!e.isIntersecting&&el._lm&&!el.closest(".mfull")){try{el._lm.map.remove();}catch(_e){}LMAPS=LMAPS.filter(function(x){return x!==el._lm;});el._lm=null;}});},{rootMargin:"1600px 0px"});}
   Array.prototype.forEach.call(els,function(el){IO.observe(el);IO2.observe(el);});}
 document.addEventListener("click",function(e){
+  var mj=e.target.closest&&e.target.closest("[data-mjump-sec]");
+  if(mj){var msec=mj.getAttribute("data-mjump-sec"),mday=mj.getAttribute("data-mjump-day");
+    S.sec=msec;sel("data-sec",S.sec);try{history.replaceState(null,"","#"+msec);}catch(_e){}render();
+    var target=document.getElementById(mday);if(target)target.scrollIntoView({behavior:"smooth",block:"start"});return;}
   var evb=e.target.closest&&e.target.closest("[data-evimg]");
   if(evb){e.stopPropagation();var fk=evb.getAttribute("data-evimg"),cap=evb.getAttribute("data-evcap")||"";
     var src=(D.evid_assets&&D.evid_assets[fk])||fk;
@@ -301,6 +338,7 @@ function leanCard(d){
   var alert=dayAlert(d);
   var h='<article class="day lean" id="d-'+d.date+'"><h2>'+esc(d.label)+' · '+esc(d.city)+dayStatus(d)+'</h2>';
   if(alert) h+='<div class="lean-alert">⚠️ '+esc(alert)+'</div>';
+  h+=marianeDayBox(d);
   var hid=(d.photos&&d.photos[0])?photo(d.photos[0]):null;
   if(hid&&hid.ref&&hid.ref.img) h+='<img class="lean-hero" src="'+esc(hid.ref.img)+'" alt="'+esc(hid.subject||hid.spot||d.city)+'">';
   function row(t,title,note,map){
@@ -318,12 +356,12 @@ function leanCard(d){
     ["drive","drive2","drive3"].forEach(function(k){if(d[k]&&d[k].checkin)cin=d[k].checkin;});
     var t=cin||evs[0].start||"";
     var place=(d.lodging||"").split("(")[0].trim();
-    h+=row(t||'🛏','🛏 Check-in · '+esc(place), evs[0].notes?esc((evs[0].notes||"").split(".")[0]+"."):'', null);
+    h+=row(t||'🛏','🛏 Check-in · '+esc(place), evs[0].notes?esc((evs[0].notes||"").split(/\.\s+/)[0]+"."):'', null);
     n++;
   }
   if(d.dinner){
     var t=(d.dinner.match(/\b(\d{1,2}:\d{2})\b/)||[])[1]||"";
-    var ev=(d.events||[]).filter(function(e){return e.type==="cena";})[0];
+    var _cenas=(d.events||[]).filter(function(e){return e.type==="cena";});var ev=_cenas.filter(function(e){return mins(e.start)>=1020;})[0]||_cenas[_cenas.length-1];
     if(ev&&ev.start) t=ev.start;
     h+=row(t||'🍽','🍽 '+esc(d.dinner), ev&&ev.place?esc(ev.place):"", ev&&ev.map?ev.map:null);
     n++;
@@ -396,11 +434,11 @@ function esencialLean(){
   var T=D.travelers, h='';
   if(T){h+='<div class="card lean-who"><b>Quién viaja.</b> '+(S.sec==="chamonix"?esc(T.chamonix):esc(T.tour))+'</div>';}
   h+='<p class="ess-note">Vista esencial: hora, trayecto, hotel y cena. Cambia a Completo si quieres fotos, notas y alternativas.</p>';
-  h+=hazardsSection();
+  h+=marianeSummary()+hazardsSection();
   h+=routeMap()+days().map(leanCard).join("");
   return h;
 }
-function renderList(){document.getElementById("list").innerHTML=S.dens==="esencial"?esencialLean():(hazardsSection()+esencial()+days().map(dayCard).join(""));}
+function renderList(){document.getElementById("list").innerHTML=S.dens==="esencial"?esencialLean():(marianeSummary()+hazardsSection()+esencial()+days().map(dayCard).join(""));}
 function renderChefs(){var c=D.chefs||[];
   var L={no:'No',sin:'Sin respuesta',rebote:'Rebotó',oferta:'Propuesta',pide:'Pide presupuesto',cerrado:'Cerrado'};
   var h='<div class="card"><h2>Nochebuena — 24 dic, raclette en el chalet</h2><p class="sub">'+esc(D.meta.chefs_note||'')+' Lectura de correo: '+esc(D.meta.chefs_read||'')+'.</p>'+
@@ -436,7 +474,7 @@ function budgetTotalsCard(B){
   h+='<div class="btotals"><div class="btot pag"><small>Pagado</small><b>'+fmtMXN(T.paid_mxn)+'</b></div>';
   h+='<div class="btot pend"><small>Pendiente</small><b>'+fmtRange(T.pending_lo,T.pending_hi)+'</b></div>';
   h+='<div class="btot all"><small>Total</small><b>'+fmtRange(T.total_lo,T.total_hi)+'</b></div></div>';
-  h+='<p class="sub">El rango sale de Basile (€560–€600) y de la habitación de Hiša Franko (€230–€250).</p></div>';
+  h+='<p class="sub">El rango sale únicamente de la habitación de Hiša Franko (€230–€250; Basile ya quedó cerrado en €600).</p></div>';
   return h;
 }
 function fmtRangeBare(lo,hi){if(lo==null||lo==="")return "—";if(hi==null||Number(hi)===Number(lo))return fmtNum(lo);return fmtNum(lo)+" – "+fmtNum(hi);}
@@ -629,6 +667,9 @@ Array.prototype.forEach.call(document.querySelectorAll("[data-tz]"),function(b){
 Array.prototype.forEach.call(document.querySelectorAll("[data-dens]"),function(b){b.addEventListener("click",function(){S.dens=b.getAttribute("data-dens");try{localStorage.setItem("itin-dens",S.dens);}catch(_e){}var y=window.scrollY;render();window.scrollTo(0,y);});});
 document.getElementById("upd").textContent=(D.meta.version||"v11.1")+" · actualizado "+D.meta.updated+" · TripIt "+D.meta.tripit_read;
 document.getElementById("foot").innerHTML='<p class="devl">Vista optimizada para: <b>'+DEVL[DEV]+'</b> (detectado automáticamente). '+esc((D.meta&&D.meta.share_note)||"Este es un archivo HTML para compartir con Mariane (AirDrop o WhatsApp).")+'</p><p><b>Fuentes</b></p><ul>'+D.sources.map(function(s){return '<li>'+esc(s.t)+(s.w?' — '+esc(s.w):'')+(s.u?' · <a href="'+esc(s.u)+'" target="_blank" rel="noopener">'+esc(s.u)+'</a>':'')+'</li>';}).join("")+'</ul><p>Solo lectura: nada se reservó ni se cambió para hacer esta página. Los mapas en vivo (MapLibre / Google) necesitan internet; el resto funciona sin conexión.</p>';
-var hs=(location.hash||"").replace("#","");if(hs==="pendientes")hs="pend";if(hs==="tour"||hs==="chamonix"||hs==="chefs"||hs==="pend"||hs==="presupuesto"){S.sec=hs;sel("data-sec",S.sec);}
+var hs=(location.hash||"").replace("#",""),_targetDay=null;if(hs==="pendientes")hs="pend";
+if(/^d-\d{4}-\d{2}-\d{2}$/.test(hs)){var _dt=hs.slice(2),_dy=dayOf(_dt);if(_dy){S.sec=_dy.section;sel("data-sec",S.sec);_targetDay=hs;}}
+else if(hs==="tour"||hs==="chamonix"||hs==="chefs"||hs==="pend"||hs==="presupuesto"){S.sec=hs;sel("data-sec",S.sec);}
 render();
+if(_targetDay){var _el=document.getElementById(_targetDay);if(_el)_el.scrollIntoView();}
 })();
