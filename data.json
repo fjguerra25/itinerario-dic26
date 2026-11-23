@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.2)",
-    "updated": "22 nov 2026, 20:10 (hora CDMX)",
+    "title": "Navidad 2026 · Itinerario de Francisco y Mariane (v11.3)",
+    "updated": "22 nov 2026, 20:30 (hora CDMX)",
     "tripit_read": "22 nov 2026, ~15:00 hora CDMX (en vivo)",
     "maps_read": "OSRM router.project-osrm.org, 22 nov 2026, 19:55–20:05 hora CDMX (geometría de carretera + tiempos). Apple Maps se abre en cada tramo.",
     "chefs_read": "22 nov 2026, 16:29 hora CDMX (Enviados: Basile 10 nov €70/€75 p/p, respuesta Francisco 18:31 pidiendo 8×€75=€600; sin respuesta posterior)",
@@ -10,10 +10,10 @@
     "map_caption_ov": "Total Apple Maps ≈ 2690 km de coche del 25 dic al 3 ene. El enlace multiparada abre toda la ruta en Apple Maps; si tu iPhone no acepta tantas paradas, usa el botón de cada día.",
     "gmap_note": "Google Maps: ruta y tiempos calculados por Google en vivo (pueden variar un poco); la tabla de manejo usa Apple Maps.",
     "chefs_note": "Chef Basile, cerrado según Francisco. En la búsqueda de todo el buzón del 22 nov no se localizó la confirmación (la búsqueda de iCloud no es infalible en un buzón grande). Las demás opciones y la cotización de Osmose se quitaron del plan. Detalles (hora, menú, precio, número de personas) siguen pendientes.",
-    "version": "v11.2",
+    "version": "v11.3",
     "mail_read": "22 nov 2026, 16:29 hora CDMX (EA, iCloud: Inbox + Travel & Leisure + Enviados, solo lectura + 59 capturas en evidencia/)",
     "packaging": "site",
-    "share_note": "Versión pública del itinerario: sin localizadores, sin números de tarjeta y sin capturas de correo.",
+    "share_note": "Sitio público de solo lectura, sin localizadores ni datos de tarjeta.",
     "finance_read": "22 nov 2026, 16:29 hora CDMX (Finance reconciliado: AMEX US/MX y HSBC US/MX; HSBC MX pre-18 oct requiere Token Móvil)",
     "public_redacted": true
   },
@@ -29451,52 +29451,63 @@
       [
         "Francia (Alta Saboya)",
         "1 nov – 31 mar",
-        "Llantas de invierno o cadenas a bordo en las zonas señalizadas (Loi Montagne)."
+        "Todo el departamento: 4 llantas 3PMSF, o cadenas/calcetines para al menos 2 ruedas motrices. El marcado solo M+S ya no basta (desde nov 2024)."
       ],
       [
-        "Italia",
-        "Valle de Aosta 15 oct – 15 abr; A22 y otras con señal 15 nov – 15 abr",
-        "Llantas de invierno o cadenas a bordo donde haya señal."
+        "Francia (Isère)",
+        "1 nov – 31 mar",
+        "Solo en comunas de montaña señalizadas (p. ej. Chartreuse). La A48 hasta Voiron no entra en esa zona."
+      ],
+      [
+        "Italia (Valle de Aosta y túnel del Mont Blanc)",
+        "15 oct – 15 abr",
+        "Llantas de invierno o cadenas a bordo (A5, T1 y vías señalizadas)."
+      ],
+      [
+        "Italia (Südtirol / A22)",
+        "15 nov – 15 abr en A22 y Bolzano; en el resto, si hay nieve, aguanieve o hielo",
+        "Llantas de invierno o cadenas."
       ],
       [
         "Eslovenia",
-        "15 nov – 15 mar",
-        "Obligatorias sin importar el clima (o verano + cadenas)."
+        "15 nov – 15 mar (y también si hay condiciones invernales)",
+        "Obligatorio: 4 llantas de invierno (M+S, mín. 3 mm) o verano más cadenas en las motrices."
       ],
       [
         "Croacia",
-        "15 nov – 15 abr",
-        "En tramos señalizados: 4 de invierno, o verano ≥ 4 mm + cadenas."
+        "15 nov – 15 abr, en tramos invernales designados (incluye autopistas A1–A6)",
+        "4 de invierno, o verano ≥ 4 mm + cadenas a bordo, da igual el tiempo."
       ],
       [
         "Hungría",
         "—",
-        "No obligatorias."
+        "Sin obligación general. Cadenas solo con señal. Clavos prohibidos."
       ],
       [
         "Eslovaquia",
-        "15 nov – 31 mar",
-        "Si hay nieve o hielo en el camino."
+        "Cuando hay nieve, hielo o escarcha, o se prevén en la ruta",
+        "4 llantas M+S o 3PMSF (mín. 3 mm). El periodo 15 nov – 31 mar es para camiones y autobuses."
       ],
       [
         "Polonia",
         "—",
-        "No obligatorias."
+        "Sin obligación general. Cadenas solo con señal."
       ],
       [
         "Austria",
         "1 nov – 15 abr",
-        "En condiciones invernales."
+        "Obligación situacional (nieve, aguanieve o hielo): 4 llantas de invierno de al menos 4 mm, o cadenas si la calzada está casi continua de nieve o hielo."
       ],
       [
         "Chequia",
         "1 nov – 31 mar",
-        "En condiciones invernales o si se prevén."
+        "Llantas de invierno cuando hay nieve, hielo o escarcha, o cuando se pueden prever en el viaje."
       ]
     ],
-    "tyres_src": "Centro Europeo del Consumidor (europe-consommateurs.eu), leído 2 nov 2026.",
+    "tyres_src": "Fuentes oficiales leídas el 22 nov 2026: prefectura de Alta Saboya (actualizado 26/10/2026), Service-Public (Loi Montagne / 3PMSF, 20/10/2026), prefectura de Isère, ministerio de Transportes de Austria (BMIMI), Policía de Eslovenia / Promet.si, HAK (Croacia), § 38 de la ley 8/2009 de Eslovaquia, Policía de Chequia (§ 40a), Centro Europeo del Consumidor para Hungría y Polonia.",
     "notes": [
-      "Vršič (Eslovenia) cierra en invierno y Predel es la alternativa habitual, pero la ruta de Apple Maps del 27 dic no usa ninguno: va por el paso Monte Croce Comelico (1 636 m), Sappada, Udine y Cividale.",
+      "La ruta del 27 dic (geometría OSRM del itinerario) no usa Vršič ni el Monte Croce Comelico / Sappada. Va por el Kartitscher Sattel (1 525 m, B111 Lesachtal, Austria) y el passo del Predil / Predel (1 156 m) hacia Bovec y Kobarid. Vršič cierra en invierno.",
+      "Sixt (recogida 21 dic, 17:30, sector francés de Ginebra): comprobar en el mostrador cuatro llantas 3PMSF y cadenas o calcetines a bordo.",
       "Túnel del Mont Blanc: cierres nocturnos programados de lunes a jueves 22:00–06:00 (tunnelmb.net). El 25 dic es viernes y sales después de las 06:00.",
       "Cracovia: zona de bajas emisiones desde el 1 ene 2026 (≈60 % de la ciudad); placa extranjera = registro obligatorio en línea antes de entrar (krakow.pl).",
       "Peajes en caseta: A40 francesa, túnel del Mont Blanc, autopistas italianas, A3/A4 croatas, A4 polaca Cracovia–Katowice.",
@@ -29870,6 +29881,66 @@
     {
       "t": "Wikimedia Commons",
       "w": "fotos de referencia (autor y licencia en cada ficha)"
+    },
+    {
+      "t": "Météo-France — Fiche climatologique Chamonix (74056001, 1 042 m)",
+      "w": "normales 1981–2010 de diciembre: media −1,6 °C, máxima 2,6 °C, mínima −5,7 °C, 109,8 mm, 27,5 días con Tn ≤ 0 °C; leído 22 nov 2026",
+      "u": "https://donneespubliques.meteofrance.fr/FichesClim/FICHECLIM_74056001.pdf"
+    },
+    {
+      "t": "Préfecture de la Haute-Savoie — Équipements hivernaux obligatoires",
+      "w": "todo el departamento, 1 nov–31 mar: cadenas/calcetines o 4 pneus hiver; actualizado 26/10/2026, leído 22 nov 2026",
+      "u": "https://www.haute-savoie.gouv.fr/Actions-de-l-Etat/Prevenir-le-risque-et-se-proteger/Securite-routiere/Equipements-hivernaux-obligatoires"
+    },
+    {
+      "t": "Service-Public.fr — Pneus hiver, chaînes (Loi Montagne)",
+      "w": "solo 3PMSF cuenta como pneu hiver; si no, hay que llevar cadenas o calcetines; publicado 20/10/2026, leído 22 nov 2026",
+      "u": "https://www.service-public.gouv.fr/particuliers/actualites/A14389"
+    },
+    {
+      "t": "Préfecture de l'Isère — Équipements hivernaux",
+      "w": "obligación solo en comunas de montaña señalizadas; leído 22 nov 2026",
+      "u": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipements-hivernaux-obligatoires-les-regles-a-connaitre-en-Isere"
+    },
+    {
+      "t": "Tunnel du Mont-Blanc / ATMB — reglas, portales y peaje 2026",
+      "w": "portales 1 274 m (FR) y 1 381 m (IT); turismo clase 1 Francia→Italia 55,50 € / ida y vuelta 69,20 €; leído 22 nov 2026",
+      "u": "https://www.tunnelmb.net/"
+    },
+    {
+      "t": "BMIMI Austria — Winter tyres and snow chains",
+      "w": "1 nov–15 abr, obligación situacional para turismos; 4 mm; leído 22 nov 2026",
+      "u": "https://www.bmimi.gv.at/en/topics/transport/roads/safety/tyres.html"
+    },
+    {
+      "t": "Policija / Promet.si — equipo de invierno en Eslovenia",
+      "w": "15 nov–15 mar, y también en condiciones invernales; leído 22 nov 2026",
+      "u": "https://www.promet.si/en/preparations-for-winter-conditions-"
+    },
+    {
+      "t": "HAK — Zimska oprema u HR i Europi",
+      "w": "Croacia, 15 nov–15 abr en tramos invernales designados; leído 22 nov 2026",
+      "u": "https://www.hak.hr/info/korisne-informacije/zimska-oprema"
+    },
+    {
+      "t": "Ley eslovaca 8/2009 § 38 (y eznamka / zjazdnost.sk)",
+      "w": "en turismo, llantas de invierno si hay nieve, hielo o escarcha, o si se prevén en la ruta; leído 22 nov 2026",
+      "u": "https://www.zjazdnost.sk/conditions/current/list.html"
+    },
+    {
+      "t": "Policie ČR — Zimní pneumatiky (§ 40a)",
+      "w": "1 nov–31 mar cuando hay o se prevén nieve, hielo o escarcha; leído 22 nov 2026",
+      "u": "https://policie.gov.cz/clanek/zimni-pneumatiky.aspx"
+    },
+    {
+      "t": "Land Tirol — webcams B111 Gailtalstraße / Kartitscher Sattel",
+      "w": "paso a 1 525 m, sin cierre invernal fijo, posible corte puntual por nieve o aludes; leído 22 nov 2026",
+      "u": "https://www.tirol.gv.at/verkehr/strassenbau-und-strassenerhaltung/webcams/webcams-bezirk-lienz/b-111-gailtalstrasse/"
+    },
+    {
+      "t": "Open-Meteo Elevation API (cotejo del perfil sobre la geometría OSRM ya guardada)",
+      "w": "máximos de corredor: Donovaly 977 m, Zwardoń/Skalité 694 m, Idrija 735 m, Vysočina 548 m; el pico 1 697 m junto al T1 se descartó como error del modelo (ladera, no la calzada); calculado 22 nov 2026",
+      "u": "https://open-meteo.com/en/docs/elevation-api"
     }
   ],
   "tramites": [
@@ -83732,6 +83803,7 @@
   "v11": {
     "title": "Qué cambió en la v11.2",
     "changes": [
+      "Nueva sección «Tramos de manejo más complicados», visible en Esencial (los 5 de más riesgo) y en Completo (todos los tramos, con normas, luz y enlaces oficiales). Los tiempos de manejo no se modificaron.",
       "Correos completos (Inbox + Travel & Leisure + Enviados), 3 tandas de capturas en evidencia/ (59 PNG) y conciliación de tarjetas integrados en una sola versión.",
       "La Cabane des Praz: DOS reservas activas para 5 pax (mar 22 dic 19:15 confirmada 4 nov en TripIt, y mié 23 dic 19:30 movida 9 nov por Zenchef y Lauren Gustin). Se muestran ambas como duplicado por decidir.",
       "Albert 1er ★ (23 dic 20:00, 3 pax): Zenchef confirmó el 4 nov después del correo de cancelación del 2 nov («SVP annulé la reservation»); sin cancelación posterior -> posiblemente activa (no-show €100 p/p).",
@@ -83997,5 +84069,523 @@
       }
     ],
     "note": "HSBC MX solo pudo leerse desde el 18 oct 2026 sin Token Móvil. Si necesitas revisar movimientos de HSBC MX anteriores al 18 oct, hace falta un código de Token Móvil."
+  },
+  "hazards": {
+    "title": "Tramos de manejo más complicados",
+    "intro": "Ordenados por riesgo, según la ruta que ya está en el mapa (no es una línea recta ni una ruta teórica). Las altitudes de túneles y pasos son cifras oficiales; el perfil se cotejó con la geometría guardada. Los tiempos de manejo no se volvieron a tocar.",
+    "sixt": "El Sixt se recoge a las 17:30 del 21 dic en el sector francés de Ginebra: hay que comprobar en el mostrador que trae cuatro llantas de invierno 3PMSF y cadenas o calcetines a bordo. En Alta Saboya el marcado solo M+S ya no basta desde noviembre de 2024, y esa obligación aplica en cuanto sales del aeropuerto.",
+    "ess_note": "El detalle de todos los tramos, normas y enlaces oficiales está en la vista Completo.",
+    "sectors": [
+      {
+        "id": "chalet_terra",
+        "rank": 1,
+        "risk": "alto",
+        "top": true,
+        "date": "2026-12-25",
+        "date_label": "25 dic",
+        "title": "Chamonix → Terra / Auener Hof (Sarentino)",
+        "line": "25 dic · Chamonix → Terra · túnel del Mont Blanc y SS508 hasta 1 622 m · se pone a las 16:32",
+        "segment": "A40 · túnel del Mont Blanc (T1) · A5 Valle de Aosta · A4 · A22 hasta Bolzano · SS508 Val Sarentino",
+        "km": 540,
+        "alt_m": 1622,
+        "alt_note": "El hotel Terra / Auener Hof está a 1 622 m. Portales del túnel del Mont Blanc: 1 274 m (Francia) y 1 381 m (Italia). No se cruza el paso del Brennero: la A22 se deja en Bolzano.",
+        "why": "Es el día más largo de los Alpes (540 km): frontera, túnel de 11,6 km con límite 50–70 km/h, distancia mínima 150 m y sin adelantar, y al final una carretera de montaña estrecha y con curvas que sube el Val Sarentino hasta 1 622 m. En invierno el parabrisas puede empañarse al entrar al túnel (~20 °C dentro). Un dispositivo de avalanchas (PIDA) puede cerrar el acceso alrededor de una hora.",
+        "conditions": "En Chamonix (1 042 m), la normal 1981–2010 de Météo-France en diciembre es −1,6 °C de media (máxima 2,6 °C, mínima −5,7 °C), 110 mm de precipitación y 27,5 días con helada. En el valle de Bolzano diciembre es más suave y con poca nieve; en el Sarntal, a más de 1 600 m, la nieve y el hielo en la SS508 son lo habitual a finales de diciembre. La Aosta de acceso al túnel también suele estar fría y puede haber nieve o niebla.",
+        "legal": "Francia, 1 nov–31 mar: en todo Alta Saboya, 4 llantas 3PMSF o cadenas/calcetines para al menos 2 ruedas motrices (Loi Montagne II). Italia, Valle de Aosta y el T1: llantas de invierno o cadenas a bordo, 15 oct–15 abr. En Südtirol, en A22 y en Bolzano es obligatorio 15 nov–15 abr; en el resto de carreteras provinciales, cuando hay nieve, aguanieve o hielo.",
+        "tunnels": "Túnel del Mont Blanc: peaje 2026, turismo clase 1, 55,50 € de Francia a Italia (ida y vuelta 69,20 €, válida 7 días). Cierres nocturnos programados lunes a jueves; el 25 dic 2026 es viernes y la salida es después de las 06:00, así que ese cierre no debería bloquearos, pero hay que mirar el estado en vivo. Autopistas italianas (A5/A4/A22) se pagan en caseta. No hace falta viñeta suiza ni austriaca en este tramo.",
+        "sunset": "16:32",
+        "daylight": "Llegada prevista alrededor de las 15:50: queda poco más de 40 min de luz para el tramo final de la SS508. Si salís a las 06:10, la llegada ronda las 15:00.",
+        "rec": "Mirar por la mañana tunnelmb.net, ATMB y la viabilità de Anas / Autobrennero. El último tramo por la SS508 hay que tomarlo con calma: es el de más altitud del día y puede estar nevado o helado. Si el túnel o la SS508 están mal, no hay un atajo bueno; la alternativa es esperar o, en un cierre largo del T1, el túnel del Gran San Bernardo o dar un rodeo mucho mayor por Suiza (eso sí pediría viñeta suiza).",
+        "links": [
+          {
+            "t": "Túnel del Mont Blanc (estado y webcams)",
+            "u": "https://www.tunnelmb.net/"
+          },
+          {
+            "t": "Peaje del túnel (ATMB)",
+            "u": "https://www.atmb.com/telepeage-tarifs/les-tarifs-au-tunnel-du-mont-blanc-pour-les-vehicules-legers/"
+          },
+          {
+            "t": "Bison Futé",
+            "u": "https://www.bison-fute.gouv.fr/"
+          },
+          {
+            "t": "Anas · tráfico en vivo",
+            "u": "https://www.stradeanas.it/it/vai-traffico-in-tempo-reale"
+          },
+          {
+            "t": "Autobrennero A22",
+            "u": "https://www.autobrennero.it/"
+          },
+          {
+            "t": "Tráfico Südtirol",
+            "u": "https://www.suedtiroltraffic.bz.it/"
+          }
+        ]
+      },
+      {
+        "id": "heufler_hisa",
+        "rank": 2,
+        "risk": "alto",
+        "top": true,
+        "date": "2026-12-27",
+        "date_label": "27 dic",
+        "title": "Heufler (Rasun-Anterselva) → Hiša Franko (Kobarid)",
+        "line": "27 dic · Heufler → Kobarid · Kartitscher Sattel (1 525 m) y Predil (1 156 m) · se pone a las 16:25",
+        "segment": "SS49 Val Pusteria · San Candido / Sesto · B111 Kartitscher Sattel y Lesachtal · Kötschach-Mauthen · Hermagor · Arnoldstein / Tarvisio · SS54 / R411 passo del Predil (Predel) · Bovec · valle del Soča · Kobarid",
+        "km": 216,
+        "alt_m": 1525,
+        "alt_note": "El punto más alto del viaje en carretera es el Kartitscher Sattel, 1 525 m (B111, Austria). Después se baja el Lesachtal y se cruza el passo del Predil / Predel a 1 156 m. Esta geometría no usa Vršič ni el Monte Croce Comelico / Sappada.",
+        "why": "Dos pasos de montaña en un mismo día y un valle estrecho (Lesachtal, B111) con curvas, exposición y riesgo puntual de alud o cierre por nieve. El Predil es una carretera de montaña, no una autopista, y baja fuerte hacia Bovec. Tres países en el mismo tramo (Italia, Austria, Eslovenia).",
+        "conditions": "El Kartitscher Sattel no tiene cierre invernal fijo y suele estar abierto y quitanieves, pero sí puede cerrarse unas horas por nieve intensa o aludes (webcams de Land Tirol). El Predil tampoco tiene cierre de temporada y es la alternativa habitual a Vršič, que sí cierra en invierno; aun así, una nevada fuerte puede cortarlo de forma temporal. A 1 500 m, a finales de diciembre, hay que contar con nieve, hielo y niebla.",
+        "legal": "Südtirol: llantas o cadenas si hay nieve, aguanieve o hielo; en A22 y Bolzano, 15 nov–15 abr. Austria, 1 nov–15 abr: obligación situacional (nieve, aguanieve o hielo) con 4 llantas de invierno de al menos 4 mm, o cadenas solo si la calzada está casi continua de nieve o hielo. Eslovenia, 15 nov–15 mar (y también si hay condiciones invernales): 4 llantas de invierno (M+S, mín. 3 mm) o llantas de verano más cadenas para las ruedas motrices.",
+        "tunnels": "La B111 no pide viñeta. Si el tramo entra un rato a la A2 cerca de Villach–Arnoldstein, sí hace falta la viñeta austriaca (shop.asfinag.at). En Eslovenia, la autopista no se usa hasta después de Kobarid; el Predil es carretera nacional. No hay peaje en el Predil.",
+        "sunset": "16:25",
+        "daylight": "216 km con llegada prevista a primera hora de la tarde; la mayor parte del Lesachtal y del Predil debería hacerse de día si no hay retrasos, pero en diciembre la luz se acaba pronto.",
+        "rec": "Antes de salir, mirar las webcams de la B111 (Land Tirol), el estado en ASFINAG y Promet.si, y la viabilità de Anas en el acceso italiano al Predil. No ir por Vršič: cierra en invierno y no está en esta ruta. Si el Kartitscher o el Predil están cerrados, la alternativa habitual es bajar hacia Lienz / Villach o esperar el despeje; no improvisar puertos laterales.",
+        "links": [
+          {
+            "t": "Webcams B111 Kartitscher Sattel (Land Tirol)",
+            "u": "https://www.tirol.gv.at/verkehr/strassenbau-und-strassenerhaltung/webcams/webcams-bezirk-lienz/b-111-gailtalstrasse/"
+          },
+          {
+            "t": "ASFINAG · estado de carreteras",
+            "u": "https://www.asfinag.at/verkehr/verkehrslage/"
+          },
+          {
+            "t": "Promet.si (Eslovenia)",
+            "u": "https://www.promet.si/"
+          },
+          {
+            "t": "Anas · tráfico en vivo",
+            "u": "https://www.stradeanas.it/it/vai-traffico-in-tempo-reale"
+          },
+          {
+            "t": "Viñeta Austria",
+            "u": "https://shop.asfinag.at/"
+          },
+          {
+            "t": "Tráfico Südtirol",
+            "u": "https://www.suedtiroltraffic.bz.it/"
+          }
+        ]
+      },
+      {
+        "id": "budmar_bottig",
+        "rank": 3,
+        "risk": "alto",
+        "top": true,
+        "date": "2026-12-30",
+        "date_label": "30 dic",
+        "title": "Budapest → Cracovia por Eslovaquia (Zvolen / Orava)",
+        "line": "30 dic · Budapest → Cracovia por Donovaly y Orava · 977 m y poca luz (se pone a las 15:46)",
+        "segment": "Hungría hacia Šahy · R1 Zvolen / Banská Bystrica · paso de Donovaly (I/59, ~960–977 m) · Ružomberok · R3 Orava (Dolný Kubín, Trstená) · frontera Chyżne · Polonia hasta Cracovia",
+        "km": 390,
+        "alt_m": 977,
+        "alt_note": "El punto más alto de la geometría está en el corredor de Donovaly, a 977 m (el paso se cita en torno a 960–972 m). No es un puerto alpino, pero es el techo de esta jornada y suele ser el primer tramo que se complica en invierno.",
+        "why": "390 km con muy poca luz de diciembre, un paso de montaña eslovaco que a menudo pide llantas de invierno y puede restringirse, y después la R3 de Orava, expuesta a nieve húmeda, hielo y viento. Llegáis hacia las 14:55, con menos de una hora de luz para la foto de Wawel.",
+        "conditions": "No hay una «normal» única de nieve para toda la R3, pero las autoridades eslovacas reportan con frecuencia, en noviembre y diciembre, nieve húmeda o hielo en R3 Trstená–Tvrdošín y avisos o restricciones en Donovaly (zjazdnost.sk, NDS, SHMÚ). Hay que salir ya contando con calzada invernal, no con asfalto seco de Budapest.",
+        "legal": "Hungría: no hay obligación general de llantas de invierno; cadenas solo donde haya señal. Eslovaquia: en turismo, no rige un calendario fijo; si hay nieve continua, hielo o escarcha, o si se pueden prever en la ruta, hacen falta 4 llantas M+S o 3PMSF (mín. 3 mm). El periodo 15 nov–31 mar es para camiones y autobuses. Polonia: no hay obligación general; cadenas solo con señal.",
+        "tunnels": "Viñeta electrónica de Eslovaquia (eznamka.sk) para R1/R3 donde aplique. Hungría: e-viñeta (nemzetiutdij.hu). En Polonia, tramos de autopista de peaje al acercaros a Cracovia.",
+        "sunset": "15:46",
+        "daylight": "Salida a las 06:00 y llegada alrededor de las 14:55: quedan unos 50 min de luz. Es el atardecer más temprano del viaje.",
+        "rec": "Salir a las 06:00, como está previsto, y mirar zjazdnost.sk (Donovaly, R3 Orava) y SHMÚ antes de poneros en marcha. Si Donovaly está mal, puede haber desvíos o esperas; no apurar para llegar a la foto con el último rayo de sol.",
+        "links": [
+          {
+            "t": "Zjazdnost.sk · estado de carreteras",
+            "u": "https://www.zjazdnost.sk/conditions/current/list.html"
+          },
+          {
+            "t": "NDS Eslovaquia",
+            "u": "https://www.ndsas.sk/"
+          },
+          {
+            "t": "SHMÚ (meteorología)",
+            "u": "https://www.shmu.sk/"
+          },
+          {
+            "t": "E-viñeta Eslovaquia",
+            "u": "https://eznamka.sk/"
+          },
+          {
+            "t": "E-viñeta Hungría",
+            "u": "https://nemzetiutdij.hu/"
+          }
+        ]
+      },
+      {
+        "id": "gva_caphorn",
+        "rank": 4,
+        "risk": "alto",
+        "top": true,
+        "date": "2026-12-21",
+        "date_label": "21 dic",
+        "title": "Ginebra (sector francés) → Chamonix / Le Cap-Horn",
+        "line": "21 dic · Ginebra → Chamonix por la A40 · llegas de noche, cena a las 19:15",
+        "segment": "Salida Sixt, sector francés de Ginebra · A40 valle del Arve (Bonneville, Sallanches, Les Houches) · Chamonix. No entra a Suiza: no hace falta viñeta suiza.",
+        "km": 91,
+        "alt_m": 1074,
+        "alt_note": "No hay un puerto alto: el techo está en el valle de Chamonix, alrededor de 1 074 m (el pueblo está a 1 042 m).",
+        "why": "El riesgo no es la altitud, es la combinación de primera noche, nieve o hielo habituales en Alta Saboya, y un horario muy justo: si el Sixt se recoge a las 17:30, la llegada ronda las 19:55, unos 40 min tarde para la cena de las 19:15 en Le Cap-Horn. Además, es el momento de comprobar llantas y cadenas.",
+        "conditions": "Misma climatología de Chamonix: en diciembre, media de −1,6 °C y helada casi todos los días (Météo-France, 1981–2010). La A40 en el valle del Arve suele tener nieve, verglas o niebla a finales de diciembre; no es un paso expuesto, pero de noche y mojada se pone seria.",
+        "legal": "Loi Montagne II en todo el departamento de Alta Saboya, 1 nov–31 mar: 4 llantas 3PMSF o cadenas/calcetines para al menos 2 ruedas motrices. El solo M+S ya no cuenta como llanta de invierno.",
+        "tunnels": "A40 francesa de peaje (ATMB). Sin túnel del Mont Blanc este día. Sin viñeta suiza.",
+        "sunset": "16:50",
+        "daylight": "El sol ya se ha puesto cuando salís del Sixt. Todo el tramo se hace de noche.",
+        "rec": "Comprobar llantas 3PMSF y cadenas en el mostrador del Sixt antes de salir. Avisar a Le Cap-Horn si vais a llegar cerca de las 20:00. Mirar ATMB y Bison Futé. No hay forma de salir mucho antes si el coche se entrega a las 17:30; lo que sí se puede es no perder tiempo en el aeropuerto.",
+        "links": [
+          {
+            "t": "ATMB (A40)",
+            "u": "https://www.atmb.com/"
+          },
+          {
+            "t": "Bison Futé",
+            "u": "https://www.bison-fute.gouv.fr/"
+          },
+          {
+            "t": "Prefectura de Alta Saboya · equipos de invierno",
+            "u": "https://www.haute-savoie.gouv.fr/Actions-de-l-Etat/Prevenir-le-risque-et-se-proteger/Securite-routiere/Equipements-hivernaux-obligatoires"
+          },
+          {
+            "t": "Service-Public · Loi Montagne / 3PMSF",
+            "u": "https://www.service-public.gouv.fr/particuliers/actualites/A14389"
+          }
+        ]
+      },
+      {
+        "id": "voiron",
+        "rank": 5,
+        "risk": "medio",
+        "top": true,
+        "date": "2026-12-23",
+        "date_label": "23 dic",
+        "title": "Chamonix ⇄ Voiron (Chartreuse), ida y vuelta",
+        "line": "23 dic · ida y vuelta a Voiron por A40/A41/A48 · el regreso llega justísimo a las 19:30",
+        "segment": "Ida y vuelta por A40 valle del Arve · Annecy · A41 Chambéry · A48 Voiron. La geometría se queda en autopista; no entra a las carreteras de las comunas de montaña de Chartreuse (Saint-Pierre-de-Chartreuse, etc.).",
+        "km": 198,
+        "alt_m": 1080,
+        "alt_note": "El techo es la salida de Chamonix, a unos 1 080 m. Voiron está a unos 290 m. La ida son 198 km y la vuelta 191 km.",
+        "why": "Dos veces el mismo corredor de Alta Saboya en un día corto de luz. La visita en Voiron es a las 12:20 (hay que estar a las 12:10; llegada prevista ~11:30). El regreso llega alrededor de las 19:30: con La Cabane a las 19:30 no hay margen, y Albert 1er a las 20:00 solo funciona yendo directo al restaurante.",
+        "conditions": "Misma normal de Chamonix en la primera mitad (frío, helada, posible nieve en la A40). Hacia Chambéry y Voiron el valle es más bajo y suele estar menos nevado, pero puede haber lluvia fría, niebla o calzada mojada.",
+        "legal": "Alta Saboya, todo el departamento, 1 nov–31 mar (3PMSF o cadenas/calcetines). En Isère la Loi Montagne no cubre todo el departamento, solo comunas de montaña señalizadas (en Chartreuse, p. ej. Saint-Pierre-de-Chartreuse). La A48 hasta Voiron no entra en esa zona, pero el equipo ya es obligatorio desde Chamonix.",
+        "tunnels": "Peaje en A40/A41/A48. Sin túneles alpinos de gran altitud.",
+        "sunset": "Ida 16:59 · vuelta 16:52",
+        "daylight": "La ida llega de día. El regreso se hace casi entero de noche.",
+        "rec": "No retrasar la salida de Voiron. Decidir la cena con ese margen en mente. Antes de salir y antes de volver, Bison Futé y ATMB, sobre todo si hay aviso de nieve en Alta Saboya.",
+        "links": [
+          {
+            "t": "ATMB (A40)",
+            "u": "https://www.atmb.com/"
+          },
+          {
+            "t": "Bison Futé",
+            "u": "https://www.bison-fute.gouv.fr/"
+          },
+          {
+            "t": "Prefectura de Isère · equipos de invierno",
+            "u": "https://www.isere.gouv.fr/Actions-de-l-Etat/Securites/Securite-routiere/Equipements-hivernaux-obligatoires-les-regles-a-connaitre-en-Isere"
+          },
+          {
+            "t": "Prefectura de Alta Saboya",
+            "u": "https://www.haute-savoie.gouv.fr/Actions-de-l-Etat/Prevenir-le-risque-et-se-proteger/Securite-routiere/Equipements-hivernaux-obligatoires"
+          }
+        ]
+      },
+      {
+        "id": "sarntal_funes",
+        "rank": 6,
+        "risk": "medio",
+        "top": false,
+        "date": "2026-12-26",
+        "date_label": "26 dic",
+        "title": "Sarentino (SS508) → Heufler, con desvío a Val di Funes / Ranui",
+        "line": "26 dic · bajada de la SS508 desde 1 622 m y valle de Funes (1 343 m)",
+        "segment": "SS508 Val Sarentino (bajada desde Terra / Auener Hof) · Bolzano · A22 o SS49 hacia Brunico · Val Pusteria · Heufler. El desvío a San Giovanni in Ranui entra por el valle de Funes (Villnöß).",
+        "km": 112,
+        "alt_m": 1622,
+        "alt_note": "Se parte de 1 622 m y se baja el Sarntal hasta Bolzano (~260 m). Ranui está a 1 343 m.",
+        "why": "La SS508 es una carretera de montaña estrecha y con curvas, ahora de bajada, que en invierno puede tener nieve o hielo compacto. El desvío a Funes es un valle lateral igual de expuesto, aunque más corto.",
+        "conditions": "A más de 1 600 m en Südtirol, a finales de diciembre, nieve o hielo en calzada son lo esperable. El fondo del valle de Bolzano es más seco y suave (diciembre ronda los 2 °C de media y nieva poco en la ciudad).",
+        "legal": "Südtirol: en carreteras provinciales, llantas de invierno o cadenas si hay nieve, aguanieve o hielo. En toda la A22 y en Bolzano, obligatorio 15 nov–15 abr.",
+        "tunnels": "Si se usa un tramo de A22, peaje italiano. Sin viñeta austriaca este día.",
+        "sunset": "16:31",
+        "daylight": "Tramos de día, con luz hasta media tarde. El desvío a Ranui conviene hacerlo con luz.",
+        "rec": "Bajar la SS508 sin prisa y mirar el estado en Südtirol Traffic. Si la carretera de Funes está mal, se puede dejar Ranui para otro momento o acercarse solo hasta donde la calzada esté bien.",
+        "links": [
+          {
+            "t": "Tráfico Südtirol",
+            "u": "https://www.suedtiroltraffic.bz.it/"
+          },
+          {
+            "t": "Autobrennero A22",
+            "u": "https://www.autobrennero.it/"
+          }
+        ]
+      },
+      {
+        "id": "stradom_river",
+        "rank": 7,
+        "risk": "medio",
+        "top": false,
+        "date": "2026-12-31",
+        "date_label": "31 dic",
+        "title": "Cracovia → Bratislava por Katowice y Žilina",
+        "line": "31 dic · Cracovia → Bratislava · Beskides / Zwardoń–Skalité a 694 m",
+        "segment": "A4 Cracovia–Katowice · S1 hacia el sur · paso de Zwardoń / Skalité (~694 m) · D3 Žilina · D1 Trenčín · Bratislava. No entra a Chequia.",
+        "km": 445,
+        "alt_m": 694,
+        "alt_note": "El techo de la geometría está en los Beskides, frontera Polonia–Eslovaquia (Zwardoń / Skalité), a 694 m.",
+        "why": "Día largo (445 km) por un corredor de media montaña donde en invierno hay niebla, nieve y viento. No es un puerto alpino, pero es el 31 de diciembre, con llegada prevista hacia las 15:30 y cena en UFO a las 20:00.",
+        "conditions": "En los Beskides, a casi 700 m, a caballo del año, nieve, aguanieve o niebla son frecuentes. El resto de la D3/D1 es autopista, más previsible, pero también puede estar helada o con lluvia fría.",
+        "legal": "Polonia: sin obligación general de llantas de invierno. Eslovaquia: llantas de invierno si hay (o se prevén) nieve, hielo o escarcha en la ruta.",
+        "tunnels": "Peaje de la A4 polaca Cracovia–Katowice. Viñeta electrónica eslovaca (eznamka.sk) para D3/D1.",
+        "sunset": "16:07",
+        "daylight": "Llegada alrededor de las 15:30: quedan unos 35 min de luz. La cena a las 20:00 sí da margen ya en Bratislava.",
+        "rec": "Mirar GDDKiA y zjazdnost.sk por la mañana, sobre todo el cruce de Zwardoń–Skalité. No recortar por Chequia: esta es la ruta prevista (Katowice–Žilina).",
+        "links": [
+          {
+            "t": "GDDKiA (Polonia)",
+            "u": "https://www.gddkia.gov.pl/"
+          },
+          {
+            "t": "Zjazdnost.sk",
+            "u": "https://www.zjazdnost.sk/conditions/current/list.html"
+          },
+          {
+            "t": "E-viñeta Eslovaquia",
+            "u": "https://eznamka.sk/"
+          }
+        ]
+      },
+      {
+        "id": "hisa_lju",
+        "rank": 8,
+        "risk": "medio",
+        "top": false,
+        "date": "2026-12-28",
+        "date_label": "28 dic",
+        "title": "Kobarid → Liubliana",
+        "line": "28 dic · Kobarid → Liubliana · carreteras del Soča e Idrija (735 m)",
+        "segment": "Kobarid · Tolmin · Most na Soči · carreteras regionales por Idrija (~735 m) · Logatec · A1 hasta Liubliana. No usa Vršič.",
+        "km": 124,
+        "alt_m": 735,
+        "alt_note": "No hay un paso alpino. El techo de la geometría está en las colinas entre Idrija y Logatec, a 735 m.",
+        "why": "Carreteras prealpinas, estrechas y con curvas, antes de enganchar la autopista. El tour de Liubliana es a las 11:00 y, si se sale a las 08:00, se llega justo a esa hora: cualquier hielo, tractor o retraso lo descompone.",
+        "conditions": "A finales de diciembre, en el valle del Soča y en las colinas de Idrija, puede haber hielo, nieve húmeda o niebla, aunque la altitud es moderada.",
+        "legal": "Eslovenia, 15 nov–15 mar: equipo de invierno obligatorio (4 llantas de invierno o verano más cadenas).",
+        "tunnels": "Viñeta eslovena (evinjeta.dars.si) a partir de la A1. Las carreteras del Soča e Idrija no son de peaje.",
+        "sunset": "16:23",
+        "daylight": "Se circula de mañana, con luz. El apuro no es el atardecer, es la hora del tour.",
+        "rec": "Salir con un colchón sobre las 08:00 si la calzada está fría. Estado en Promet.si. Si el tiempo está feo, la A1 se toma en cuanto se pueda, sin alargar por carreteras locales.",
+        "links": [
+          {
+            "t": "Promet.si",
+            "u": "https://www.promet.si/"
+          },
+          {
+            "t": "E-viñeta Eslovenia",
+            "u": "https://evinjeta.dars.si/"
+          }
+        ]
+      },
+      {
+        "id": "imper_pragmar",
+        "rank": 9,
+        "risk": "medio",
+        "top": false,
+        "date": "2027-01-02",
+        "date_label": "2 ene",
+        "title": "Viena → Praga (Brno / Vysočina)",
+        "line": "2 ene · Viena → Praga · altiplano de Vysočina (548 m), niebla y hielo",
+        "segment": "Salida de Viena · corredor hacia Brno · D1 por el altiplano de Vysočina (~548 m) · Praga.",
+        "km": 336,
+        "alt_m": 548,
+        "alt_note": "El techo está en la Vysočina checa, a 548 m. No es montaña alpina: el riesgo es la niebla y el hielo en autopista.",
+        "why": "La D1 al cruzar la Vysočina es conocida por niebla, placas de hielo y, en nevadas, cierres o accidentes en cadena. Es un tramo rápido, no un puerto, y por eso se subestima.",
+        "conditions": "En diciembre y enero, Radio Prague y medios checos han documentado de forma repetida nieve, hielo y niebla en la región de Vysočina y en la D1 (incluida lluvia helada). No es todos los días, pero es el patrón del invierno en ese altiplano. Consultar česko dopravní info el mismo día.",
+        "legal": "Austria, 1 nov–15 abr: obligación situacional. Chequia, 1 nov–31 mar: llantas de invierno cuando hay nieve, hielo o escarcha, o cuando se pueden prever en el viaje (§ 40a de la ley de tráfico; Policía de Chequia).",
+        "tunnels": "Viñeta austriaca (si no se compró ya el 1 ene) y e-viñeta checa (edalnice.gov.cz).",
+        "sunset": "16:11",
+        "daylight": "Llegada prevista alrededor de las 13:15, de día y con margen.",
+        "rec": "Mirar dopravniinfo.cz y ASFINAG antes de salir. Si hay aviso de Rain Ice / ledovka, bajar el ritmo en la D1 y no encadenar adelantamientos con poca visibilidad.",
+        "links": [
+          {
+            "t": "Dopravniinfo.cz (ŘSD)",
+            "u": "https://www.dopravniinfo.cz/"
+          },
+          {
+            "t": "ASFINAG",
+            "u": "https://www.asfinag.at/verkehr/verkehrslage/"
+          },
+          {
+            "t": "E-viñeta Chequia",
+            "u": "https://edalnice.gov.cz/"
+          }
+        ]
+      },
+      {
+        "id": "lju_westin",
+        "rank": 10,
+        "risk": "bajo",
+        "top": false,
+        "date": "2026-12-28",
+        "date_label": "28 dic",
+        "title": "Liubliana → Zagreb",
+        "line": "28 dic · Liubliana → Zagreb · autopista A2/A3",
+        "segment": "A2 / A3 Liubliana–Zagreb, corredor de autopista.",
+        "km": 137,
+        "alt_m": 444,
+        "alt_note": "Techo de la geometría: 444 m. Autopista, sin puertos.",
+        "why": "Riesgo bajo de montaña, pero es invierno, puede haber niebla o calzada húmeda, y hay que tener viñeta eslovena y peaje croata, además del equipo de invierno en ambos países.",
+        "conditions": "Niebla y lluvia fría son lo más habitual a baja altitud; la nieve es menos frecuente que en los Alpes, pero no se puede descartar.",
+        "legal": "Eslovenia, 15 nov–15 mar, equipo de invierno obligatorio. Croacia, 15 nov–15 abr, equipo de invierno obligatorio en los tramos invernales designados (incluye las autopistas A1–A6 y otras vías listadas por HAK), da igual el tiempo: 4 llantas de invierno, o verano con ≥ 4 mm más cadenas a bordo.",
+        "tunnels": "Viñeta eslovena. En Croacia no hay viñeta: se paga peaje en las autopistas (HAC / HAK).",
+        "sunset": "16:18",
+        "daylight": "Tramo de tarde, aún con luz si no se sale tarde de Liubliana.",
+        "rec": "Estado en Promet.si y HAK. Comprar la viñeta eslovena con antelación (evinjeta.dars.si).",
+        "links": [
+          {
+            "t": "Promet.si",
+            "u": "https://www.promet.si/"
+          },
+          {
+            "t": "HAK (Croacia)",
+            "u": "https://www.hak.hr/"
+          },
+          {
+            "t": "E-viñeta Eslovenia",
+            "u": "https://evinjeta.dars.si/"
+          }
+        ]
+      },
+      {
+        "id": "westin_budmar",
+        "rank": 11,
+        "risk": "bajo",
+        "top": false,
+        "date": "2026-12-29",
+        "date_label": "29 dic",
+        "title": "Zagreb → Budapest",
+        "line": "29 dic · Zagreb → Budapest · autopista, 276 m",
+        "segment": "Autopista por el norte de Croacia hacia Hungría y Budapest (corredor tipo A4/M7).",
+        "km": 347,
+        "alt_m": 276,
+        "alt_note": "Techo de la geometría: 276 m. Autopista de llanura y colinas bajas.",
+        "why": "Poco riesgo orográfico. El cuidado es la niebla, el hielo a primera hora y las viñetas o peajes al cruzar la frontera.",
+        "conditions": "A esta altitud, a finales de diciembre, lo más habitual es niebla, lluvia fría o placas de hielo matinales, no un puerto nevado.",
+        "legal": "Croacia: equipo de invierno en tramos designados, 15 nov–15 abr. Hungría: sin obligación general de llantas de invierno; cadenas solo con señal. Neumáticos con clavos prohibidos en Hungría.",
+        "tunnels": "Peaje croata de autopista. E-viñeta húngara (nemzetiutdij.hu).",
+        "sunset": "16:00",
+        "daylight": "Llegada prevista alrededor de las 13:20, de día.",
+        "rec": "HAK y Útinform (Hungría) por la mañana. Llevar la e-viñeta húngara comprada antes de entrar a la autopista.",
+        "links": [
+          {
+            "t": "HAK",
+            "u": "https://www.hak.hr/"
+          },
+          {
+            "t": "Útinform Hungría",
+            "u": "https://www.utinform.hu/"
+          },
+          {
+            "t": "E-viñeta Hungría",
+            "u": "https://nemzetiutdij.hu/"
+          }
+        ]
+      },
+      {
+        "id": "bratislava_vienna",
+        "rank": 12,
+        "risk": "bajo",
+        "top": false,
+        "date": "2027-01-01",
+        "date_label": "1 ene",
+        "title": "Bratislava · Pezinok · Devín → Viena",
+        "line": "1 ene · Bratislava y Cárpatos bajos → Viena · llegada al hotel ~18:25, cena a las 19:00",
+        "segment": "Tramos cortos por los Cárpatos bajos (Svätý Jur, Pezinok, Devín) y entrada a Viena (Imperial Riding School). Altitud máxima en torno a 210 m.",
+        "km": 149,
+        "alt_m": 210,
+        "alt_note": "Colinas bajas, no montaña. El techo de la geometría ronda los 210 m.",
+        "why": "El riesgo de carretera es bajo. El apuro es el reloj: llegada al hotel alrededor de las 18:25 y cena en TIAN a las 19:00, ya de noche.",
+        "conditions": "1 de enero, posible niebla o hielo matinal en el Danubio y en las colinas del vino. Nada comparable a los Alpes.",
+        "legal": "Eslovaquia: llantas de invierno si hay (o se prevén) nieve, hielo o escarcha. Austria, 1 nov–15 abr: obligación situacional, 4 mm de dibujo en turismo.",
+        "tunnels": "Viñeta eslovaca si se usa vía de peaje, y viñeta austriaca para entrar a Viena por autopista (shop.asfinag.at).",
+        "sunset": "16:07–16:10",
+        "daylight": "Los castillos se visitan de día; el tramo final a Viena y la cena son de noche.",
+        "rec": "No alargar la tarde en Devín. Tener la viñeta austriaca antes de entrar a la A4/A2. Dejar 15–20 min entre el check-in y la salida a TIAN.",
+        "links": [
+          {
+            "t": "ASFINAG",
+            "u": "https://www.asfinag.at/verkehr/verkehrslage/"
+          },
+          {
+            "t": "Viñeta Austria",
+            "u": "https://shop.asfinag.at/"
+          },
+          {
+            "t": "E-viñeta Eslovaquia",
+            "u": "https://eznamka.sk/"
+          }
+        ]
+      },
+      {
+        "id": "pragmar_sixtprg",
+        "rank": 13,
+        "risk": "bajo",
+        "top": false,
+        "date": "2027-01-03",
+        "date_label": "3 ene",
+        "title": "Praga centro → aeropuerto PRG (devolución Sixt)",
+        "line": "3 ene · Praga → aeropuerto · 15 km de ciudad",
+        "segment": "Tramo urbano de 15 km hasta el aeropuerto Václav Havel.",
+        "km": 15,
+        "alt_m": 366,
+        "alt_note": "Ciudad y meseta de Praga, alrededor de 200–366 m.",
+        "why": "Sin dificultad de montaña. Solo tráfico, posible hielo urbano y el horario de la devolución.",
+        "conditions": "Enero en Praga: frío, posible niebla o calzada helada a primera hora.",
+        "legal": "Chequia, 1 nov–31 mar: llantas de invierno si hay o se prevén nieve, hielo o escarcha.",
+        "tunnels": "Sin viñeta extra para este trayecto urbano.",
+        "sunset": "16:12",
+        "daylight": "Depende de la hora de la devolución; el tramo es corto.",
+        "rec": "Dejar margen por el tráfico de Praga y por una calzada helada a primera hora.",
+        "links": [
+          {
+            "t": "Dopravniinfo.cz",
+            "u": "https://www.dopravniinfo.cz/"
+          }
+        ]
+      },
+      {
+        "id": "chamonix_local",
+        "rank": 14,
+        "risk": "bajo",
+        "top": false,
+        "date": "2026-12-21",
+        "date_label": "21–25 dic",
+        "title": "Tramos cortos en el valle de Chamonix",
+        "line": "21–25 dic · tramos locales del valle (Cap-Horn, Cabane, Albert 1er, Aiguille, Les Tissières)",
+        "segment": "Carreteras locales del valle de Chamonix, entre unos 1 030 y 1 080 m: chalet, Le Cap-Horn, La Cabane, Albert 1er, Aiguille du Midi, Les Tissières.",
+        "km": 8,
+        "alt_m": 1080,
+        "alt_note": "Todo el valle está en torno a 1 030–1 080 m. No hay puertos en estos desplazamientos.",
+        "why": "Son pocos kilómetros, pero el valle está helado casi todos los días de diciembre y de noche las rampas locales se ponen resbaladizas.",
+        "conditions": "Normal de Météo-France en Chamonix (1 042 m, 1981–2010): −1,6 °C de media en diciembre y 27,5 días con mínima bajo cero.",
+        "legal": "Loi Montagne II en todo Alta Saboya, 1 nov–31 mar.",
+        "tunnels": "Sin túneles ni peajes en estos tramos.",
+        "sunset": "16:50–16:52 según el día",
+        "daylight": "Varios de estos movimientos son de noche (cenas y regresos).",
+        "rec": "Las mismas llantas 3PMSF del Sixt. En nieve o verglas, no improvisar atajos por carreteras de ladera.",
+        "links": [
+          {
+            "t": "Bison Futé",
+            "u": "https://www.bison-fute.gouv.fr/"
+          },
+          {
+            "t": "Prefectura de Alta Saboya",
+            "u": "https://www.haute-savoie.gouv.fr/Actions-de-l-Etat/Prevenir-le-risque-et-se-proteger/Securite-routiere/Equipements-hivernaux-obligatoires"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -349,3 +349,31 @@ body.mode-esencial .legend{gap:8px}
 .applepanel .abtn:first-child{min-height:50px;font-size:16px;box-shadow:0 1px 4px rgba(10,132,255,.28)}
 .lean-who{font-size:14px;margin:0 0 12px;color:#334}
 .ess-note{font-size:13px;color:var(--mut);margin:0 0 8px}
+
+/* v11.3 tramos de manejo más complicados */
+.hz h2{margin:0 0 8px}
+.hz-sixt{background:#fdecea;border:1px solid #e8a8a0;border-radius:10px;padding:10px 12px;font-size:14px;margin:0 0 12px;color:#5a1c18}
+.hz-top{list-style:none;margin:0;padding:0}
+.hz-top li{display:flex;gap:8px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4}
+.hz-top li:first-child{border-top:0}
+.hz-top .risk{flex:0 0 auto;margin-top:1px}
+.risk{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:2px 8px;white-space:nowrap;line-height:1.4}
+.risk-alto{background:#fdecea;color:#8b1e16}
+.risk-medio{background:#fdf0d3;color:#8a5a00}
+.risk-bajo{background:#e3f3ea;color:#14532d}
+.hz-sec{margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--line)}
+.hz-sec h3{margin:0 0 8px;font-size:16px;font-weight:650;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.hz-sec h3 b{font-weight:700}
+.hz-sec.hz-alto{border-top:2px solid #e8a8a0}
+.hz-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0;font-size:14px}
+.hz-dl dt{color:var(--mut);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;padding-top:2px}
+.hz-dl dd{margin:0}
+@media(max-width:640px){.hz-dl{grid-template-columns:1fr}.hz-dl dt{padding-top:8px}}
+.hz-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.hz-links a{display:inline-block;padding:6px 10px;background:#f4f7fb;border:1px solid #d5e2f2;border-radius:999px;font-size:13px;font-weight:600;color:var(--acc)!important;text-decoration:none!important}
+.hz details.hz-sec{padding-top:0;border-top:1px solid var(--line)}
+.hz details.hz-sec summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:15px;font-weight:650;color:inherit;padding:10px 0}
+.hz details.hz-sec summary::-webkit-details-marker{display:none}
+.hz details.hz-sec summary::after{content:"▸";margin-left:auto;color:var(--acc);font-size:14px}
+.hz details.hz-sec[open] summary::after{content:"▾"}
+.hz details.hz-sec .hz-dl{padding-bottom:8px}
