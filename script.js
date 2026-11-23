@@ -1,6 +1,8 @@
 (function(){
 "use strict";
-var D=window.DATA, S={sec:"chamonix",view:"list",tz:"cet"};
+var D=window.DATA, S={sec:"chamonix",view:"list",tz:"cet",dens:"esencial"};
+try{var _dn=localStorage.getItem("itin-dens");if(_dn==="esencial"||_dn==="completo")S.dens=_dn;}catch(_e){}
+try{var _dq=new URLSearchParams(location.search).get("dens");if(_dq==="esencial"||_dq==="completo")S.dens=_dq;}catch(_e){}
 var UA=navigator.userAgent||"",TP=navigator.maxTouchPoints||0;
 var DEV=/iPhone|iPod/.test(UA)?"iphone":((/iPad/.test(UA)||(/Macintosh/.test(UA)&&TP>1))?"ipad":(/Android/.test(UA)?(/Mobile/.test(UA)?"iphone":"ipad"):"desktop"));
 try{var _dv=new URLSearchParams(location.search).get("dev");if(_dv==="iphone"||_dv==="ipad"||_dv==="desktop")DEV=_dv;}catch(_e){}
@@ -75,9 +77,11 @@ function demLine(p){var d=p.dem||{},x=[];
   if(d.src) return '<dt>Relieve</dt><dd>'+x.join(' · ')+' <small>('+d.src+')</small></dd>';
   return x.length?'<dt>Relieve</dt><dd>'+x.join(' · ')+' <small>(modelo Copernicus 30 m, '+(d.mind_m>=1000?'colinas a más de 1 km':'desde '+d.mind_m+' m')+' hasta '+d.maxd_km+' km)</small></dd>':'';}
 function profTbl(p){if(!p.profile)return '';return '<details><summary>Minuto a minuto (luna vs. arista)</summary><table class="tbl mini"><tr><th>Hora</th><th>Luna alt</th><th>az</th><th>Arista</th><th>Estado</th></tr>'+p.profile.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+deg(r[1])+'</td><td>'+deg(r[2])+'</td><td>'+deg(r[3])+'</td><td>'+r[4]+'</td></tr>';}).join('')+'</table></details>';}
+function appleBtn(url,label){if(!url)return '';
+  return '<a class="abtn apple-go" href="'+esc(url)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Abrir en Apple Maps'+(label?'<small>'+esc(label)+'</small>':'')+'</span></a>';}
 function driveBox(r,title){if(!r)return '';var a=r.rec,b=r.alt06;
-  var h='<div class="drivebox"><div class="full"><b style="display:inline;font-size:14px">🚗 '+esc(title||(r.frm+' → '+r.to))+'</b> · <a href="'+esc(r.map)+'" target="_blank" rel="noopener">ruta en Apple Maps ›</a></div>'+
-  '<div class="full comp"><span>Apple Maps<b>'+esc(r.raw)+'</b>'+r.km+' km</span><span>+20 %<b>'+esc(r.p20)+'</b>&nbsp;</span><span>Descansos<b>'+r.rest+' min</b>15 por c/2 h</span><span>Estacionar<b>'+r.park+' min</b>al llegar</span><span class="tot">Total<b>'+esc(r.total)+'</b>&nbsp;</span></div>'+
+  var h='<div class="drivebox"><div class="full drivehead"><div><b style="display:inline;font-size:15px">🚗 '+esc(title||(r.frm+' → '+r.to))+'</b><div class="dkm">'+r.km+' km · tiempo previsto <b style="display:inline">'+esc(r.total)+'</b> (con márgenes)</div></div>'+appleBtn(r.map,r.frm+' → '+r.to)+'</div>'+
+  '<div class="full comp"><span>Ruta<b>'+esc(r.raw)+'</b>'+r.km+' km</span><span>+20 %<b>'+esc(r.p20)+'</b>&nbsp;</span><span>Descansos<b>'+r.rest+' min</b>15 por c/2 h</span><span>Estacionar<b>'+r.park+' min</b>al llegar</span><span class="tot">Total<b>'+esc(r.total)+'</b>&nbsp;</span></div>'+
   '<div><small>Salida recomendada</small><b>'+a.dep+' → '+a.arr+'</b>'+(a.daylight_min>0&&a.daylight_min<600?'luz al llegar: '+esc(a.daylight):(a.daylight_min<=0?'llegas de noche':''))+'</div>'+
   (b?'<div><small>Si sales a las 06:00</small><b>06:00 → '+b.arr+'</b>'+(b.daylight_min>0?'luz al llegar: '+esc(b.daylight):'llegas de noche')+'</div>':'<div><small>06:00</small><b>—</b>no aplica este día</div>')+
   '<div class="full"><small>Sol en destino: se pone '+r.sunset+', crepúsculo civil hasta '+r.civil+(r.dinner?' · cena '+r.dinner+(r.free?' · libre real antes de cenar (ya restando 15–30 min de check-in/arreglarse): <b style="display:inline;font-size:13px">'+esc(r.free)+'</b>'+(r.free06?' (con 06:00: '+esc(r.free06)+')':''):''):'')+'</small>'+
@@ -169,17 +173,26 @@ window.MCOL={hotel:"#5E5CE6",cena:"#FF9500",visita:"#FF2D55",cafe:"#A2845E",foto
 
 function drawSvgMap(el,spec,fmt){
   var ms=spec.markers||[];if(!ms.length)return;
+  var routes=spec.routes||[];
   var minLat=90,maxLat=-90,minLon=180,maxLon=-180;
-  ms.forEach(function(p){if(p.lat<minLat)minLat=p.lat;if(p.lat>maxLat)maxLat=p.lat;if(p.lon<minLon)minLon=p.lon;if(p.lon>maxLon)maxLon=p.lon;});
+  function acc(lat,lon){if(lat<minLat)minLat=lat;if(lat>maxLat)maxLat=lat;if(lon<minLon)minLon=lon;if(lon>maxLon)maxLon=lon;}
+  ms.forEach(function(p){acc(p.lat,p.lon);});
+  routes.forEach(function(r){(r.geom_svg||r.geom||[]).forEach(function(c){acc(c[1],c[0]);});});
   var padLat=Math.max(0.01,(maxLat-minLat)*0.22),padLon=Math.max(0.01,(maxLon-minLon)*0.22);
   minLat-=padLat;maxLat+=padLat;minLon-=padLon;maxLon+=padLon;
   var W=640,H=320;
-  function px(lon){return 30+((lon-minLon)/(maxLon-minLon))*(W-60);}
-  function py(lat){return H-30-((lat-minLat)/(maxLat-minLat))*(H-60);}
-  var pts=ms.map(function(p){return px(p.lon).toFixed(1)+','+py(p.lat).toFixed(1);}).join(' ');
-  var svg='<svg viewBox="0 0 '+W+' '+H+'" class="svgmap" role="img" aria-label="Ruta esquemática">';
+  function px(lon){return 30+((lon-minLon)/(maxLon-minLon||1))*(W-60);}
+  function py(lat){return H-30-((lat-minLat)/(maxLat-minLat||1))*(H-60);}
+  var svg='<svg viewBox="0 0 '+W+' '+H+'" class="svgmap" role="img" aria-label="Ruta por carretera">';
   svg+='<rect width="'+W+'" height="'+H+'" fill="#f2efe9"/>';
-  if(ms.length>1) svg+='<polyline fill="none" stroke="#0A84FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5" points="'+pts+'"/>';
+  routes.forEach(function(r){
+    var g=r.geom_svg||r.geom||[]; if(g.length<2) return;
+    var pts=g.map(function(c){return px(c[0]).toFixed(1)+','+py(c[1]).toFixed(1);}).join(' ');
+    var flight=r.kind==="flight", sec=!!r.secondary;
+    var col=flight?"#636366":(sec?"#7aa2d4":"#0A84FF");
+    var dash=flight?' stroke-dasharray="7 6"':'';
+    svg+='<polyline fill="none" stroke="'+col+'" stroke-width="'+(sec?2.6:3.6)+'" stroke-linecap="round" stroke-linejoin="round"'+dash+' points="'+pts+'"/>';
+  });
   ms.forEach(function(p){
     var x=px(p.lon),y=py(p.lat),col=(window.MCOL[p.k]||"#FF2D55");
     svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="13" fill="'+col+'" stroke="#fff" stroke-width="2.5"/>';
@@ -196,7 +209,9 @@ window.TabMaps={create:function(el,spec,opts){
     if(v&&v.b&&v.b.length===2) return [[v.b[0][1],v.b[0][0]],[v.b[1][1],v.b[1][0]]];
     if(!ms.length) return [[6,45],[16,50]];
     var a=90,b=-90,c=180,d=-180;
-    ms.forEach(function(p){if(p.lat<a)a=p.lat;if(p.lat>b)b=p.lat;if(p.lon<c)c=p.lon;if(p.lon>d)d=p.lon;});
+    function acc(lat,lon){if(lat<a)a=lat;if(lat>b)b=lat;if(lon<c)c=lon;if(lon>d)d=lon;}
+    ms.forEach(function(p){acc(p.lat,p.lon);});
+    (spec.routes||[]).forEach(function(r){(r.geom||r.geom_svg||[]).forEach(function(xy){acc(xy[1],xy[0]);});});
     return [[c-0.02,a-0.02],[d+0.02,b+0.02]];
   }
   if(!window.maplibregl){drawSvgMap(el,spec,fmt);return {map:{getContainer:function(){return el;},resize:function(){},remove:function(){el.innerHTML="";},cooperativeGestures:{disable:function(){},enable:function(){}}},view:function(){}};}
@@ -206,9 +221,16 @@ window.TabMaps={create:function(el,spec,opts){
     var map=new window.maplibregl.Map({container:el,style:osmStyle,bounds:b0,fitBoundsOptions:{padding:38,maxZoom:14},cooperativeGestures:true});
     map.addControl(new window.maplibregl.NavigationControl({showCompass:false}),"top-right");
     map.on("load",function(){
-      if(ms.length>1){
-        map.addSource("leg",{type:"geojson",data:{type:"Feature",geometry:{type:"LineString",coordinates:ms.map(function(p){return [p.lon,p.lat];})}}});
-        map.addLayer({id:"leg-line",type:"line",source:"leg",paint:{"line-color":"#0A84FF","line-width":4,"line-opacity":0.85}});
+      var routes=spec.routes||[];
+      var feats=routes.filter(function(r){return (r.geom||[]).length>1;}).map(function(r){
+        return {type:"Feature",properties:{kind:r.kind||"drive",secondary:!!r.secondary},geometry:{type:"LineString",coordinates:r.geom}};
+      });
+      if(feats.length){
+        map.addSource("legs",{type:"geojson",data:{type:"FeatureCollection",features:feats}});
+        map.addLayer({id:"leg-drive",type:"line",source:"legs",filter:["!=",["get","kind"],"flight"],
+          paint:{"line-color":["case",["==",["get","secondary"],true],"#7aa2d4","#0A84FF"],"line-width":["case",["==",["get","secondary"],true],3,4.5],"line-opacity":0.92}});
+        map.addLayer({id:"leg-flight",type:"line",source:"legs",filter:["==",["get","kind"],"flight"],
+          paint:{"line-color":"#636366","line-width":3,"line-opacity":0.8,"line-dasharray":[2,2]}});
       }
     });
     map.on("error",function(){if(!el.querySelector("canvas")){drawSvgMap(el,spec,fmt);}});
@@ -268,7 +290,60 @@ function tripitCard(){var t=D.tripit,m=D.mail;
     if(m.conflicts&&m.conflicts.length) h+='<ul class="warn">'+m.conflicts.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';
     if(m.changes&&m.changes.length) h+='<ul class="recs">'+m.changes.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';}
   return h+'</div>';}
-function renderList(){document.getElementById("list").innerHTML=esencial()+days().map(dayCard).join("");}
+function dayAlert(d){
+  if(d.conflict) return d.conflict;
+  if(d.ambig) return d.ambig;
+  var ev=(d.events||[]).filter(function(e){return e.status==="conflicto"||e.status==="por_resolver"||(e.flag&&/duplicado|reconfirmar|sin respuesta|posiblemente activa/i.test(e.flag));});
+  if(ev.length) return ev[0].flag||ev[0].title;
+  return "";
+}
+function leanCard(d){
+  var alert=dayAlert(d);
+  var h='<article class="day lean" id="d-'+d.date+'"><h2>'+esc(d.label)+' · '+esc(d.city)+dayStatus(d)+'</h2>';
+  if(alert) h+='<div class="lean-alert">⚠️ '+esc(alert)+'</div>';
+  var hid=(d.photos&&d.photos[0])?photo(d.photos[0]):null;
+  if(hid&&hid.ref&&hid.ref.img) h+='<img class="lean-hero" src="'+esc(hid.ref.img)+'" alt="'+esc(hid.subject||hid.spot||d.city)+'">';
+  function row(t,title,note,map){
+    return '<div class="lean-item"><div class="t">'+t+'</div><div><div class="ti">'+title+'</div>'+(note?'<div class="nt">'+note+'</div>':'')+(map?appleBtn(map):'')+'</div></div>';
+  }
+  var n=0;
+  ["drive","drive2","drive3"].forEach(function(k){
+    var r=d[k]; if(!r||!r.rec) return; n++;
+    var label=(k==="drive2"?"Tarde: ":(k==="drive3"?"Noche: ":""))+esc(r.frm)+' → '+esc(r.to);
+    h+=row(r.rec.dep,'🚗 '+label, r.km+' km · sale '+r.rec.dep+' · llega '+r.rec.arr+' · '+esc(r.total)+' con márgenes', r.map);
+  });
+  var evs=(d.events||[]).filter(function(e){return e.type==="hotel"&&/check-?in/i.test(e.title||"");});
+  if(evs.length && d.lodging){
+    var cin=null;
+    ["drive","drive2","drive3"].forEach(function(k){if(d[k]&&d[k].checkin)cin=d[k].checkin;});
+    var t=cin||evs[0].start||"";
+    var place=(d.lodging||"").split("(")[0].trim();
+    h+=row(t||'🛏','🛏 Check-in · '+esc(place), evs[0].notes?esc((evs[0].notes||"").split(".")[0]+"."):'', null);
+    n++;
+  }
+  if(d.dinner){
+    var t=(d.dinner.match(/\b(\d{1,2}:\d{2})\b/)||[])[1]||"";
+    var ev=(d.events||[]).filter(function(e){return e.type==="cena";})[0];
+    if(ev&&ev.start) t=ev.start;
+    h+=row(t||'🍽','🍽 '+esc(d.dinner), ev&&ev.place?esc(ev.place):"", ev&&ev.map?ev.map:null);
+    n++;
+  }
+  if(!n && (d.events||[]).length){
+    (d.events||[]).slice(0,4).forEach(function(e){
+      var tt=disp(d,e);
+      h+=row(hm(tt.s), esc(e.title), e.place?esc(e.place):"", e.map||null);
+    });
+  }
+  return h+'</article>';
+}
+function esencialLean(){
+  var T=D.travelers, h='';
+  if(T){h+='<div class="card lean-who"><b>Quién viaja.</b> '+(S.sec==="chamonix"?esc(T.chamonix):esc(T.tour))+'</div>';}
+  h+='<p class="ess-note">Vista esencial: hora, trayecto, hotel y cena. Cambia a Completo si quieres fotos, notas y alternativas.</p>';
+  h+=routeMap()+days().map(leanCard).join("");
+  return h;
+}
+function renderList(){document.getElementById("list").innerHTML=S.dens==="esencial"?esencialLean():(esencial()+days().map(dayCard).join(""));}
 function renderChefs(){var c=D.chefs||[];
   var L={no:'No',sin:'Sin respuesta',rebote:'Rebotó',oferta:'Propuesta',pide:'Pide presupuesto',cerrado:'Cerrado'};
   var h='<div class="card"><h2>Nochebuena — 24 dic, raclette en el chalet</h2><p class="sub">'+esc(D.meta.chefs_note||'')+' Lectura de correo: '+esc(D.meta.chefs_read||'')+'.</p>'+
@@ -280,7 +355,7 @@ var GRP={ya:"🔴 Reservar / pagar YA",tour:"🟡 Tour / actividad por decidir",
 function grpChip(g){return g?'<span class="grp grp-'+g+'">'+GRP[g]+'</span>':"";}
 function isDone(p){try{var v=localStorage.getItem(pkey(p.n));if(v==="1")return true;if(v==="0")return false;}catch(_e){}return !!p.done;}
 function pItem(p){var dn=isDone(p);return '<li class="'+(dn?'done':'')+'" id="p-'+p.n+'"><label><input type="checkbox" data-n="'+p.n+'"'+(dn?' checked':'')+'><span class="num">'+p.n+'</span><span class="ptx">'+grpChip(p.grp)+'<br><b>'+esc(p.what)+'</b> '+badge(p.status)+'<br><small><b>Cuándo:</b> '+esc(p.when)+'</small><br><small><b>Por qué:</b> '+esc(p.why)+'</small>'+(p.detail?'<br><small>'+esc(p.detail)+'</small>':'')+'</span></label>'+
-  (p.alts&&p.alts.length?'<div class="alts"><div class="alth">Alternativas ('+p.alts.length+')</div>'+p.alts.map(function(a){return '<div class="alt" id="p-'+p.n+a.l+'"><div class="altt"><span class="altl">'+p.n+a.l+'</span> <b>'+esc(a.title)+'</b> '+badge(a.status)+'</div><small><b>Cuándo:</b> '+esc(a.when)+'</small><br><small>'+esc(a.why)+'</small>'+(a.detail?'<br><small>'+esc(a.detail)+'</small>':'')+'</div>';}).join('')+'</div>':'')+'</li>';}
+  (S.dens!=="esencial"&&p.alts&&p.alts.length?'<div class="alts"><div class="alth">Alternativas ('+p.alts.length+')</div>'+p.alts.map(function(a){return '<div class="alt" id="p-'+p.n+a.l+'"><div class="altt"><span class="altl">'+p.n+a.l+'</span> <b>'+esc(a.title)+'</b> '+badge(a.status)+'</div><small><b>Cuándo:</b> '+esc(a.when)+'</small><br><small>'+esc(a.why)+'</small>'+(a.detail?'<br><small>'+esc(a.detail)+'</small>':'')+'</div>';}).join('')+'</div>':'')+'</li>';}
 
 function renderBudget(){var B=D.presupuesto||{};
   function totTbl(L,title){if(!L||!L.length)return '';
@@ -366,11 +441,11 @@ function renderCal(){
 }
 function drvRow(lbl,r){return '<tr><td>'+esc(lbl)+'</td><td>'+esc(r.frm)+' → '+esc(r.to)+'</td><td>'+esc(r.raw)+'<br><small>'+r.km+' km</small></td><td>'+esc(r.p20)+'</td><td>'+r.rest+'</td><td>'+r.park+'</td><td><b>'+esc(r.total)+'</b></td><td>'+r.rec.dep+' → '+r.rec.arr+(r.alt06?'<br><small>06:00 → '+r.alt06.arr+'</small>':'')+'</td><td>'+(r.rec.daylight_min>0&&r.rec.daylight_min<600?esc(r.rec.daylight):'—')+(r.alt06&&r.alt06.daylight_min>0?'<br><small>'+esc(r.alt06.daylight)+'</small>':'')+'</td></tr>';}
 function renderExtra(){
-  var h='';if(S.sec==="chefs"||S.sec==="pend"||S.sec==="presupuesto"){document.getElementById("extra").innerHTML='';return;}
+  var h='';if(S.dens==="esencial"||S.sec==="chefs"||S.sec==="pend"||S.sec==="presupuesto"){document.getElementById("extra").innerHTML='';return;}
   var rows=days().filter(function(d){return d.drive;});
-  h+='<div class="card"><h2>'+(S.sec==="tour"?'Trayectos en coche':'Trayectos en coche (Chamonix)')+' — Apple Maps + márgenes</h2><div class="scroll"><table class="tbl"><thead><tr><th>Día</th><th>Tramo</th><th>Apple</th><th>+20 %</th><th>Desc.</th><th>Estac.</th><th>Total</th><th>Salida → llegada</th><th>Luz al llegar</th></tr></thead><tbody>'+
+  h+='<div class="card"><h2>'+(S.sec==="tour"?'Trayectos en coche':'Trayectos en coche (Chamonix)')+' — tiempo previsto con márgenes</h2><div class="scroll"><table class="tbl"><thead><tr><th>Día</th><th>Tramo</th><th>Ruta</th><th>+20 %</th><th>Desc.</th><th>Estac.</th><th>Total</th><th>Salida → llegada</th><th>Luz al llegar</th></tr></thead><tbody>'+
    rows.map(function(d){var x=drvRow(d.label,d.drive);if(d.drive2)x+=drvRow('',d.drive2);if(d.drive3)x+=drvRow('',d.drive3);return x;}).join('')+
-   '</tbody></table></div><p class="sub" style="font-size:12px">La tabla sigue usando Apple Maps (lectura de v10) más márgenes: +20 % redondeado a 5 min, + 15 min de descanso por cada 2 h completas de manejo ajustado, + 15 min para estacionar al llegar. Cada tramo se contrastó con OSRM el 22 nov 2026 (sin nieve ni tráfico de diciembre); las diferencias materiales están en la nota del tramo y en el reto. Luz = minutos entre la llegada y la puesta del sol en destino (efemérides). Salida recomendada arriba; abajo, lo que pasa si sales a las 06:00 (lo más temprano posible).</p></div>';
+   '</tbody></table></div><p class="sub" style="font-size:12px">El tiempo previsto toma el mayor entre Apple Maps y OSRM (22 nov 2026), más márgenes: +20 % redondeado a 5 min, + 15 min de descanso por cada 2 h completas de manejo ajustado, + 15 min para estacionar. OSRM no incluye nieve, tráfico ni esperas en frontera o viñeta; por eso se usa el tiempo más conservador. Luz = minutos entre la llegada y la puesta del sol en destino. Abajo, lo que pasa si sales a las 06:00 (lo más temprano posible).</p></div>';
   if(S.sec==="tour") h+='<div class="card"><h2>Carretera en invierno</h2><p class="sub">Viñetas y registro de Cracovia con fechas: pestaña Pendientes → Trámites de carretera.</p><div class="scroll"><table class="tbl"><thead><tr><th>País</th><th>Fechas</th><th>Llantas de invierno</th></tr></thead><tbody>'+D.road.tyres.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td>'+esc(r[1])+'</td><td>'+esc(r[2])+'</td></tr>';}).join('')+'</tbody></table></div><p class="sub" style="font-size:12px">Fuente: '+esc(D.road.tyres_src)+'</p><ul class="recs">'+D.road.notes.map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul></div>';
   var ph=D.photos.filter(function(p){return p.section===S.sec;});
   h+='<div class="card"><h2>Resumen de fotos para PhotoPills</h2><p class="sub">Toca el número para ver la ficha completa con la foto de referencia.</p><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>Fecha · sesión (CET)</th><th>Lugar (GPS)</th><th>Sol alt / az</th><th>Luna alt / az</th><th>Apuntar</th></tr></thead><tbody>'+
@@ -414,8 +489,11 @@ document.addEventListener("click",function(ev){var t=ev.target;
 });
 document.addEventListener("keydown",function(ev){if(ev.key==="Escape")closeModal();if((ev.key==="Enter"||ev.key===" ")&&ev.target&&ev.target.getAttribute&&ev.target.getAttribute("data-ev")){ev.preventDefault();window.TabOpen(ev.target.getAttribute("data-ev"));}});
 function render(){
+  document.body.classList.toggle("mode-esencial", S.dens==="esencial");
+  document.body.classList.toggle("mode-completo", S.dens==="completo");
+  sel("data-dens", S.dens);
   var isDay=(S.sec==="chamonix"||S.sec==="tour");
-  document.getElementById("vseg").hidden=!isDay; document.getElementById("tzbar").hidden=!isDay; document.getElementById("legend").hidden=(S.sec==="chefs"||S.sec==="presupuesto");
+  document.getElementById("vseg").hidden=!isDay; document.getElementById("tzbar").hidden=!isDay; document.getElementById("legend").hidden=(S.sec==="chefs"||S.sec==="presupuesto"||S.dens==="esencial");
   document.getElementById("list").hidden=isDay&&S.view!=="list"; document.getElementById("cal").hidden=!(isDay&&S.view==="cal");
   document.getElementById("tzlabel").innerHTML=tzLabel();
   Array.prototype.forEach.call(document.querySelectorAll("[data-tz]"),function(b){b.setAttribute("aria-pressed",String(b.getAttribute("data-tz")===S.tz));});
@@ -427,6 +505,7 @@ function sel(attr,val){Array.prototype.forEach.call(document.querySelectorAll("[
 Array.prototype.forEach.call(document.querySelectorAll("[data-sec]"),function(b){b.addEventListener("click",function(){S.sec=b.getAttribute("data-sec");sel("data-sec",S.sec);try{history.replaceState(null,"","#"+(S.sec==="pend"?"pendientes":S.sec));}catch(_e){}render();window.scrollTo(0,0);});});
 Array.prototype.forEach.call(document.querySelectorAll("[data-view]"),function(b){b.addEventListener("click",function(){S.view=b.getAttribute("data-view");sel("data-view",S.view);render();});});
 Array.prototype.forEach.call(document.querySelectorAll("[data-tz]"),function(b){b.addEventListener("click",function(){S.tz=b.getAttribute("data-tz");try{localStorage.setItem("itin-tz",S.tz);}catch(_e){}var y=window.scrollY;render();window.scrollTo(0,y);});});
+Array.prototype.forEach.call(document.querySelectorAll("[data-dens]"),function(b){b.addEventListener("click",function(){S.dens=b.getAttribute("data-dens");try{localStorage.setItem("itin-dens",S.dens);}catch(_e){}var y=window.scrollY;render();window.scrollTo(0,y);});});
 document.getElementById("upd").textContent=(D.meta.version||"v11.1")+" · actualizado "+D.meta.updated+" · TripIt "+D.meta.tripit_read;
 document.getElementById("foot").innerHTML='<p class="devl">Vista optimizada para: <b>'+DEVL[DEV]+'</b> (detectado automáticamente). '+esc((D.meta&&D.meta.share_note)||"Este es un archivo HTML para compartir con Mariane (AirDrop o WhatsApp).")+'</p><p><b>Fuentes</b></p><ul>'+D.sources.map(function(s){return '<li>'+esc(s.t)+(s.w?' — '+esc(s.w):'')+(s.u?' · <a href="'+esc(s.u)+'" target="_blank" rel="noopener">'+esc(s.u)+'</a>':'')+'</li>';}).join("")+'</ul><p>Solo lectura: nada se reservó ni se cambió para hacer esta página. Los mapas en vivo (MapLibre / Google) necesitan internet; el resto funciona sin conexión.</p>';
 var hs=(location.hash||"").replace("#","");if(hs==="pendientes")hs="pend";if(hs==="tour"||hs==="chamonix"||hs==="chefs"||hs==="pend"||hs==="presupuesto"){S.sec=hs;sel("data-sec",S.sec);}

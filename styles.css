@@ -319,3 +319,33 @@ body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-ri
 .evth{max-width:150px;max-height:92px;border-radius:6px;border:1px solid #cdd6e2;display:block;object-fit:cover}
 .evid.full .evth{max-width:260px;max-height:180px}
 .evmiss{margin-top:3px;color:#5a6578}
+
+
+/* v11.2 esencial / mapas con geometría real */
+.seg.dens{margin-top:8px;margin-bottom:2px;background:rgba(255,255,255,.18)}
+.seg.dens button{font-size:15px}
+.seg.dens button span{font-size:11px;opacity:.85}
+body.mode-esencial .legend .lgsep,
+body.mode-esencial .legend .lgtip,
+body.mode-esencial #legend .badge{display:none}
+body.mode-esencial .legend{gap:8px}
+.day.lean{padding:14px 14px 12px}
+.day.lean h2{font-size:18px;margin:0 0 8px}
+.lean-hero{width:100%;height:140px;object-fit:cover;border-radius:12px;margin:0 0 10px;display:block}
+.lean-item{display:grid;grid-template-columns:58px 1fr;gap:8px;padding:8px 0;border-top:1px solid var(--line);align-items:start}
+.lean-item{border-top:1px solid var(--line)}
+.lean-item:first-child,.day.lean .lean-item:first-of-type{border-top:1px solid var(--line)}
+.day.lean .lean-hero + .lean-item,.day.lean .lean-alert + .lean-item,.day.lean h2 + .lean-item{border-top:0}
+.lean-item .t{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;color:#334}
+.lean-item .ti{font-weight:600;font-size:15px}
+.lean-item .nt{font-size:13px;color:var(--mut);margin-top:2px}
+.lean-item .abtn{margin-top:8px}
+.lean-alert{background:#fdecea;border:1px solid #e8a8a0;border-radius:10px;padding:8px 10px;font-size:13px;margin:0 0 10px;color:#5a1c18}
+.drivebox .drivehead{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.drivebox .drivehead .dkm{font-size:13px;color:#27415f;margin-top:2px}
+.drivebox .drivehead .abtn{flex:1 1 220px;justify-content:center;min-height:48px;box-shadow:0 1px 4px rgba(10,132,255,.28)}
+.abtn.apple-go{background:#0A84FF;color:#fff!important;font-size:16px}
+.abtn.apple-go small{display:block;font-weight:500;font-size:12px;opacity:.92;margin-top:1px}
+.applepanel .abtn:first-child{min-height:50px;font-size:16px;box-shadow:0 1px 4px rgba(10,132,255,.28)}
+.lean-who{font-size:14px;margin:0 0 12px;color:#334}
+.ess-note{font-size:13px;color:var(--mut);margin:0 0 8px}
